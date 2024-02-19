@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d31054750dd4ff4f9e95b83109a370e, type: 3}
+  m_Name: Brown Adson Forceps
+  m_EditorClassIdentifier: 
+  Bullets: []
+  Videos: []
+  LeftHandGrips:
+  - {fileID: 11400000, guid: a7904a8522f7c07438e19a1a3d140c9a, type: 2}
+  - {fileID: 11400000, guid: 93940aa74779dea4e9b5d1e0fcf29c55, type: 2}
+  RightHandGrips:
+  - {fileID: 11400000, guid: 6e4fe13d8b064c04ab4f1bd8b3c96981, type: 2}
+  - {fileID: 11400000, guid: d398be7b7f63fb349a2a3fd864cf5690, type: 2}
