@@ -36,6 +36,11 @@ public class InstructionDeliveryControllerEditor : Editor
                 (Response response) => { 
                     Debug.Log(response.message);
                     AssetDatabase.Refresh();
+                    if (FileSystem.DoesFileExistAtAbsolutePath(instructionDeliveryMetadata.AbsAudioPath))
+                    {
+                        AudioClip audioClip = (AudioClip)AssetDatabase.LoadAssetAtPath(instructionDeliveryMetadata.RelAudioPath, typeof(AudioClip));
+                        instructionDeliveryMetadata.AudioClip = audioClip;
+                    }
                 })
             );
         }

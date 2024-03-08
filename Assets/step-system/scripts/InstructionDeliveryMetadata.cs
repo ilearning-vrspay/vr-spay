@@ -3,28 +3,11 @@ using UnityEngine;
 [System.Serializable]
 public class InstructionDeliveryMetadata
 {
-    [UnityEngine.SerializeField] private string dataPath;
+    //[UnityEngine.SerializeField] private string dataPath;
     [UnityEngine.SerializeField] private string fileName;
-    [UnityEngine.SerializeField] private AudioClip audioClip;
-    [UnityEngine.SerializeField] private AnimationClip animationClip;
-
-    public AudioClip AudioClip
-    {
-        get
-        {
-            return audioClip;
-        }
-    }
-
-    public AnimationClip AnimationClip
-    {
-        get
-        {
-            return animationClip;
-        }
-    }
-
-    
+    public AudioClip AudioClip;
+    public AnimationClip AnimationClip;
+        
 
     public string RelAudioPath
     {
@@ -63,8 +46,7 @@ public class InstructionDeliveryMetadata
     {
         get
         {
-            string timelineDir = FileSystem.CombinePathFilename(dataPath, "Timeline");
-            return FileSystem.CombinePathFilenameExt(timelineDir, fileName, "playable");
+            return FileSystem.CombinePathFilenameExt("Assets/app/timelines", fileName, "playable");
         }
     }
 
