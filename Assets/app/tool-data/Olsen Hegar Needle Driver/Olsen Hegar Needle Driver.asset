@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d31054750dd4ff4f9e95b83109a370e, type: 3}
+  m_Name: Olsen Hegar Needle Driver
+  m_EditorClassIdentifier: 
+  Bullets: []
+  Videos: []
+  LeftHandGrips:
+  - {fileID: 11400000, guid: ed8e13b6c31113c4da3c3dc9c86f4b39, type: 2}
+  - {fileID: 11400000, guid: 0bbd5caa29f1ddf4d989c088abb0e97b, type: 2}
+  RightHandGrips:
+  - {fileID: 11400000, guid: d29fc6896157b094089f2608a2042102, type: 2}
+  - {fileID: 11400000, guid: da5c08d7304692c468860f8f990f9650, type: 2}

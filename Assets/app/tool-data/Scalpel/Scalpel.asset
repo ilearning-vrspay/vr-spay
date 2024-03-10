@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d31054750dd4ff4f9e95b83109a370e, type: 3}
+  m_Name: Scalpel
+  m_EditorClassIdentifier: 
+  Bullets: []
+  Videos: []
+  LeftHandGrips:
+  - {fileID: 11400000, guid: 4368a0b9a8a8f0e42afd3d88778c5506, type: 2}
+  - {fileID: 11400000, guid: 37969a6eaa4fb4f4e8aa538fcdbfea3b, type: 2}
+  RightHandGrips:
+  - {fileID: 11400000, guid: fd5bffb7bd96d1848b5c98378c0bc179, type: 2}
+  - {fileID: 11400000, guid: 76dfaed2fe8333141a1f43094cdbcd68, type: 2}

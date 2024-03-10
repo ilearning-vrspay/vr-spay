@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d31054750dd4ff4f9e95b83109a370e, type: 3}
+  m_Name: Mayo Needle Driver
+  m_EditorClassIdentifier: 
+  Bullets: []
+  Videos: []
+  LeftHandGrips:
+  - {fileID: 11400000, guid: 84be4d22b77b4bf4fa7946668589a8c4, type: 2}
+  - {fileID: 11400000, guid: 50570be7ccda0c54cba2461e01e9acb1, type: 2}
+  RightHandGrips:
+  - {fileID: 11400000, guid: 01e0433ff9b3b7b449c1ff133f103940, type: 2}
+  - {fileID: 11400000, guid: c9ea42ac208df09438cd6e917f98a965, type: 2}

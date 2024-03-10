@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d31054750dd4ff4f9e95b83109a370e, type: 3}
+  m_Name: Metzenbaum Suture Scissors
+  m_EditorClassIdentifier: 
+  Bullets: []
+  Videos: []
+  LeftHandGrips:
+  - {fileID: 11400000, guid: 2366dedfeb00b32429bb6dd0d59565ce, type: 2}
+  - {fileID: 11400000, guid: c16a985d5de07f64c8611a544497d197, type: 2}
+  RightHandGrips:
+  - {fileID: 11400000, guid: ece38390b2ccba04492d7d49c028be4b, type: 2}
+  - {fileID: 11400000, guid: a8fee4934fd0b104db435c665c9f53d1, type: 2}
