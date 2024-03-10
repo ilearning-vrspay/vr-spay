@@ -21,6 +21,8 @@ public class InstructionDeliveryControllerEditor : Editor
         // dialogue string
         string dialogue = instructionDeliveryController.Script;
  
+
+
         if (GUILayout.Button("Generate Audio"))
         {
             Debug.Log(instructionDeliveryMetadata.AbsAudioPath);

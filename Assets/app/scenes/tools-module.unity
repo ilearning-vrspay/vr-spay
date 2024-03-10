@@ -123,6 +123,91 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &40871882
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 40871883}
+  - component: {fileID: 40871885}
+  - component: {fileID: 40871884}
+  m_Layer: 0
+  m_Name: thumb-forceps-13
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &40871883
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 40871882}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443313850}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &40871884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 40871882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '--INSTRUCT TO REST POSE--
+
+    -------------------------------
+
+    ---------DIALOGUE------------'
+  TimelineAsset: {fileID: 11400000, guid: 6669a83118b60634c91cd44d93ce047e, type: 2}
+  script: "User, change poses by clicking on the joystick button. Choose the \u201Cat
+    rest pose\u201D "
+  MetaData:
+    fileName: thumb-forceps-13
+    AudioClip: {fileID: 8300000, guid: a9183856d6b45ef47ad70c2dae3c2c20, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &40871885
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 40871882}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 147471827299508108, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 3379686890641205236}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &51576682
 GameObject:
   m_ObjectHideFlags: 0
@@ -175,6 +260,11 @@ MonoBehaviour:
   OnInstructionsStarted:
     m_PersistentCalls:
       m_Calls: []
+  description: '--PLAYS ONLINE COURSE VIDEO--
+
+    ----------------------------------
+
+    ------------VIDEO----------------'
   TimelineAsset: {fileID: 11400000, guid: ce730c40690912a4295bacc313c79e38, type: 2}
   script: 
   MetaData:
@@ -520,11 +610,16 @@ MonoBehaviour:
   OnInstructionsStarted:
     m_PersistentCalls:
       m_Calls: []
+  description: '--INSTRUCT TO INSPECT OWN GRASP--
+
+    ---------------------------------------
+
+    -------------DIALOGUE----------------'
   TimelineAsset: {fileID: 11400000, guid: 23c29eb10c80be244b41e77d85d42470, type: 2}
   script: 'Rotate your hand so examine the aspects of the pencil grip. '
   MetaData:
     fileName: thumb-forceps-9
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: eb03fc82037b52b41ad9073662dfbff1, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &123141095
 PlayableDirector:
@@ -721,7 +816,7 @@ PlayableDirector:
   m_SceneBindings:
   - key: {fileID: 147471827299508108, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
     value: {fileID: 0}
-  - key: {fileID: -1127436221829241864, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
+  - key: {fileID: 0}
     value: {fileID: 3379686890641205236}
   m_ExposedReferences:
     m_References: []
@@ -744,8 +839,16 @@ MonoBehaviour:
   OnInstructionsStarted:
     m_PersistentCalls:
       m_Calls: []
+  description: '--DESCRIBE CURRENT GRIP--
+
+    -----------------------------
+
+    --------DIALOGUE-----------'
   TimelineAsset: {fileID: 11400000, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
-  script: Click the joystick to see another way to hold the brown adson forceps.
+  script: 'Hold the tissue forceps in a modified pencil grip so that one tip functions
+    as an extension of the thumb, and the other tip as an extension of the opposing
+    fingers. The shank of the instrument should rest on the metacarpophalangeal joint,
+    giving stability and the widest range of maneuverability. '
   MetaData:
     fileName: thumb-forceps-10
     AudioClip: {fileID: 8300000, guid: d10c8413277ef774c8900eae8802e7e2, type: 3}
@@ -802,6 +905,7 @@ MonoBehaviour:
   OnInstructionsStarted:
     m_PersistentCalls:
       m_Calls: []
+  description: 
   TimelineAsset: {fileID: 11400000, guid: b87506acd2144914d97b24196a3f787e, type: 2}
   script: Hello! This is a guided walkthrough of all the tools used during the spay
     procedure. The tools are laid out in front of you. Please follow the instructions
@@ -825,6 +929,93 @@ PlayableDirector:
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!1 &453383922
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 453383923}
+  - component: {fileID: 453383925}
+  - component: {fileID: 453383924}
+  m_Layer: 0
+  m_Name: thumb-forceps-12
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &453383923
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 453383922}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443313850}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &453383924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 453383922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '--EDUCATE ON CHUCK GRIP--
+
+    -------------------------------
+
+    ---------DIALOGUE------------'
+  TimelineAsset: {fileID: 11400000, guid: ff58ee2a7987c58449a2614014587358, type: 2}
+  script: "Even greater stability is achieved when the forceps are held in a \u201Cchuck\u201D
+    grip, with the thumb, index finger, and middle finger all touching and stabilizing
+    each other. The end of the instrument should poke out through the hole made by
+    these three fingers. "
+  MetaData:
+    fileName: thumb-forceps-12
+    AudioClip: {fileID: 8300000, guid: 48e69a537b6605d4aabba8babe3c7665, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &453383925
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 453383922}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 147471827299508108, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 3379686890641205236}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &479539902
@@ -1281,6 +1472,11 @@ MonoBehaviour:
   OnInstructionsStarted:
     m_PersistentCalls:
       m_Calls: []
+  description: '--AVATAR GRASPS TISSUE--
+
+    ----------------------------
+
+    ---------ANIMATION--------'
   TimelineAsset: {fileID: 11400000, guid: 58bd654f5862eb745804cbbe286ebda5, type: 2}
   script: 
   MetaData:
@@ -1426,12 +1622,17 @@ MonoBehaviour:
   OnInstructionsStarted:
     m_PersistentCalls:
       m_Calls: []
+  description: '--WATCH AVATAR HANDS--
+
+    ---------------------------
+
+    --------DIALOGUE---------'
   TimelineAsset: {fileID: 11400000, guid: e9f797c49dd65034ba5b72e2d69821fe, type: 2}
   script: Watch the avatar hands using the forceps to open and close to pretend to
     grasp tissue.
   MetaData:
     fileName: thumb-forceps-6
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: 15059b59b13346d43a6af11ab2bc2d77, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!1 &884013951
 GameObject:
@@ -1563,6 +1764,11 @@ MonoBehaviour:
   OnInstructionsStarted:
     m_PersistentCalls:
       m_Calls: []
+  description: '--INTRO TO FORCEPS--
+
+    -----------------------
+
+    ------DIALOGUE-------'
   TimelineAsset: {fileID: 11400000, guid: 2ab6c5966f09fc842bb002230e3eb683, type: 2}
   script: The first type of tool we will learn about are the forceps.
   MetaData:
@@ -2234,7 +2440,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -30}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -1, y: 30}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1069395875
@@ -2436,13 +2642,18 @@ MonoBehaviour:
   OnInstructionsStarted:
     m_PersistentCalls:
       m_Calls: []
+  description: '--FORCEPS GRASP TISSUE--
+
+    ----------------------------
+
+    --------DIALOGUE----------'
   TimelineAsset: {fileID: 11400000, guid: a0b0827e1ca440843ac5d5c611b4e7af, type: 2}
   script: 'When handled appropriately, thumb forceps allow quick grasp and release
     movements, enabling the surgeon to grasp tissue gently during dissection or suture
     placement. '
   MetaData:
     fileName: thumb-forceps-5
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: 810aca83a6267e54092254dbc74eea65, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &1089113190
 PlayableDirector:
@@ -2652,13 +2863,19 @@ MonoBehaviour:
   OnInstructionsStarted:
     m_PersistentCalls:
       m_Calls: []
+  description: '--FORCEPS GRIP DESCRIPTION--
+
+    --------------------------------
+
+    ---------DIALOGUE-------------'
   TimelineAsset: {fileID: 11400000, guid: 373c8619653d0994ea6059592835948f, type: 2}
   script: "Thumb forceps grip when their tips are compressed between the surgeon\u2019s
     thumb\_ and forefinger. Thumb forceps are used to manipulate tissue during incision,
+    dissection, and suturing. humb forceps are used to manipulate tissue during incision,
     dissection, and suturing. "
   MetaData:
     fileName: thumb-forceps-2
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: 525d89902cb4eef4a90c5d0e4757de34, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &1153343422
 PlayableDirector:
@@ -2723,6 +2940,92 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1236168386
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1236168387}
+  - component: {fileID: 1236168389}
+  - component: {fileID: 1236168388}
+  m_Layer: 0
+  m_Name: thumb-forceps-14
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1236168387
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1236168386}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443313850}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1236168388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1236168386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '-----DESCRIBE REST POSE-----
+
+    -------------------------------
+
+    ---------DIALOGUE------------'
+  TimelineAsset: {fileID: 0}
+  script: 'When temporarily not in use, for instance when tying knots associated
+    with suture placement, the thumb forceps may be set down or held in the nondominant
+    hand using a palmed grip. '
+  MetaData:
+    fileName: thumb-forceps-14
+    AudioClip: {fileID: 8300000, guid: e17fff184dc222946a80ed00195561c4, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1236168389
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1236168386}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 147471827299508108, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 3379686890641205236}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &1320836837
 GameObject:
   m_ObjectHideFlags: 0
@@ -2788,6 +3091,91 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1346731359
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1346731360}
+  - component: {fileID: 1346731362}
+  - component: {fileID: 1346731361}
+  m_Layer: 0
+  m_Name: thumb-forceps-11
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1346731360
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346731359}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443313850}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1346731361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346731359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '--INSTRUCT TO CHANGE POS--
+
+    -------------------------------
+
+    ---------DIALOGUE------------'
+  TimelineAsset: {fileID: 11400000, guid: 8bd13e880125c0f479e7b5d30dca6aeb, type: 2}
+  script: ' Press the joystick button to access pose options. Scroll to the "chuck
+    grip pose" and press the joystick button to select it.'
+  MetaData:
+    fileName: thumb-forceps-11
+    AudioClip: {fileID: 8300000, guid: 650b78d18312ea84a8d28568a3543edb, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1346731362
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346731359}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 147471827299508108, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 3379686890641205236}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &1349009236 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 12b1bab754b4d7441b18238df3084216, type: 3}
@@ -2917,6 +3305,11 @@ Transform:
   - {fileID: 1877912676}
   - {fileID: 123141093}
   - {fileID: 285162879}
+  - {fileID: 1346731360}
+  - {fileID: 453383923}
+  - {fileID: 40871883}
+  - {fileID: 1236168387}
+  - {fileID: 2053578358}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3283,12 +3676,17 @@ MonoBehaviour:
   OnInstructionsStarted:
     m_PersistentCalls:
       m_Calls: []
+  description: '--INSTRUCT TO WATCH VIDEO--
+
+    --------------------------------
+
+    ----------DIALOGUE------------'
   TimelineAsset: {fileID: 11400000, guid: 8f1668d38e0ccc44db19476a3c7afa75, type: 2}
   script: Please watch the video on the left screen to hear what Heidi says about
     forceps.
   MetaData:
     fileName: thumb-forceps-3
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: ee93cd9d5cfd6604ebd9c5c8583f3f0f, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &1500345782
 PlayableDirector:
@@ -3478,12 +3876,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  description: '--BrAd FORCEPS HIGHLIGHT--
+
+    ------------------------------
+
+    ----------DIALOGUE----------'
   TimelineAsset: {fileID: 11400000, guid: 91fffb7361c7d5144a39bda7b108eaa4, type: 2}
   script: 'Hover over the Brown Adson forceps with your controller and press the
     side button on the controller to pick them up. The default pose is a pencil grip. '
   MetaData:
     fileName: thumb-forceps-8
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: 31fa48926cf83d84ca8e57bd979bda5f, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &1877912678
 PlayableDirector:
@@ -3500,6 +3903,90 @@ PlayableDirector:
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!1 &2053578357
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2053578358}
+  - component: {fileID: 2053578360}
+  - component: {fileID: 2053578359}
+  m_Layer: 0
+  m_Name: thumb-forceps-15
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2053578358
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053578357}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443313850}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2053578359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053578357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '----INSTRUCT TO RELEASE----
+
+    -------------------------------
+
+    ---------DIALOGUE------------'
+  TimelineAsset: {fileID: 11400000, guid: 3bb6e1193d842bb479bdcefbb1eaa7cf, type: 2}
+  script: press the O button to release the Brown Adson Forceps.
+  MetaData:
+    fileName: thumb-forceps-15
+    AudioClip: {fileID: 8300000, guid: cbe5890455d241e488ca3af372c29344, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &2053578360
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053578357}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 147471827299508108, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 3379686890641205236}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &2085433959

@@ -14,7 +14,10 @@ public class InstructionDeliveryController : MonoBehaviour
     
     [SerializeField] private UnityEvent onInstructionsDelivered = new UnityEvent(); // event that fires when instructions are done
     [SerializeField] private UnityEvent OnInstructionsStarted = new UnityEvent(); // event that fires when the instructions have started
+    
 
+    [TextArea(2, 10)]
+    public string description; // This will hold the component-specific details
     public TimelineAsset TimelineAsset;
     [SerializeField] private string script; // What should the instructions say?//
 
