@@ -208,6 +208,92 @@ PlayableDirector:
     value: {fileID: 3379686890641205236}
   m_ExposedReferences:
     m_References: []
+--- !u!1 &42679229
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 42679230}
+  - component: {fileID: 42679232}
+  - component: {fileID: 42679231}
+  m_Layer: 0
+  m_Name: thumb-forceps-46
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &42679230
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42679229}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443313850}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &42679231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42679229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '------INSTRUCT TO WATCH VIDEO ON ADSON RAT FORCEPS------
+
+    ------------------------------------------------------------------
+
+    ------------------ON
+    SCREEN INSTRUCTIONS---------------------'
+  TimelineAsset: {fileID: 11400000, guid: 5e215725da3ce74428de1c8482ac8b29, type: 2}
+  script: 'User, watch the media screen to the left to see Heidi talk about the Adson
+    Rat-toothed forceps '
+  MetaData:
+    fileName: thumb-forceps-46
+    AudioClip: {fileID: 8300000, guid: 2b93894c87db95747b67fe71a63b2590, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &42679232
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42679229}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 147471827299508108, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 3379686890641205236}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &51576682
 GameObject:
   m_ObjectHideFlags: 0
@@ -424,6 +510,176 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 63313934}
   m_CullTransparentMesh: 1
+--- !u!1 &83123161
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 83123162}
+  - component: {fileID: 83123164}
+  - component: {fileID: 83123163}
+  m_Layer: 0
+  m_Name: thumb-forceps-35
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &83123162
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83123161}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443313850}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &83123163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83123161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '------INSTRUCT TO WATCH BROWN ADSON VIDEO------
+
+    --------------------------------------------------------
+
+    ------------ON
+    SCREEN INSTRUCTIONS-----------------'
+  TimelineAsset: {fileID: 11400000, guid: f136a8fc954ff8a4093e4d5025c0c3cd, type: 2}
+  script: 'User look at left screen to learn about the Brown Adson Forceps '
+  MetaData:
+    fileName: thumb-forceps-35
+    AudioClip: {fileID: 8300000, guid: 0af21b82e424e5d4e97834b14e8e8649, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &83123164
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83123161}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 147471827299508108, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 3379686890641205236}
+  m_ExposedReferences:
+    m_References: []
+--- !u!1 &114072009
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 114072010}
+  - component: {fileID: 114072012}
+  - component: {fileID: 114072011}
+  m_Layer: 0
+  m_Name: thumb-forceps-34
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &114072010
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114072009}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443313850}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114072011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114072009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '------INSTRUCT TO WATCH VIDEO------
+
+    ----------------------------------------
+
+    ------ON
+    SCREEN INSTRUCTIONS--------'
+  TimelineAsset: {fileID: 11400000, guid: a3c28d0b9dc29b445b7440f2290efafa, type: 2}
+  script: 'User,  press the O button to release the DeBakey foceps '
+  MetaData:
+    fileName: thumb-forceps-34
+    AudioClip: {fileID: 8300000, guid: faf2ca88869028e4081fbf8a3d4faad1, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &114072012
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114072009}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 147471827299508108, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 3379686890641205236}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &117806585
 GameObject:
   m_ObjectHideFlags: 0
@@ -638,6 +894,350 @@ PlayableDirector:
   m_SceneBindings: []
   m_ExposedReferences:
     m_References: []
+--- !u!1 &183166285
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 183166286}
+  - component: {fileID: 183166288}
+  - component: {fileID: 183166287}
+  m_Layer: 0
+  m_Name: thumb-forceps-50
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &183166286
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183166285}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443313850}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &183166287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183166285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '------VIDEO PLAYS OF ADSON RAT IN USE------
+
+    -----------------------------------------------
+
+    --------------------VIDEO---------------------'
+  TimelineAsset: {fileID: 0}
+  script: 
+  MetaData:
+    fileName: thumb-forceps-50
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &183166288
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183166285}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 147471827299508108, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 3379686890641205236}
+  m_ExposedReferences:
+    m_References: []
+--- !u!1 &220082965
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 220082966}
+  - component: {fileID: 220082968}
+  - component: {fileID: 220082967}
+  m_Layer: 0
+  m_Name: thumb-forceps-21
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &220082966
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 220082965}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443313850}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &220082967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 220082965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '--DESCRIBES DEBAKEY FORCEPS--
+
+    -----------------------------------
+
+    -----------DIALOGUE--------------'
+  TimelineAsset: {fileID: 11400000, guid: 197bf6352611e3c408ac832d76ae7d54, type: 2}
+  script: "DeBakey forceps are atraumatic thumb forceps, meaning they allow for the
+    most gentle\_tissue handling. DeBakey forceps are the best forceps to use for
+    softer tissue including skin, stomach, intestine, bladder, and other delicate
+    organs and tissue. During ovariohysterectomy, DeBakey forceps can be used on
+    the ovarian pedicle, uterine horns and body, subcutaneous tissues, and skin. "
+  MetaData:
+    fileName: thumb-forceps-21
+    AudioClip: {fileID: 8300000, guid: 58fd3cc6f90f50c4fbec53cd146b4b6c, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &220082968
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 220082965}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 147471827299508108, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 3379686890641205236}
+  m_ExposedReferences:
+    m_References: []
+--- !u!1 &257891506
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 257891507}
+  - component: {fileID: 257891509}
+  - component: {fileID: 257891508}
+  m_Layer: 0
+  m_Name: thumb-forceps-51
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &257891507
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257891506}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443313850}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &257891508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257891506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '------INSTRUCT TO CHANGE ADSON RAT POSE------
+
+    --------------------------------------------------------
+
+    -------------ON
+    SCREEN INSTRUCTIONS----------------'
+  TimelineAsset: {fileID: 11400000, guid: cc6922c71d8ccd442bc452e4e43425ee, type: 2}
+  script: 'User,  Press the joystick button to open the poses menu; move the joystick
+    button up and down and press again to choose the side pose to view grips on sides
+    of Adson Rat-toothed forceps. (New pose?)  Look to your left screen to see a
+    photo of the Brown Adson forceps grips up close. '
+  MetaData:
+    fileName: thumb-forceps-51
+    AudioClip: {fileID: 8300000, guid: bdaeaf81e82eb2342b3c2d3c4c586357, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &257891509
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257891506}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 147471827299508108, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 3379686890641205236}
+  m_ExposedReferences:
+    m_References: []
+--- !u!1 &261158323
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 261158324}
+  - component: {fileID: 261158326}
+  - component: {fileID: 261158325}
+  m_Layer: 0
+  m_Name: thumb-forceps-44
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &261158324
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 261158323}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443313850}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &261158325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 261158323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '------IMAGE OF BROWN ADSON TEETH------
+
+    --------------------------------------------
+
+    ------------------IMAGE--------------------'
+  TimelineAsset: {fileID: 0}
+  script: ' They have a more finely ribbed grip panel '
+  MetaData:
+    fileName: thumb-forceps-40
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &261158326
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 261158323}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 147471827299508108, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 3379686890641205236}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &266534341
 GameObject:
   m_ObjectHideFlags: 0
@@ -766,6 +1366,93 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
+--- !u!1 &284338268
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 284338269}
+  - component: {fileID: 284338271}
+  - component: {fileID: 284338270}
+  m_Layer: 0
+  m_Name: thumb-forceps-54
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &284338269
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284338268}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443313850}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &284338270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284338268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '--------INSTRUCT TO CHANGE ADSON RAT POSE-------
+
+    --------------------------------------------------------
+
+    -------------ON
+    SCREEN INSTRUCTIONS----------------'
+  TimelineAsset: {fileID: 11400000, guid: d2a79da70d4136c41ab7e99c99b7fb46, type: 2}
+  script: '1. User, turn the forceps tips toward you. 2. Press the back button to
+    open and close the forceps tips.  3. Look at the media screen to see an up close
+    image of the tips and how they are used in surgery. '
+  MetaData:
+    fileName: thumb-forceps-54
+    AudioClip: {fileID: 8300000, guid: ed4b8ebf55990894c92fd3a260541d4f, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &284338271
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284338268}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 147471827299508108, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 3379686890641205236}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &285162878
 GameObject:
   m_ObjectHideFlags: 0
@@ -931,6 +1618,178 @@ PlayableDirector:
   m_SceneBindings: []
   m_ExposedReferences:
     m_References: []
+--- !u!1 &329761946
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 329761947}
+  - component: {fileID: 329761949}
+  - component: {fileID: 329761948}
+  m_Layer: 0
+  m_Name: thumb-forceps-33
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &329761947
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329761946}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443313850}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &329761948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329761946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '--VIDEO OF FORCEPS AIDING SUTURING--
+
+    -----------------------------------------
+
+    -----------------VIDEO-------------------'
+  TimelineAsset: {fileID: 0}
+  script: 
+  MetaData:
+    fileName: thumb-forceps-33
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &329761949
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329761946}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 147471827299508108, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 3379686890641205236}
+  m_ExposedReferences:
+    m_References: []
+--- !u!1 &333564020
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 333564021}
+  - component: {fileID: 333564023}
+  - component: {fileID: 333564022}
+  m_Layer: 0
+  m_Name: thumb-forceps-22
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &333564021
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333564020}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443313850}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &333564022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333564020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '----HOW TO CHANGE POSE----
+
+    -------------------------------
+
+    --ON
+    SCREEN INSTRUCTIONS--'
+  TimelineAsset: {fileID: 11400000, guid: 5fe8181f057a9ff408a9ce64142ada06, type: 2}
+  script: 'User,  Press the joystick button to open the poses menu; move the joystick
+    button up and down and press again to choose the side pose to view grips on sides
+    of DeBakey forceps. (New pose?)  Look to your left screen to see a photo of the
+    DeBakey forceps grips up close. '
+  MetaData:
+    fileName: thumb-forceps-22
+    AudioClip: {fileID: 8300000, guid: 9f6fef6224b8a5f4bb2c3c4ec19aacc0, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &333564023
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333564020}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 147471827299508108, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 3379686890641205236}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &366267567
 GameObject:
   m_ObjectHideFlags: 0
@@ -1001,6 +1860,93 @@ PlayableDirector:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 366267567}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 147471827299508108, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 3379686890641205236}
+  m_ExposedReferences:
+    m_References: []
+--- !u!1 &407553257
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 407553258}
+  - component: {fileID: 407553260}
+  - component: {fileID: 407553259}
+  m_Layer: 0
+  m_Name: thumb-forceps-38
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &407553258
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407553257}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443313850}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &407553259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407553257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '------INSTRUCT TO USE BROWN ADSON FORCEPS------
+
+    --------------------------------------------------------
+
+    -------------ON
+    SCREEN INSTRUCTIONS----------------'
+  TimelineAsset: {fileID: 11400000, guid: 8e0d02c0051c0e24ba9c6e2492f076d2, type: 2}
+  script: 'User, use the side button to pick the Brown-Adson forceps up off the table
+    and hold with the default pencil grip pose.  Then press the back button to open
+    and close the forceps. '
+  MetaData:
+    fileName: thumb-forceps-38
+    AudioClip: {fileID: 8300000, guid: 3dbea83747e594c4da429a569041b4af, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &407553260
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407553257}
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 0}
@@ -1088,6 +2034,90 @@ PlayableDirector:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 453383922}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 147471827299508108, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 3379686890641205236}
+  m_ExposedReferences:
+    m_References: []
+--- !u!1 &456720447
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 456720448}
+  - component: {fileID: 456720450}
+  - component: {fileID: 456720449}
+  m_Layer: 0
+  m_Name: thumb-forceps-52
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &456720448
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456720447}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443313850}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &456720449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456720447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '--------DESCRIBE ADSON RAT GRIPS--------
+
+    --------------------------------------------
+
+    ----------------DIALOGUE------------------'
+  TimelineAsset: {fileID: 11400000, guid: a404448676ca30f4ebb8df170bb0c322, type: 2}
+  script: They have a finely ribbed grip panel
+  MetaData:
+    fileName: thumb-forceps-52
+    AudioClip: {fileID: 8300000, guid: 41067b249a1ae874cb20c2faeb397639, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &456720450
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456720447}
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 0}
@@ -1220,6 +2250,174 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!1 &493292637
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 493292638}
+  - component: {fileID: 493292640}
+  - component: {fileID: 493292639}
+  m_Layer: 0
+  m_Name: thumb-forceps-56
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &493292638
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493292637}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443313850}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &493292639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493292637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '------IMAGE SHOWN OF ADSON RAT TEETH------
+
+    -----------------------------------------------
+
+    --------------------IMAGE---------------------'
+  TimelineAsset: {fileID: 0}
+  script: 
+  MetaData:
+    fileName: thumb-forceps-53
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &493292640
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493292637}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 147471827299508108, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 3379686890641205236}
+  m_ExposedReferences:
+    m_References: []
+--- !u!1 &513029786
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 513029787}
+  - component: {fileID: 513029789}
+  - component: {fileID: 513029788}
+  m_Layer: 0
+  m_Name: thumb-forceps-30
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &513029787
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513029786}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443313850}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &513029788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513029786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '--VIDEO OF FORCEPS GUIDING SCALPEL--
+
+    -----------------------------------------
+
+    -----------------VIDEO-------------------'
+  TimelineAsset: {fileID: 0}
+  script: 
+  MetaData:
+    fileName: thumb-forceps-30
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &513029789
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513029786}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 147471827299508108, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 3379686890641205236}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &521224203
 GameObject:
   m_ObjectHideFlags: 0
@@ -1291,6 +2489,93 @@ PlayableDirector:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 521224203}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 147471827299508108, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 3379686890641205236}
+  m_ExposedReferences:
+    m_References: []
+--- !u!1 &524226765
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 524226766}
+  - component: {fileID: 524226768}
+  - component: {fileID: 524226767}
+  m_Layer: 0
+  m_Name: thumb-forceps-20
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &524226766
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 524226765}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443313850}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &524226767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 524226765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '--INSTRUCTS TO USE FORCEPS--
+
+    ---------------------------------
+
+    ---ON
+    SCREEN INSTRUCTIONS---'
+  TimelineAsset: {fileID: 11400000, guid: 4b7aed161f0311947ab2fb6aea192ffe, type: 2}
+  script: 'Hold with a pencil grip(default pick up grip)   Press the grip button
+    to open and close the forceps. Watch the video screen on the left to see how
+    the DeBakey forceps are used in surgery. '
+  MetaData:
+    fileName: thumb-forceps-20
+    AudioClip: {fileID: 8300000, guid: 986df86ad99cb364d974f83c6701b04e, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &524226768
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 524226765}
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 0}
@@ -1717,6 +3002,178 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &655210064
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 655210065}
+  - component: {fileID: 655210067}
+  - component: {fileID: 655210066}
+  m_Layer: 0
+  m_Name: thumb-forceps-41
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &655210065
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655210064}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443313850}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &655210066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655210064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '------IMAGE OF BROWN ADSON GRIP------
+
+    --------------------------------------------
+
+    ----------------IMAGE------------------'
+  TimelineAsset: {fileID: 0}
+  script: ' They have a more finely ribbed grip panel '
+  MetaData:
+    fileName: thumb-forceps-40
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &655210067
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655210064}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 147471827299508108, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 3379686890641205236}
+  m_ExposedReferences:
+    m_References: []
+--- !u!1 &677076650
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 677076651}
+  - component: {fileID: 677076653}
+  - component: {fileID: 677076652}
+  m_Layer: 0
+  m_Name: thumb-forceps-48
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &677076651
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 677076650}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443313850}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &677076652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 677076650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '------INSTRUCT TO PICK UP ADSON RAT FORCEPS------
+
+    --------------------------------------------------------
+
+    -------------ON
+    SCREEN INSTRUCTIONS----------------'
+  TimelineAsset: {fileID: 11400000, guid: c9614947c2a6d314a8021497384b559c, type: 2}
+  script: 'User, use the side button to pick the Adson Rat-toothed forceps up off
+    the table and hold with the default pencil grip pose.  Then press the back button
+    to open and close the forceps. Watch the left screen to see how the Adson Rat-toothed
+    forceps are used in surgery. '
+  MetaData:
+    fileName: thumb-forceps-48
+    AudioClip: {fileID: 8300000, guid: 28854f1f26826634b95f6b919bad8c62, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &677076653
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 677076650}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 147471827299508108, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 3379686890641205236}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &702805479 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 915948843608175857, guid: fb885289feea75a479d9fa2eb31fb201, type: 3}
@@ -1803,6 +3260,175 @@ MonoBehaviour:
     fileName: thumb-forceps-6
     AudioClip: {fileID: 8300000, guid: 15059b59b13346d43a6af11ab2bc2d77, type: 3}
     AnimationClip: {fileID: 0}
+--- !u!1 &792261231
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 792261232}
+  - component: {fileID: 792261234}
+  - component: {fileID: 792261233}
+  m_Layer: 0
+  m_Name: thumb-forceps-40
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &792261232
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 792261231}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443313850}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &792261233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 792261231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '------DESCRIBE BROWN ADSON GRIPS------
+
+    --------------------------------------------
+
+    ----------------DIALOGUE------------------'
+  TimelineAsset: {fileID: 11400000, guid: 1074a14747895a84da0fe7a4476d59ee, type: 2}
+  script: ' They have a more finely ribbed grip panel '
+  MetaData:
+    fileName: thumb-forceps-40
+    AudioClip: {fileID: 8300000, guid: 61873f18bc6a90b478d4d146c603a940, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &792261234
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 792261231}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 147471827299508108, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 3379686890641205236}
+  m_ExposedReferences:
+    m_References: []
+--- !u!1 &834284392
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 834284393}
+  - component: {fileID: 834284395}
+  - component: {fileID: 834284394}
+  m_Layer: 0
+  m_Name: thumb-forceps-18
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &834284393
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834284392}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443313850}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &834284394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834284392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '-----FORCEPS HIGHLIGHT-----
+
+    -------------------------------
+
+    -----VISUAL
+    CHANGES--------'
+  TimelineAsset: {fileID: 0}
+  script: 
+  MetaData:
+    fileName: thumb-forceps-18
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &834284395
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834284392}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 147471827299508108, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 3379686890641205236}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &884013951
 GameObject:
   m_ObjectHideFlags: 0
@@ -1881,6 +3507,93 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 884013951}
   m_CullTransparentMesh: 1
+--- !u!1 &948638277
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 948638278}
+  - component: {fileID: 948638280}
+  - component: {fileID: 948638279}
+  m_Layer: 0
+  m_Name: thumb-forceps-42
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &948638278
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948638277}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443313850}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &948638279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948638277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '------INSTRUCT TO LOOK AT BROWN ADSON FORCEPS------
+
+    ------------------------------------------------------------
+
+    ---------------ON
+    SCREEN INSTRUCTIONS------------------'
+  TimelineAsset: {fileID: 11400000, guid: a2f1200d5c46b424db3fde59ecbe66f2, type: 2}
+  script: '1. User, turn the forceps tips toward you. 2. Press the back button to
+    open and close the forceps tips.  3. Look at the media screen to see an up close
+    image of the tips.  '
+  MetaData:
+    fileName: thumb-forceps-42
+    AudioClip: {fileID: 8300000, guid: 18188ca03256a614591945f08db1e2a7, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &948638280
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948638277}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 147471827299508108, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 3379686890641205236}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &956080433
 GameObject:
   m_ObjectHideFlags: 0
@@ -2324,6 +4037,90 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1030675487
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1030675488}
+  - component: {fileID: 1030675490}
+  - component: {fileID: 1030675489}
+  m_Layer: 0
+  m_Name: thumb-forceps-37
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1030675488
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1030675487}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443313850}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1030675489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1030675487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '--VIDEO OF BROWN ADSON FORCEPS--
+
+    ---------------------------------------
+
+    -----------------VIDEO----------------'
+  TimelineAsset: {fileID: 0}
+  script: 
+  MetaData:
+    fileName: thumb-forceps-37
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1030675490
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1030675487}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 147471827299508108, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 3379686890641205236}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &1036982858
 GameObject:
   m_ObjectHideFlags: 0
@@ -2572,6 +4369,260 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
+--- !u!1 &1043826876
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1043826877}
+  - component: {fileID: 1043826879}
+  - component: {fileID: 1043826878}
+  m_Layer: 0
+  m_Name: thumb-forceps-31
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1043826877
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043826876}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443313850}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1043826878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043826876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '------INSTRUCT TO WATCH VIDEO------
+
+    ----------------------------------------
+
+    ------ON
+    SCREEN INSTRUCTIONS--------'
+  TimelineAsset: {fileID: 11400000, guid: 86fcaa27517f13d4c9cb3aa437e15961, type: 2}
+  script: 'User look at left screen to how the DeBakey forceps are used in suturing. '
+  MetaData:
+    fileName: thumb-forceps-31
+    AudioClip: {fileID: 8300000, guid: ad9987144b4cbdf46ad75b38edc0e8e7, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1043826879
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043826876}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 147471827299508108, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 3379686890641205236}
+  m_ExposedReferences:
+    m_References: []
+--- !u!1 &1050277461
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1050277462}
+  - component: {fileID: 1050277464}
+  - component: {fileID: 1050277463}
+  m_Layer: 0
+  m_Name: thumb-forceps-53
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1050277462
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1050277461}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443313850}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1050277463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1050277461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '------IMAGE SHOWN OF ADSON RAT GRIPS------
+
+    -----------------------------------------------
+
+    --------------------IMAGE---------------------'
+  TimelineAsset: {fileID: 0}
+  script: 
+  MetaData:
+    fileName: thumb-forceps-53
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1050277464
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1050277461}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 147471827299508108, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 3379686890641205236}
+  m_ExposedReferences:
+    m_References: []
+--- !u!1 &1064349853
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1064349854}
+  - component: {fileID: 1064349856}
+  - component: {fileID: 1064349855}
+  m_Layer: 0
+  m_Name: thumb-forceps-28
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1064349854
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1064349853}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443313850}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1064349855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1064349853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '------INSTRUCT TO WATCH VIDEO------
+
+    ----------------------------------------
+
+    ------ON
+    SCREEN INSTRUCTIONS--------'
+  TimelineAsset: {fileID: 11400000, guid: bb9c58f4f1259f24cbcca847f535385d, type: 2}
+  script: 'User look at left screen to see more uses of the  DeBakey forceps. '
+  MetaData:
+    fileName: thumb-forceps-28
+    AudioClip: {fileID: 8300000, guid: 18e68da001a8e9f4f8fd86c1bbf131c8, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1064349856
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1064349853}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 147471827299508108, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 3379686890641205236}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &1069395873
 GameObject:
   m_ObjectHideFlags: 0
@@ -2856,6 +4907,177 @@ Transform:
   m_Father: {fileID: 1443313850}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1099823390
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1099823391}
+  - component: {fileID: 1099823393}
+  - component: {fileID: 1099823392}
+  m_Layer: 0
+  m_Name: thumb-forceps-57
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1099823391
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099823390}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443313850}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1099823392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099823390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '--------INSTRUCT TO OPEN/CLOSE ADSON RAT-------
+
+    --------------------------------------------------------
+
+    -------------ON
+    SCREEN INSTRUCTIONS----------------'
+  TimelineAsset: {fileID: 11400000, guid: eb4a4258fbb722341908a239e5f61f43, type: 2}
+  script: 'User, continue to hold with pencil grip. Open and close '
+  MetaData:
+    fileName: thumb-forceps-57
+    AudioClip: {fileID: 8300000, guid: 3f79fa8b63cb40c4b831d9b88cdaf638, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1099823393
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099823390}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 147471827299508108, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 3379686890641205236}
+  m_ExposedReferences:
+    m_References: []
+--- !u!1 &1103040637
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1103040638}
+  - component: {fileID: 1103040640}
+  - component: {fileID: 1103040639}
+  m_Layer: 0
+  m_Name: thumb-forceps-19
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1103040638
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103040637}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443313850}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1103040639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103040637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '--INSTRUCT TO PICK UP DEBAKEY--
+
+    ------------------------------------
+
+    --------VISUAL
+    CHANGES----------'
+  TimelineAsset: {fileID: 11400000, guid: 205c737c5aa98754898ff1f30a5478e2, type: 2}
+  script: 'Reach down to the highlighted DeBakey forceps. When the highlight changes
+    color, pull the trigger to pick up the DeBakey Forceps. '
+  MetaData:
+    fileName: thumb-forceps-19
+    AudioClip: {fileID: 8300000, guid: 8519ab6b84abc584d8440383a75bc060, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1103040640
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103040637}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 147471827299508108, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 3379686890641205236}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1001 &1118475328
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3195,6 +5417,178 @@ PlayableDirector:
     value: {fileID: 3379686890641205236}
   m_ExposedReferences:
     m_References: []
+--- !u!1 &1259308720
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1259308721}
+  - component: {fileID: 1259308723}
+  - component: {fileID: 1259308722}
+  m_Layer: 0
+  m_Name: thumb-forceps-32
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1259308721
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259308720}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443313850}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1259308722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259308720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '------DESCRIBE DEBAKEY FOR STABILIZING------
+
+    ------------------------------------
+
+    ------------DIALOGUE--------------'
+  TimelineAsset: {fileID: 11400000, guid: 0d737d380e34f6c4aa43a498ca230237, type: 2}
+  script: " When suturing, the surgeon uses DeBakey or other forceps on the near
+    side of the incision to lift, grasp, or stabilize tissue near the point of needle
+    entrance and exit. Forceps\_ can also be used to stabilize tissue on the opposing
+    side of the incision at the point of needle entrance and exit. "
+  MetaData:
+    fileName: thumb-forceps-32
+    AudioClip: {fileID: 8300000, guid: cd17eafd627e7104388f56738f2956a3, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1259308723
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259308720}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 147471827299508108, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 3379686890641205236}
+  m_ExposedReferences:
+    m_References: []
+--- !u!1 &1296524219
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1296524220}
+  - component: {fileID: 1296524222}
+  - component: {fileID: 1296524221}
+  m_Layer: 0
+  m_Name: thumb-forceps-58
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1296524220
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296524219}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443313850}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1296524221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296524219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '--------DESCRIBE ADSON RAT MODIFIED PENCIL GRIP--------
+
+    -------------------------------------------------------------
+
+    ------------------------DIALOGUE---------------------------'
+  TimelineAsset: {fileID: 11400000, guid: a41640bb7c0e7674692e1e6bb3224826, type: 2}
+  script: 'They are held in a modified pencil grip and do not require significant
+    force as a secure grasp is afforded by the prominent 1x2 interdigitating teeth.  '
+  MetaData:
+    fileName: thumb-forceps-58
+    AudioClip: {fileID: 8300000, guid: d7bfe01d5a285a14ebd9125875cda7ff, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1296524222
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296524219}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 147471827299508108, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 3379686890641205236}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &1320836837
 GameObject:
   m_ObjectHideFlags: 0
@@ -3376,6 +5770,91 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &1381453102
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1381453103}
+  - component: {fileID: 1381453105}
+  - component: {fileID: 1381453104}
+  m_Layer: 0
+  m_Name: thumb-forceps-25
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1381453103
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1381453102}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443313850}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1381453104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1381453102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '----INSTRUCT TO CHANGE GRIPS----
+
+    -------------------------------------
+
+    ----ON
+    SCREEN INSTRUCTIONS------'
+  TimelineAsset: {fileID: 11400000, guid: 4e6d58fb22bbae1418f279730263e56c, type: 2}
+  script: Again, Press the joystick and then choose the modified pencil grip
+  MetaData:
+    fileName: thumb-forceps-25
+    AudioClip: {fileID: 8300000, guid: 92769387389264b4b983c3d7620abc56, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1381453105
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1381453102}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 147471827299508108, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 3379686890641205236}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &1443313848
 GameObject:
   m_ObjectHideFlags: 0
@@ -3481,6 +5960,47 @@ Transform:
   - {fileID: 2053578358}
   - {fileID: 366267568}
   - {fileID: 521224204}
+  - {fileID: 834284393}
+  - {fileID: 1103040638}
+  - {fileID: 524226766}
+  - {fileID: 220082966}
+  - {fileID: 333564021}
+  - {fileID: 1661962492}
+  - {fileID: 1973280735}
+  - {fileID: 1381453103}
+  - {fileID: 1571837561}
+  - {fileID: 1655671890}
+  - {fileID: 1064349854}
+  - {fileID: 2032724451}
+  - {fileID: 513029787}
+  - {fileID: 1043826877}
+  - {fileID: 1259308721}
+  - {fileID: 329761947}
+  - {fileID: 114072010}
+  - {fileID: 83123162}
+  - {fileID: 1747416039}
+  - {fileID: 1030675488}
+  - {fileID: 407553258}
+  - {fileID: 2016671889}
+  - {fileID: 792261232}
+  - {fileID: 655210065}
+  - {fileID: 948638278}
+  - {fileID: 1669765980}
+  - {fileID: 261158324}
+  - {fileID: 2102151871}
+  - {fileID: 42679230}
+  - {fileID: 1595309472}
+  - {fileID: 677076651}
+  - {fileID: 2075169052}
+  - {fileID: 183166286}
+  - {fileID: 257891507}
+  - {fileID: 456720448}
+  - {fileID: 1050277462}
+  - {fileID: 284338269}
+  - {fileID: 1725846920}
+  - {fileID: 493292638}
+  - {fileID: 1099823391}
+  - {fileID: 1296524220}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3876,6 +6396,92 @@ PlayableDirector:
   m_SceneBindings: []
   m_ExposedReferences:
     m_References: []
+--- !u!1 &1571837560
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1571837561}
+  - component: {fileID: 1571837563}
+  - component: {fileID: 1571837562}
+  m_Layer: 0
+  m_Name: thumb-forceps-26
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1571837561
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571837560}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443313850}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1571837562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571837560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '----INSTRUCT TO EXAMINE FORCEPS----
+
+    -------------------------------------
+
+    ----ON
+    SCREEN INSTRUCTIONS------'
+  TimelineAsset: {fileID: 11400000, guid: 8b7a7f5d187f7c842a73140d9775a81b, type: 2}
+  script: '1. User, turn the forceps tips toward you. 2. Press the back button to
+    open and close the forceps tips.  '
+  MetaData:
+    fileName: thumb-forceps-26
+    AudioClip: {fileID: 8300000, guid: a14d14f8d7056f44ca7f7557139aa962, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1571837563
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571837560}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 147471827299508108, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 3379686890641205236}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &1588657298
 GameObject:
   m_ObjectHideFlags: 0
@@ -3949,6 +6555,90 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1588657298}
   m_CullTransparentMesh: 1
+--- !u!1 &1595309471
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1595309472}
+  - component: {fileID: 1595309474}
+  - component: {fileID: 1595309473}
+  m_Layer: 0
+  m_Name: thumb-forceps-47
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1595309472
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1595309471}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443313850}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1595309473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1595309471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '---VIDEO PLAYS OF ADSON RAT FORCEPS---
+
+    --------------------------------------------
+
+    ------------------VIDEO--------------------'
+  TimelineAsset: {fileID: 0}
+  script: ' They have a more finely ribbed grip panel '
+  MetaData:
+    fileName: thumb-forceps-47
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1595309474
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1595309471}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 147471827299508108, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 3379686890641205236}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &1610788602
 GameObject:
   m_ObjectHideFlags: 0
@@ -3983,6 +6673,428 @@ Transform:
   m_Father: {fileID: 1320836840}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1655671889
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1655671890}
+  - component: {fileID: 1655671892}
+  - component: {fileID: 1655671891}
+  m_Layer: 0
+  m_Name: thumb-forceps-27
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1655671890
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655671889}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443313850}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1655671891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655671889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '----DESCRIBES ATRAUMATIC TEETH----
+
+    -------------------------------------
+
+    ----DIALOGUE------'
+  TimelineAsset: {fileID: 11400000, guid: ad392d0c5d549934283905626df2f542, type: 2}
+  script: 'Two rows of atraumatic teeth interfit with one opposite row of atraumatic
+    teeth. The narrow tips and fine serrations cause little to no damage to tissues. '
+  MetaData:
+    fileName: thumb-forceps-27
+    AudioClip: {fileID: 8300000, guid: 66ae48c57e880d94a860ca17ce1685ad, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1655671892
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655671889}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 147471827299508108, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 3379686890641205236}
+  m_ExposedReferences:
+    m_References: []
+--- !u!1 &1661962491
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1661962492}
+  - component: {fileID: 1661962494}
+  - component: {fileID: 1661962493}
+  m_Layer: 0
+  m_Name: thumb-forceps-23
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1661962492
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1661962491}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443313850}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1661962493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1661962491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '----IMAGE OF FORCEPS GRIPS----
+
+    ----------------------------------
+
+    -------------IMAGE---------------'
+  TimelineAsset: {fileID: 0}
+  script: 
+  MetaData:
+    fileName: thumb-forceps-23
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1661962494
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1661962491}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 147471827299508108, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 3379686890641205236}
+  m_ExposedReferences:
+    m_References: []
+--- !u!1 &1669765979
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1669765980}
+  - component: {fileID: 1669765982}
+  - component: {fileID: 1669765981}
+  m_Layer: 0
+  m_Name: thumb-forceps-43
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1669765980
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669765979}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443313850}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1669765981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669765979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '------DESCRIBE BROWN ADSON TEETH------
+
+    --------------------------------------------
+
+    ----------------DIALOGUE------------------'
+  TimelineAsset: {fileID: 11400000, guid: 8b3ea43fbc516e942aab56b3637dc6e9, type: 2}
+  script: 'And 7 or 9 teeth on one tip that precisely interdigitate with  7 or 9
+    side-grasping teeth on the opposite tip for secure, atraumatic grasping of soft
+    tissue. '
+  MetaData:
+    fileName: thumb-forceps-43
+    AudioClip: {fileID: 8300000, guid: 56b113dd06d9d554d8d7794e1b915776, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1669765982
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669765979}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 147471827299508108, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 3379686890641205236}
+  m_ExposedReferences:
+    m_References: []
+--- !u!1 &1725846919
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1725846920}
+  - component: {fileID: 1725846922}
+  - component: {fileID: 1725846921}
+  m_Layer: 0
+  m_Name: thumb-forceps-55
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1725846920
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725846919}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443313850}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1725846921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725846919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  description: "--------DESCRIBE ADSON RAT TEETH\t--------\n--------------------------------------------\n----------------DIALOGUE------------------"
+  TimelineAsset: {fileID: 11400000, guid: 8be2c64aecc48cd47aa4c85f2ddb9eb0, type: 2}
+  script: And 2 fine 1x2 teeth for secure manipulation of thicker, denser tissues
+  MetaData:
+    fileName: thumb-forceps-55
+    AudioClip: {fileID: 8300000, guid: cc751ba6f55a26f4d837ed7a73e24422, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1725846922
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725846919}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 147471827299508108, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 3379686890641205236}
+  m_ExposedReferences:
+    m_References: []
+--- !u!1 &1747416038
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1747416039}
+  - component: {fileID: 1747416041}
+  - component: {fileID: 1747416040}
+  m_Layer: 0
+  m_Name: thumb-forceps-36
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1747416039
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1747416038}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443313850}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1747416040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1747416038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '------DESCRIBE BROWN ADSON------
+
+    ------------------------------------
+
+    ------------DIALOGUE--------------'
+  TimelineAsset: {fileID: 11400000, guid: 020dacc3b004bba4db68b8c4c99898d5, type: 2}
+  script: "Brown-Adson forceps are relatively atraumatic thumb forceps but are not
+    as atraumatic as the DeBakey forceps. They can be used on slightly less delicate
+    tissues\_ or where more grasp is needed, or carefully if DeBakey forceps are
+    not available "
+  MetaData:
+    fileName: thumb-forceps-36
+    AudioClip: {fileID: 8300000, guid: 0215dd634d39ff84aa1978e564acc1c7, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1747416041
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1747416038}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 147471827299508108, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 3379686890641205236}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &1877912675
 GameObject:
   m_ObjectHideFlags: 0
@@ -4076,6 +7188,267 @@ PlayableDirector:
   m_SceneBindings: []
   m_ExposedReferences:
     m_References: []
+--- !u!1 &1973280734
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1973280735}
+  - component: {fileID: 1973280737}
+  - component: {fileID: 1973280736}
+  m_Layer: 0
+  m_Name: thumb-forceps-24
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1973280735
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973280734}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443313850}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1973280736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973280734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '----DESCRIBES DEBAKEY GRIPS----
+
+    ----------------------------------
+
+    -------------DIALOGUE---------------'
+  TimelineAsset: {fileID: 11400000, guid: 513f4b26df0f09c48bd73548a8055f68, type: 2}
+  script: 'They have a distinct coarsely ribbed grip panel, as opposed to the finer
+    ribbing on most other tissue forceps. '
+  MetaData:
+    fileName: thumb-forceps-24
+    AudioClip: {fileID: 8300000, guid: fdf8efd7ac5fc7844a0ddefe8d963a79, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1973280737
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973280734}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 147471827299508108, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 3379686890641205236}
+  m_ExposedReferences:
+    m_References: []
+--- !u!1 &2016671888
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2016671889}
+  - component: {fileID: 2016671891}
+  - component: {fileID: 2016671890}
+  m_Layer: 0
+  m_Name: thumb-forceps-39
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2016671889
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2016671888}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443313850}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2016671890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2016671888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '------INSTRUCT TO CHANGE BROWN ADSON GRIP------
+
+    --------------------------------------------------------
+
+    -------------ON
+    SCREEN INSTRUCTIONS----------------'
+  TimelineAsset: {fileID: 11400000, guid: 3fab9f655c0375b498506c5d7d8af8a3, type: 2}
+  script: 'User,  Press the joystick button to open the poses menu; move the joystick
+    button up and down and press again to choose the side pose to view grips on sides
+    of Brown Adson forceps. (New pose?)  Look to your left screen to see a photo
+    of the Brown Adson forceps grips up close. '
+  MetaData:
+    fileName: thumb-forceps-39
+    AudioClip: {fileID: 8300000, guid: 74979d9cfad3f964f98ec398edeea1dc, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &2016671891
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2016671888}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 147471827299508108, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 3379686890641205236}
+  m_ExposedReferences:
+    m_References: []
+--- !u!1 &2032724450
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2032724451}
+  - component: {fileID: 2032724453}
+  - component: {fileID: 2032724452}
+  m_Layer: 0
+  m_Name: thumb-forceps-29
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2032724451
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032724450}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443313850}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2032724452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032724450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '------DESCRIBE FORCEP GRIP------
+
+    ------------------------------------
+
+    ------------DIALOGUE--------------'
+  TimelineAsset: {fileID: 11400000, guid: 30b6ee2bb8f4d004d9782aa4259fcd04, type: 2}
+  script: "When used in concert with needle drivers, scissors, or other forceps,
+    they are held in a modified pencil grip in the nondominant hand. When used as
+    the primary means of holding or evaluating tissue, they may be held in the dominant
+    hand.  \_e. DeBakey forceps can also be used to slip under loosened tissue and
+    act as guide to make an incision with a scalpel.  \_ "
+  MetaData:
+    fileName: thumb-forceps-29
+    AudioClip: {fileID: 8300000, guid: 2bd6bc6d987dcba4684f2549c7f6bc62, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &2032724453
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032724450}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 147471827299508108, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 3379686890641205236}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &2053578357
 GameObject:
   m_ObjectHideFlags: 0
@@ -4146,6 +7519,92 @@ PlayableDirector:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2053578357}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 147471827299508108, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 3379686890641205236}
+  m_ExposedReferences:
+    m_References: []
+--- !u!1 &2075169051
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2075169052}
+  - component: {fileID: 2075169054}
+  - component: {fileID: 2075169053}
+  m_Layer: 0
+  m_Name: thumb-forceps-49
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2075169052
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2075169051}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443313850}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2075169053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2075169051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '------DESCRIBE ADSON RAT FORCEPS------
+
+    --------------------------------------------
+
+    ----------------DIALOGUE------------------'
+  TimelineAsset: {fileID: 11400000, guid: cfd57922bc65dce4a8c01a44d3ab14a6, type: 2}
+  script: "Adson rat-toothed forceps are traumatic to softer tissues and should only
+    be used on tough tissues such as fascia. During ovariohysterectomy, these could
+    be used on the linea alba and rectus abdominis fascia during abdominal closure\_"
+  MetaData:
+    fileName: thumb-forceps-49
+    AudioClip: {fileID: 8300000, guid: d335c5020e7c0f84fa1b4363606590d2, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &2075169054
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2075169051}
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 0}
@@ -4263,6 +7722,91 @@ RectTransform:
   m_AnchoredPosition: {x: -1.207, y: 1.4}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &2102151870
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2102151871}
+  - component: {fileID: 2102151873}
+  - component: {fileID: 2102151872}
+  m_Layer: 0
+  m_Name: thumb-forceps-45
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2102151871
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2102151870}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443313850}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2102151872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2102151870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '------INSTRUCT TO RELEASE BROWN ADSON FORCEPS------
+
+    ------------------------------------------------------------
+
+    ---------------ON
+    SCREEN INSTRUCTIONS------------------'
+  TimelineAsset: {fileID: 11400000, guid: 20f87b243b7a8a74397e7bc8934c83d5, type: 2}
+  script: 'User,  press the O button to release the Brown Adson forceps. '
+  MetaData:
+    fileName: thumb-forceps-45
+    AudioClip: {fileID: 8300000, guid: 5ba953691fdbf72409fb362ddb2a76ce, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &2102151873
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2102151870}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 147471827299508108, guid: f0e506f027f47854a9796e6931bb0f0d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 3379686890641205236}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &2111853420 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -455926171538865814, guid: 12b1bab754b4d7441b18238df3084216, type: 3}
