@@ -13,8 +13,10 @@ public class UnityEventWithTool : UnityEvent<ToolComponent>
 public class ToolComponent : MonoBehaviour
 {
     public SO_ToolData ToolData;
+    public ToolPoseData toolPoseData;
     public GameObject RightToolkitTool;
     public GameObject LeftToolkitTool;
+    public List<GameObject> StageMeshes;
 
     public int GripIndex;
     //public string GetGripAnimationParamter()
@@ -49,5 +51,18 @@ public class ToolComponent : MonoBehaviour
         {
             _handThatIsTouching.SetTool(this);
         }
+    }
+
+    public void ToggleToolBeltTool(string hand, bool state)
+    {
+        if (hand == "Right"){
+            RightToolkitTool.SetActive(state);
+        }
+        else if (hand == "Left")
+        {
+            LeftToolkitTool.SetActive(state);
+        }
+
+        
     }
 }

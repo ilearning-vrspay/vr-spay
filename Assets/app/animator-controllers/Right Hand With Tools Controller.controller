@@ -17,7 +17,7 @@ BlendTree:
     m_DirectBlendParameter: GripSpayHook
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 1827226128182048838, guid: adb53dbee9c4ff74eb27e976b59429ab, type: 3}
+    m_Motion: {fileID: 1827226128182048838, guid: df790cd7b1b57da47bd6ccff8e4fe04e, type: 3}
     m_Threshold: 0
     m_Position: {x: 0, y: 1}
     m_TimeScale: 1
@@ -25,7 +25,7 @@ BlendTree:
     m_DirectBlendParameter: Grip
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 1827226128182048838, guid: df790cd7b1b57da47bd6ccff8e4fe04e, type: 3}
+    m_Motion: {fileID: 1827226128182048838, guid: adb53dbee9c4ff74eb27e976b59429ab, type: 3}
     m_Threshold: 0
     m_Position: {x: 1, y: 0}
     m_TimeScale: 1
@@ -33,7 +33,7 @@ BlendTree:
     m_DirectBlendParameter: Grip
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 1827226128182048838, guid: b4ea98243a8c245438ce470c008dca79, type: 3}
+    m_Motion: {fileID: 1827226128182048838, guid: b22ee1c9994d59c4a9a0f45d09ef1211, type: 3}
     m_Threshold: 0
     m_Position: {x: 1, y: 1}
     m_TimeScale: 1
@@ -190,7 +190,7 @@ AnimatorStateMachine:
     m_Position: {x: 400, y: 80, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 4985019872800501611}
-    m_Position: {x: 340, y: -100, z: 0}
+    m_Position: {x: 470, y: -60, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []

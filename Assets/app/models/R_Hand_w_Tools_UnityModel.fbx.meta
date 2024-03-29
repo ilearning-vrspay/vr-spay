@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 12b1bab754b4d7441b18238df3084216
+guid: 2a2aa44742c186a4b9d7bac280bf0f81
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -53,7 +53,7 @@ ModelImporter:
     keepQuads: 0
     weldVertices: 1
     bakeAxisConversion: 0
-    preserveHierarchy: 1
+    preserveHierarchy: 0
     skinWeightsMode: 0
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
@@ -101,7 +101,7 @@ ModelImporter:
   humanoidOversampling: 1
   avatarSetup: 0
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
-  importBlendShapeDeformPercent: 0
+  importBlendShapeDeformPercent: 1
   remapMaterialsIfMaterialImportModeIsNone: 0
   additionalBone: 0
   userData: 
