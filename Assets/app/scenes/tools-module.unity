@@ -240,8 +240,8 @@ MonoBehaviour:
   colliderObject: {fileID: 0}
   rootBone: {fileID: 0}
   meshObjects: []
-  leftHandAnimationClips: []
-  rightHandAnimationClips: []
+  RightOverrideController: {fileID: 0}
+  LeftOverrideController: {fileID: 0}
   leftToolKitTool: {fileID: 0}
   rightToolKitTool: {fileID: 0}
 --- !u!1001 &38389701
@@ -609,13 +609,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 349b174aa7d21424780b187ab9ed67b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colliderObject: {fileID: 0}
-  rootBone: {fileID: 0}
-  meshObjects: []
-  leftHandAnimationClips: []
-  rightHandAnimationClips: []
-  leftToolKitTool: {fileID: 0}
-  rightToolKitTool: {fileID: 0}
+  colliderObject: {fileID: 7317572254710635923}
+  rootBone: {fileID: 3061673143970972058}
+  meshObjects:
+  - {fileID: 3566796388084293214}
+  RightOverrideController: {fileID: 22100000, guid: 6dc0e889c6d015f42aec1be4a879926e, type: 2}
+  LeftOverrideController: {fileID: 22100000, guid: 64ece57a29a2b18428ed9e0989b50439, type: 2}
+  leftToolKitTool: {fileID: 1383461738}
+  rightToolKitTool: {fileID: 1674690230}
 --- !u!1 &63313934
 GameObject:
   m_ObjectHideFlags: 0
@@ -799,8 +800,8 @@ MonoBehaviour:
   colliderObject: {fileID: 0}
   rootBone: {fileID: 0}
   meshObjects: []
-  leftHandAnimationClips: []
-  rightHandAnimationClips: []
+  RightOverrideController: {fileID: 0}
+  LeftOverrideController: {fileID: 0}
   leftToolKitTool: {fileID: 0}
   rightToolKitTool: {fileID: 0}
 --- !u!1 &83123161
@@ -1916,8 +1917,8 @@ MonoBehaviour:
   colliderObject: {fileID: 0}
   rootBone: {fileID: 0}
   meshObjects: []
-  leftHandAnimationClips: []
-  rightHandAnimationClips: []
+  RightOverrideController: {fileID: 0}
+  LeftOverrideController: {fileID: 0}
   leftToolKitTool: {fileID: 0}
   rightToolKitTool: {fileID: 0}
 --- !u!1 &284338268
@@ -2141,8 +2142,8 @@ MonoBehaviour:
   colliderObject: {fileID: 0}
   rootBone: {fileID: 0}
   meshObjects: []
-  leftHandAnimationClips: []
-  rightHandAnimationClips: []
+  RightOverrideController: {fileID: 0}
+  LeftOverrideController: {fileID: 0}
   leftToolKitTool: {fileID: 0}
   rightToolKitTool: {fileID: 0}
 --- !u!1001 &305206338
@@ -2705,8 +2706,8 @@ MonoBehaviour:
   colliderObject: {fileID: 0}
   rootBone: {fileID: 0}
   meshObjects: []
-  leftHandAnimationClips: []
-  rightHandAnimationClips: []
+  RightOverrideController: {fileID: 0}
+  LeftOverrideController: {fileID: 0}
   leftToolKitTool: {fileID: 0}
   rightToolKitTool: {fileID: 0}
 --- !u!1 &453383922
@@ -3214,7 +3215,19 @@ MonoBehaviour:
   ShouldPlayOnStart: 0
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1021646204}
+        m_TargetAssemblyTypeName: InputActions, Assembly-CSharp
+        m_MethodName: ChooseSpecificPose
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnInstructionsStarted:
     m_PersistentCalls:
       m_Calls: []
@@ -3385,8 +3398,8 @@ MonoBehaviour:
   colliderObject: {fileID: 0}
   rootBone: {fileID: 0}
   meshObjects: []
-  leftHandAnimationClips: []
-  rightHandAnimationClips: []
+  RightOverrideController: {fileID: 0}
+  LeftOverrideController: {fileID: 0}
   leftToolKitTool: {fileID: 0}
   rightToolKitTool: {fileID: 0}
 --- !u!1 &564016618
@@ -4202,7 +4215,7 @@ Animator:
   m_GameObject: {fileID: 799045330}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8015b2029f58aef468028130f0beaa37, type: 2}
+  m_Controller: {fileID: 9100000, guid: c794e44b2fba41b46bb522d1150608d6, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -4260,8 +4273,8 @@ MonoBehaviour:
   colliderObject: {fileID: 0}
   rootBone: {fileID: 0}
   meshObjects: []
-  leftHandAnimationClips: []
-  rightHandAnimationClips: []
+  RightOverrideController: {fileID: 0}
+  LeftOverrideController: {fileID: 0}
   leftToolKitTool: {fileID: 0}
   rightToolKitTool: {fileID: 0}
 --- !u!1001 &821369016
@@ -4544,8 +4557,8 @@ MonoBehaviour:
   colliderObject: {fileID: 0}
   rootBone: {fileID: 0}
   meshObjects: []
-  leftHandAnimationClips: []
-  rightHandAnimationClips: []
+  RightOverrideController: {fileID: 0}
+  LeftOverrideController: {fileID: 0}
   leftToolKitTool: {fileID: 0}
   rightToolKitTool: {fileID: 0}
 --- !u!1 &948638277
@@ -4762,8 +4775,8 @@ MonoBehaviour:
   colliderObject: {fileID: 0}
   rootBone: {fileID: 0}
   meshObjects: []
-  leftHandAnimationClips: []
-  rightHandAnimationClips: []
+  RightOverrideController: {fileID: 0}
+  LeftOverrideController: {fileID: 0}
   leftToolKitTool: {fileID: 0}
   rightToolKitTool: {fileID: 0}
 --- !u!1 &1005173472
@@ -5128,7 +5141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handAnimator: {fileID: 799045332}
   grabbedTool: {fileID: 0}
-  baseAnimatorController: {fileID: 0}
+  baseAnimatorController: {fileID: 9100000, guid: c794e44b2fba41b46bb522d1150608d6, type: 2}
   TempTool: {fileID: 0}
   altController: {fileID: 0}
 --- !u!114 &1021646205
@@ -5193,12 +5206,24 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1021646204}
-          m_TargetAssemblyTypeName: 
-          m_MethodName: 
+          m_TargetAssemblyTypeName: InputActions, Assembly-CSharp
+          m_MethodName: JoystickOnClick
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: 
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 51576684}
+          m_TargetAssemblyTypeName: InstructionDeliveryController, Assembly-CSharp
+          m_MethodName: StartInstructionDelivery
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -5293,8 +5318,8 @@ MonoBehaviour:
   colliderObject: {fileID: 0}
   rootBone: {fileID: 0}
   meshObjects: []
-  leftHandAnimationClips: []
-  rightHandAnimationClips: []
+  RightOverrideController: {fileID: 0}
+  LeftOverrideController: {fileID: 0}
   leftToolKitTool: {fileID: 0}
   rightToolKitTool: {fileID: 0}
 --- !u!1 &1030675487
@@ -6662,8 +6687,8 @@ MonoBehaviour:
   colliderObject: {fileID: 0}
   rootBone: {fileID: 0}
   meshObjects: []
-  leftHandAnimationClips: []
-  rightHandAnimationClips: []
+  RightOverrideController: {fileID: 0}
+  LeftOverrideController: {fileID: 0}
   leftToolKitTool: {fileID: 0}
   rightToolKitTool: {fileID: 0}
 --- !u!1 &1213138551
@@ -8135,8 +8160,8 @@ MonoBehaviour:
   colliderObject: {fileID: 0}
   rootBone: {fileID: 0}
   meshObjects: []
-  leftHandAnimationClips: []
-  rightHandAnimationClips: []
+  RightOverrideController: {fileID: 0}
+  LeftOverrideController: {fileID: 0}
   leftToolKitTool: {fileID: 0}
   rightToolKitTool: {fileID: 0}
 --- !u!1 &1346731359
@@ -8271,8 +8296,8 @@ MonoBehaviour:
   colliderObject: {fileID: 0}
   rootBone: {fileID: 0}
   meshObjects: []
-  leftHandAnimationClips: []
-  rightHandAnimationClips: []
+  RightOverrideController: {fileID: 0}
+  LeftOverrideController: {fileID: 0}
   leftToolKitTool: {fileID: 0}
   rightToolKitTool: {fileID: 0}
 --- !u!1 &1381453102
@@ -8360,6 +8385,11 @@ PlayableDirector:
     value: {fileID: 3379686890641205236}
   m_ExposedReferences:
     m_References: []
+--- !u!1 &1383461738 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8327281659368478645, guid: fb885289feea75a479d9fa2eb31fb201, type: 3}
+  m_PrefabInstance: {fileID: 1882249251}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1404757088 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: fb885289feea75a479d9fa2eb31fb201, type: 3}
@@ -9125,8 +9155,8 @@ MonoBehaviour:
   colliderObject: {fileID: 0}
   rootBone: {fileID: 0}
   meshObjects: []
-  leftHandAnimationClips: []
-  rightHandAnimationClips: []
+  RightOverrideController: {fileID: 0}
+  LeftOverrideController: {fileID: 0}
   leftToolKitTool: {fileID: 0}
   rightToolKitTool: {fileID: 0}
 --- !u!1001 &1523643112
@@ -10103,8 +10133,8 @@ MonoBehaviour:
   colliderObject: {fileID: 0}
   rootBone: {fileID: 0}
   meshObjects: []
-  leftHandAnimationClips: []
-  rightHandAnimationClips: []
+  RightOverrideController: {fileID: 0}
+  LeftOverrideController: {fileID: 0}
   leftToolKitTool: {fileID: 0}
   rightToolKitTool: {fileID: 0}
 --- !u!1 &1655671889
@@ -10362,6 +10392,11 @@ PlayableDirector:
     value: {fileID: 3379686890641205236}
   m_ExposedReferences:
     m_References: []
+--- !u!1 &1674690230 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3133477712170797657, guid: 2a2aa44742c186a4b9d7bac280bf0f81, type: 3}
+  m_PrefabInstance: {fileID: 1306327876}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1725846919
 GameObject:
   m_ObjectHideFlags: 0
@@ -10576,8 +10611,8 @@ MonoBehaviour:
   colliderObject: {fileID: 0}
   rootBone: {fileID: 0}
   meshObjects: []
-  leftHandAnimationClips: []
-  rightHandAnimationClips: []
+  RightOverrideController: {fileID: 0}
+  LeftOverrideController: {fileID: 0}
   leftToolKitTool: {fileID: 0}
   rightToolKitTool: {fileID: 0}
 --- !u!1 &1877912675
@@ -10880,8 +10915,8 @@ MonoBehaviour:
   colliderObject: {fileID: 0}
   rootBone: {fileID: 0}
   meshObjects: []
-  leftHandAnimationClips: []
-  rightHandAnimationClips: []
+  RightOverrideController: {fileID: 0}
+  LeftOverrideController: {fileID: 0}
   leftToolKitTool: {fileID: 0}
   rightToolKitTool: {fileID: 0}
 --- !u!1 &1973280734
@@ -11174,8 +11209,8 @@ MonoBehaviour:
   colliderObject: {fileID: 0}
   rootBone: {fileID: 0}
   meshObjects: []
-  leftHandAnimationClips: []
-  rightHandAnimationClips: []
+  RightOverrideController: {fileID: 0}
+  LeftOverrideController: {fileID: 0}
   leftToolKitTool: {fileID: 0}
   rightToolKitTool: {fileID: 0}
 --- !u!1 &2032724450
@@ -11313,8 +11348,8 @@ MonoBehaviour:
   colliderObject: {fileID: 0}
   rootBone: {fileID: 0}
   meshObjects: []
-  leftHandAnimationClips: []
-  rightHandAnimationClips: []
+  RightOverrideController: {fileID: 0}
+  LeftOverrideController: {fileID: 0}
   leftToolKitTool: {fileID: 0}
   rightToolKitTool: {fileID: 0}
 --- !u!1 &2053578357
@@ -11534,8 +11569,8 @@ MonoBehaviour:
   colliderObject: {fileID: 0}
   rootBone: {fileID: 0}
   meshObjects: []
-  leftHandAnimationClips: []
-  rightHandAnimationClips: []
+  RightOverrideController: {fileID: 0}
+  LeftOverrideController: {fileID: 0}
   leftToolKitTool: {fileID: 0}
   rightToolKitTool: {fileID: 0}
 --- !u!1 &2085433959
@@ -11773,8 +11808,8 @@ MonoBehaviour:
   colliderObject: {fileID: 0}
   rootBone: {fileID: 0}
   meshObjects: []
-  leftHandAnimationClips: []
-  rightHandAnimationClips: []
+  RightOverrideController: {fileID: 0}
+  LeftOverrideController: {fileID: 0}
   leftToolKitTool: {fileID: 0}
   rightToolKitTool: {fileID: 0}
 --- !u!1 &3230183832498073
@@ -17888,6 +17923,7 @@ GameObject:
   - component: {fileID: 7317572254710635923}
   - component: {fileID: 7317572254710635922}
   - component: {fileID: 7317572254710635921}
+  - component: {fileID: 7317572254710635924}
   m_Layer: 0
   m_Name: Debakey_Forceps_BdBn_DebFor__Arm_Root_01
   m_TagString: Untagged
@@ -26262,11 +26298,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29c443464963eed4bbfacdd010d0748a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ToolData: {fileID: 11400000, guid: 4558096419be7904c9bc201d5539225d, type: 2}
+  ToolData: {fileID: 11400000, guid: d9dca690663c74c4cb922958b8a2da03, type: 2}
   toolPoseData: {fileID: 0}
-  RightToolkitTool: {fileID: 0}
-  LeftToolkitTool: {fileID: 0}
-  StageMeshes: []
+  RightToolkitTool: {fileID: 1674690230}
+  LeftToolkitTool: {fileID: 1383461738}
+  StageMeshes:
+  - {fileID: 3566796388084293214}
   GripIndex: 0
 --- !u!54 &7317572254710635922
 Rigidbody:
@@ -26316,6 +26353,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.1639823, y: 0.01579385, z: 0.01130394}
   m_Center: {x: -0.045005888, y: -0.00013482291, z: -0.00019133091}
+--- !u!114 &7317572254710635924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3061673143970972058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e08a3e5de175404a9051deec21d6b74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolReferenceObject: {fileID: 62744848}
 --- !u!4 &7329610796241319939
 Transform:
   m_ObjectHideFlags: 0

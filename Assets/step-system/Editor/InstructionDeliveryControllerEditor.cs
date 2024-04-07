@@ -10,9 +10,16 @@ using UnityEngine.Timeline;
 /// </summary>
 [CustomEditor(typeof(InstructionDeliveryController))]
 public class InstructionDeliveryControllerEditor : Editor
-{    public override void OnInspectorGUI()
+{    
+    SerializedProperty metaDataProperty;
+    private void OnEnable()
     {
-        base.OnInspectorGUI();
+        metaDataProperty = serializedObject.FindProperty("MetaData");
+    }
+    public override void OnInspectorGUI()
+    {
+        // base.OnInspectorGUI();
+        serializedObject.Update();
 
         // a reference to this editor's script and metadata 
         InstructionDeliveryController instructionDeliveryController = (InstructionDeliveryController)target;
@@ -21,30 +28,51 @@ public class InstructionDeliveryControllerEditor : Editor
         // dialogue string
         string dialogue = instructionDeliveryController.Script;
  
+        DrawPropertiesExcluding(serializedObject, "MetaData");
 
+        if (metaDataProperty != null)
+        {
+            EditorGUILayout.PropertyField(metaDataProperty, includeChildren: false);
+
+            if (metaDataProperty.isExpanded)
+            {
+                EditorGUI.indentLevel++;
+                
+                //get file name field
+                SerializedProperty fileNameProperty = metaDataProperty.FindPropertyRelative("fileName");
+
+                GUILayout.BeginHorizontal();
+                EditorGUILayout.PropertyField(fileNameProperty, new GUIContent("File Name"));
+                
+                //use button to fill in the file name field
+                if (GUILayout.Button("Use Step Name"))
+                {
+                    fileNameProperty.stringValue = ((InstructionDeliveryController)target).gameObject.name;
+                }
+                GUILayout.EndHorizontal();
+
+                //loop through the meta data fields available and draw them
+                SerializedProperty property = metaDataProperty.Copy();
+                int index = 0;
+                while (property.NextVisible(true) & index < 10)
+                {
+                    if (property.name == "fileName") continue;
+                    EditorGUILayout.PropertyField(property, true);
+                    index++;
+                }
+
+
+                
+
+                EditorGUI.indentLevel--;
+            }
+        }
+        
 
         if (GUILayout.Button("Generate Audio"))
         {
-            Debug.Log(instructionDeliveryMetadata.AbsAudioPath);
-            string jsonFields = JObject.FromObject(new
-            {
-                save_path = instructionDeliveryMetadata.AbsAudioPath,
-                dialogue = dialogue
-            }).ToString();
-
-            EditorCoroutineRunner.StartCoroutine(Request.post(
-                "step-system/generate-instructional-audio",
-                jsonFields, 
-                (Response response) => { 
-                    Debug.Log(response.message);
-                    AssetDatabase.Refresh();
-                    if (FileSystem.DoesFileExistAtAbsolutePath(instructionDeliveryMetadata.AbsAudioPath))
-                    {
-                        AudioClip audioClip = (AudioClip)AssetDatabase.LoadAssetAtPath(instructionDeliveryMetadata.RelAudioPath, typeof(AudioClip));
-                        instructionDeliveryMetadata.AudioClip = audioClip;
-                    }
-                })
-            );
+            GenerateAudio(instructionDeliveryController, dialogue);
+            
         }
 
         if (GUILayout.Button("Generate Timeline"))
@@ -95,5 +123,30 @@ public class InstructionDeliveryControllerEditor : Editor
                 instructionDeliveryController.StartInstructionDelivery();
             }
         }
+        serializedObject.ApplyModifiedProperties();
+    }
+
+    public static void GenerateAudio(InstructionDeliveryController controller, string dialogue)
+    {
+        Debug.Log(controller.MetaData.AbsAudioPath);
+        string jsonFields = JObject.FromObject(new
+        {
+            save_path = controller.MetaData.AbsAudioPath,
+            dialogue = dialogue
+        }).ToString();
+
+        EditorCoroutineRunner.StartCoroutine(Request.post(
+            "step-system/generate-instructional-audio",
+            jsonFields,
+            (Response response) => {
+                Debug.Log(response.message);
+                AssetDatabase.Refresh();
+                if (FileSystem.DoesFileExistAtAbsolutePath(controller.MetaData.AbsAudioPath))
+                {
+                    AudioClip audioClip = (AudioClip)AssetDatabase.LoadAssetAtPath(controller.MetaData.RelAudioPath, typeof(AudioClip));
+                    controller.MetaData.AudioClip = audioClip;
+                }
+            })
+        );
     }
 }

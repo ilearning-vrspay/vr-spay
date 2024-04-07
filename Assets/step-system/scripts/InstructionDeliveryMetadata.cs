@@ -4,6 +4,7 @@ using UnityEngine;
 public class InstructionDeliveryMetadata
 {
     //[UnityEngine.SerializeField] private string dataPath;
+    [HideInInspector]
     [UnityEngine.SerializeField] private string fileName;
     public AudioClip AudioClip;
     public AnimationClip AnimationClip;
@@ -56,6 +57,17 @@ public class InstructionDeliveryMetadata
         {
             return FileSystem.GetAbsolutePathFromUnityAssetFilePath(RelTimelinePath);
         }
+    }
+
+    public void SetFileName(string name)
+    {
+        fileName = name;
+    }
+
+    // Public method to get fileName
+    public string GetFileName()
+    {
+        return fileName;
     }
 }
 

@@ -25,7 +25,7 @@ public class HandInteractionSystem : StandardHandAnimationComponent
         public void StartListening()
         {
             InputAction action = inputActionReference.action;
-            Debug.Log("Listening");
+            // Debug.Log("Listening");
             switch (inputType)
             {
                 case InputType.Button:
@@ -48,7 +48,7 @@ public class HandInteractionSystem : StandardHandAnimationComponent
 
         public void OnContinuousInputPerformed(float value)
         {
-            Debug.Log("sending good vibes bro: " + value);
+            // Debug.Log("sending good vibes bro: " + value);
             onContinuousInputReceived.Invoke(value);
         }
 

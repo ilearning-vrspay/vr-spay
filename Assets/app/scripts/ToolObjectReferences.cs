@@ -8,8 +8,8 @@ public class ToolObjectReferences : MonoBehaviour
     public Collider colliderObject;
     public GameObject rootBone;
     public List<GameObject> meshObjects;
-    public List<AnimationClip> leftHandAnimationClips;
-    public List<AnimationClip> rightHandAnimationClips;
+    public AnimatorOverrideController RightOverrideController;
+    public AnimatorOverrideController LeftOverrideController;
     public GameObject leftToolKitTool;
     public GameObject rightToolKitTool;
     

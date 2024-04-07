@@ -667,7 +667,7 @@ BlendTree:
     m_DirectBlendParameter: Crile Hemostatic Forceps Right Hand Pose 1
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 1827226128182048838, guid: 9c3870d4f1fa20943860dfdcf778fb0b, type: 3}
+    m_Motion: {fileID: 1827226128182048838, guid: e3a2d071ad12b344c9eac5f6fb967b7d, type: 3}
     m_Threshold: 0.5769231
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -675,7 +675,7 @@ BlendTree:
     m_DirectBlendParameter: DeBakey Forceps Right Hand Pose 1
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 1827226128182048838, guid: 197eeaa8f287a3e4b9e025035bf6ce80, type: 3}
+    m_Motion: {fileID: 1827226128182048838, guid: 3b25a11b3253dda459a5dc899af8a62d, type: 3}
     m_Threshold: 0.61538464
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
