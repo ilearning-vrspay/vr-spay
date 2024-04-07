@@ -77,35 +77,7 @@ public class InstructionDeliveryControllerEditor : Editor
 
         if (GUILayout.Button("Generate Timeline"))
         {
-            TimelineAsset timeline = CreateInstance<TimelineAsset>();
-            AssetDatabase.CreateAsset(timeline, instructionDeliveryMetadata.RelTimelinePath);
-
-            AudioClip audioClip = instructionDeliveryMetadata.AudioClip;
-            if(audioClip)
-            {
-                AudioTrack audioTrack = timeline.CreateTrack<AudioTrack>("dialogue");
-                audioTrack.CreateClip(audioClip);
-            }
-            AnimationClip animationClip = instructionDeliveryMetadata.AnimationClip;
-            if (animationClip)
-            {
-                AnimationTrack audioTrack = timeline.CreateTrack<AnimationTrack>("animation");
-                audioTrack.CreateClip(animationClip);
-            }
-
-            //if (FileSystem.DoesFileExistAtAbsolutePath(instructionDeliveryMetadata.AbsAudioPath))
-            //{
-            //    AudioClip audioClip = (AudioClip)AssetDatabase.LoadAssetAtPath(instructionDeliveryMetadata.RelAudioPath, typeof(AudioClip));
-            //    AudioTrack audioTrack = timeline.CreateTrack<AudioTrack>("dialogue");
-            //    audioTrack.CreateClip(audioClip);
-            //}
-            //if (FileSystem.DoesFileExistAtAbsolutePath(instructionDeliveryMetadata.AbsAnimationPath))
-            //{
-            //    AnimationClip animationClip = (AnimationClip)AssetDatabase.LoadAssetAtPath(instructionDeliveryMetadata.RelAnimationPath, typeof(AnimationClip));
-            //    AnimationTrack audioTrack = timeline.CreateTrack<AnimationTrack>("animation");
-            //    audioTrack.CreateClip(animationClip);
-            //}
-            instructionDeliveryController.TimelineAsset = timeline;
+            GenerateTimeline(instructionDeliveryController);
         }
 
         if (GUILayout.Button("Tester"))
@@ -148,5 +120,38 @@ public class InstructionDeliveryControllerEditor : Editor
                 }
             })
         );
+    }
+
+    public static void GenerateTimeline(InstructionDeliveryController controller)
+    {
+        TimelineAsset timeline = CreateInstance<TimelineAsset>();
+        AssetDatabase.CreateAsset(timeline, controller.MetaData.RelTimelinePath);
+
+        AudioClip audioClip = controller.MetaData.AudioClip;
+        if(audioClip)
+        {
+            AudioTrack audioTrack = timeline.CreateTrack<AudioTrack>("dialogue");
+            audioTrack.CreateClip(audioClip);
+        }
+        AnimationClip animationClip = controller.MetaData.AnimationClip;
+        if (animationClip)
+        {
+            AnimationTrack audioTrack = timeline.CreateTrack<AnimationTrack>("animation");
+            audioTrack.CreateClip(animationClip);
+        }
+
+        //if (FileSystem.DoesFileExistAtAbsolutePath(instructionDeliveryMetadata.AbsAudioPath))
+        //{
+        //    AudioClip audioClip = (AudioClip)AssetDatabase.LoadAssetAtPath(instructionDeliveryMetadata.RelAudioPath, typeof(AudioClip));
+        //    AudioTrack audioTrack = timeline.CreateTrack<AudioTrack>("dialogue");
+        //    audioTrack.CreateClip(audioClip);
+        //}
+        //if (FileSystem.DoesFileExistAtAbsolutePath(instructionDeliveryMetadata.AbsAnimationPath))
+        //{
+        //    AnimationClip animationClip = (AnimationClip)AssetDatabase.LoadAssetAtPath(instructionDeliveryMetadata.RelAnimationPath, typeof(AnimationClip));
+        //    AnimationTrack audioTrack = timeline.CreateTrack<AnimationTrack>("animation");
+        //    audioTrack.CreateClip(animationClip);
+        //}
+        controller.TimelineAsset = timeline;
     }
 }

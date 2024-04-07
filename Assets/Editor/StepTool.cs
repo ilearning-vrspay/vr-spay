@@ -3,6 +3,8 @@ using UnityEditor;
 using System.Collections.Generic;
 using UnityEditor.SceneManagement;
 using System.Text.RegularExpressions;
+using System.Configuration;
+using Mono.Reflection;
 
 public class StepTool : EditorWindow
 
@@ -13,15 +15,17 @@ public class StepTool : EditorWindow
     private enum NumberingPosition { Prefix, Suffix }
     private NumberingPosition numberingPosition = NumberingPosition.Prefix;
 
+    private string groupName = "";
     private string stepName = ""; // For naming the GameObject
+    private readonly List<string> types = new List<string>
+    {
+        "Dialogue", "Instruction", "Image", "Video", "On-Screen Instructions", "Program-Action", "User Action", "Custom"
+    };
     private string scriptContent = ""; // For the script content to populate in the component
     private string descriptionInput = "";
     private int selectedTypeIndex = 0;
     private string customTypeInput = "";
-    private readonly List<string> types = new List<string>
-    {
-        "Dialogue", "Image", "Video", "On-Screen Instructions", "Program-Action", "User Action", "Custom"
-    };
+    
 
     [MenuItem("Tools/Step Tool")]
     public static void ShowWindow()
@@ -29,9 +33,8 @@ public class StepTool : EditorWindow
         GetWindow<StepTool>("Step Tool");
     }
 
-    void OnGUI()
+   void OnGUI()
     {
-        
         float width = EditorGUIUtility.currentViewWidth;
 
         GUILayout.Space(10f);
@@ -49,50 +52,54 @@ public class StepTool : EditorWindow
         GameObject selectedGameObject = Selection.activeGameObject;
 
         // Field to name the step or display the selected object's name
+        groupName = EditorGUILayout.TextField("Group Name", groupName);
         stepName = EditorGUILayout.TextField("Step Name", stepName == "" && selectedGameObject != null ? selectedGameObject.name : stepName);
+        selectedTypeIndex = EditorGUILayout.Popup("Type", selectedTypeIndex, types.ToArray());
+
+        if (types[selectedTypeIndex] == "Custom")
+                {
+                    customTypeInput = EditorGUILayout.TextField("Custom Type", customTypeInput);
+                }
+
+        GUILayout.Space(10f);
 
         // Field for the script content
         scriptContent = EditorGUILayout.TextField("Script Content", scriptContent);
 
         // Continue with your existing GUI for description
         descriptionInput = EditorGUILayout.TextField("Description", descriptionInput);
-        selectedTypeIndex = EditorGUILayout.Popup("Type", selectedTypeIndex, types.ToArray());
-        if (types[selectedTypeIndex] == "Custom")
-        {
-            customTypeInput = EditorGUILayout.TextField("Custom Type", customTypeInput);
-        }
+        
 
         // Check if the selected GameObject has an InstructionDeliveryController component
         bool hasControllerComponent = selectedGameObject != null && selectedGameObject.GetComponent<InstructionDeliveryController>() != null;
 
-        // Adjust button label based on whether the selected GameObject has the component
-        string buttonLabel = hasControllerComponent ? "Update Step" : "Create New Step";
-
-        if (GUILayout.Button(buttonLabel))
+        GUILayout.Space(10f);
+        
+        // Button for creating a new child step
+        if (GUILayout.Button("Create New Step"))
         {
-            if (!hasControllerComponent)
+            
+            string objectName = SetupFullName();
+            
+            GameObject newStep = new GameObject(objectName);
+            if (selectedGameObject != null)
             {
-                // Create new GameObject as a step and make it a child of the selected GameObject
-                GameObject newStep = new GameObject(stepName);
-                if (selectedGameObject != null)
-                {
-                    newStep.transform.SetParent(selectedGameObject.transform);
-                }
-
-                // Add the InstructionDeliveryController component and set up fields
-                SetupStep(newStep);
+                newStep.transform.SetParent(selectedGameObject.transform, false);
             }
-            else
+
+            SetupStep(newStep, objectName);
+        }
+
+        // Button for updating the existing step, only shown if a suitable GameObject is selected
+        if (hasControllerComponent)
+        {
+            if (GUILayout.Button("Update Step"))
             {
-                // The selected GameObject already has the component, so update its fields
-                SetupStep(selectedGameObject);
+                SetupStep(selectedGameObject, SetupFullName(false));
             }
         }
-        // add a gui line to separate the renumber clips section from the rest of the tool 
-
-
-        GUILayout.Space(10f);
         GUILayout.Label(dashes);
+        GUILayout.Space(10f);
         GUILayout.Label("Renumber Clips", EditorStyles.boldLabel);
         renumberClipsEnabled = EditorGUILayout.Toggle("Enable Renumbering", renumberClipsEnabled);
 
@@ -105,34 +112,139 @@ public class StepTool : EditorWindow
 
             if (GUILayout.Button("Renumber Clips"))
             {
-                List<GameObject> selectedGameObjects = new List<GameObject>(Selection.gameObjects);
-                selectedGameObjects.Sort((x, y) => x.transform.GetSiblingIndex().CompareTo(y.transform.GetSiblingIndex()));
-
-                int currentNumber = startingNumber;
-                foreach (GameObject obj in selectedGameObjects)
-                {
-                    string originalName = obj.name;
-                    string objSplit = originalName.Split('_')[0];
-                    //check if objSplit is a number, if it's not a number, then just add the current number to the front of the original name with an underscore in between
-                    if (!int.TryParse(objSplit, out int result))
-                    {
-                        obj.name = currentNumber + "_" + originalName;
-                        currentNumber++;
-                        continue;
-                    }
-                    
-                    // Replace the number at the beginning with the new number
-                    string newName = Regex.Replace(originalName, @"^\d+", currentNumber.ToString());
-                    obj.name = newName;
-                    currentNumber++;
-                }
-                
+                RenumberClips();
             }
         }
     }
 
+    private string SetupFullName(bool constructName = true){
+        if (constructName == false)
+        {
+            return Selection.activeGameObject.name;
+        }
+        GameObject selectedGameObject = Selection.activeGameObject;
 
-    private void SetupStep(GameObject stepObject)
+        string type = (types[selectedTypeIndex] != "Custom" ? types[selectedTypeIndex] : customTypeInput).Replace(" ", "");
+        string baseName = $"{groupName}_{stepName}_{type}";
+        
+        GameObject parentObject = selectedGameObject != null && selectedGameObject.GetComponent<InstructionDeliveryController>() == null ? selectedGameObject : null;
+            
+        string prefix = DetermineStepPrefix(selectedGameObject, parentObject);
+        string fullName = $"{prefix}_{baseName}";
+
+        return fullName;
+    }
+
+    private string DetermineStepPrefix(GameObject selectedGameObject, GameObject parentObject = null)
+    {
+        // Check if we are adding as a child to an object with a controller
+        if (selectedGameObject != null && selectedGameObject.GetComponent<InstructionDeliveryController>() != null)
+        {
+            // We're adding a child step. Find the appropriate name based on siblings.
+            return DetermineChildStepName(selectedGameObject);
+        }
+        else
+        {
+            // We're adding a new root step. Determine the next integer prefix.
+            Debug.Log("DetermineNextRootStepName");
+            return DetermineNextRootStepName(parentObject);
+        }
+    }
+
+    // Placeholder for DetermineChildStepName - will implement next
+    private string DetermineChildStepName(GameObject parent)
+    {
+        string parentName = parent.name;
+        int number = 0;
+        
+        // Attempt to extract the numeric prefix from the parent's name
+        Match match = Regex.Match(parentName, @"^(\d+)_");
+        if (match.Success)
+        {
+            number = int.Parse(match.Groups[1].Value);
+        }
+
+        // Find the next available suffix letter for the new child
+        char nextSuffix = 'a';
+        foreach (Transform sibling in parent.transform)
+        {
+            string siblingName = sibling.name;
+            // Check if sibling name follows the pattern "number + letter"
+            Match siblingMatch = Regex.Match(siblingName, @"^" + number + @"([a-z])_");
+
+            if (siblingMatch.Success)
+            {
+                char siblingSuffix = siblingMatch.Groups[1].Value[0];
+                if (siblingSuffix >= nextSuffix)
+                {
+                    // Move to the next letter in the alphabet
+                    nextSuffix = (char)(siblingSuffix + 1);
+                }
+            }
+        }
+
+        // Construct the new child name with the correct suffix letter
+        return $"{number}{nextSuffix}";
+    }
+
+
+
+    // Placeholder for DetermineNextRootStepName - will implement next
+    private string DetermineNextRootStepName(GameObject parent = null)
+    {
+        
+        int highestNumber = 0;
+        foreach (Transform childTransform in parent.transform)
+        {
+            GameObject obj = childTransform.gameObject;
+            int currentNumber = ExtractLeadingNumber(obj.name);
+            if (currentNumber > highestNumber)
+            {
+                highestNumber = currentNumber;
+            }
+        }
+        return (highestNumber + 1).ToString(); // Increment and append a base name
+    }
+
+
+
+
+    private int ExtractLeadingNumber(string name)
+    {
+        var match = Regex.Match(name, @"^(\d+)_");
+        if (match.Success)
+        {
+            return int.Parse(match.Groups[1].Value);
+        }
+        return 0; // No leading number found
+    }
+
+
+
+    // Consider moving the renumbering logic into its own method for clarity
+    private void RenumberClips()
+    {
+        List<GameObject> selectedGameObjects = new List<GameObject>(Selection.gameObjects);
+        selectedGameObjects.Sort((x, y) => x.transform.GetSiblingIndex().CompareTo(y.transform.GetSiblingIndex()));
+
+        int currentNumber = startingNumber;
+        foreach (GameObject obj in selectedGameObjects)
+        {
+            string originalName = obj.name;
+            // Determine if the original name starts with a number and replace it
+            string newName = Regex.Replace(originalName, @"^\d+", currentNumber.ToString());
+            if (newName == originalName) // No number at the start, prepend the number
+            {
+                newName = currentNumber + "_" + originalName;
+            }
+            obj.name = newName;
+            currentNumber++;
+        }
+    }
+
+
+
+    private void SetupStep(GameObject stepObject, string fullName)
     {
         InstructionDeliveryController controller = stepObject.GetComponent<InstructionDeliveryController>();
         if (controller == null)
@@ -158,7 +270,7 @@ public class StepTool : EditorWindow
         // If MetaData is accessible and modifiable like this
         if (controller.MetaData != null)
         {
-            controller.MetaData.SetFileName(stepName);
+            controller.MetaData.SetFileName(fullName);
         }
 
         GenerateAndApplyDescription(stepObject); // Apply your description formatting
@@ -170,10 +282,11 @@ public class StepTool : EditorWindow
             EditorSceneManager.MarkSceneDirty(stepObject.scene);
         }
 
-        if (types[selectedTypeIndex] == "Dialogue" && !string.IsNullOrEmpty(scriptContent))
+        if (types[selectedTypeIndex] == "Dialogue" || types[selectedTypeIndex] == "Instruction" && !string.IsNullOrEmpty(scriptContent))
         {
             // Call the GenerateAudio method from InstructionDeliveryControllerEditor
             InstructionDeliveryControllerEditor.GenerateAudio(controller, scriptContent);
+            InstructionDeliveryControllerEditor.GenerateTimeline(controller);
         }
     }
 
