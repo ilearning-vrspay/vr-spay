@@ -6,13 +6,14 @@ using System.Reflection;
 using System;
 using Unity.VisualScripting;
 
+[RequireComponent(typeof(HandInteractionSystem))]
 public class InputActions : MonoBehaviour
 {
     private ToolObjectReference isTriggered = null;
-    public Animator handAnimator;
-    public ToolObjectReference grabbedTool = null;
-    public RuntimeAnimatorController baseAnimatorController;
-    public AnimatorOverrideController altController;
+    private Animator handAnimator;
+    private ToolObjectReference grabbedTool = null;
+    private RuntimeAnimatorController baseAnimatorController;
+    private AnimatorOverrideController altController;
     private int poseIndex = 0;
     bool JoystickClickable = false;
     private List<KeyValuePair<AnimationClip, AnimationClip>> overrides = new List<KeyValuePair<AnimationClip, AnimationClip>>();
@@ -26,6 +27,13 @@ public class InputActions : MonoBehaviour
         "Pose7",
         "Pose8"
     };
+
+    void Start()
+    {
+        HandInteractionSystem handInteractionSystem = GetComponent<HandInteractionSystem>();
+        handAnimator = handInteractionSystem.handAnimator;
+        baseAnimatorController = handAnimator.runtimeAnimatorController;
+    }
 
     
     /// <summary>
