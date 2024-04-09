@@ -285,7 +285,7 @@ public class InstructionDeliveryController : MonoBehaviour
         {
             if (!_loopClicked)
             {
-                Debug.Log("Delivered Invoked.");
+                Debug.Log("Delivered Invoked." + name);
                 onInstructionsDelivered.Invoke(); // OnInstructionsDelivered UnityEvent activated
                 _director.Pause();
                 Debug.Log("Pause status: " + _paused);
