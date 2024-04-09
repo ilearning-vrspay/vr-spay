@@ -3,8 +3,8 @@ using System.Collections.Generic;
 
 public class TriggerToolOutline : MonoBehaviour
 {
-    private Dictionary<ToolComponent, List<Outline>> toolOutlines = new Dictionary<ToolComponent, List<Outline>>();
-    private ToolComponent closestTool = null;
+    private Dictionary<ToolObjectReference, List<Outline>> toolOutlines = new Dictionary<ToolObjectReference, List<Outline>>();
+    private ToolObjectReference closestTool = null;
 
     private void Update() {
         UpdateClosestTool();
@@ -12,7 +12,7 @@ public class TriggerToolOutline : MonoBehaviour
 
     private void UpdateClosestTool() {
         float closestDistance = float.MaxValue;
-        ToolComponent newClosestTool = null;
+        ToolObjectReference newClosestTool = null;
 
         // Iterate through all tools to find the closest one
         foreach (var tool in toolOutlines.Keys) {
@@ -38,10 +38,13 @@ public class TriggerToolOutline : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other) {
-        ToolComponent toolComponent = other.GetComponent<ToolComponent>();
-        if (toolComponent != null && toolComponent.StageMeshes.Count > 0) {
+
+        ToolObjectReference toolComponent = GetToolObjectReference(other);
+
+        // ToolObjectReference toolComponent = other.GetComponent<ToolObjectReference>();
+        if (toolComponent != null && toolComponent.MeshObjects.Count > 0) {
             List<Outline> outlines = new List<Outline>();
-            foreach (var mesh in toolComponent.StageMeshes) {
+            foreach (var mesh in toolComponent.MeshObjects) {
                 Outline outline = mesh.GetComponent<Outline>();
                 if (outline != null) {
                     outlines.Add(outline);
@@ -53,7 +56,12 @@ public class TriggerToolOutline : MonoBehaviour
     }
 
     private void OnTriggerExit(Collider other) {
-        ToolComponent toolComponent = other.GetComponent<ToolComponent>();
+        GetToolReferenceObject toolRef = other.GetComponent<GetToolReferenceObject>();
+        ToolObjectReference toolComponent = null;
+        if (toolRef != null)
+        {
+            toolComponent = toolRef.ToolObjectReference;
+        }
         if (toolComponent != null && toolOutlines.ContainsKey(toolComponent)) {
             SetOutlinesEnabled(toolComponent, false); // Disable outlines when the tool exits
             toolOutlines.Remove(toolComponent); // Remove the tool from tracking
@@ -64,9 +72,20 @@ public class TriggerToolOutline : MonoBehaviour
     }
 
     // Helper method to enable or disable all outlines for a tool
-    private void SetOutlinesEnabled(ToolComponent tool, bool enabled) {
+    private void SetOutlinesEnabled(ToolObjectReference tool, bool enabled) {
         foreach (var outline in toolOutlines[tool]) {
             outline.enabled = enabled;
         }
+    }
+
+    ToolObjectReference GetToolObjectReference(Collider other){
+        GetToolReferenceObject toolRef = other.GetComponent<GetToolReferenceObject>();
+        ToolObjectReference toolComponent = null;
+        if (toolRef != null)
+        {
+            toolComponent = toolRef.ToolObjectReference;
+        }
+
+        return toolComponent;
     }
 }
