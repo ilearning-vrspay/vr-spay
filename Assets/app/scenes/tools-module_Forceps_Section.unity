@@ -182,14 +182,14 @@ MonoBehaviour:
 
     -------------------------
     INSTRUCTION --------------------------'
-  TimelineAsset: {fileID: 11400000, guid: bb1aa1948bec33b4f924bfe862228162, type: 2}
+  TimelineAsset: {fileID: 11400000, guid: dc447343e933088449cfa4940edd7277, type: 2}
   script: "Now, we\u2019ll learn more about the Brown Adson forceps. Hover over the
     Brown Adson forceps on the Surgical instruments table, until you see them highlighted
     and labeled. Press the grip to pick up the Brown Adson forceps. The default grip
     is the pencil grip."
   MetaData:
-    fileName: 1_Brown-Adson_PickUpBrownAdson_Instruction
-    AudioClip: {fileID: 8300000, guid: 818e0d4c54b8c0c4cba993644a2cc0b2, type: 3}
+    fileName: 23_Brown-Adson_PickUpBrownAdson_Instruction
+    AudioClip: {fileID: 8300000, guid: 0f8159a326655074592fe99e2c4fc5dd, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &9665195
 PlayableDirector:
@@ -267,11 +267,11 @@ MonoBehaviour:
 
     -------------
     DIALOGUE --------------'
-  TimelineAsset: {fileID: 11400000, guid: 58def0677d7d5a247a7162d726b8e26f, type: 2}
+  TimelineAsset: {fileID: 11400000, guid: 6f12cb2fec688af4d992a7b7c933aaf0, type: 2}
   script: Press the play button to learn more about the pencil grip.
   MetaData:
-    fileName: 5_Forceps_InstructToPlay_Dialogue
-    AudioClip: {fileID: 8300000, guid: 39ae7464c65693c408bf6966ee717710, type: 3}
+    fileName: 4_Forceps_InstructToPlay_Dialogue
+    AudioClip: {fileID: 8300000, guid: 75588928bcea4994b86b41d0494f1105, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &9673844
 PlayableDirector:
@@ -430,13 +430,13 @@ MonoBehaviour:
 
     ------------------------
     DIALOGUE -------------------------'
-  TimelineAsset: {fileID: 11400000, guid: daa93948e961a11449dea808e8e585eb, type: 2}
+  TimelineAsset: {fileID: 11400000, guid: f671d26d2c21a574ab5f4fec64a0de83, type: 2}
   script: Now you try to pick up the DeBakey forceps. Hover the DeBakey forceps and
     press the Grip button to pick them up. Move your hand around to examine the pencil
     grip.
   MetaData:
-    fileName: Forceps_UserPickup_Dialogue
-    AudioClip: {fileID: 8300000, guid: 2c90d621b8723d14c95fe8d7a7de890b, type: 3}
+    fileName: 3_Forceps_InstructPickup_Dialogue
+    AudioClip: {fileID: 8300000, guid: 1e44978b9fd23f94182b82f233027149, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &25549628
 PlayableDirector:
@@ -729,10 +729,10 @@ MonoBehaviour:
 
     -------------------
     VIDEO --------------------'
-  TimelineAsset: {fileID: 11400000, guid: f6dad7611a17c7544b240b173d7b21b2, type: 2}
+  TimelineAsset: {fileID: 11400000, guid: c942242c3b3b258459a40f6949bf8a3f, type: 2}
   script: 
   MetaData:
-    fileName: PalmGrip
+    fileName: 16_Forceps_PalmGrip_Video
     AudioClip: {fileID: 0}
     AnimationClip: {fileID: 0}
 --- !u!320 &54291724
@@ -810,10 +810,10 @@ MonoBehaviour:
 
     --------------------
     VIDEO --------------------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 00585c569be28c74a99923d15ddd6f85, type: 2}
   script: 
   MetaData:
-    fileName: DeBakeyVideo
+    fileName: 19_DeBakey_DeBakeyVideo_Video
     AudioClip: {fileID: 0}
     AnimationClip: {fileID: 0}
 --- !u!320 &58642796
@@ -1507,7 +1507,7 @@ MonoBehaviour:
 
     -----------------
     VIDEO -----------------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: ae3ac72e64345724ca0dd66a5ee43a96, type: 2}
   script: 
   MetaData:
     fileName: 25_Brown-Adson_BrownAdsonInformation_Video
@@ -2284,7 +2284,7 @@ MonoBehaviour:
 
     ----------------------------
     VIDEO ----------------------------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 1efc9f6a48881314bb4285cd3cb2e0db, type: 2}
   script: 
   MetaData:
     fileName: 34_AdsonRat_AdsonRatInformation_Video
@@ -2646,13 +2646,13 @@ MonoBehaviour:
 
     -------------------------
     DIALOGUE --------------------------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 7619ffd1562a09a479db9bf60dc7a4ab, type: 2}
   script: "Turn the forceps tips toward you and gently press and release the grip
     to see the atraumatic teeth of the DeBakey Forceps. Also, you can look at the
     close up picture. When you\u2019re ready to move on press the next button."
   MetaData:
-    fileName: InstructToViewTeeth
-    AudioClip: {fileID: 8300000, guid: 568f38f981c9aff47ac8e5d713fee5fd, type: 3}
+    fileName: 20_DeBakey_InstructToViewTeeth_Dialogue
+    AudioClip: {fileID: 8300000, guid: 91407542a08a32843a88830cacc2ea39, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &517160526
 PlayableDirector:
@@ -3288,12 +3288,12 @@ MonoBehaviour:
 
     ------------------
     DIALOGUE -------------------'
-  TimelineAsset: {fileID: 11400000, guid: eefd169eb37e7ee49ba8318958f70fde, type: 2}
+  TimelineAsset: {fileID: 11400000, guid: 5ee5fd25f87ab2d479cd9fc43e1d11fc, type: 2}
   script: 'Take a moment to examine the forceps in your hand held in the modified
     pencil grip. Squeeze the grip button to open and close the forceps. '
   MetaData:
-    fileName: 6_Forceps_ExaminePencilGrip_Dialogue
-    AudioClip: {fileID: 8300000, guid: 1b50619ab121b2040aa8030eb62d8017, type: 3}
+    fileName: 6_Forceps_ExaminPencilGrip_Dialogue
+    AudioClip: {fileID: 8300000, guid: f6fee5289b9b31c4e9bdef9f7f92d6cb, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &749931417
 PlayableDirector:
@@ -3371,13 +3371,13 @@ MonoBehaviour:
 
     -------------------
     INSTRUCTION -------------------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 3bfb40dbf0d31ce468865631e7f62ab7, type: 2}
   script: That concludes all you need to know about the DeBakey forceps. Hover over
     the DeBakey forceps on the surgical instruments table and press the grip button
     to release them.
   MetaData:
-    fileName: InstructToReleaseDeBakey
-    AudioClip: {fileID: 8300000, guid: cf747781897a4af469695e0c087e4f36, type: 3}
+    fileName: 22_DeBakey_InstructToReleaseDeBakey_Instruction
+    AudioClip: {fileID: 8300000, guid: a3da35f93b3131544ab99fc1726543f6, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &763889034
 PlayableDirector:
@@ -4187,14 +4187,14 @@ MonoBehaviour:
 
     -----------------------
     INSTRUCTION -----------------------'
-  TimelineAsset: {fileID: 11400000, guid: 3c0342acfd7b92b438e3c03dd0471c00, type: 2}
+  TimelineAsset: {fileID: 11400000, guid: 46c98bde4c2119d40be74e95dce8f361, type: 2}
   script: "Now, we\u2019ll learn more about the Adson Rat-Toothed forceps. Hover
     over the Adson Rat-Toothed forceps on the Surgical instruments table, until you
     see them highlighted and labeled. Press the grip to pick up the Adson Rat-Toothed
     forceps. The default grip is the pencil grip"
   MetaData:
-    fileName: 1_AdsonRat_PickupAdsonRat_Instruction
-    AudioClip: {fileID: 8300000, guid: b8ece1cc304c4f74586d9f9416ad12d9, type: 3}
+    fileName: 32_AdsonRat_PickupAdsonRat_Instruction
+    AudioClip: {fileID: 8300000, guid: 3531923669e803b42b21e113924025b8, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &916754467
 PlayableDirector:
@@ -5976,11 +5976,11 @@ MonoBehaviour:
     --------------------------------------
 
     --------------DIALOGUE--------------'
-  TimelineAsset: {fileID: 11400000, guid: 7e6b54816763b164698808cb39ccc462, type: 2}
+  TimelineAsset: {fileID: 11400000, guid: 90c65c1eae9edde4391c3a45b0c13593, type: 2}
   script: We will start with the Forceps Group
   MetaData:
-    fileName: Forceps_Intro
-    AudioClip: {fileID: 8300000, guid: b0c45c5fb3d618a4bbb95087e7a66ee8, type: 3}
+    fileName: 1_Forceps_Intro
+    AudioClip: {fileID: 8300000, guid: 0a6863c99a0424e43b5bc75b454347da, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &1184374005
 PlayableDirector:
@@ -5997,7 +5997,7 @@ PlayableDirector:
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
-  - key: {fileID: 2489262902287125967, guid: 7e6b54816763b164698808cb39ccc462, type: 2}
+  - key: {fileID: 0}
     value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
@@ -6604,10 +6604,10 @@ MonoBehaviour:
 
     -------------------------
     VIDEO --------------------------'
-  TimelineAsset: {fileID: 11400000, guid: 6be83b3489f0fef4cbe7655b4787ad55, type: 2}
+  TimelineAsset: {fileID: 11400000, guid: 96f32fddb948a5840a7b86b7c8d68133, type: 2}
   script: 
   MetaData:
-    fileName: Forceps_Group_Video
+    fileName: 2_Forceps_Group_Video
     AudioClip: {fileID: 0}
     AnimationClip: {fileID: 0}
 --- !u!320 &1302155395
@@ -7409,14 +7409,14 @@ MonoBehaviour:
 
     -----------------------
     DIALOGUE ------------------------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: c606071be58e1d24baa623ea092c8647, type: 2}
   script: "Now we will learn about the unique aspects of each forceps. We will start
     with the DeBakey forceps which are the ones you are currently holding. When you
     are ready to move on, press the play button. You\u2019ll notice that you will
     be holding the DeBakey forceps in the modified pencil grip again. "
   MetaData:
-    fileName: InstructToPlay
-    AudioClip: {fileID: 8300000, guid: cd5e0529c6133e14598dd7897797731c, type: 3}
+    fileName: 18_DeBakey_InstructToPlay_Dialogue
+    AudioClip: {fileID: 8300000, guid: a3a3d88e2f93ba04da844b9cf50478ea, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &1413496390
 PlayableDirector:
@@ -7482,6 +7482,29 @@ MonoBehaviour:
   - {fileID: 1627052863}
   - {fileID: 54291723}
   - {fileID: 1448866729}
+  - {fileID: 1413496389}
+  - {fileID: 58642795}
+  - {fileID: 517160525}
+  - {fileID: 1785952651}
+  - {fileID: 763889033}
+  - {fileID: 9665194}
+  - {fileID: 928197132}
+  - {fileID: 215083922}
+  - {fileID: 1680476700}
+  - {fileID: 32597732}
+  - {fileID: 2000786098}
+  - {fileID: 801909479}
+  - {fileID: 2039636258}
+  - {fileID: 1685011454}
+  - {fileID: 916754466}
+  - {fileID: 822833799}
+  - {fileID: 469195943}
+  - {fileID: 1890243087}
+  - {fileID: 1591769116}
+  - {fileID: 2032314673}
+  - {fileID: 1265187234}
+  - {fileID: 2095727254}
+  - {fileID: 1271789875}
   StepIndex: 0
   SequenceStarted:
     m_PersistentCalls:
@@ -7924,9 +7947,12 @@ PlayableDirector:
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
-  m_SceneBindings: []
+  m_SceneBindings:
+  - key: {fileID: 8832328859684375694, guid: 2fccbfa8b1d772b49ad44d88f0f68820, type: 2}
+    value: {fileID: 1511524926}
   m_ExposedReferences:
-    m_References: []
+    m_References:
+    - d1f160a635a44cb4da2afa55543d411a: {fileID: 1408578981}
 --- !u!1 &1448866727
 GameObject:
   m_ObjectHideFlags: 0
@@ -7986,12 +8012,12 @@ MonoBehaviour:
 
     --------------
     DIALOGUE --------------'
-  TimelineAsset: {fileID: 11400000, guid: 266c39e1f16f2b34887da60ef638f73e, type: 2}
+  TimelineAsset: {fileID: 11400000, guid: eebb01ad8cc908742829e3e6bf30c5fc, type: 2}
   script: Now switch the way you are holding the forceps to the palm grip by clicking
     the joystick.
   MetaData:
-    fileName: SwitchToPalmGrip
-    AudioClip: {fileID: 8300000, guid: c26c67c4fec128c46903704b8d80a046, type: 3}
+    fileName: 17_Forceps_SwitchToPalmGrip_Dialogue
+    AudioClip: {fileID: 8300000, guid: fe7bca865ecdd674aa4d170a7c3b7503, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &1448866730
 PlayableDirector:
@@ -8202,7 +8228,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1408578981}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 45b72f04078bc7d4ba7938610fb2eccb, type: 2}
   m_CullingMode: 0
@@ -8677,7 +8703,7 @@ MonoBehaviour:
 
     --------------------
     DIALOGUE ---------------------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 8f551ebe44ff2c545aa0906e14f98bf0, type: 2}
   script: Watch  the avatar use the forceps to grasp and release tissue, then you
     try that motion by gently pressing and releasing the grip button to open and
     close the forceps.
@@ -9917,14 +9943,14 @@ MonoBehaviour:
 
     -----------------
     INSTRUCTION -----------------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 6943825704da00044bfc51656f7a5ed2, type: 2}
   script: "Click the Joystick to switch to the side hold so you can see the ribbed
     grip panel of the DeBakey forceps. DeBakey forceps have a distinct coarsely ribbed
     grip panel, as opposed to the finer ribbing on most other tissue forceps. When
     you\u2019re ready to move on press the next button."
   MetaData:
-    fileName: ChangeGripToSideHold
-    AudioClip: {fileID: 8300000, guid: 0e24af55d25014f46b82e090f782a20d, type: 3}
+    fileName: 21_DeBakey_ChangeGripToSideHold_Instruction
+    AudioClip: {fileID: 8300000, guid: 91d0a329049fb3b40ac572d9aac35f51, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &1785952652
 PlayableDirector:
