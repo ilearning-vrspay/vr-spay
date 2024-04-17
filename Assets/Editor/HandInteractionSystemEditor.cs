@@ -6,6 +6,7 @@ public class HandInteractionSystemEditor : Editor
 {
     public override void OnInspectorGUI()
     {
+        //DrawDefaultInspector();
         // Update the serialized object
         serializedObject.Update();
 

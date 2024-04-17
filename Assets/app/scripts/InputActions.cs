@@ -5,11 +5,17 @@ using UnityEngine.Events;
 using System.Reflection;
 using System;
 using Unity.VisualScripting;
+using UnityEngine.PlayerLoop;
+using static UnityEngine.Rendering.DebugUI;
 
 [RequireComponent(typeof(HandInteractionSystem))]
 public class InputActions : MonoBehaviour
 {
-    private ToolObjectReference isTriggered = null;
+    public UnityEvent OnToolGrabbed = new UnityEvent();
+    public UnityEvent OnToolReleased = new UnityEvent();
+    public UnityEvent OnToolUsed = new UnityEvent();
+
+    private ToolObjectReference hoveredTool = null;
     private Animator handAnimator;
     private ToolObjectReference grabbedTool = null;
     private RuntimeAnimatorController baseAnimatorController;
@@ -17,6 +23,7 @@ public class InputActions : MonoBehaviour
     private int poseIndex = 0;
     bool JoystickClickable = false;
     private List<KeyValuePair<AnimationClip, AnimationClip>> overrides = new List<KeyValuePair<AnimationClip, AnimationClip>>();
+
     private readonly string[] animationNames = {
         "DefaultPose",
         "Pose2",
@@ -27,6 +34,17 @@ public class InputActions : MonoBehaviour
         "Pose7",
         "Pose8"
     };
+
+    private void Update()
+    {
+        Debug.Log(handAnimator.GetFloat(animationNames[poseIndex] + "_AltState"));
+        if (grabbedTool != null) { 
+            if(grabbedTool.ColliderObject.enabled == false)
+            {
+                hoveredTool = null;
+            }
+        }
+    }
 
     void Start()
     {
@@ -60,15 +78,18 @@ public class InputActions : MonoBehaviour
     /// <param name="value">The boolean value of the input action.</param>
     public void TriggerOnBooleanInput(bool value)
     {
-        if (isTriggered != null){
+        if (hoveredTool != null){
             if (grabbedTool == null){
                 ChangeController(false, altController);
-                InputPressed(isTriggered, true);
-                grabbedTool = isTriggered;
-            } else if (grabbedTool == isTriggered){
+                InputPressed(hoveredTool, true);
+                grabbedTool = hoveredTool;
+                OnToolGrabbed.Invoke();
+            } else if (grabbedTool == hoveredTool){
+                Debug.Log("HERE");
                 ChangeController(true);
                 InputPressed(grabbedTool, false);
                 grabbedTool = null;
+                OnToolReleased.Invoke();
             }
         } 
     }
@@ -86,7 +107,6 @@ public class InputActions : MonoBehaviour
 
     }
 
-
     /// <summary>
     /// Handles the click event of the joystick.
     /// </summary>
@@ -100,9 +120,14 @@ public class InputActions : MonoBehaviour
         for (int i = 0; i < animationNames.Length; i++)
         {
             poseIndex = (poseIndex + 1) % animationNames.Length;
-
+            
+            //if (handAnimator.GetFloat(animationNames[poseIndex] + "_AltState") != 0f) return;
             if (IsValidAnimation(poseIndex)) // If the current pose has a valid animation
             {
+                //if(HasAltState(poseIndex))
+                //{
+                //    handAnimator.SetFloat(animationNames[poseIndex] + "_AltState", 0.0f);
+                //}
                 handAnimator.SetFloat(animationNames[poseIndex], 1.0f); // turn on the animation for the current pose
                 handAnimator.SetFloat(animationNames[prevPoseIndex], 0.0f); // turn off the animation for the previous pose
 
@@ -113,7 +138,13 @@ public class InputActions : MonoBehaviour
         }
     }
 
+    private bool hasClosed;
+    private bool ShouldCheckUsability;
 
+    public void ToggleUsabilityCheck(bool value)
+    {
+        ShouldCheckUsability = value;
+    }
 
     /// <summary>
     /// Function for the trigger analog input.
@@ -127,6 +158,21 @@ public class InputActions : MonoBehaviour
             if (HasAltState(poseIndex)){ // If the current pose has an alternative state
                 handAnimator.SetFloat(animationNames[poseIndex], 1.0f - value);         // Interpolate from current pose
                 handAnimator.SetFloat(animationNames[poseIndex] + "_AltState", value);  // to current pose alternative state
+
+                if (ShouldCheckUsability)
+                {
+                    // check if the tool is used and if it is, invoke OnToolUsed
+                    if (value > 0.9f)
+                    {
+                        hasClosed = true;
+                    }
+
+                    if (hasClosed && value < 0.1f)
+                    {
+                        hasClosed = false;
+                        OnToolUsed.Invoke();
+                    }
+                }
             }
         }
     }
@@ -164,8 +210,8 @@ public class InputActions : MonoBehaviour
         GetToolReferenceObject toolRef = other.GetComponent<GetToolReferenceObject>(); // First, use the GetToolReferenceObject component to get the tool reference
         if (toolRef != null)    // If the tool reference is not null
         {
-            isTriggered = toolRef.ToolObjectReference;                      // Set the tool reference to the triggered tool
-            altController = isTriggered.GetOverrideController("Right");     // Set the alternative controller to the Left or Right override controller
+            hoveredTool = toolRef.ToolObjectReference;                      // Set the tool reference to the triggered tool
+            altController = hoveredTool.GetOverrideController("Right");     // Set the alternative controller to the Left or Right override controller
         }
     }
 
@@ -175,7 +221,7 @@ public class InputActions : MonoBehaviour
     /// <param name="other">The collider that exited the trigger.</param>
     private void OnTriggerExit(Collider other)
     {
-        isTriggered = null;
+        hoveredTool = null;
     }
 
 

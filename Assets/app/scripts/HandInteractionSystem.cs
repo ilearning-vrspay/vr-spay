@@ -17,10 +17,10 @@ public class HandInteractionSystem : StandardHandAnimationComponent
 
         public InputType inputType;
         public InputActionReference inputActionReference;
-        public UnityEvent<bool> onInputReceived;
-        public UnityEvent<float> onContinuousInputReceived;
-        
 
+
+        public UnityEvent<bool> onInputReceived = new UnityEvent<bool>();
+        public UnityEvent<float> onContinuousInputReceived = new UnityEvent<float>();
 
         public void StartListening()
         {

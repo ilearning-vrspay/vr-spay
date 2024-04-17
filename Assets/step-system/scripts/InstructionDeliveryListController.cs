@@ -26,8 +26,9 @@ public class InstructionDeliveryListController : MonoBehaviour
     public UnityEvent SequenceResumed = new UnityEvent();
     public UnityEvent<InstructionDeliveryListController> ProgramMuted = new UnityEvent<InstructionDeliveryListController>();
     public UnityEvent<InstructionDeliveryListController> ProgramUnmuted = new UnityEvent<InstructionDeliveryListController>();
+    public UnityEvent<InstructionDeliveryListController> InstructionDelivered = new UnityEvent<InstructionDeliveryListController>();
     public UnityEvent ProgramRestarted = new UnityEvent();
-
+    
     private bool _startClicked;
     private bool _adjustingProgressBar;
     private bool _isMuted;
@@ -58,7 +59,29 @@ public class InstructionDeliveryListController : MonoBehaviour
             SequencePlaying.Invoke(this);
         }
     }
- 
+
+
+    private void OnEnable()
+    {
+        foreach(var step in Steps)
+        {
+            step.onInstructionsDelivered.AddListener(OnInstructionDelivered);
+        }
+    }
+
+    private void OnDisable()
+    {
+        foreach (var step in Steps)
+        {
+            step.onInstructionsDelivered.RemoveListener(OnInstructionDelivered);
+        }
+    }
+
+    private void OnInstructionDelivered()
+    {
+        InstructionDelivered.Invoke(this);
+    }
+
     /* Functions below are called during onClick() of respective buttons */
 
     public void StartSequence()
@@ -159,5 +182,10 @@ public class InstructionDeliveryListController : MonoBehaviour
     public void LoopStep()
     {
         GetCurrentInstructionDeliveryController().LoopInstructions();
+    }
+
+    public void SkipInstructions()
+    {
+        GetCurrentInstructionDeliveryController().ScrubDirector(GetCurrentInstructionDeliveryController().InstructionDuration * 0.99f);
     }
 }

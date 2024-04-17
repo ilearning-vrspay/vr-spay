@@ -12,9 +12,9 @@ using Newtonsoft.Json.Linq;
 public class InstructionDeliveryController : MonoBehaviour
 {
     public bool ShouldPlayOnStart; // Should these instructions be delivered when the game starts?
-    
-    [SerializeField] private UnityEvent onInstructionsDelivered = new UnityEvent(); // event that fires when instructions are done
-    [SerializeField] private UnityEvent OnInstructionsStarted = new UnityEvent(); // event that fires when the instructions have started
+
+    [SerializeField] public UnityEvent OnInstructionsStarted = new UnityEvent(); // event that fires when the instructions have started
+    [SerializeField] public UnityEvent onInstructionsDelivered = new UnityEvent(); // event that fires when instructions are done
     
 
     [TextArea(2, 10)]
@@ -277,7 +277,7 @@ public class InstructionDeliveryController : MonoBehaviour
         // increment
         _instructionCurrentTime += deltaTime;
 
-        Debug.Log("Instruction current time: " + _instructionCurrentTime);
+        //Debug.Log("Instruction current time: " + _instructionCurrentTime);
 
         // If current time is greater than or equal to the instruction duration,
         // the instructions have been delivered.

@@ -39,5 +39,20 @@ public class ToolObjectReference : MonoBehaviour
         return null;
     }
 
+    public void EnableGrabability()
+    {
+        if (ColliderObject != null)
+        {
+            ColliderObject.enabled = true;
+        }
+    }
+
+    public void DisableGrabability()
+    {
+        if (ColliderObject != null)
+        {
+            ColliderObject.enabled = false;
+        }
+    }
 
 }
