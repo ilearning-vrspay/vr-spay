@@ -9,8 +9,10 @@ using UnityEngine.PlayerLoop;
 using static UnityEngine.Rendering.DebugUI;
 
 [RequireComponent(typeof(HandInteractionSystem))]
+
 public class InputActions : MonoBehaviour
 {
+
     public UnityEvent OnToolGrabbed = new UnityEvent();
     public UnityEvent OnToolReleased = new UnityEvent();
     public UnityEvent OnToolUsed = new UnityEvent();
@@ -21,6 +23,12 @@ public class InputActions : MonoBehaviour
     private RuntimeAnimatorController baseAnimatorController;
     private AnimatorOverrideController altController;
     private int poseIndex = 0;
+    
+    public int PoseIndex
+    {
+        get => poseIndex;
+        set => poseIndex = value;
+    }
     bool JoystickClickable = false;
     private List<KeyValuePair<AnimationClip, AnimationClip>> overrides = new List<KeyValuePair<AnimationClip, AnimationClip>>();
 
@@ -37,7 +45,7 @@ public class InputActions : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(handAnimator.GetFloat(animationNames[poseIndex] + "_AltState"));
+        // Debug.Log(handAnimator.GetFloat(animationNames[poseIndex] + "_AltState"));
         if (grabbedTool != null) { 
             if(grabbedTool.ColliderObject.enabled == false)
             {
@@ -59,17 +67,15 @@ public class InputActions : MonoBehaviour
     /// </summary>
     /// <param name="reset">If true, resets the controller to the base animator controller.</param>
     /// <param name="controller">The new animator override controller to use.</param>
-    public void ChangeController(bool reset=false, AnimatorOverrideController controller=null)
-    {
-        if (reset)
-        {
-            handAnimator.runtimeAnimatorController = baseAnimatorController;
-        }
-        else
+    public void ChangeController(AnimatorOverrideController controller=null)
         {
             handAnimator.runtimeAnimatorController = altController;
-            altController.GetOverrides(overrides);
-        }   
+            altController.GetOverrides(overrides);     
+        }
+
+    public void ResetController()
+    {
+        handAnimator.runtimeAnimatorController = baseAnimatorController;
     }
 
     /// <summary>
@@ -80,13 +86,13 @@ public class InputActions : MonoBehaviour
     {
         if (hoveredTool != null){
             if (grabbedTool == null){
-                ChangeController(false, altController);
+                ChangeController(altController);
                 InputPressed(hoveredTool, true);
                 grabbedTool = hoveredTool;
                 OnToolGrabbed.Invoke();
             } else if (grabbedTool == hoveredTool){
                 Debug.Log("HERE");
-                ChangeController(true);
+                ResetController();
                 InputPressed(grabbedTool, false);
                 grabbedTool = null;
                 OnToolReleased.Invoke();
@@ -103,9 +109,18 @@ public class InputActions : MonoBehaviour
 
         // handAnimator.SetFloat(animationNames[index], 1.0f);
         // handAnimator.SetFloat(animationNames[poseIndex], 0.0f);
+        int prevPoseIndex = poseIndex; // to act on the previous pose index
         poseIndex = index;
 
+    
+        if (HasAltState(prevPoseIndex))  // if the pose we are switching from has an alternative state
+        {
+            handAnimator.SetFloat(animationNames[prevPoseIndex] + "_AltState", 0.0f);
+        }
+        handAnimator.SetFloat(animationNames[prevPoseIndex], 0.0f);              // set the new pose to the value of the previous pose
+        handAnimator.SetFloat(animationNames[poseIndex], 1.0f); // turn on the animation for the current pose
     }
+    private int testerInt = 0;
 
     /// <summary>
     /// Handles the click event of the joystick.
@@ -113,25 +128,46 @@ public class InputActions : MonoBehaviour
     public void JoystickOnClick()
     {
         if (grabbedTool == null) return;    //  If no tool is currently in hand, return
-
+        Debug.Log("testerInt: " + testerInt);
+        testerInt++;
         int prevPoseIndex = poseIndex; // to act on the previous pose index
 
         // Loop through animation names with a maximum of the total number of animations to avoid infinite looping
         for (int i = 0; i < animationNames.Length; i++)
         {
             poseIndex = (poseIndex + 1) % animationNames.Length;
-            
-            //if (handAnimator.GetFloat(animationNames[poseIndex] + "_AltState") != 0f) return;
+
             if (IsValidAnimation(poseIndex)) // If the current pose has a valid animation
             {
-                //if(HasAltState(poseIndex))
-                //{
-                //    handAnimator.SetFloat(animationNames[poseIndex] + "_AltState", 0.0f);
-                //}
-                handAnimator.SetFloat(animationNames[poseIndex], 1.0f); // turn on the animation for the current pose
-                handAnimator.SetFloat(animationNames[prevPoseIndex], 0.0f); // turn off the animation for the previous pose
+                float poseVal = 1.0f;
+                float altVal = 0.0f;
+                
+                if(HasAltState(prevPoseIndex)) // if the pose we are switching from has an alternative state we need to interpolate between the two states 
+                                               // with respect to the current position of the blend tree between the pose and it's alternative state
+                {
+                    poseVal = handAnimator.GetFloat(animationNames[prevPoseIndex]); // get the value of the pose we are switching from
+                    altVal = 1.0f - poseVal;                                        // get it's alternative state value as well
+                    
+                    handAnimator.SetFloat(animationNames[prevPoseIndex], 0.0f);                 // turn off the previous pose
+                    handAnimator.SetFloat(animationNames[prevPoseIndex] + "_AltState", 0.0f);   // turn off the previous pose alternative state
 
-                // ---- FIX MID ALT STATE TOOL SWITCH BUG HERE ---- //
+                    if (HasAltState(poseIndex))  // if the pose we are switching to has an alternative state as well
+                    {
+                        handAnimator.SetFloat(animationNames[poseIndex], poseVal);              // set the new pose to the value of the previous pose
+                        handAnimator.SetFloat(animationNames[poseIndex] + "_AltState", altVal); // set the new pose alternative state to the value of the previous pose alternative state
+
+                    } else {    // if the pose we are switching to does not have an alternative state9
+                                // we can simply turn on the current pose
+
+                        handAnimator.SetFloat(animationNames[poseIndex], 1.0f); // turn on the animation for the current pose
+
+                    }
+                    
+                } else {    // if the pose we are switching from does not have an alternative state we can simply turn off the previous pose and turn on the current pose
+                            
+                    handAnimator.SetFloat(animationNames[poseIndex], 1.0f); // turn on the animation for the current pose
+                    handAnimator.SetFloat(animationNames[prevPoseIndex], 0.0f); // turn off the animation for the previous pose
+                }
 
                 break; // Exit the loop after setting the animation
             }
@@ -237,6 +273,7 @@ public class InputActions : MonoBehaviour
         {
             if (pair.Key.name == $"{side}_{animationNames[index]}" && pair.Value != null) // if the current tool has an override for the current animation and the override is a valid animation
             {
+                Debug.Log("pair.key: " + pair.Key.name + "pair.value" + pair.Value.ToString());
                 return true; // Valid override found
             }
         }

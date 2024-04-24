@@ -223,6 +223,8 @@ public class InstructionDeliveryController : MonoBehaviour
             _isUserReceivingInstruction = true;
             _director.playableAsset = TimelineAsset;
             _director.Play();
+
+
         }
 
         IEnumerator _instructionLoop()
