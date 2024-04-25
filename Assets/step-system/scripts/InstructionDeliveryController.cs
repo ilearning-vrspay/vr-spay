@@ -232,7 +232,7 @@ public class InstructionDeliveryController : MonoBehaviour
             // Loop that ticks instruction current time while the user is receiving instructions.
             while (_isUserReceivingInstruction)
             {
-                Debug.Log("Coroutine pause status: " + _paused);
+                // Debug.Log("Coroutine pause status: " + _paused);
                 if (!_paused)
                 {
                     _tickStepInstructionCurrentTime(Time.deltaTime);

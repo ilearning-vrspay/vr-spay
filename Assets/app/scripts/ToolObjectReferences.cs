@@ -8,6 +8,7 @@ public class ToolObjectReferences : MonoBehaviour
 
     public void DisableAllGrabability()
     {
+        Debug.Log("DisableAllGrabability called");
         foreach (var reference in references)
         {
             reference.DisableGrabability();

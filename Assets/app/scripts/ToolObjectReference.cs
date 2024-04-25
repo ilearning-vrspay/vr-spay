@@ -13,6 +13,7 @@ public class ToolObjectReference : MonoBehaviour
     public GameObject RightToolKitTool;
     public GameObject LeftToolKitTool;
 
+    public Outline Outline;
     
     public void ToggleToolBeltTool(string hand, bool state)
     {
@@ -43,6 +44,7 @@ public class ToolObjectReference : MonoBehaviour
     {
         if (ColliderObject != null)
         {
+            Debug.Log("EnableGrabability called");
             ColliderObject.enabled = true;
         }
     }
@@ -55,4 +57,19 @@ public class ToolObjectReference : MonoBehaviour
         }
     }
 
+    public void EnableOutline()
+    {
+        if (Outline != null)
+        {
+            Outline.enabled = true;
+        }
+    }
+
+    public void DisableOutline()
+    {
+        if (Outline != null)
+        {
+            Outline.enabled = false;
+        }
+    }
 }

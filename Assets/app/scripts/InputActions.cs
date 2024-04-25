@@ -23,11 +23,23 @@ public class InputActions : MonoBehaviour
     private RuntimeAnimatorController baseAnimatorController;
     private AnimatorOverrideController altController;
     private int poseIndex = 0;
+    private int customPoseIndex = -1;
     
     public int PoseIndex
     {
         get => poseIndex;
         set => poseIndex = value;
+    }
+
+    public int CustomPoseIndex
+    {
+        get => customPoseIndex;
+        set => customPoseIndex = value;
+    }
+
+    public ToolObjectReference GrabbedTool
+    {
+        get => grabbedTool;
     }
     bool JoystickClickable = false;
     private List<KeyValuePair<AnimationClip, AnimationClip>> overrides = new List<KeyValuePair<AnimationClip, AnimationClip>>();
@@ -122,6 +134,13 @@ public class InputActions : MonoBehaviour
     }
     private int testerInt = 0;
 
+
+    public void JoystickClicked2()
+    {
+        if (grabbedTool == null) return;
+
+
+    }
     /// <summary>
     /// Handles the click event of the joystick.
     /// </summary>
@@ -135,8 +154,14 @@ public class InputActions : MonoBehaviour
         // Loop through animation names with a maximum of the total number of animations to avoid infinite looping
         for (int i = 0; i < animationNames.Length; i++)
         {
-            poseIndex = (poseIndex + 1) % animationNames.Length;
-
+            if(customPoseIndex != -1)
+            {
+                poseIndex = customPoseIndex;
+            } else
+            {
+                poseIndex = (poseIndex + 1) % animationNames.Length;
+            }
+            
             if (IsValidAnimation(poseIndex)) // If the current pose has a valid animation
             {
                 float poseVal = 1.0f;

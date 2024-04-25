@@ -11,10 +11,10 @@ public class CheckInputAction : MonoBehaviour
     public InputActions InputAction;
     [SerializeField] public UnityEvent CheckEvent = new UnityEvent(); // event that fires when instructions are done
     
-    public void StartChecking()
-    {
-        checking = true;
-    }
+    //public void StartChecking()
+    //{
+    //    checking = true;
+    //}
 
 
     // Start is called before the first frame update
@@ -27,14 +27,12 @@ public class CheckInputAction : MonoBehaviour
     void Update()
     {
         Debug.Log("is onnnnnnnn");
-        if (checking == true)
-        {
-            Debug.Log("checking index");
-            if (InputAction.PoseIndex == IndexCheck){
-                CheckEvent.Invoke();
-                checking = false;
-                this.enabled = false;
-            }
+
+        Debug.Log("checking index");
+        if (InputAction.PoseIndex == IndexCheck){
+            CheckEvent.Invoke();
+            checking = false;
+            this.enabled = false;
         }
     }
 }

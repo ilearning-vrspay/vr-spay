@@ -460,6 +460,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 877189200}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- INSTRUCT THE USER TO PICK UP DEBAKEY FORCEPS ----
 
     ------------------------------------------------------------
@@ -555,18 +567,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 937030170}
-        m_TargetAssemblyTypeName: InstructionDeliveryController, Assembly-CSharp
-        m_MethodName: StartInstructionDelivery
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
         m_CallState: 2
   description: '---- INSTRUCT USER TO CHANGE GRIP ----
 
@@ -731,6 +731,7 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 0}
   RightToolKitTool: {fileID: 0}
   LeftToolKitTool: {fileID: 0}
+  Outline: {fileID: 0}
 --- !u!1 &54291721
 GameObject:
   m_ObjectHideFlags: 0
@@ -1062,6 +1063,7 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 22100000, guid: 64ece57a29a2b18428ed9e0989b50439, type: 2}
   RightToolKitTool: {fileID: 1674690230}
   LeftToolKitTool: {fileID: 1383461738}
+  Outline: {fileID: 286292848}
 --- !u!1 &63313934
 GameObject:
   m_ObjectHideFlags: 0
@@ -1249,6 +1251,7 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 0}
   RightToolKitTool: {fileID: 0}
   LeftToolKitTool: {fileID: 0}
+  Outline: {fileID: 0}
 --- !u!1 &92211877
 GameObject:
   m_ObjectHideFlags: 0
@@ -2093,6 +2096,7 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 0}
   RightToolKitTool: {fileID: 0}
   LeftToolKitTool: {fileID: 0}
+  Outline: {fileID: 0}
 --- !u!1 &286292846 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -429778535767825689, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
@@ -2167,6 +2171,7 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 0}
   RightToolKitTool: {fileID: 0}
   LeftToolKitTool: {fileID: 0}
+  Outline: {fileID: 0}
 --- !u!1 &298292618
 GameObject:
   m_ObjectHideFlags: 0
@@ -2809,6 +2814,7 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 0}
   RightToolKitTool: {fileID: 0}
   LeftToolKitTool: {fileID: 0}
+  Outline: {fileID: 0}
 --- !u!1 &438490537 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2683053518139351031, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
@@ -3559,6 +3565,7 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 0}
   RightToolKitTool: {fileID: 0}
   LeftToolKitTool: {fileID: 0}
+  Outline: {fileID: 0}
 --- !u!1 &564016618
 GameObject:
   m_ObjectHideFlags: 0
@@ -4067,8 +4074,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 652608875}
-  - component: {fileID: 652608877}
-  - component: {fileID: 652608876}
   - component: {fileID: 652608878}
   m_Layer: 0
   m_Name: 17a_Forceps_ClicksJoystcik_UserAction
@@ -4092,66 +4097,6 @@ Transform:
   m_Father: {fileID: 1448866728}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &652608876
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 652608874}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShouldPlayOnStart: 0
-  OnInstructionsStarted:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 652608878}
-        m_TargetAssemblyTypeName: CheckInputAction, Assembly-CSharp
-        m_MethodName: StartChecking
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onInstructionsDelivered:
-    m_PersistentCalls:
-      m_Calls: []
-  description: '---- INSTRUCTED TO CHANGE GRIP ----
-
-    ---------------------------------------
-
-    ------------
-    USER ACTION -------------'
-  TimelineAsset: {fileID: 0}
-  script: 
-  MetaData:
-    fileName: ClicksJoystcik
-    AudioClip: {fileID: 0}
-    AnimationClip: {fileID: 0}
---- !u!320 &652608877
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 652608874}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 0}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings: []
-  m_ExposedReferences:
-    m_References: []
 --- !u!114 &652608878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4415,7 +4360,31 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 62744848}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: EnableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1109097834}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- INSTRUCTED TO RELEASE DEBAKEY FORCEPS ----
 
     ----------------------------------------------------
@@ -4612,6 +4581,7 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 0}
   RightToolKitTool: {fileID: 0}
   LeftToolKitTool: {fileID: 0}
+  Outline: {fileID: 0}
 --- !u!1 &818035479
 GameObject:
   m_ObjectHideFlags: 0
@@ -4972,7 +4942,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 877189199}
-  - component: {fileID: 877189201}
   - component: {fileID: 877189200}
   m_Layer: 0
   m_Name: 3a_Forceps_Pickup_UserAction
@@ -5005,45 +4974,50 @@ MonoBehaviour:
   m_GameObject: {fileID: 877189198}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Script: {fileID: 11500000, guid: a8febe03d02dfe64eb5acfb1be8bfeca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShouldPlayOnStart: 0
-  OnInstructionsStarted:
+  InputAction: {fileID: 1021646204}
+  ToolToGrab: {fileID: 62744848}
+  CheckEvent:
     m_PersistentCalls:
-      m_Calls: []
-  onInstructionsDelivered:
-    m_PersistentCalls:
-      m_Calls: []
-  description: '---- USER PICKS UP FORCEPS ----
-
-    ----------------------------------
-
-    ----------
-    USER ACTION -----------'
-  TimelineAsset: {fileID: 0}
-  script: 
-  MetaData:
-    fileName: 5_Forceps_Pickup_UserAction
-    AudioClip: {fileID: 0}
-    AnimationClip: {fileID: 0}
---- !u!320 &877189201
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 877189198}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 0}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings: []
-  m_ExposedReferences:
-    m_References: []
+      m_Calls:
+      - m_Target: {fileID: 1443313849}
+        m_TargetAssemblyTypeName: InstructionDeliveryListController, Assembly-CSharp
+        m_MethodName: StartNextStep
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 62744848}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 62744848}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableOutline
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &884013951
 GameObject:
   m_ObjectHideFlags: 0
@@ -5131,10 +5105,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 911572133}
-  - component: {fileID: 911572135}
   - component: {fileID: 911572134}
   m_Layer: 0
-  m_Name: 21a_DeBakey_PressesNextButton_UserAction
+  m_Name: 21a_DeBakey_ClicksJoystick_UserAction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5162,47 +5135,28 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 911572132}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Script: {fileID: 11500000, guid: 29d9a958b8caf7544b0a8f805473e834, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShouldPlayOnStart: 0
-  OnInstructionsStarted:
+  IndexCheck: 3
+  InputAction: {fileID: 1021646204}
+  CheckEvent:
     m_PersistentCalls:
-      m_Calls: []
-  onInstructionsDelivered:
-    m_PersistentCalls:
-      m_Calls: []
-  description: '---- USER PRESSES NEXT BUTTON ----
-
-    --------------------------------------
-
-    ------------
-    USER ACTION ------------'
-  TimelineAsset: {fileID: 0}
-  script: 
-  MetaData:
-    fileName: PressesNextButton
-    AudioClip: {fileID: 0}
-    AnimationClip: {fileID: 0}
---- !u!320 &911572135
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 911572132}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 0}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings: []
-  m_ExposedReferences:
-    m_References: []
+      m_Calls:
+      - m_Target: {fileID: 1659573479}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &916754464
 GameObject:
   m_ObjectHideFlags: 0
@@ -5339,6 +5293,7 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 0}
   RightToolKitTool: {fileID: 0}
   LeftToolKitTool: {fileID: 0}
+  Outline: {fileID: 0}
 --- !u!1 &928197130
 GameObject:
   m_ObjectHideFlags: 0
@@ -5430,8 +5385,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 937030169}
-  - component: {fileID: 937030171}
-  - component: {fileID: 937030170}
   - component: {fileID: 937030173}
   m_Layer: 0
   m_Name: 13a_Forceps_ClicksJoystick_UserAction
@@ -5455,66 +5408,6 @@ Transform:
   m_Father: {fileID: 30205166}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &937030170
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 937030168}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShouldPlayOnStart: 0
-  OnInstructionsStarted:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 937030173}
-        m_TargetAssemblyTypeName: Check_InputAction, Assembly-CSharp
-        m_MethodName: StartChecking
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onInstructionsDelivered:
-    m_PersistentCalls:
-      m_Calls: []
-  description: '---- USER CLICKS JOYSTICK TO CHANGE GRIP ----
-
-    --------------------------------------------------
-
-    ------------------
-    USER ACTION ------------------'
-  TimelineAsset: {fileID: 0}
-  script: 
-  MetaData:
-    fileName: 13a_Forceps_ClicksJoystick_UserAction
-    AudioClip: {fileID: 0}
-    AnimationClip: {fileID: 0}
---- !u!320 &937030171
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 937030168}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 0}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings: []
-  m_ExposedReferences:
-    m_References: []
 --- !u!114 &937030173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5595,6 +5488,7 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 0}
   RightToolKitTool: {fileID: 0}
   LeftToolKitTool: {fileID: 0}
+  Outline: {fileID: 0}
 --- !u!1 &978376584
 GameObject:
   m_ObjectHideFlags: 0
@@ -6110,31 +6004,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OnToolGrabbed:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1443313849}
-        m_TargetAssemblyTypeName: InstructionDeliveryListController, Assembly-CSharp
-        m_MethodName: StartNextStep
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 62744848}
-        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: DisableGrabability
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   OnToolReleased:
     m_PersistentCalls:
       m_Calls: []
@@ -6320,6 +6190,7 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 22100000, guid: acc45aaad8648ad45ac7dbd1232b0579, type: 2}
   RightToolKitTool: {fileID: 1306327877}
   LeftToolKitTool: {fileID: 1882249252}
+  Outline: {fileID: 0}
 --- !u!1 &1031221750
 GameObject:
   m_ObjectHideFlags: 0
@@ -6700,7 +6571,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -32}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -1, y: 30}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1069395875
@@ -6884,7 +6755,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1109097833}
-  - component: {fileID: 1109097835}
   - component: {fileID: 1109097834}
   m_Layer: 0
   m_Name: 22a_DeBakey_ReleasesDeBakey_UserAction
@@ -6915,47 +6785,39 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1109097832}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Script: {fileID: 11500000, guid: 9be32534b9c66ba41a68c0732914b06f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShouldPlayOnStart: 0
-  OnInstructionsStarted:
+  InputAction: {fileID: 1021646204}
+  CheckEvent:
     m_PersistentCalls:
-      m_Calls: []
-  onInstructionsDelivered:
-    m_PersistentCalls:
-      m_Calls: []
-  description: '---- USER RELEASES DEBAKEY FORCEPS ----
-
-    -------------------------------------------
-
-    --------------
-    USER ACTION ---------------'
-  TimelineAsset: {fileID: 0}
-  script: 
-  MetaData:
-    fileName: ReleasesDeBakey
-    AudioClip: {fileID: 0}
-    AnimationClip: {fileID: 0}
---- !u!320 &1109097835
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1109097832}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 0}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings: []
-  m_ExposedReferences:
-    m_References: []
+      m_Calls:
+      - m_Target: {fileID: 1443313849}
+        m_TargetAssemblyTypeName: InstructionDeliveryListController, Assembly-CSharp
+        m_MethodName: StartNextStep
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 62744848}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1174068827 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8344240366312856507, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
@@ -7248,6 +7110,7 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 0}
   RightToolKitTool: {fileID: 0}
   LeftToolKitTool: {fileID: 0}
+  Outline: {fileID: 0}
 --- !u!1 &1213138551
 GameObject:
   m_ObjectHideFlags: 0
@@ -8401,6 +8264,7 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 0}
   RightToolKitTool: {fileID: 0}
   LeftToolKitTool: {fileID: 0}
+  Outline: {fileID: 0}
 --- !u!1 &1364469884
 GameObject:
   m_ObjectHideFlags: 0
@@ -8452,6 +8316,7 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 0}
   RightToolKitTool: {fileID: 0}
   LeftToolKitTool: {fileID: 0}
+  Outline: {fileID: 0}
 --- !u!1 &1383461738 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8327281659368478645, guid: fb885289feea75a479d9fa2eb31fb201, type: 3}
@@ -9029,7 +8894,7 @@ MonoBehaviour:
   - {fileID: 1265187234}
   - {fileID: 2095727254}
   - {fileID: 1271789875}
-  StepIndex: 11
+  StepIndex: 0
   SequenceStarted:
     m_PersistentCalls:
       m_Calls:
@@ -9630,18 +9495,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 652608876}
-        m_TargetAssemblyTypeName: InstructionDeliveryController, Assembly-CSharp
-        m_MethodName: StartInstructionDelivery
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   description: '---- INSTRUCTED TO CHANGE GRIP ----
 
     ---------------------------------------
@@ -10067,6 +9920,7 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 22100000, guid: 018fd549bdc818943a8dac55d9130ee4, type: 2}
   RightToolKitTool: {fileID: 1306327878}
   LeftToolKitTool: {fileID: 1882249253}
+  Outline: {fileID: 0}
 --- !u!4 &1511524925 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
@@ -10561,6 +10415,7 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 0}
   RightToolKitTool: {fileID: 0}
   LeftToolKitTool: {fileID: 0}
+  Outline: {fileID: 0}
 --- !u!1 &1627052861
 GameObject:
   m_ObjectHideFlags: 0
@@ -12144,7 +11999,31 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911572134}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1021646204}
+        m_TargetAssemblyTypeName: InputActions, Assembly-CSharp
+        m_MethodName: set_CustomPoseIndex
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- INSTRUCTED TO CHANGE TO SIDE HOLD ----
 
     ------------------------------------------------
@@ -12228,6 +12107,7 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 0}
   RightToolKitTool: {fileID: 0}
   LeftToolKitTool: {fileID: 0}
+  Outline: {fileID: 0}
 --- !u!1 &1823873422
 GameObject:
   m_ObjectHideFlags: 0
@@ -12570,6 +12450,7 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 0}
   RightToolKitTool: {fileID: 0}
   LeftToolKitTool: {fileID: 0}
+  Outline: {fileID: 0}
 --- !u!1 &1890243085
 GameObject:
   m_ObjectHideFlags: 0
@@ -13032,6 +12913,7 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 0}
   RightToolKitTool: {fileID: 0}
   LeftToolKitTool: {fileID: 0}
+  Outline: {fileID: 0}
 --- !u!1 &2032314671
 GameObject:
   m_ObjectHideFlags: 0
@@ -13165,6 +13047,7 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 0}
   RightToolKitTool: {fileID: 0}
   LeftToolKitTool: {fileID: 0}
+  Outline: {fileID: 0}
 --- !u!1 &2039636256
 GameObject:
   m_ObjectHideFlags: 0
@@ -13496,6 +13379,7 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 0}
   RightToolKitTool: {fileID: 0}
   LeftToolKitTool: {fileID: 0}
+  Outline: {fileID: 0}
 --- !u!1 &2085433959
 GameObject:
   m_ObjectHideFlags: 0
@@ -13991,6 +13875,7 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 0}
   RightToolKitTool: {fileID: 0}
   LeftToolKitTool: {fileID: 0}
+  Outline: {fileID: 0}
 --- !u!1 &2147050196
 GameObject:
   m_ObjectHideFlags: 0

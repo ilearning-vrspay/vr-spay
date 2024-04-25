@@ -54,7 +54,7 @@ public class InstructionDeliveryListController : MonoBehaviour
     /// </summary>
     private void Update()
     {
-        Debug.Log("at index: " + StepIndex + "named: " + Steps[StepIndex].name);
+        //Debug.Log("at index: " + StepIndex + "named: " + Steps[StepIndex].name);
 
         if (!_adjustingProgressBar)
         {
