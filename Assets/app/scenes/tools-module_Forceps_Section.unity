@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 9665195}
   - component: {fileID: 9665194}
   m_Layer: 0
-  m_Name: 23_Brown-Adson_PickUpBrownAdson_Instruction
+  m_Name: 23_Brown-Adson_InstructToPickUpBrownAdson_Instruction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -175,7 +175,31 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1030490638}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: EnableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 60656674}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- USER IS INSTRUCTED TO PICK UP BROWN ADSON FORCEPS ----
 
     ------------------------------------------------------------------
@@ -650,7 +674,31 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1327818467}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1021646204}
+        m_TargetAssemblyTypeName: InputActions, Assembly-CSharp
+        m_MethodName: set_CustomPoseIndex
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- INSTRUCTED TO CHANGE TO CHUCK GRIP ON BROWN ADSON ----
 
     ------------------------------------------------------------------
@@ -939,7 +987,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 60656673}
-  - component: {fileID: 60656675}
   - component: {fileID: 60656674}
   m_Layer: 0
   m_Name: 23a_Brown-Adson_PicksUpBrownAdson_UserAction
@@ -970,47 +1017,52 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60656672}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Script: {fileID: 11500000, guid: a8febe03d02dfe64eb5acfb1be8bfeca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShouldPlayOnStart: 0
-  OnInstructionsStarted:
+  InputAction: {fileID: 1021646204}
+  ToolToGrab: {fileID: 1030490638}
+  CheckEvent:
     m_PersistentCalls:
-      m_Calls: []
-  onInstructionsDelivered:
-    m_PersistentCalls:
-      m_Calls: []
-  description: '---- USER PICKS UP THE BROWN ADSON FORCEPS ----
-
-    ----------------------------------------------------
-
-    -------------------
-    USER ACTION -------------------'
-  TimelineAsset: {fileID: 0}
-  script: 
-  MetaData:
-    fileName: 23a_Brown-Adson_PicksUpBrownAdson_UserAction
-    AudioClip: {fileID: 0}
-    AnimationClip: {fileID: 0}
---- !u!320 &60656675
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 60656672}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 0}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings: []
-  m_ExposedReferences:
-    m_References: []
+      m_Calls:
+      - m_Target: {fileID: 1443313849}
+        m_TargetAssemblyTypeName: InstructionDeliveryListController, Assembly-CSharp
+        m_MethodName: StartNextStep
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1030490638}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1030490638}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableOutline
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &62744846
 GameObject:
   m_ObjectHideFlags: 0
@@ -1414,8 +1466,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 92915991}
-  - component: {fileID: 92915993}
-  - component: {fileID: 92915992}
   m_Layer: 0
   m_Name: 4a_Forceps_PressesPlay_UserAction
   m_TagString: Untagged
@@ -1438,54 +1488,6 @@ Transform:
   m_Father: {fileID: 9673842}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &92915992
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 92915990}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShouldPlayOnStart: 0
-  OnInstructionsStarted:
-    m_PersistentCalls:
-      m_Calls: []
-  onInstructionsDelivered:
-    m_PersistentCalls:
-      m_Calls: []
-  description: '---- USER PRESSES PLAY BUTTON ----
-
-    --------------------------------------
-
-    ------------
-    USER ACTION ------------'
-  TimelineAsset: {fileID: 0}
-  script: 
-  MetaData:
-    fileName: 5a_Forceps_PressesPlay_UserAction
-    AudioClip: {fileID: 0}
-    AnimationClip: {fileID: 0}
---- !u!320 &92915993
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 92915990}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 0}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings: []
-  m_ExposedReferences:
-    m_References: []
 --- !u!1 &102587038
 GameObject:
   m_ObjectHideFlags: 0
@@ -1495,8 +1497,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 102587039}
-  - component: {fileID: 102587041}
-  - component: {fileID: 102587040}
   m_Layer: 0
   m_Name: 24a_Brown-Adson_UserPressesPlay_UserAction
   m_TagString: Untagged
@@ -1519,54 +1519,6 @@ Transform:
   m_Father: {fileID: 928197131}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &102587040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 102587038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShouldPlayOnStart: 0
-  OnInstructionsStarted:
-    m_PersistentCalls:
-      m_Calls: []
-  onInstructionsDelivered:
-    m_PersistentCalls:
-      m_Calls: []
-  description: '---- USER PLAYS VIDEO ON BROWN-ADSON ----
-
-    ----------------------------------------------
-
-    ----------------
-    USER ACTION ----------------'
-  TimelineAsset: {fileID: 0}
-  script: 
-  MetaData:
-    fileName: 24a_Brown-Adson_UserPressesPlay_UserAction
-    AudioClip: {fileID: 0}
-    AnimationClip: {fileID: 0}
---- !u!320 &102587041
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 102587038}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 0}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings: []
-  m_ExposedReferences:
-    m_References: []
 --- !u!1 &117806585
 GameObject:
   m_ObjectHideFlags: 0
@@ -1884,10 +1836,34 @@ MonoBehaviour:
   ShouldPlayOnStart: 0
   OnInstructionsStarted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2055885269}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1659573479}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- VIDEO ON BROWN-ADSON FORCEPS ----
 
     ------------------------------------------
@@ -2181,8 +2157,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 298292619}
-  - component: {fileID: 298292621}
-  - component: {fileID: 298292620}
   m_Layer: 0
   m_Name: 7a_Forceps_PressesPlay_UserAction
   m_TagString: Untagged
@@ -2205,54 +2179,6 @@ Transform:
   m_Father: {fileID: 1031221751}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &298292620
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 298292618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShouldPlayOnStart: 0
-  OnInstructionsStarted:
-    m_PersistentCalls:
-      m_Calls: []
-  onInstructionsDelivered:
-    m_PersistentCalls:
-      m_Calls: []
-  description: '---- USER PRESSES PLAY BUTTON ----
-
-    --------------------------------------
-
-    ------------
-    USER ACTION ------------'
-  TimelineAsset: {fileID: 0}
-  script: 
-  MetaData:
-    fileName: 7a_Forceps_PressesPlay_UserAction
-    AudioClip: {fileID: 0}
-    AnimationClip: {fileID: 0}
---- !u!320 &298292621
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 298292618}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 0}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings: []
-  m_ExposedReferences:
-    m_References: []
 --- !u!1 &340156011
 GameObject:
   m_ObjectHideFlags: 0
@@ -2397,7 +2323,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 387445780}
-  - component: {fileID: 387445782}
   - component: {fileID: 387445781}
   m_Layer: 0
   m_Name: 32a_AdsonRat_PicksUpAdsonRat_UserAction
@@ -2430,45 +2355,50 @@ MonoBehaviour:
   m_GameObject: {fileID: 387445779}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Script: {fileID: 11500000, guid: a8febe03d02dfe64eb5acfb1be8bfeca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShouldPlayOnStart: 0
-  OnInstructionsStarted:
+  InputAction: {fileID: 1021646204}
+  ToolToGrab: {fileID: 1504145190}
+  CheckEvent:
     m_PersistentCalls:
-      m_Calls: []
-  onInstructionsDelivered:
-    m_PersistentCalls:
-      m_Calls: []
-  description: '---- USER PICKS UP ADSON RAT FORCEPS ----
-
-    ----------------------------------------------
-
-    ----------------
-    USER ACTION ----------------'
-  TimelineAsset: {fileID: 0}
-  script: 
-  MetaData:
-    fileName: 32a_AdsonRat_PicksUpAdsonRat_UserAction
-    AudioClip: {fileID: 0}
-    AnimationClip: {fileID: 0}
---- !u!320 &387445782
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 387445779}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 0}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings: []
-  m_ExposedReferences:
-    m_References: []
+      m_Calls:
+      - m_Target: {fileID: 1443313849}
+        m_TargetAssemblyTypeName: InstructionDeliveryListController, Assembly-CSharp
+        m_MethodName: StartNextStep
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1504145190}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1504145190}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableOutline
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &424758316
 GameObject:
   m_ObjectHideFlags: 0
@@ -2478,7 +2408,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 424758317}
-  - component: {fileID: 424758319}
   - component: {fileID: 424758318}
   m_Layer: 0
   m_Name: 40a_AdsonRat_ReleasesAdsonRatForceps_UserAction
@@ -2511,45 +2440,49 @@ MonoBehaviour:
   m_GameObject: {fileID: 424758316}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Script: {fileID: 11500000, guid: 9be32534b9c66ba41a68c0732914b06f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShouldPlayOnStart: 0
-  OnInstructionsStarted:
+  InputAction: {fileID: 1021646204}
+  CheckEvent:
     m_PersistentCalls:
-      m_Calls: []
-  onInstructionsDelivered:
-    m_PersistentCalls:
-      m_Calls: []
-  description: '---- USER RELEASES ADSON RAT FORCEPS ----
-
-    ----------------------------------------------
-
-    ----------------
-    USER ACTION ----------------'
-  TimelineAsset: {fileID: 0}
-  script: 
-  MetaData:
-    fileName: 40a_AdsonRat_ReleasesAdsonRatForceps_UserAction
-    AudioClip: {fileID: 0}
-    AnimationClip: {fileID: 0}
---- !u!320 &424758319
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 424758316}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 0}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings: []
-  m_ExposedReferences:
-    m_References: []
+      m_Calls:
+      - m_Target: {fileID: 1443313849}
+        m_TargetAssemblyTypeName: InstructionDeliveryListController, Assembly-CSharp
+        m_MethodName: StartNextStep
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1504145190}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1504145190}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableOutline
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &428212384
 GameObject:
   m_ObjectHideFlags: 0
@@ -3027,7 +2960,19 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1443313849}
+        m_TargetAssemblyTypeName: InstructionDeliveryListController, Assembly-CSharp
+        m_MethodName: StartNextStep
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   description: '---- VIDEO PLAYS DESCRIBING ADSON RAT-TOOTHED FORCEPS ----
 
     -----------------------------------------------------------------
@@ -3184,8 +3129,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 481127271}
-  - component: {fileID: 481127273}
-  - component: {fileID: 481127272}
   m_Layer: 0
   m_Name: 35a_AdsonRat_ClicksNextButton_UserAction
   m_TagString: Untagged
@@ -3208,54 +3151,6 @@ Transform:
   m_Father: {fileID: 1890243086}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &481127272
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 481127270}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShouldPlayOnStart: 0
-  OnInstructionsStarted:
-    m_PersistentCalls:
-      m_Calls: []
-  onInstructionsDelivered:
-    m_PersistentCalls:
-      m_Calls: []
-  description: '---- USER CLICKS NEXT BUTTON WHEN FINISHED EXAMINING ----
-
-    ----------------------------------------------------------------
-
-    ------------------------
-    USER ACTION -------------------------'
-  TimelineAsset: {fileID: 0}
-  script: 
-  MetaData:
-    fileName: 35a_AdsonRat_ClicksNextButton_UserAction
-    AudioClip: {fileID: 0}
-    AnimationClip: {fileID: 0}
---- !u!320 &481127273
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 481127270}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 0}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings: []
-  m_ExposedReferences:
-    m_References: []
 --- !u!1 &489712471
 GameObject:
   m_ObjectHideFlags: 0
@@ -3265,8 +3160,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 489712472}
-  - component: {fileID: 489712474}
-  - component: {fileID: 489712473}
   m_Layer: 0
   m_Name: 28a_Brown-Adson_ClicksNextButton_UserAction
   m_TagString: Untagged
@@ -3289,54 +3182,6 @@ Transform:
   m_Father: {fileID: 2000786097}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &489712473
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 489712471}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShouldPlayOnStart: 0
-  OnInstructionsStarted:
-    m_PersistentCalls:
-      m_Calls: []
-  onInstructionsDelivered:
-    m_PersistentCalls:
-      m_Calls: []
-  description: '---- USER CLICKS NEXT BUTTON ----
-
-    -------------------------------------
-
-    -----------
-    USER ACTION ------------'
-  TimelineAsset: {fileID: 0}
-  script: 
-  MetaData:
-    fileName: 28a_Brown-Adson_ClicksNextButton_UserAction
-    AudioClip: {fileID: 0}
-    AnimationClip: {fileID: 0}
---- !u!320 &489712474
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 489712471}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 0}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings: []
-  m_ExposedReferences:
-    m_References: []
 --- !u!1 &517160523
 GameObject:
   m_ObjectHideFlags: 0
@@ -3442,8 +3287,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 520474457}
-  - component: {fileID: 520474459}
-  - component: {fileID: 520474458}
   m_Layer: 0
   m_Name: 26a_Brown-Adson_PressesNextButton_UserAction
   m_TagString: Untagged
@@ -3466,54 +3309,6 @@ Transform:
   m_Father: {fileID: 1680476699}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &520474458
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 520474456}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShouldPlayOnStart: 0
-  OnInstructionsStarted:
-    m_PersistentCalls:
-      m_Calls: []
-  onInstructionsDelivered:
-    m_PersistentCalls:
-      m_Calls: []
-  description: '---- USER PRESSES NEXT BUTTON WHEN DONE EXAMINING ----
-
-    ------------------------------------------------------------
-
-    -----------------------
-    USER ACTION -----------------------'
-  TimelineAsset: {fileID: 0}
-  script: 
-  MetaData:
-    fileName: 26a_Brown-Adson_PressesNextButton_UserAction
-    AudioClip: {fileID: 0}
-    AnimationClip: {fileID: 0}
---- !u!320 &520474459
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 520474456}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 0}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings: []
-  m_ExposedReferences:
-    m_References: []
 --- !u!1 &541891208
 GameObject:
   m_ObjectHideFlags: 0
@@ -4499,7 +4294,31 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 845236112}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1021646204}
+        m_TargetAssemblyTypeName: InputActions, Assembly-CSharp
+        m_MethodName: set_CustomPoseIndex
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   description: '---- USER INSTRUCTED TO CHANGE SIDE GRIP ----
 
     --------------------------------------------------
@@ -4821,7 +4640,19 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1540094162}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- USER IS INSTRUCTED TO PRESS PLAY TO LEARN ABOUT ADSON RAT-TOOTHED
     FORCEPS ----
 
@@ -4861,7 +4692,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 845236111}
-  - component: {fileID: 845236113}
   - component: {fileID: 845236112}
   m_Layer: 0
   m_Name: 29a_Brown-Adson_ClickToChangeGrip_UserAction
@@ -4892,47 +4722,28 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 845236110}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Script: {fileID: 11500000, guid: 29d9a958b8caf7544b0a8f805473e834, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShouldPlayOnStart: 0
-  OnInstructionsStarted:
+  IndexCheck: 3
+  InputAction: {fileID: 1021646204}
+  CheckEvent:
     m_PersistentCalls:
-      m_Calls: []
-  onInstructionsDelivered:
-    m_PersistentCalls:
-      m_Calls: []
-  description: '---- USER CLICKS JOYSTICK TO EXAMINE SIDES ----
-
-    ----------------------------------------------------
-
-    -------------------
-    USER ACTION -------------------'
-  TimelineAsset: {fileID: 0}
-  script: 
-  MetaData:
-    fileName: 29a_Brown-Adson_ClickToChangeGrip_UserAction
-    AudioClip: {fileID: 0}
-    AnimationClip: {fileID: 0}
---- !u!320 &845236113
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 845236110}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 0}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings: []
-  m_ExposedReferences:
-    m_References: []
+      m_Calls:
+      - m_Target: {fileID: 1443313849}
+        m_TargetAssemblyTypeName: InstructionDeliveryListController, Assembly-CSharp
+        m_MethodName: StartNextStep
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &877189198
 GameObject:
   m_ObjectHideFlags: 0
@@ -4972,7 +4783,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 877189198}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a8febe03d02dfe64eb5acfb1be8bfeca, type: 3}
   m_Name: 
@@ -5209,7 +5020,31 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1504145190}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: EnableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 387445781}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- USER INSTRUCTED TO PICK UP ADSON RAT FORCEPS ----
 
     ------------------------------------------------------------
@@ -5346,7 +5181,19 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1540094162}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- INSTRUCTED TO WATCH VIDEO ON BROWN ADSON FORCEPS ----
 
     -----------------------------------------------------------------
@@ -5808,8 +5655,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1019480163}
-  - component: {fileID: 1019480165}
-  - component: {fileID: 1019480164}
   m_Layer: 0
   m_Name: 39a_AdsonRat_PressNextButton_UserAction
   m_TagString: Untagged
@@ -5832,54 +5677,6 @@ Transform:
   m_Father: {fileID: 2095727253}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1019480164
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1019480162}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShouldPlayOnStart: 0
-  OnInstructionsStarted:
-    m_PersistentCalls:
-      m_Calls: []
-  onInstructionsDelivered:
-    m_PersistentCalls:
-      m_Calls: []
-  description: '---- USER PRESSES NEXT BUTTON WHEN DONE EXAMINING SIDE GRIP ----
-
-    ------------------------------------------------------------------------
-
-    ----------------------------
-    USER ACTION -----------------------------'
-  TimelineAsset: {fileID: 0}
-  script: 
-  MetaData:
-    fileName: 39a_AdsonRat_PressNextButton_UserAction
-    AudioClip: {fileID: 0}
-    AnimationClip: {fileID: 0}
---- !u!320 &1019480165
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1019480162}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 0}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings: []
-  m_ExposedReferences:
-    m_References: []
 --- !u!1 &1021646198
 GameObject:
   m_ObjectHideFlags: 0
@@ -6190,7 +5987,7 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 22100000, guid: acc45aaad8648ad45ac7dbd1232b0579, type: 2}
   RightToolKitTool: {fileID: 1306327877}
   LeftToolKitTool: {fileID: 1882249252}
-  Outline: {fileID: 0}
+  Outline: {fileID: 1770337519}
 --- !u!1 &1031221750
 GameObject:
   m_ObjectHideFlags: 0
@@ -6818,6 +6615,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 62744848}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableOutline
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1174068827 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8344240366312856507, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
@@ -6893,8 +6702,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1183504234}
-  - component: {fileID: 1183504236}
-  - component: {fileID: 1183504235}
   m_Layer: 0
   m_Name: 33a_AdsonRat_PressesPlayButton_UserAction
   m_TagString: Untagged
@@ -6917,54 +6724,6 @@ Transform:
   m_Father: {fileID: 822833798}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1183504235
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1183504233}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShouldPlayOnStart: 0
-  OnInstructionsStarted:
-    m_PersistentCalls:
-      m_Calls: []
-  onInstructionsDelivered:
-    m_PersistentCalls:
-      m_Calls: []
-  description: '---- USER PRESSES PLAY BUTTON TO WATCH VIDEO ----
-
-    -------------------------------------------------------
-
-    -----------------------
-    VIDEO -----------------------'
-  TimelineAsset: {fileID: 0}
-  script: 
-  MetaData:
-    fileName: 33a_AdsonRat_PressesPlayButton_Video
-    AudioClip: {fileID: 0}
-    AnimationClip: {fileID: 0}
---- !u!320 &1183504236
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1183504233}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 0}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings: []
-  m_ExposedReferences:
-    m_References: []
 --- !u!1 &1184374002
 GameObject:
   m_ObjectHideFlags: 0
@@ -7166,8 +6925,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1215519028}
-  - component: {fileID: 1215519030}
-  - component: {fileID: 1215519029}
   m_Layer: 0
   m_Name: 11a_Forceps_PressesPlay_UserAction
   m_TagString: Untagged
@@ -7190,54 +6947,6 @@ Transform:
   m_Father: {fileID: 818035480}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1215519029
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1215519027}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShouldPlayOnStart: 0
-  OnInstructionsStarted:
-    m_PersistentCalls:
-      m_Calls: []
-  onInstructionsDelivered:
-    m_PersistentCalls:
-      m_Calls: []
-  description: '---- USER PRESSES PLAY BUTTON ----
-
-    --------------------------------------
-
-    ------------
-    USER ACTION ------------'
-  TimelineAsset: {fileID: 0}
-  script: 
-  MetaData:
-    fileName: 11a_Forceps_PressesPlay_UserAction
-    AudioClip: {fileID: 0}
-    AnimationClip: {fileID: 0}
---- !u!320 &1215519030
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1215519027}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 0}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings: []
-  m_ExposedReferences:
-    m_References: []
 --- !u!1 &1259789437 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5452678416271382647, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
@@ -7356,7 +7065,31 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1867071755}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1021646204}
+        m_TargetAssemblyTypeName: InputActions, Assembly-CSharp
+        m_MethodName: set_CustomPoseIndex
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   description: '---- USER INSTRUCTED TO CHANGE TO SIDE GRIP TO EXAMINE GRIPS ----
 
     -------------------------------------------------------------------------
@@ -7528,7 +7261,31 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1504145190}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: EnableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 424758318}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- USER IS INSTRUCTED TO RELEASE THE ADSON RAT FORCEPS ----
 
     --------------------------------------------------------------------
@@ -7569,7 +7326,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1282472206}
-  - component: {fileID: 1282472208}
   - component: {fileID: 1282472207}
   m_Layer: 0
   m_Name: 31a_Brown-Adson_ReleasesBrown-Adson_UserAction
@@ -7600,47 +7356,51 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1282472205}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Script: {fileID: 11500000, guid: 9be32534b9c66ba41a68c0732914b06f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShouldPlayOnStart: 0
-  OnInstructionsStarted:
+  InputAction: {fileID: 1021646204}
+  CheckEvent:
     m_PersistentCalls:
-      m_Calls: []
-  onInstructionsDelivered:
-    m_PersistentCalls:
-      m_Calls: []
-  description: '---- USER RELEASES BROWN-ADSON FORCEPS ----
-
-    ------------------------------------------------
-
-    -----------------
-    USER ACTION -----------------'
-  TimelineAsset: {fileID: 0}
-  script: 
-  MetaData:
-    fileName: 31a_Brown-Adson_ReleasesBrown-Adson_UserAction
-    AudioClip: {fileID: 0}
-    AnimationClip: {fileID: 0}
---- !u!320 &1282472208
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1282472205}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 0}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings: []
-  m_ExposedReferences:
-    m_References: []
+      m_Calls:
+      - m_Target: {fileID: 1443313849}
+        m_TargetAssemblyTypeName: InstructionDeliveryListController, Assembly-CSharp
+        m_MethodName: StartNextStep
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1030490638}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1030490638}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableOutline
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1302155392
 GameObject:
   m_ObjectHideFlags: 0
@@ -8141,7 +7901,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1327818466}
-  - component: {fileID: 1327818468}
   - component: {fileID: 1327818467}
   m_Layer: 0
   m_Name: 27a_Brown-Adson_ClicksToChangeGrip_UserAction
@@ -8172,47 +7931,28 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1327818465}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Script: {fileID: 11500000, guid: 29d9a958b8caf7544b0a8f805473e834, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShouldPlayOnStart: 0
-  OnInstructionsStarted:
+  IndexCheck: 1
+  InputAction: {fileID: 1021646204}
+  CheckEvent:
     m_PersistentCalls:
-      m_Calls: []
-  onInstructionsDelivered:
-    m_PersistentCalls:
-      m_Calls: []
-  description: '---- USER CLICKS JOYSTICK TO CHANGE GRIP TO CHUCK GRIP ----
-
-    ------------------------------------------------------------------
-
-    -------------------------
-    USER ACTION --------------------------'
-  TimelineAsset: {fileID: 0}
-  script: 
-  MetaData:
-    fileName: 27a_Brown-Adson_ClicksToChangeGrip_UserAction
-    AudioClip: {fileID: 0}
-    AnimationClip: {fileID: 0}
---- !u!320 &1327818468
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1327818465}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 0}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings: []
-  m_ExposedReferences:
-    m_References: []
+      m_Calls:
+      - m_Target: {fileID: 1443313849}
+        m_TargetAssemblyTypeName: InstructionDeliveryListController, Assembly-CSharp
+        m_MethodName: StartNextStep
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &1345019705
 GameObject:
   m_ObjectHideFlags: 0
@@ -8331,8 +8071,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1399170510}
-  - component: {fileID: 1399170512}
-  - component: {fileID: 1399170511}
   m_Layer: 0
   m_Name: 14a_Forceps_OpenCloseChuckGrip_UserAction
   m_TagString: Untagged
@@ -8355,54 +8093,6 @@ Transform:
   m_Father: {fileID: 456491282}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1399170511
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1399170509}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShouldPlayOnStart: 0
-  OnInstructionsStarted:
-    m_PersistentCalls:
-      m_Calls: []
-  onInstructionsDelivered:
-    m_PersistentCalls:
-      m_Calls: []
-  description: '---- USER OPEN AND CLOSES CHUCK GRIP ----
-
-    ----------------------------------------------
-
-    ----------------
-    USER ACTION ----------------'
-  TimelineAsset: {fileID: 0}
-  script: 
-  MetaData:
-    fileName: 14a_Forceps_OpenCloseChuckGrip_UserAction
-    AudioClip: {fileID: 0}
-    AnimationClip: {fileID: 0}
---- !u!320 &1399170512
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1399170509}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 0}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings: []
-  m_ExposedReferences:
-    m_References: []
 --- !u!1 &1404757088 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: fb885289feea75a479d9fa2eb31fb201, type: 3}
@@ -9715,8 +9405,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1467133880}
-  - component: {fileID: 1467133882}
-  - component: {fileID: 1467133881}
   m_Layer: 0
   m_Name: 37a_AdsonRat_PressNextButton_UserAction
   m_TagString: Untagged
@@ -9739,54 +9427,6 @@ Transform:
   m_Father: {fileID: 2032314672}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1467133881
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1467133879}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShouldPlayOnStart: 0
-  OnInstructionsStarted:
-    m_PersistentCalls:
-      m_Calls: []
-  onInstructionsDelivered:
-    m_PersistentCalls:
-      m_Calls: []
-  description: '---- USER PRESSES NEXT BUTTON TO MOVE ON ----
-
-    --------------------------------------------------
-
-    ------------------
-    USER ACTION ------------------'
-  TimelineAsset: {fileID: 0}
-  script: 
-  MetaData:
-    fileName: 37a_AdsonRat_PressNextButton_UserAction
-    AudioClip: {fileID: 0}
-    AnimationClip: {fileID: 0}
---- !u!320 &1467133882
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1467133879}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 0}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings: []
-  m_ExposedReferences:
-    m_References: []
 --- !u!1 &1503624846
 GameObject:
   m_ObjectHideFlags: 0
@@ -9796,8 +9436,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1503624847}
-  - component: {fileID: 1503624849}
-  - component: {fileID: 1503624848}
   m_Layer: 0
   m_Name: 18a_DeBakey_PressesPlay_UserAction
   m_TagString: Untagged
@@ -9820,54 +9458,6 @@ Transform:
   m_Father: {fileID: 1413496388}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1503624848
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1503624846}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShouldPlayOnStart: 0
-  OnInstructionsStarted:
-    m_PersistentCalls:
-      m_Calls: []
-  onInstructionsDelivered:
-    m_PersistentCalls:
-      m_Calls: []
-  description: '---- USER PRESSES PLAY TO WATCH VIDEO ----
-
-    -----------------------------------------------
-
-    ----------------
-    USER ACTION -----------------'
-  TimelineAsset: {fileID: 0}
-  script: 
-  MetaData:
-    fileName: 18a_DeBakey_PressesPlay_UserAction
-    AudioClip: {fileID: 0}
-    AnimationClip: {fileID: 0}
---- !u!320 &1503624849
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1503624846}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 0}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings: []
-  m_ExposedReferences:
-    m_References: []
 --- !u!1 &1504145188
 GameObject:
   m_ObjectHideFlags: 0
@@ -9920,7 +9510,7 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 22100000, guid: 018fd549bdc818943a8dac55d9130ee4, type: 2}
   RightToolKitTool: {fileID: 1306327878}
   LeftToolKitTool: {fileID: 1882249253}
-  Outline: {fileID: 0}
+  Outline: {fileID: 1012504677}
 --- !u!4 &1511524925 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
@@ -10102,7 +9692,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1548152332}
-  - component: {fileID: 1548152334}
   - component: {fileID: 1548152333}
   m_Layer: 0
   m_Name: 36a_AdsonRat_ChangeToChuckGrip_UserAction
@@ -10135,45 +9724,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 1548152331}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Script: {fileID: 11500000, guid: 29d9a958b8caf7544b0a8f805473e834, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShouldPlayOnStart: 0
-  OnInstructionsStarted:
+  IndexCheck: 1
+  InputAction: {fileID: 1021646204}
+  CheckEvent:
     m_PersistentCalls:
-      m_Calls: []
-  onInstructionsDelivered:
-    m_PersistentCalls:
-      m_Calls: []
-  description: '---- USER CLICKS JOYSTICK TO CHANGE TO CHUCK GRIP ----
-
-    ------------------------------------------------------------
-
-    -----------------------
-    USER ACTION -----------------------'
-  TimelineAsset: {fileID: 0}
-  script: 
-  MetaData:
-    fileName: 36a_AdsonRat_ChangeToChuckGrip_UserAction
-    AudioClip: {fileID: 0}
-    AnimationClip: {fileID: 0}
---- !u!320 &1548152334
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1548152331}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 0}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings: []
-  m_ExposedReferences:
-    m_References: []
+      m_Calls:
+      - m_Target: {fileID: 1443313849}
+        m_TargetAssemblyTypeName: InstructionDeliveryListController, Assembly-CSharp
+        m_MethodName: StartNextStep
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1588657298
 GameObject:
   m_ObjectHideFlags: 0
@@ -10299,7 +9869,31 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1548152333}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1021646204}
+        m_TargetAssemblyTypeName: InputActions, Assembly-CSharp
+        m_MethodName: set_CustomPoseIndex
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   description: '---- USER INSTRUCTED TO CLICK JOYSTICK TO CHANGE TO CHUCK GRIP ----
 
     ---------------------------------------------------------------------------
@@ -10796,7 +10390,19 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1659573479}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- INSTRUCTED TO EXAMINE TEETH ON BROWN-ADSON ----
 
     ----------------------------------------------------------
@@ -10880,7 +10486,31 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1030490638}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: EnableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1282472207}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- USER IS INSTRUCTED TO RELEASE BROWN-ADSON FORCEPS ----
 
     ------------------------------------------------------------------
@@ -12157,7 +11787,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1867071754}
-  - component: {fileID: 1867071756}
   - component: {fileID: 1867071755}
   m_Layer: 0
   m_Name: 38a_AdsonRat_ChangesToSideGrips_UserAction
@@ -12190,45 +11819,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 1867071753}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Script: {fileID: 11500000, guid: 29d9a958b8caf7544b0a8f805473e834, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShouldPlayOnStart: 0
-  OnInstructionsStarted:
+  IndexCheck: 3
+  InputAction: {fileID: 1021646204}
+  CheckEvent:
     m_PersistentCalls:
-      m_Calls: []
-  onInstructionsDelivered:
-    m_PersistentCalls:
-      m_Calls: []
-  description: '---- USER CLICKS JOYSTICK TO EXAMINE SIDES ----
-
-    ----------------------------------------------------
-
-    -------------------
-    USER ACTION -------------------'
-  TimelineAsset: {fileID: 0}
-  script: 
-  MetaData:
-    fileName: 38a_AdsonRat_ChangesToSideGrips_UserAction
-    AudioClip: {fileID: 0}
-    AnimationClip: {fileID: 0}
---- !u!320 &1867071756
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1867071753}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 0}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings: []
-  m_ExposedReferences:
-    m_References: []
+      m_Calls:
+      - m_Target: {fileID: 1443313849}
+        m_TargetAssemblyTypeName: InstructionDeliveryListController, Assembly-CSharp
+        m_MethodName: StartNextStep
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &1882249251
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12503,7 +12113,19 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1659573479}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- USER INSTRUCTED TO EXAMINE THE ADSON RAT TEETH ----
 
     ---------------------------------------------------------------
@@ -12544,8 +12166,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1931127187}
-  - component: {fileID: 1931127189}
-  - component: {fileID: 1931127188}
   m_Layer: 0
   m_Name: 20a_DeBakey_PressesNextButton_UserAction
   m_TagString: Untagged
@@ -12568,54 +12188,6 @@ Transform:
   m_Father: {fileID: 517160524}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1931127188
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1931127186}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShouldPlayOnStart: 0
-  OnInstructionsStarted:
-    m_PersistentCalls:
-      m_Calls: []
-  onInstructionsDelivered:
-    m_PersistentCalls:
-      m_Calls: []
-  description: '---- USER PRESSES NEXT BUTTON ----
-
-    --------------------------------------
-
-    ------------
-    USER ACTION ------------'
-  TimelineAsset: {fileID: 0}
-  script: 
-  MetaData:
-    fileName: PressesNextButton
-    AudioClip: {fileID: 0}
-    AnimationClip: {fileID: 0}
---- !u!320 &1931127189
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1931127186}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 0}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings: []
-  m_ExposedReferences:
-    m_References: []
 --- !u!1 &1978115210
 GameObject:
   m_ObjectHideFlags: 0
@@ -12708,8 +12280,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1993900738}
-  - component: {fileID: 1993900740}
-  - component: {fileID: 1993900739}
   m_Layer: 0
   m_Name: 30a_Brown-Adson_ClicksNextButton_UserAction
   m_TagString: Untagged
@@ -12732,54 +12302,6 @@ Transform:
   m_Father: {fileID: 2039636257}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1993900739
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1993900737}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShouldPlayOnStart: 0
-  OnInstructionsStarted:
-    m_PersistentCalls:
-      m_Calls: []
-  onInstructionsDelivered:
-    m_PersistentCalls:
-      m_Calls: []
-  description: '---- USER PRESSES NEXT BUTTON ----
-
-    --------------------------------------
-
-    ------------
-    USER ACTION ------------'
-  TimelineAsset: {fileID: 0}
-  script: 
-  MetaData:
-    fileName: 30a_Brown-Adson_ClicksNextButton_UserAction
-    AudioClip: {fileID: 0}
-    AnimationClip: {fileID: 0}
---- !u!320 &1993900740
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1993900737}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 0}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings: []
-  m_ExposedReferences:
-    m_References: []
 --- !u!1 &2000786096
 GameObject:
   m_ObjectHideFlags: 0
@@ -12832,7 +12354,19 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1659573479}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- USER IS INSTRUCTED TO PRESS NEXT BUTTON WHEN READY ----
 
     -------------------------------------------------------------------
@@ -12966,7 +12500,19 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1659573479}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- USER INSTRUCTED TO CLICK NEXT BUTTON WHEN READY TO MOVE ON ----
 
     ----------------------------------------------------------------------------
@@ -13100,7 +12646,19 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1659573479}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- USER INSTRUCTED TO PRESS NEXT WHEN DONE EXAMINING ----
 
     -----------------------------------------------------------
@@ -13515,8 +13073,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2093951517}
-  - component: {fileID: 2093951519}
-  - component: {fileID: 2093951518}
   m_Layer: 0
   m_Name: 6a_Forceps_SqueezeForceps_UserAction
   m_TagString: Untagged
@@ -13539,54 +13095,6 @@ Transform:
   m_Father: {fileID: 749931415}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2093951518
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2093951516}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShouldPlayOnStart: 0
-  OnInstructionsStarted:
-    m_PersistentCalls:
-      m_Calls: []
-  onInstructionsDelivered:
-    m_PersistentCalls:
-      m_Calls: []
-  description: '---- OPEN AND CLOSE IN PENCIL GRIP ----
-
-    -------------------------------------------
-
-    --------------
-    USER ACTION ---------------'
-  TimelineAsset: {fileID: 0}
-  script: 
-  MetaData:
-    fileName: 6a_Forceps_SqueezeForceps_UserAction
-    AudioClip: {fileID: 0}
-    AnimationClip: {fileID: 0}
---- !u!320 &2093951519
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2093951516}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 0}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings: []
-  m_ExposedReferences:
-    m_References: []
 --- !u!1 &2095727252
 GameObject:
   m_ObjectHideFlags: 0
@@ -13639,7 +13147,19 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1659573479}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- USER INSTRUCTED TO PRESS NEXT BUTTON WHEN DONE EXAMINING  ----
 
     ---------------------------------------------------------------------------

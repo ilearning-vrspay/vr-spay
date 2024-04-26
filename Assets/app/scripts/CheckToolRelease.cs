@@ -5,6 +5,11 @@ using UnityEngine.Events;
 
 public class CheckToolRelease : MonoBehaviour
 {
+
+    void Awake()
+    {
+        this.enabled = false;
+    }
     public InputActions InputAction;
     [SerializeField] public UnityEvent CheckEvent = new UnityEvent(); // event that fires when instructions are done
 

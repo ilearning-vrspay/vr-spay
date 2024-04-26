@@ -7,6 +7,11 @@ public class CheckToolGrab : MonoBehaviour
     public ToolObjectReference ToolToGrab;
     [SerializeField] public UnityEvent CheckEvent = new UnityEvent(); // event that fires when instructions are done
 
+    void Awake()
+    {
+        this.enabled = false;
+    }
+
     // Update is called once per frame
     void Update()
     {
