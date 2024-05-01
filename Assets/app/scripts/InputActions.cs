@@ -44,6 +44,16 @@ public class InputActions : MonoBehaviour
     bool JoystickClickable = false;
     private List<KeyValuePair<AnimationClip, AnimationClip>> overrides = new List<KeyValuePair<AnimationClip, AnimationClip>>();
 
+    public void EnableSwitchablity()
+    {
+        JoystickClickable = true;
+    }
+
+    public void DisableSwitchablity()
+    {
+        JoystickClickable = false;
+    }
+
     private readonly string[] animationNames = {
         "DefaultPose",
         "Pose2",
@@ -146,6 +156,7 @@ public class InputActions : MonoBehaviour
     /// </summary>
     public void JoystickOnClick()
     {
+        if (!JoystickClickable) return;
         if (grabbedTool == null) return;    //  If no tool is currently in hand, return
         Debug.Log("testerInt: " + testerInt);
         testerInt++;
