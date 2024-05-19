@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: R_MayoSutureScissors_Animations_Override
+  m_Controller: {fileID: 9100000, guid: c794e44b2fba41b46bb522d1150608d6, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 45638d2806f1c844eadd82a4348b55fc, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 49c73a0bf8ac44a41ac58651ff82bed6, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 35b5877a999617545bfffd1ddf4fb1c5, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: a889969f2825b194aaea47ed27059354, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 8dee4f3edcac1374db236cb942ebb4a3, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: be1058f2677938f44a25bdeaaaf7afa7, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: ca6733a2c41d46b4eb1165019527aff7, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 4ca27eb198961954a93610dbc9959729, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: b7a2202ba38ee0e4a849349a95608b1d, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 45c005f9ef020b14d9a87d8f59058fb1, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 478efcf5b3835cb41834e6922eb71235, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ad85f318d1f781143b90d60da65255c5, type: 2}

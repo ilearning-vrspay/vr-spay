@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: R_MetzenbaumScissors_Animations_Override
+  m_Controller: {fileID: 9100000, guid: c794e44b2fba41b46bb522d1150608d6, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 45638d2806f1c844eadd82a4348b55fc, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: b1aca43c87b8be042a26f9bab010ce29, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 35b5877a999617545bfffd1ddf4fb1c5, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 35e54c079ed351a40a1a02b362a2bf98, type: 2}

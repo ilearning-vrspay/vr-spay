@@ -7,6 +7,7 @@ using System;
 using Unity.VisualScripting;
 using UnityEngine.PlayerLoop;
 using static UnityEngine.Rendering.DebugUI;
+using UnityEditor;
 
 [RequireComponent(typeof(HandInteractionSystem))]
 
@@ -24,11 +25,25 @@ public class InputActions : MonoBehaviour
     private AnimatorOverrideController altController;
     private int poseIndex = 0;
     private int customPoseIndex = -1;
-    
+    private int toolVariationIndex = 0;
+
+    private float gripSqueezeValue = 0.0f;
+
+    public float GripSqueezeValue
+    {
+        get => gripSqueezeValue;
+        set => gripSqueezeValue = value;
+    }
     public int PoseIndex
     {
         get => poseIndex;
         set => poseIndex = value;
+    }
+
+    public int ToolVariationIndex
+    {
+        get => toolVariationIndex;
+        set => toolVariationIndex = value;
     }
 
     public int CustomPoseIndex
@@ -42,6 +57,7 @@ public class InputActions : MonoBehaviour
         get => grabbedTool;
     }
     bool JoystickClickable = false;
+    bool ToolVariationSwitchable = true;
     private List<KeyValuePair<AnimationClip, AnimationClip>> overrides = new List<KeyValuePair<AnimationClip, AnimationClip>>();
 
     public void EnableSwitchablity()
@@ -52,6 +68,16 @@ public class InputActions : MonoBehaviour
     public void DisableSwitchablity()
     {
         JoystickClickable = false;
+    }
+
+    public void EnableToolVariationSwitchability()
+    {
+        ToolVariationSwitchable = true;
+    }
+
+    public void DisableToolVariationSwitchability()
+    {
+        ToolVariationSwitchable = false;
     }
 
     private readonly string[] animationNames = {
@@ -225,6 +251,7 @@ public class InputActions : MonoBehaviour
     //// TRIGGER ANALOG INPUT FUNCTION //
     public void TriggerAnalogInput(float value)
     {
+        GripSqueezeValue = value;
         if (grabbedTool) // If a tool is currently in hand
         {
             if (HasAltState(poseIndex)){ // If the current pose has an alternative state
@@ -269,8 +296,29 @@ public class InputActions : MonoBehaviour
             handAnimator.SetFloat(animationNames[poseIndex], 0.0f); // Set the current pose animation to 0.0f
             poseIndex = 0;                                          // Reset the pose index to the default pose
         }
-        tool.ToggleToolBeltTool(side, state);                    
+        tool.ToggleToolBeltTool(side, state);               
 
+    }
+
+    public void changeCustomTool(int index = -1)
+    {
+        if (grabbedTool == null) return;
+        if (!ToolVariationSwitchable) return;
+        if (index != -1)
+        {
+            toolVariationIndex = index;
+        } else
+        {
+            toolVariationIndex = (toolVariationIndex + 1) % grabbedTool.RightToolVariations.Count;
+        }
+        
+        grabbedTool.ToggleToolVariation("Right", toolVariationIndex);
+    }
+    
+
+    public void printTest()
+    {
+        Debug.Log("Test");
     }
 
     /// <summary>

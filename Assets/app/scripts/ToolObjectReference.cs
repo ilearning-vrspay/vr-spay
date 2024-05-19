@@ -11,18 +11,68 @@ public class ToolObjectReference : MonoBehaviour
     public AnimatorOverrideController RightOverrideController;
     public AnimatorOverrideController LeftOverrideController;
     public GameObject RightToolKitTool;
+    public List<GameObject> RightToolVariations;
     public GameObject LeftToolKitTool;
+    public List<GameObject> LeftToolVariations;
 
-    public Outline Outline;
-    
+    public List<Outline> Outlines;
     public void ToggleToolBeltTool(string hand, bool state)
     {
         if (hand == "Right"){
+            Debug.Log("Right tool belt tool toggled");
             RightToolKitTool.SetActive(state);
+            //if the right tool has variations
+            if (RightToolVariations.Count > 0)
+            {
+                Debug.Log("Right tool has variations");
+                ToggleToolVariation(hand, 0);
+            }
         }
         else if (hand == "Left")
         {
             LeftToolKitTool.SetActive(state);
+            if (LeftToolVariations.Count > 0)
+            {
+                ToggleToolVariation(hand, 0);
+            }
+        }
+    }
+
+    public void ToggleToolVariation(string hand, int index)
+    {
+        if (hand == "Right")
+        {
+            if (RightToolVariations.Count > 0)
+            {
+                for (int i = 0; i < RightToolVariations.Count; i++)
+                {
+                    if (i == index)
+                    {
+                        RightToolVariations[i].SetActive(true);
+                    }
+                    else
+                    {
+                        RightToolVariations[i].SetActive(false);
+                    }
+                }
+            }
+        }
+        else if (hand == "Left")
+        {
+            if (LeftToolVariations.Count > 0)
+            {
+                for (int i = 0; i < LeftToolVariations.Count; i++)
+                {
+                    if (i == index)
+                    {
+                        LeftToolVariations[i].SetActive(true);
+                    }
+                    else
+                    {
+                        LeftToolVariations[i].SetActive(false);
+                    }
+                }
+            }
         }
     }
 
@@ -59,17 +109,26 @@ public class ToolObjectReference : MonoBehaviour
 
     public void EnableOutline()
     {
-        if (Outline != null)
+        Debug.Log("EnableOutline called");
+        foreach (var outline in Outlines)
         {
-            Outline.enabled = true;
+            if (outline != null)
+                {
+                    outline.enabled = true;
+                }
         }
+        
     }
 
     public void DisableOutline()
     {
-        if (Outline != null)
+        Debug.Log("DisableOutline called");
+        foreach (var outline in Outlines)
         {
-            Outline.enabled = false;
+            if (outline != null)
+            {
+                outline.enabled = false;
+            }
         }
     }
 }

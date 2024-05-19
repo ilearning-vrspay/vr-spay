@@ -1426,6 +1426,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "ToolVariation",
+                    "type": "Button",
+                    "id": "36ad2bd2-7877-4fbf-86dc-594f8f510902",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -1580,6 +1589,17 @@
                     "processors": "",
                     "groups": "Generic XR Controller",
                     "action": "Inventory",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f82a8502-897f-4557-8b5f-4baa537455d5",
+                    "path": "<XRController>{RightHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "ToolVariation",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
