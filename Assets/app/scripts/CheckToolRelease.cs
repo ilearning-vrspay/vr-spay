@@ -21,6 +21,8 @@ public class CheckToolRelease : MonoBehaviour
         Debug.Log("checking index");
         if (InputAction.GrabbedTool == null)
         {
+            Debug.Log("tool is released");
+            
             CheckEvent.Invoke();
             this.enabled = false; // should this be hardcoded here? or should it be determined in the inspector?
         }

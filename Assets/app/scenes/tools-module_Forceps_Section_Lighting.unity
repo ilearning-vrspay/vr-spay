@@ -123,6 +123,99 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &3043396
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3043397}
+  - component: {fileID: 3043399}
+  - component: {fileID: 3043398}
+  m_Layer: 0
+  m_Name: 31_SutureScissors_DescribeSutureScissors_Video
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3043397
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3043396}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.1329324, y: -0.40191203, z: -0.21652111}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1790662507}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3043398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3043396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1659573479}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  description: '---- DESCRIBESUTURESCISSORS ----
+
+    ------------------------------------
+
+    --------------
+    VIDEO --------------'
+  TimelineAsset: {fileID: 11400000, guid: d94ff7ceb14999044bbf1d16c63fa44d, type: 2}
+  script: 
+  MetaData:
+    fileName: 31_SutureScissors_DescribeSutureScissors_Video
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &3043399
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3043396}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &9665192
 GameObject:
   m_ObjectHideFlags: 0
@@ -316,6 +409,113 @@ PlayableDirector:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9673841}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!1 &10759128
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 10759129}
+  - component: {fileID: 10759131}
+  - component: {fileID: 10759130}
+  m_Layer: 0
+  m_Name: 35_SutureScissors_InstructToChangeToolVariation_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &10759129
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10759128}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.1329324, y: -0.40191203, z: -0.21652111}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1862977580}
+  m_Father: {fileID: 1790662507}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &10759130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10759128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1862977581}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1021646204}
+        m_TargetAssemblyTypeName: InputActions, Assembly-CSharp
+        m_MethodName: EnableToolVariationSwitchability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  description: '---- INSTRUCTTOCHANGETOOLVARIATION ----
+
+    -------------------------------------------
+
+    ----------------
+    DIALOGUE ----------------'
+  TimelineAsset: {fileID: 11400000, guid: abc60658b1a3af54a841972c30e320ee, type: 2}
+  script: Suture scissors also come with curved blades. Press the B button to switch
+    between blade types.
+  MetaData:
+    fileName: 35_SutureScissors_InstructToChangeToolVariation_Dialogue
+    AudioClip: {fileID: 8300000, guid: bcfdff4e1ed6b374889caf33ced32f1b, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &10759131
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10759128}
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 0}
@@ -1286,6 +1486,90 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 63313934}
   m_CullTransparentMesh: 1
+--- !u!1 &67452458
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 67452459}
+  - component: {fileID: 67452460}
+  m_Layer: 0
+  m_Name: 26a_Mayo_Scissors_UserReleasesTool_UserAction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &67452459
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67452458}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1499993337}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &67452460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67452458}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9be32534b9c66ba41a68c0732914b06f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InputAction: {fileID: 1021646204}
+  CheckEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6539479389457707605}
+        m_TargetAssemblyTypeName: InstructionDeliveryListController, Assembly-CSharp
+        m_MethodName: StartNextStep
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1623461742}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1623461742}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableOutline
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &80099802
 GameObject:
   m_ObjectHideFlags: 0
@@ -1689,6 +1973,298 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 117806585}
   m_CullTransparentMesh: 1
+--- !u!1 &142773190
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 142773191}
+  - component: {fileID: 142773193}
+  - component: {fileID: 142773192}
+  m_Layer: 0
+  m_Name: 27_SutureScissors_SutureScissorsIntro_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &142773191
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142773190}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.1329324, y: -0.40191203, z: -0.21652111}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1264765529}
+  m_Father: {fileID: 1790662507}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &142773192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142773190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2080540839}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: EnableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1264765530}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  description: '---- SUTURESCISSORSINTRO ----
+
+    --------------------------------
+
+    ----------
+    DIALOGUE -----------'
+  TimelineAsset: {fileID: 11400000, guid: 41389441b158c0a48a426c3457f71899, type: 2}
+  script: Now hover the Suture scissors and press the Grip button to pick them up.
+  MetaData:
+    fileName: 27_SutureScissors_SutureScissorsIntro_Dialogue
+    AudioClip: {fileID: 8300000, guid: e44d0506f08341644bf787e4c2050010, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &142773193
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142773190}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!1 &157767851
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 157767852}
+  - component: {fileID: 157767854}
+  - component: {fileID: 157767853}
+  m_Layer: 0
+  m_Name: 36_SutureScissors_DisplayNextButton_NextButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &157767852
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157767851}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.1329324, y: -0.40191203, z: -0.21652111}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1790662507}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &157767853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157767851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1659573479}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  description: '---- DISPLAYNEXTBUTTON ----
+
+    ------------------------------
+
+    --------
+    NEXTBUTTON ---------'
+  TimelineAsset: {fileID: 0}
+  script: 
+  MetaData:
+    fileName: 18_SutureScissors_DisplayNextButton_NextButton
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &157767854
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157767851}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!1 &167565229
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 167565230}
+  - component: {fileID: 167565232}
+  - component: {fileID: 167565231}
+  m_Layer: 0
+  m_Name: 38_SutureScissors_TripSutureVideo_Video
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &167565230
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167565229}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.1329324, y: -0.40191203, z: -0.21652111}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1790662507}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &167565231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167565229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1659573479}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  description: '---- TRIPSUTUREVIDEO ----
+
+    ----------------------------
+
+    ----------
+    VIDEO ----------'
+  TimelineAsset: {fileID: 11400000, guid: 54e38c6124dbc674b872eb67385dc5f6, type: 2}
+  script: 
+  MetaData:
+    fileName: 38_SutureScissors_TripSutureVideo_Video
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &167565232
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167565229}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &174878193
 GameObject:
   m_ObjectHideFlags: 0
@@ -1965,7 +2541,7 @@ Transform:
   - {fileID: 687529548}
   - {fileID: 805404071}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &253472400
 MonoBehaviour:
@@ -2293,6 +2869,119 @@ MonoBehaviour:
   precomputeOutline: 1
   bakeKeys: []
   bakeValues: []
+--- !u!1 &333359798
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 333359799}
+  - component: {fileID: 333359801}
+  - component: {fileID: 333359800}
+  m_Layer: 0
+  m_Name: 39_SutureScissors_SutureScissorsConclusion_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &333359799
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333359798}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.1329324, y: -0.40191203, z: -0.21652111}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1104391922}
+  m_Father: {fileID: 1790662507}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &333359800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333359798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2080540839}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: EnableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1104391923}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  description: '---- SUTURESCISSORSCONCLUSION ----
+
+    --------------------------------------
+
+    -------------
+    DIALOGUE --------------'
+  TimelineAsset: {fileID: 11400000, guid: 3b5a384701f4eeb4187214a07d7ac540, type: 2}
+  script: That concludes all you need to know about the Suture scissors. Hover over
+    the Suture scissors on the surgical instruments table and press the grip button
+    to release them.
+  MetaData:
+    fileName: 39_SutureScissors_SutureScissorsConclusion_Dialogue
+    AudioClip: {fileID: 8300000, guid: 62bf0e8c4023cd644bbd7d86a6727e6b, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &333359801
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333359798}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!1 &340017593 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -6772094074317745401, guid: fb885289feea75a479d9fa2eb31fb201, type: 3}
+  m_PrefabInstance: {fileID: 1882249251}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &340156011
 GameObject:
   m_ObjectHideFlags: 0
@@ -2428,70 +3117,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 340156011}
   m_CullTransparentMesh: 1
---- !u!1001 &384958471
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 550d7d0331443284bbc420a79980acc2, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 550d7d0331443284bbc420a79980acc2, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.0599228
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 550d7d0331443284bbc420a79980acc2, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.65380704
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 550d7d0331443284bbc420a79980acc2, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.028544351
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 550d7d0331443284bbc420a79980acc2, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 550d7d0331443284bbc420a79980acc2, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 550d7d0331443284bbc420a79980acc2, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 550d7d0331443284bbc420a79980acc2, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 550d7d0331443284bbc420a79980acc2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 550d7d0331443284bbc420a79980acc2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 550d7d0331443284bbc420a79980acc2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 550d7d0331443284bbc420a79980acc2, type: 3}
-      propertyPath: m_Name
-      value: MayoScissorsTester
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 550d7d0331443284bbc420a79980acc2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2018644219}
-  m_SourcePrefab: {fileID: 100100000, guid: 550d7d0331443284bbc420a79980acc2, type: 3}
+--- !u!1 &345589979 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4792663604502074011, guid: fb885289feea75a479d9fa2eb31fb201, type: 3}
+  m_PrefabInstance: {fileID: 1882249251}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &387445779
 GameObject:
   m_ObjectHideFlags: 0
@@ -2577,6 +3207,99 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &403156466
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 403156467}
+  - component: {fileID: 403156469}
+  - component: {fileID: 403156468}
+  m_Layer: 0
+  m_Name: 33_SutureScissors_InstructToPlayVideo_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &403156467
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403156466}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.1329324, y: -0.40191203, z: -0.21652111}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1790662507}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &403156468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403156466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1540094162}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  description: '---- INSTRUCTTOPLAYVIDEO ----
+
+    --------------------------------
+
+    ------------
+    DIALOGUE ------------'
+  TimelineAsset: {fileID: 11400000, guid: 81150e2a15a663a4b8155be4f483eb0c, type: 2}
+  script: 'Watch the video to see how to properly cut suture, using the suture scissors. '
+  MetaData:
+    fileName: 33_SutureScissors_InstructToPlayVideo_Dialogue
+    AudioClip: {fileID: 8300000, guid: 1071b7c4e5413dd4e87eba99fd4efbc2, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &403156469
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403156466}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &424758316
 GameObject:
   m_ObjectHideFlags: 0
@@ -3213,6 +3936,99 @@ PlayableDirector:
   m_SceneBindings: []
   m_ExposedReferences:
     m_References: []
+--- !u!1 &460518712
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 460518713}
+  - component: {fileID: 460518715}
+  - component: {fileID: 460518714}
+  m_Layer: 0
+  m_Name: 30_SutureScissors_InstructToPlayVideo_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &460518713
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 460518712}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.1329324, y: -0.40191203, z: -0.21652111}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1790662507}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &460518714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 460518712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1540094162}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  description: '---- INSTRUCTTOPLAYVIDEO ----
+
+    --------------------------------
+
+    ----------
+    DIALOGUE -----------'
+  TimelineAsset: {fileID: 11400000, guid: 232238b76d3efdd49832f5d54705b3c8, type: 2}
+  script: Watch the video to learn about the Suture scissors.
+  MetaData:
+    fileName: 30_SutureScissors_InstructToPlayVideo_Dialogue
+    AudioClip: {fileID: 8300000, guid: 5182164ab849af84d81a256ed0d0bef1, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &460518715
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 460518712}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &469195941
 GameObject:
   m_ObjectHideFlags: 0
@@ -3399,7 +4215,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!114 &479539905
 MonoBehaviour:
@@ -3966,6 +4782,100 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   LockMode: 1
+--- !u!1 &569734473
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 569734474}
+  - component: {fileID: 569734476}
+  - component: {fileID: 569734475}
+  m_Layer: 0
+  m_Name: 32_SutureScissors_InstructToExamine_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &569734474
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 569734473}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.1329324, y: -0.40191203, z: -0.21652111}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1790662507}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &569734475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 569734473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1659573479}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  description: '---- INSTRUCTTOEXAMINE ----
+
+    ------------------------------
+
+    ---------
+    DIALOGUE ----------'
+  TimelineAsset: {fileID: 11400000, guid: 372ca4a9cd665194b96afea262adec51, type: 2}
+  script: "Examine the tips of the scissors. You\u2019ll notice that one is blunt
+    and one is pointed. Press the next button when you\u2019re ready to move on."
+  MetaData:
+    fileName: 32_SutureScissors_InstructToExamine_Dialogue
+    AudioClip: {fileID: 8300000, guid: 9f41c81a50e812c4c91bdbc5edc11e3c, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &569734476
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 569734473}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &593186349
 GameObject:
   m_ObjectHideFlags: 0
@@ -4069,7 +4979,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &595885001
 GameObject:
@@ -4372,6 +5282,69 @@ Transform:
   m_Father: {fileID: 1443313850}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &652475032
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 652475033}
+  - component: {fileID: 652475034}
+  m_Layer: 0
+  m_Name: 20a_Mayo_Scissors_UserExamines_UserAction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &652475033
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652475032}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1486331661}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &652475034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652475032}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29d9a958b8caf7544b0a8f805473e834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CheckType: 2
+  IndexCheck: 0
+  TargetSqueezePercentage: 95
+  InputAction: {fileID: 1021646204}
+  CheckEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6539479389457707605}
+        m_TargetAssemblyTypeName: InstructionDeliveryListController, Assembly-CSharp
+        m_MethodName: StartNextStep
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &652608874
 GameObject:
   m_ObjectHideFlags: 0
@@ -4520,7 +5493,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &687529547
 GameObject:
@@ -4628,6 +5601,104 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 687529547}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &728457147 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -361977809142676648, guid: 2a2aa44742c186a4b9d7bac280bf0f81, type: 3}
+  m_PrefabInstance: {fileID: 1306327876}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &731253291
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 731253292}
+  - component: {fileID: 731253294}
+  - component: {fileID: 731253293}
+  m_Layer: 0
+  m_Name: "34_SutureScissors_Educate45DegCut \u2013 Video"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &731253292
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731253291}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.1329324, y: -0.40191203, z: -0.21652111}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1790662507}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &731253293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731253291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1659573479}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  description: '------------- EDUCATE45DEGCUT -------------
+
+    ------------------------------------------------
+
+    ------------------
+    VIDEO -----------------------'
+  TimelineAsset: {fileID: 11400000, guid: b17660c383b2ed34da3a0679c790b76d, type: 2}
+  script: 
+  MetaData:
+    fileName: "34_SutureScissors_Educate45DegCut \u2013 WILL_BE_SWAPPED_Dialogue"
+    AudioClip: {fileID: 8300000, guid: f16f38db03c580147aea2a901c70c404, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &731253294
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731253291}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &749931414
 GameObject:
   m_ObjectHideFlags: 0
@@ -5583,6 +6654,69 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &879412778
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 879412779}
+  - component: {fileID: 879412780}
+  m_Layer: 0
+  m_Name: 28a_Mayo_Scissors_UserOpensAndClosesTool_UserAction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &879412779
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879412778}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1194671284}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &879412780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879412778}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29d9a958b8caf7544b0a8f805473e834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CheckType: 2
+  IndexCheck: 0
+  TargetSqueezePercentage: 95
+  InputAction: {fileID: 1021646204}
+  CheckEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6539479389457707605}
+        m_TargetAssemblyTypeName: InstructionDeliveryListController, Assembly-CSharp
+        m_MethodName: StartNextStep
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &884013951
 GameObject:
   m_ObjectHideFlags: 0
@@ -6146,6 +7280,11 @@ Transform:
   m_Father: {fileID: 1443313850}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &981153531 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7337968676566773644, guid: fb885289feea75a479d9fa2eb31fb201, type: 3}
+  m_PrefabInstance: {fileID: 1882249251}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1005173472
 GameObject:
   m_ObjectHideFlags: 0
@@ -6378,7 +7517,7 @@ RectTransform:
   m_Children:
   - {fileID: 884013952}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -7116,6 +8255,99 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
+--- !u!1 &1044358041
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1044358042}
+  - component: {fileID: 1044358044}
+  - component: {fileID: 1044358043}
+  m_Layer: 0
+  m_Name: 29_SutureScissors_DisplayNextButton_NextButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1044358042
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044358041}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.1329324, y: -0.40191203, z: -0.21652111}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1790662507}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1044358043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044358041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1659573479}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  description: '---- DISPLAYNEXTBUTTON ----
+
+    ------------------------------
+
+    --------
+    NEXTBUTTON ---------'
+  TimelineAsset: {fileID: 0}
+  script: 
+  MetaData:
+    fileName: 29_SutureScissors_DisplayNextButton_NextButton
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1044358044
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044358041}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &1069395873
 GameObject:
   m_ObjectHideFlags: 0
@@ -7296,7 +8528,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1070035688
 MonoBehaviour:
@@ -7328,6 +8560,188 @@ MonoBehaviour:
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0
+--- !u!1 &1072754755 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7273487585992082943, guid: fb885289feea75a479d9fa2eb31fb201, type: 3}
+  m_PrefabInstance: {fileID: 1882249251}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1092088739
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1092088740}
+  - component: {fileID: 1092088742}
+  - component: {fileID: 1092088741}
+  m_Layer: 0
+  m_Name: 23_Mayo_Scissors_MayoScissors_Video
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1092088740
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092088739}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.1329324, y: -0.40191203, z: -0.21652111}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2104975489}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1092088741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092088739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1659573479}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  description: '---- MAYOSCISSORS ----
+
+    ------------------------
+
+    --------
+    VIDEO ---------'
+  TimelineAsset: {fileID: 11400000, guid: 12c33f6d43f560d49be3168ec6279d38, type: 2}
+  script: 
+  MetaData:
+    fileName: 23_Mayo_Scissors_MayoScissors_Video
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1092088742
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092088739}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!1 &1104391921
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1104391922}
+  - component: {fileID: 1104391923}
+  m_Layer: 0
+  m_Name: 39a_Mayo_Scissors_UserReleasesTool_UserAction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1104391922
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104391921}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 333359799}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1104391923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104391921}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9be32534b9c66ba41a68c0732914b06f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InputAction: {fileID: 1021646204}
+  CheckEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6539479389457707605}
+        m_TargetAssemblyTypeName: InstructionDeliveryListController, Assembly-CSharp
+        m_MethodName: StartNextStep
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2080540839}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2080540839}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableOutline
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1109097832
 GameObject:
   m_ObjectHideFlags: 0
@@ -7495,6 +8909,206 @@ Transform:
   m_Father: {fileID: 231432086}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1148810669
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1148810670}
+  - component: {fileID: 1148810672}
+  - component: {fileID: 1148810671}
+  m_Layer: 0
+  m_Name: 19_Mayo_Scissors_InstructToPickUp_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1148810670
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148810669}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.1329324, y: -0.40191203, z: -0.21652111}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2058993322}
+  m_Father: {fileID: 2104975489}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1148810671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148810669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1623461742}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: EnableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2058993323}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  description: '---- INSTRUCTTOPICKUP ----
+
+    -----------------------------
+
+    ---------
+    DIALOGUE ---------'
+  TimelineAsset: {fileID: 11400000, guid: e73be81d7cb804142afbff86553d1884, type: 2}
+  script: Now hover the Mayo scissors and press the Grip button to pick them up.
+  MetaData:
+    fileName: 19_Mayo_Scissors_InstructToPickUp_Dialogue
+    AudioClip: {fileID: 8300000, guid: 2e0e7c361819ef0429a736503cc7e70f, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1148810672
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148810669}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!1 &1160276136
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1160276137}
+  - component: {fileID: 1160276139}
+  - component: {fileID: 1160276138}
+  m_Layer: 0
+  m_Name: 25_Mayo_Scissors_InstructToExamine_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1160276137
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160276136}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.1329324, y: -0.40191203, z: -0.21652111}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2104975489}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1160276138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160276136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1659573479}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  description: '---- INSTRUCTTOEXAMINE ----
+
+    ------------------------------
+
+    ---------
+    DIALOGUE ----------'
+  TimelineAsset: {fileID: 11400000, guid: 9308eb89868d5164dbc92688b978935c, type: 2}
+  script: "Examine the tips of the scissors. You\u2019ll notice that one is blunt
+    and one is pointed. Press the next button when you\u2019re ready to move on."
+  MetaData:
+    fileName: 25_Mayo_Scissors_InstructToExamine_Dialogue
+    AudioClip: {fileID: 8300000, guid: 0607c6efa155c4040ae3385ff69d8936, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1160276139
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160276136}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &1174068827 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8344240366312856507, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
@@ -7686,6 +9300,199 @@ PlayableDirector:
     value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
+--- !u!1 &1190469139 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4845239309778285682, guid: 2a2aa44742c186a4b9d7bac280bf0f81, type: 3}
+  m_PrefabInstance: {fileID: 1306327876}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1194671283
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1194671284}
+  - component: {fileID: 1194671286}
+  - component: {fileID: 1194671285}
+  m_Layer: 0
+  m_Name: 28_SutureScissors_InstructToExamine_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1194671284
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194671283}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.1329324, y: -0.40191203, z: -0.21652111}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 879412779}
+  m_Father: {fileID: 1790662507}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1194671285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194671283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 879412780}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  description: '---- INSTRUCTTOEXAMINE ----
+
+    ------------------------------
+
+    ---------
+    DIALOGUE ----------'
+  TimelineAsset: {fileID: 11400000, guid: 3d88089dfb3a9344dad8da37afce0e9a, type: 2}
+  script: 'Take a moment to examine the Suture scissors. The default pose is the
+    tripod hold. Open and close them by squeezing and releasing the grip button. '
+  MetaData:
+    fileName: 28_SutureScissors_InstructToExamine_Dialogue
+    AudioClip: {fileID: 8300000, guid: edbd5d463cbceac48be10c42280cd9c9, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1194671286
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194671283}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!1 &1199357441
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1199357442}
+  - component: {fileID: 1199357444}
+  - component: {fileID: 1199357443}
+  m_Layer: 0
+  m_Name: 22_Mayo_Scissors_InstructToPlayVideo_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1199357442
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199357441}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.1329324, y: -0.40191203, z: -0.21652111}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2104975489}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1199357443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199357441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1540094162}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  description: '---- INSTRUCTTOPLAYVIDEO ----
+
+    --------------------------------
+
+    ----------
+    DIALOGUE -----------'
+  TimelineAsset: {fileID: 11400000, guid: de418edb50df4974f9635380c7975959, type: 2}
+  script: Watch the video to learn about the Mayo scissors.
+  MetaData:
+    fileName: 22_Mayo_Scissors_InstructToPlayVideo_Dialogue
+    AudioClip: {fileID: 8300000, guid: bbb79c7bb6df8af47929bdba0835bd4b, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1199357444
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199357441}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &1205226267
 GameObject:
   m_ObjectHideFlags: 0
@@ -7784,7 +9591,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1215519027
 GameObject:
@@ -7821,6 +9628,11 @@ Transform:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8679816502123715603, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
   m_PrefabInstance: {fileID: 1726090026}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1228192464 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4675584728469762711, guid: 2a2aa44742c186a4b9d7bac280bf0f81, type: 3}
+  m_PrefabInstance: {fileID: 1306327876}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1259789437 stripped
 GameObject:
@@ -7888,6 +9700,91 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.13122414, y: 0.017060986, z: 0.014829886}
   m_Center: {x: -0.04480633, y: 0.0010943692, z: -0.00020313263}
+--- !u!1 &1264765528
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1264765529}
+  - component: {fileID: 1264765530}
+  m_Layer: 0
+  m_Name: 27a_Mayo_Scissors_UserGrabsTool_UserAction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1264765529
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1264765528}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 142773191}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1264765530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1264765528}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8febe03d02dfe64eb5acfb1be8bfeca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InputAction: {fileID: 1021646204}
+  ToolToGrab: {fileID: 2080540839}
+  CheckEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6539479389457707605}
+        m_TargetAssemblyTypeName: InstructionDeliveryListController, Assembly-CSharp
+        m_MethodName: StartNextStep
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2080540839}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2080540839}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableOutline
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1265187232
 GameObject:
   m_ObjectHideFlags: 0
@@ -8059,7 +9956,7 @@ Transform:
   - {fileID: 35320569}
   - {fileID: 2121078969}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1266969159
 MonoBehaviour:
@@ -8796,7 +10693,7 @@ Transform:
   m_Children:
   - {fileID: 1610788603}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1327818465
 GameObject:
@@ -9291,6 +11188,102 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!1 &1428144351
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1428144352}
+  - component: {fileID: 1428144354}
+  - component: {fileID: 1428144353}
+  m_Layer: 0
+  m_Name: 37_SutureScissors_EducateOnBlades_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1428144352
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1428144351}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.1329324, y: -0.40191203, z: -0.21652111}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1790662507}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1428144353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1428144351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1540094162}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  description: '---- EDUCATEONBLADES ----
+
+    ----------------------------
+
+    --------
+    DIALOGUE ---------'
+  TimelineAsset: {fileID: 11400000, guid: b812bd88c812fe54982fc2d6e7e88f95, type: 2}
+  script: Like the straight suture scissors, one blade is blunt and the other is
+    sharp and pointed. With the tips pointed toward you, open the blades and identify
+    the blunt blade and the pointed sharp blade. Then watch the video to see how
+    the curved blade is used to cut suture.
+  MetaData:
+    fileName: 37_SutureScissors_EducateOnBlades_Dialogue
+    AudioClip: {fileID: 8300000, guid: 0b748866eb520404381892edade70ad3, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1428144354
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1428144351}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &1442894948
 GameObject:
   m_ObjectHideFlags: 0
@@ -9646,8 +11639,13 @@ Transform:
   - {fileID: 1823873423}
   - {fileID: 646260739}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1444267036 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3817612810089089717, guid: 2a2aa44742c186a4b9d7bac280bf0f81, type: 3}
+  m_PrefabInstance: {fileID: 1306327876}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1447222996
 GameObject:
   m_ObjectHideFlags: 0
@@ -10626,7 +12624,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9010601807325844943, guid: 2b24bca1b28a9284e81bce4864453b17, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9010601807325844943, guid: 2b24bca1b28a9284e81bce4864453b17, type: 3}
       propertyPath: m_LocalScale.y
@@ -10910,6 +12908,313 @@ Transform:
   m_Father: {fileID: 2032314672}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1480717191
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1480717192}
+  - component: {fileID: 1480717194}
+  - component: {fileID: 1480717193}
+  m_Layer: 0
+  m_Name: "24_Mayo_Scissors_EducateOnMayoBlades \u2013 WILL_BE_SWAPPED_Dialogue"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1480717192
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480717191}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.1329324, y: -0.40191203, z: -0.21652111}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1964533601}
+  m_Father: {fileID: 2104975489}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1480717193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480717191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1964533602}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1021646204}
+        m_TargetAssemblyTypeName: InputActions, Assembly-CSharp
+        m_MethodName: EnableToolVariationSwitchability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  description: "---- EDUCATEONMAYOBLADES \u2013 WILL_BE_SWAPPED ----\n----------------------------------------------------\n--------------------
+    DIALOGUE ---------------------"
+  TimelineAsset: {fileID: 11400000, guid: a64df7b1e8b16bc4bb36021360bba783, type: 2}
+  script: 'Mayo scissors have thick blades that are approximately one third the length
+    of the instrument. They come in curved and straight varieties. Press the B to
+    button switch between these varieties. '
+  MetaData:
+    fileName: "24_Mayo_Scissors_EducateOnMayoBlades \u2013 WILL_BE_SWAPPED_Dialogue"
+    AudioClip: {fileID: 8300000, guid: 00a78cc5856479a41b2448d82ced86c3, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1480717194
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480717191}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!1 &1486331660
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1486331661}
+  - component: {fileID: 1486331663}
+  - component: {fileID: 1486331662}
+  m_Layer: 0
+  m_Name: 20_Mayo_Scissors_InstructToExamine_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1486331661
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1486331660}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.1329324, y: -0.40191203, z: -0.21652111}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 652475033}
+  m_Father: {fileID: 2104975489}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1486331662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1486331660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 652475034}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  description: '---- INSTRUCTTOEXAMINE ----
+
+    ------------------------------
+
+    ---------
+    DIALOGUE ----------'
+  TimelineAsset: {fileID: 11400000, guid: 690d17885d885554f909a3140a4b13a4, type: 2}
+  script: 'Take a moment to examine the Mayo scissors. The default pose is the tripod
+    hold. Open and close them by squeezing and releasing the grip button. '
+  MetaData:
+    fileName: 20_Mayo_Scissors_InstructToExamine_Dialogue
+    AudioClip: {fileID: 8300000, guid: 763b4fc8d5744b248893b2475037272c, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1486331663
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1486331660}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!1 &1499993336
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1499993337}
+  - component: {fileID: 1499993339}
+  - component: {fileID: 1499993338}
+  m_Layer: 0
+  m_Name: 26_Mayo_Scissors_MayoConclusion_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1499993337
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499993336}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.1329324, y: -0.40191203, z: -0.21652111}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 67452459}
+  m_Father: {fileID: 2104975489}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1499993338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499993336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1623461742}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: EnableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 67452460}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  description: '---- MAYOCONCLUSION ----
+
+    ---------------------------
+
+    --------
+    DIALOGUE --------'
+  TimelineAsset: {fileID: 11400000, guid: 3000fd7f04e64a647bfcb7d889d2bb1c, type: 2}
+  script: That concludes all you need to know about the Mayo scissors. Hover over
+    the Mayo scissors on the surgical instruments table and press the grip button
+    to release them.
+  MetaData:
+    fileName: 26_Mayo_Scissors_MayoConclusion_Dialogue
+    AudioClip: {fileID: 8300000, guid: 3fb58035e3aa2644fbcff0355ceab42d, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1499993339
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499993336}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &1503624846
 GameObject:
   m_ObjectHideFlags: 0
@@ -11616,9 +13921,13 @@ MonoBehaviour:
   RightOverrideController: {fileID: 22100000, guid: 8aff4284dbdf3bf4db218c0c78c984d6, type: 2}
   LeftOverrideController: {fileID: 22100000, guid: fd530bb47487ff44fbe6601d09be2c67, type: 2}
   RightToolKitTool: {fileID: 1306327880}
-  RightToolVariations: []
+  RightToolVariations:
+  - {fileID: 728457147}
+  - {fileID: 1444267036}
   LeftToolKitTool: {fileID: 1882249255}
-  LeftToolVariations: []
+  LeftToolVariations:
+  - {fileID: 345589979}
+  - {fileID: 340017593}
   Outlines:
   - {fileID: 253472400}
   - {fileID: 302309239}
@@ -13697,6 +16006,50 @@ PlayableDirector:
   m_SceneBindings: []
   m_ExposedReferences:
     m_References: []
+--- !u!1 &1790662506
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1790662507}
+  m_Layer: 0
+  m_Name: //----- Suture_Scissors_Steps -----//
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1790662507
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790662506}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.1329324, y: 0.40191203, z: 0.21652111}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 142773191}
+  - {fileID: 1194671284}
+  - {fileID: 1044358042}
+  - {fileID: 460518713}
+  - {fileID: 3043397}
+  - {fileID: 569734474}
+  - {fileID: 403156467}
+  - {fileID: 731253292}
+  - {fileID: 10759129}
+  - {fileID: 157767852}
+  - {fileID: 1428144352}
+  - {fileID: 167565230}
+  - {fileID: 333359799}
+  m_Father: {fileID: 9055910674980147301}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1812859547
 GameObject:
   m_ObjectHideFlags: 0
@@ -13791,6 +16144,69 @@ Transform:
   m_Father: {fileID: 1443313850}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1862977579
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1862977580}
+  - component: {fileID: 1862977581}
+  m_Layer: 0
+  m_Name: 35a_Mayo_Scissors_UserPressesB_UserAction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1862977580
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1862977579}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 10759129}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1862977581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1862977579}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29d9a958b8caf7544b0a8f805473e834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CheckType: 1
+  IndexCheck: 1
+  TargetSqueezePercentage: 100
+  InputAction: {fileID: 1021646204}
+  CheckEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6539479389457707605}
+        m_TargetAssemblyTypeName: InstructionDeliveryListController, Assembly-CSharp
+        m_MethodName: StartNextStep
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1867071753
 GameObject:
   m_ObjectHideFlags: 0
@@ -14199,6 +16615,99 @@ PlayableDirector:
   m_SceneBindings: []
   m_ExposedReferences:
     m_References: []
+--- !u!1 &1911157481
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1911157482}
+  - component: {fileID: 1911157484}
+  - component: {fileID: 1911157483}
+  m_Layer: 0
+  m_Name: 21_Mayo_Scissors_DisplayNextButton_NextButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1911157482
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911157481}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.1329324, y: -0.40191203, z: -0.21652111}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2104975489}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1911157483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911157481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1659573479}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  description: '---- DISPLAYNEXTBUTTON ----
+
+    ------------------------------
+
+    --------
+    NEXTBUTTON ---------'
+  TimelineAsset: {fileID: 0}
+  script: 
+  MetaData:
+    fileName: 21_Mayo_Scissors_DisplayNextButton_NextButton
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1911157484
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911157481}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &1926148644
 GameObject:
   m_ObjectHideFlags: 0
@@ -14314,6 +16823,69 @@ Transform:
   m_Father: {fileID: 517160524}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1964533600
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1964533601}
+  - component: {fileID: 1964533602}
+  m_Layer: 0
+  m_Name: 24a_Mayo_Scissors_UserPressesB_UserAction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1964533601
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964533600}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1480717192}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1964533602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964533600}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29d9a958b8caf7544b0a8f805473e834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CheckType: 1
+  IndexCheck: 1
+  TargetSqueezePercentage: 100
+  InputAction: {fileID: 1021646204}
+  CheckEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6539479389457707605}
+        m_TargetAssemblyTypeName: InstructionDeliveryListController, Assembly-CSharp
+        m_MethodName: StartNextStep
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1978115210
 GameObject:
   m_ObjectHideFlags: 0
@@ -14527,29 +17099,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: -1028626532802701393, guid: 2a2aa44742c186a4b9d7bac280bf0f81, type: 3}
   m_PrefabInstance: {fileID: 1306327876}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2018644218 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 550d7d0331443284bbc420a79980acc2, type: 3}
-  m_PrefabInstance: {fileID: 384958471}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2018644219
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2018644218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 0.19421315, g: 1, b: 0, a: 1}
-  outlineWidth: 2
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &2021352762
 GameObject:
   m_ObjectHideFlags: 0
@@ -14922,6 +17471,91 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2055885269}
   m_CullTransparentMesh: 1
+--- !u!1 &2058993321
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2058993322}
+  - component: {fileID: 2058993323}
+  m_Layer: 0
+  m_Name: 19a_Mayo_Scissors_UserPicksUp_UserAction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2058993322
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058993321}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1148810670}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2058993323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058993321}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8febe03d02dfe64eb5acfb1be8bfeca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InputAction: {fileID: 1021646204}
+  ToolToGrab: {fileID: 1623461742}
+  CheckEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6539479389457707605}
+        m_TargetAssemblyTypeName: InstructionDeliveryListController, Assembly-CSharp
+        m_MethodName: StartNextStep
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1623461742}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1623461742}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableOutline
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2063799757
 GameObject:
   m_ObjectHideFlags: 0
@@ -15165,9 +17799,13 @@ MonoBehaviour:
   RightOverrideController: {fileID: 22100000, guid: 36d639b778c2ab94a950d2c6e9389103, type: 2}
   LeftOverrideController: {fileID: 22100000, guid: 25d1c0bf68540ad40b6419c6d46515ba, type: 2}
   RightToolKitTool: {fileID: 1306327881}
-  RightToolVariations: []
+  RightToolVariations:
+  - {fileID: 1228192464}
+  - {fileID: 1190469139}
   LeftToolKitTool: {fileID: 1882249256}
-  LeftToolVariations: []
+  LeftToolVariations:
+  - {fileID: 981153531}
+  - {fileID: 1072754755}
   Outlines:
   - {fileID: 435608977}
   - {fileID: 1726090036}
@@ -15271,7 +17909,7 @@ RectTransform:
   - {fileID: 1540094163}
   - {fileID: 1659573480}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -15577,6 +18215,45 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!1 &2104975488
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2104975489}
+  m_Layer: 0
+  m_Name: //----- Mayo_Scissors_Steps -----//
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2104975489
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104975488}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.1329324, y: 0.40191203, z: 0.21652111}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1148810670}
+  - {fileID: 1486331661}
+  - {fileID: 1911157482}
+  - {fileID: 1199357442}
+  - {fileID: 1092088740}
+  - {fileID: 1480717192}
+  - {fileID: 1160276137}
+  - {fileID: 1499993337}
+  m_Father: {fileID: 9055910674980147301}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2121078968
 GameObject:
   m_ObjectHideFlags: 0
@@ -16246,7 +18923,7 @@ Transform:
   - {fileID: 1511524925}
   - {fileID: 7411013362787582343}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1112876795283646238
 GameObject:
@@ -17430,7 +20107,7 @@ RectTransform:
   - {fileID: 1419316920}
   - {fileID: 92211878}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -18925,7 +21602,28 @@ MonoBehaviour:
   - {fileID: 8104985333000404985}
   - {fileID: 3318984478282723704}
   - {fileID: 7724800063347598693}
-  StepIndex: 0
+  - {fileID: 1148810671}
+  - {fileID: 1486331662}
+  - {fileID: 1911157483}
+  - {fileID: 1199357443}
+  - {fileID: 1092088741}
+  - {fileID: 1480717193}
+  - {fileID: 1160276138}
+  - {fileID: 1499993338}
+  - {fileID: 142773192}
+  - {fileID: 1194671285}
+  - {fileID: 1044358043}
+  - {fileID: 460518714}
+  - {fileID: 3043398}
+  - {fileID: 569734475}
+  - {fileID: 403156468}
+  - {fileID: 731253293}
+  - {fileID: 10759130}
+  - {fileID: 157767853}
+  - {fileID: 1428144353}
+  - {fileID: 167565231}
+  - {fileID: 333359800}
+  StepIndex: 15
   SequenceStarted:
     m_PersistentCalls:
       m_Calls:
@@ -19402,9 +22100,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2440961973328093042}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
+      - m_Target: {fileID: 9014006632421286335}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -20214,8 +22912,10 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7323069463853631079}
+  - {fileID: 2104975489}
+  - {fileID: 1790662507}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9057804198347879726
 GameObject:
