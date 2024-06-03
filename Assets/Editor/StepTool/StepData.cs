@@ -10,6 +10,7 @@ namespace StepCreationTool
 
         public string GroupName { get; set; }
         public string StepName { get; set; }
+        public string StepClass { get; set; }
         public string StepType { get; set; }
         public int StepTypeIndex { get; set; }
         public string CustomTypeInput { get; set; }
@@ -18,7 +19,7 @@ namespace StepCreationTool
         
         public List<UserStepData> userSteps = new List<UserStepData>();
     
-
+        public GameObject StepGameObject { get; set; }
 
     }
 }

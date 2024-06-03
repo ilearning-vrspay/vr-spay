@@ -10,7 +10,23 @@ namespace StepCreationTool
         private Vector2 scrollPosition;
         public List<StepGroupData> stepCommandList { get; set; }
         private GUIStyle textStyle;
+        private Dictionary<string, bool> foldoutStates = new Dictionary<string, bool>();
+        private readonly List<ReviewGroupGUI> reviewGroupGUIs = new List<ReviewGroupGUI>();
+        private readonly List<ReviewStepGUI> reviewStepGUIs = new List<ReviewStepGUI>();
+        private List<Group> groups = new List<Group>();
+        
+        private List<Step> steps = new List<Step>();
+        
 
+        
+        
+
+        private readonly List<string> classes = new List<string>
+        {
+            "Class", "Instruct To Play", "Instruct To Pickup Tool", "Instruct To Release Tool", "Instruct To Examine", "Educate On Topic"
+        };
+
+        public int SelectedClassIndex { get; set; } = 0;
         
         public static void ShowWindow(List<StepGroupData> list)
         {
@@ -18,6 +34,7 @@ namespace StepCreationTool
             window.stepCommandList = list; 
             AssemblyReloadEvents.beforeAssemblyReload += window.OnBeforeAssemblyReload;
             EditorApplication.quitting += window.OnEditorQuitting;
+            window.SetupGUIs();
         }
 
         private void OnBeforeAssemblyReload()
@@ -43,9 +60,53 @@ namespace StepCreationTool
             textStyle.normal.textColor = Color.white;
         }
 
+        private void SetupGUIs()
+        {
+            foreach (var group in stepCommandList)
+            {
+
+                ReviewGroupGUI reviewGroupGUI = new ReviewGroupGUI();
+                reviewGroupGUI.stepGroupData = group;
+
+                reviewGroupGUIs.Add(reviewGroupGUI);
+
+
+            }
+
+
+            // foreach (var group in stepCommandList)
+            // {
+            //     Group groupObj = new Group();
+            //     ReviewGroupGUI reviewGroupGUI = new ReviewGroupGUI();
+
+            //     groupObj.StepGroupData = group;
+            //     groupObj.ReviewGroupGUI = reviewGroupGUI;
+
+
+            //     foreach (var step in group.stepList)
+            //     {
+            //         var reviewStepGUI = new ReviewStepGUI();
+            //         reviewStepGUI.StepData = step;
+            //         reviewStepGUIs.Add(reviewStepGUI);
+            //     }
+            // }
+        
+        }
+
 
 
     void OnGUI(){
+
+        // foreach (var reviewStepGUI in reviewStepGUIs)
+        // {
+        //     reviewStepGUI.Render();
+        // }
+
+        foreach (var reviewGroupGUI in reviewGroupGUIs)
+        {
+            reviewGroupGUI.Render();
+        }
+
 
         scrollPosition = EditorGUILayout.BeginScrollView(scrollPosition);
         int stepNumber = 1;
@@ -55,95 +116,145 @@ namespace StepCreationTool
 
         foreach (var group in stepCommandList)
         {
+            
+            // EditorGUILayout.Space(5.0f);
+            // GUILayout.Box("", GUILayout.ExpandWidth(true), GUILayout.Height(2));
+            // EditorGUILayout.Space(10.0f);
 
-            EditorGUILayout.Space(5.0f);
-            GUILayout.Box("", GUILayout.ExpandWidth(true), GUILayout.Height(2));
-            EditorGUILayout.Space(10.0f);
+            // EditorGUILayout.BeginHorizontal();
+            // EditorGUILayout.LabelField("//-------", GUILayout.Width(50));
+            // Vector2 size = textStyle.CalcSize(new GUIContent(group.groupName));
+            // if (size.x < 50){
+            //     size.x = 50;
+            // } else {
+            //     size.x += 5;
+            // }
+            
+            // group.groupName = EditorGUILayout.TextField( group.groupName, GUILayout.Width(size.x + 5));
 
+            
+            // EditorGUILayout.LabelField("------//", GUILayout.Width(100));
+            // if (GUILayout.Button("Propogate")){
+            //     foreach (var step in group.stepList)
+            //     {
+            //         step.GroupName = group.groupName;
+            //     }
+            // }
+            
+            // EditorGUILayout.EndHorizontal();
             EditorGUILayout.BeginHorizontal();
-            EditorGUILayout.LabelField("//-------", GUILayout.Width(50));
-            Vector2 size = textStyle.CalcSize(new GUIContent(group.groupName));
-            if (size.x < 50){
-                size.x = 50;
-            } else {
-                size.x += 5;
-            }
-            
-            group.groupName = EditorGUILayout.TextField( group.groupName, GUILayout.Width(size.x + 5));
 
+            EditorGUILayout.LabelField("  |", GUILayout.Width(35));
+
+
+
+            // Vector2 numSize = textStyle.CalcSize(new GUIContent(stepNumber.ToString()));
+            // if (numSize.x < 20){
+            //     numSize.x = 20;
+            // } else {
+            //     numSize.x += 5;
+            // }
+            EditorGUILayout.LabelField("", "#", GUILayout.Width(10), GUILayout.ExpandWidth(true));
             
-            EditorGUILayout.LabelField("------//", GUILayout.Width(100));
-            if (GUILayout.Button("Propogate")){
-                foreach (var step in group.stepList)
-                {
-                    step.GroupName = group.groupName;
-                }
-            }
-            
+            EditorGUILayout.LabelField("_", GUILayout.Width(10), GUILayout.ExpandWidth(true));
+            EditorGUILayout.LabelField( "Step Group", GUILayout.ExpandWidth(true));
+            EditorGUILayout.LabelField("_", GUILayout.Width(10), GUILayout.ExpandWidth(true));  
+            EditorGUILayout.LabelField( "Step Name", GUILayout.ExpandWidth(true));
+            EditorGUILayout.LabelField("_", GUILayout.Width(10), GUILayout.ExpandWidth(true));
+            EditorGUILayout.LabelField("Step Type", GUILayout.ExpandWidth(true));
+
+
             EditorGUILayout.EndHorizontal();
-            EditorGUILayout.LabelField("  |");
-
 
 
             foreach (var step in group.stepList)
             {   
                 EditorGUILayout.Space(5.0f);
+                // EditorGUILayout.LabelField("Step Name baby");
 
+                // GameObject thisThang = (GameObject)EditorGUILayout.ObjectField(step.StepGameObject, typeof(GameObject), GUILayout.ExpandWidth(true));
+                // if (!foldoutStates.ContainsKey(group.groupName))
+                // {
+                //     foldoutStates[group.groupName] = true;
+                // }
+
+                // foldoutStates[group.groupName] = EditorGUILayout.Foldout(foldoutStates[group.groupName], group.groupName);
+
+
+                // EditorGUILayout.BeginHorizontal();
+                // EditorGUILayout.LabelField("  |-- ", GUILayout.Width(30));
+
+                // Vector2 numSize = textStyle.CalcSize(new GUIContent(stepNumber.ToString()));
+                // if (numSize.x < 20){
+                //     numSize.x = 20;
+                // } else {
+                //     numSize.x += 5;
+                // }
+
+                // SelectedClassIndex = EditorGUILayout.Popup(SelectedClassIndex, classes.ToArray(), GUILayout.Width(75));
+
+                // step.SequenceNumber = EditorGUILayout.IntField("", step.SequenceNumber, GUILayout.Width(numSize.x), GUILayout.ExpandWidth(true));
                 
+                // EditorGUILayout.LabelField("_", GUILayout.Width(10), GUILayout.ExpandWidth(true));
+                // step.GroupName = EditorGUILayout.TextField( step.GroupName, GUILayout.ExpandWidth(true));
+                // EditorGUILayout.LabelField("_", GUILayout.Width(10), GUILayout.ExpandWidth(true));  
+                // step.StepName = EditorGUILayout.TextField( step.StepName, GUILayout.ExpandWidth(true));
+                // EditorGUILayout.LabelField("_", GUILayout.Width(10), GUILayout.ExpandWidth(true));
+                // step.StepType = EditorGUILayout.TextField(step.StepType, GUILayout.ExpandWidth(true));
 
 
-                EditorGUILayout.BeginHorizontal();
-                EditorGUILayout.LabelField("  |-- ", GUILayout.Width(30));
-
-                Vector2 numSize = textStyle.CalcSize(new GUIContent(stepNumber.ToString()));
-                if (numSize.x < 20){
-                    numSize.x = 20;
-                } else {
-                    numSize.x += 5;
-                }
-                step.SequenceNumber = EditorGUILayout.IntField("", step.SequenceNumber, GUILayout.Width(numSize.x), GUILayout.ExpandWidth(true));
-                
-                EditorGUILayout.LabelField("_", GUILayout.Width(10), GUILayout.ExpandWidth(true));
-                step.GroupName = EditorGUILayout.TextField( step.GroupName, GUILayout.ExpandWidth(true));
-                EditorGUILayout.LabelField("_", GUILayout.Width(10), GUILayout.ExpandWidth(true));  
-                step.StepName = EditorGUILayout.TextField( step.StepName, GUILayout.ExpandWidth(true));
-                EditorGUILayout.LabelField("_", GUILayout.Width(10), GUILayout.ExpandWidth(true));
-                step.StepType = EditorGUILayout.TextField(step.StepType, GUILayout.ExpandWidth(true));
+                // EditorGUILayout.EndHorizontal();
 
 
-                EditorGUILayout.EndHorizontal();
-
-
-                var UserIdx = 0;
-                foreach (var userStep in step.userSteps)
-                {
-                    EditorGUILayout.Space(5.0f);
+                // var UserIdx = 0;
+                // foreach (var userStep in step.userSteps)
+                // {
+                //     EditorGUILayout.Space(5.0f);
                     
-                    // var userStepChar = ((char)('a' + UserIdx)).ToString();
-                    EditorGUILayout.BeginHorizontal();
-                    EditorGUILayout.LabelField("  |", GUILayout.Width(30));
-                    EditorGUILayout.LabelField("  |-- ", GUILayout.Width(30));
-                    EditorGUILayout.TextField("", userStep.SequenceNumber, GUILayout.MaxWidth(25), GUILayout.ExpandWidth(true));
-                    EditorGUILayout.LabelField("_", GUILayout.Width(10), GUILayout.ExpandWidth(true));
-                    EditorGUILayout.TextField( userStep.GroupName, GUILayout.ExpandWidth(true));
-                    EditorGUILayout.LabelField("_", GUILayout.Width(10), GUILayout.ExpandWidth(true));  
-                    EditorGUILayout.TextField( userStep.StepName, GUILayout.ExpandWidth(true));
-                    EditorGUILayout.LabelField("_", GUILayout.Width(10), GUILayout.ExpandWidth(true));
-                    EditorGUILayout.TextField(userStep.StepType, GUILayout.ExpandWidth(true));
+                //     // var userStepChar = ((char)('a' + UserIdx)).ToString();
+                //     EditorGUILayout.BeginHorizontal();
+                //     EditorGUILayout.LabelField("  |", GUILayout.Width(30));
+                //     EditorGUILayout.LabelField("  |-- ", GUILayout.Width(30));
+                //     EditorGUILayout.TextField("", userStep.SequenceNumber, GUILayout.MaxWidth(25), GUILayout.ExpandWidth(true));
+                //     EditorGUILayout.LabelField("_", GUILayout.Width(10), GUILayout.ExpandWidth(true));
+                //     EditorGUILayout.TextField( userStep.GroupName, GUILayout.ExpandWidth(true));
+                //     EditorGUILayout.LabelField("_", GUILayout.Width(10), GUILayout.ExpandWidth(true));  
+                //     EditorGUILayout.TextField( userStep.StepName, GUILayout.ExpandWidth(true));
+                //     EditorGUILayout.LabelField("_", GUILayout.Width(10), GUILayout.ExpandWidth(true));
+                //     EditorGUILayout.TextField(userStep.StepType, GUILayout.ExpandWidth(true));
 
 
-                    EditorGUILayout.EndHorizontal();
-                    UserIdx++;
+                //     EditorGUILayout.EndHorizontal();
+                //     UserIdx++;
                 
-                }
+                // }
 
-                stepNumber++;
+                // stepNumber++;
 
 
 
 
             }
         }
+        EditorGUILayout.Space(10.0f);
+        EditorGUILayout.BeginHorizontal();
+        
+        if (GUILayout.Button("Make GameO bjects"))
+        {
+            Debug.Log("Save button pressed");
+        }
+
+        if (GUILayout.Button("Save"))
+        {
+            Debug.Log("Save button pressed");
+        }
+
+        EditorGUILayout.EndHorizontal();
+        EditorGUILayout.Space(40.0f);
+        
+
+
+       
         EditorGUILayout.EndScrollView();
 
     }

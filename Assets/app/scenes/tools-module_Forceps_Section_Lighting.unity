@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 3043399}
   - component: {fileID: 3043398}
   m_Layer: 0
-  m_Name: 31_SutureScissors_DescribeSutureScissors_Video
+  m_Name: 28_SutureScissors_DescribeSutureScissors_Video
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -431,7 +431,7 @@ GameObject:
   - component: {fileID: 10759131}
   - component: {fileID: 10759130}
   m_Layer: 0
-  m_Name: 35_SutureScissors_InstructToChangeToolVariation_Dialogue
+  m_Name: 32_SutureScissors_InstructToChangeToolVariation_Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1248,8 +1248,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8febe03d02dfe64eb5acfb1be8bfeca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GrabType: 0
   InputAction: {fileID: 1021646204}
-  ToolToGrab: {fileID: 1030490638}
   CheckEvent:
     m_PersistentCalls:
       m_Calls:
@@ -1497,7 +1497,7 @@ GameObject:
   - component: {fileID: 67452459}
   - component: {fileID: 67452460}
   m_Layer: 0
-  m_Name: 26a_Mayo_Scissors_UserReleasesTool_UserAction
+  m_Name: 23a_Mayo_Scissors_UserReleasesTool_UserAction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1985,7 +1985,7 @@ GameObject:
   - component: {fileID: 142773193}
   - component: {fileID: 142773192}
   m_Layer: 0
-  m_Name: 27_SutureScissors_SutureScissorsIntro_Dialogue
+  m_Name: 24_SutureScissors_SutureScissorsIntro_Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2079,99 +2079,6 @@ PlayableDirector:
   m_SceneBindings: []
   m_ExposedReferences:
     m_References: []
---- !u!1 &157767851
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 157767852}
-  - component: {fileID: 157767854}
-  - component: {fileID: 157767853}
-  m_Layer: 0
-  m_Name: 36_SutureScissors_DisplayNextButton_NextButton
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &157767852
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 157767851}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.1329324, y: -0.40191203, z: -0.21652111}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1790662507}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &157767853
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 157767851}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShouldPlayOnStart: 0
-  OnInstructionsStarted:
-    m_PersistentCalls:
-      m_Calls: []
-  onInstructionsDelivered:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1659573479}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-  description: '---- DISPLAYNEXTBUTTON ----
-
-    ------------------------------
-
-    --------
-    NEXTBUTTON ---------'
-  TimelineAsset: {fileID: 0}
-  script: 
-  MetaData:
-    fileName: 18_SutureScissors_DisplayNextButton_NextButton
-    AudioClip: {fileID: 0}
-    AnimationClip: {fileID: 0}
---- !u!320 &157767854
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 157767851}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 0}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings: []
-  m_ExposedReferences:
-    m_References: []
 --- !u!1 &167565229
 GameObject:
   m_ObjectHideFlags: 0
@@ -2184,7 +2091,7 @@ GameObject:
   - component: {fileID: 167565232}
   - component: {fileID: 167565231}
   m_Layer: 0
-  m_Name: 38_SutureScissors_TripSutureVideo_Video
+  m_Name: 34_SutureScissors_TripSutureVideo_Video
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2881,7 +2788,7 @@ GameObject:
   - component: {fileID: 333359801}
   - component: {fileID: 333359800}
   m_Layer: 0
-  m_Name: 39_SutureScissors_SutureScissorsConclusion_Dialogue
+  m_Name: 35_SutureScissors_SutureScissorsConclusion_Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3166,8 +3073,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8febe03d02dfe64eb5acfb1be8bfeca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GrabType: 0
   InputAction: {fileID: 1021646204}
-  ToolToGrab: {fileID: 1504145190}
   CheckEvent:
     m_PersistentCalls:
       m_Calls:
@@ -3219,7 +3126,7 @@ GameObject:
   - component: {fileID: 403156469}
   - component: {fileID: 403156468}
   m_Layer: 0
-  m_Name: 33_SutureScissors_InstructToPlayVideo_Dialogue
+  m_Name: 30_SutureScissors_InstructToPlayVideo_Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3948,7 +3855,7 @@ GameObject:
   - component: {fileID: 460518715}
   - component: {fileID: 460518714}
   m_Layer: 0
-  m_Name: 30_SutureScissors_InstructToPlayVideo_Dialogue
+  m_Name: 27_SutureScissors_InstructToPlayVideo_Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4794,7 +4701,7 @@ GameObject:
   - component: {fileID: 569734476}
   - component: {fileID: 569734475}
   m_Layer: 0
-  m_Name: 32_SutureScissors_InstructToExamine_Dialogue
+  m_Name: 29_SutureScissors_InstructToExamine_Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5293,7 +5200,7 @@ GameObject:
   - component: {fileID: 652475033}
   - component: {fileID: 652475034}
   m_Layer: 0
-  m_Name: 20a_Mayo_Scissors_UserExamines_UserAction
+  m_Name: 18a_Mayo_Scissors_UserExamines_UserAction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5333,17 +5240,17 @@ MonoBehaviour:
   CheckEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6539479389457707605}
-        m_TargetAssemblyTypeName: InstructionDeliveryListController, Assembly-CSharp
-        m_MethodName: StartNextStep
-        m_Mode: 1
+      - m_Target: {fileID: 1659573479}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!1 &652608874
 GameObject:
@@ -5618,7 +5525,7 @@ GameObject:
   - component: {fileID: 731253294}
   - component: {fileID: 731253293}
   m_Layer: 0
-  m_Name: "34_SutureScissors_Educate45DegCut \u2013 Video"
+  m_Name: "31_SutureScissors_Educate45DegCut \u2013 Video"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6613,8 +6520,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8febe03d02dfe64eb5acfb1be8bfeca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GrabType: 0
   InputAction: {fileID: 1021646204}
-  ToolToGrab: {fileID: 62744848}
   CheckEvent:
     m_PersistentCalls:
       m_Calls:
@@ -6665,7 +6572,7 @@ GameObject:
   - component: {fileID: 879412779}
   - component: {fileID: 879412780}
   m_Layer: 0
-  m_Name: 28a_Mayo_Scissors_UserOpensAndClosesTool_UserAction
+  m_Name: 25a_Mayo_Scissors_UserOpensAndClosesTool_UserAction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8267,7 +8174,7 @@ GameObject:
   - component: {fileID: 1044358044}
   - component: {fileID: 1044358043}
   m_Layer: 0
-  m_Name: 29_SutureScissors_DisplayNextButton_NextButton
+  m_Name: 26_SutureScissors_DisplayNextButton_NextButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8577,7 +8484,7 @@ GameObject:
   - component: {fileID: 1092088742}
   - component: {fileID: 1092088741}
   m_Layer: 0
-  m_Name: 23_Mayo_Scissors_MayoScissors_Video
+  m_Name: 20_Mayo_Scissors_MayoScissors_Video
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8669,7 +8576,7 @@ GameObject:
   - component: {fileID: 1104391922}
   - component: {fileID: 1104391923}
   m_Layer: 0
-  m_Name: 39a_Mayo_Scissors_UserReleasesTool_UserAction
+  m_Name: 35a_Mayo_Scissors_UserReleasesTool_UserAction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8921,7 +8828,7 @@ GameObject:
   - component: {fileID: 1148810672}
   - component: {fileID: 1148810671}
   m_Layer: 0
-  m_Name: 19_Mayo_Scissors_InstructToPickUp_Dialogue
+  m_Name: 17_Mayo_Scissors_InstructToPickUp_Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9027,7 +8934,7 @@ GameObject:
   - component: {fileID: 1160276139}
   - component: {fileID: 1160276138}
   m_Layer: 0
-  m_Name: 25_Mayo_Scissors_InstructToExamine_Dialogue
+  m_Name: 22_Mayo_Scissors_InstructToExamine_Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9317,7 +9224,7 @@ GameObject:
   - component: {fileID: 1194671286}
   - component: {fileID: 1194671285}
   m_Layer: 0
-  m_Name: 28_SutureScissors_InstructToExamine_Dialogue
+  m_Name: 25_SutureScissors_InstructToExamine_Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9412,7 +9319,7 @@ GameObject:
   - component: {fileID: 1199357444}
   - component: {fileID: 1199357443}
   m_Layer: 0
-  m_Name: 22_Mayo_Scissors_InstructToPlayVideo_Dialogue
+  m_Name: 19_Mayo_Scissors_InstructToPlayVideo_Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9711,7 +9618,7 @@ GameObject:
   - component: {fileID: 1264765529}
   - component: {fileID: 1264765530}
   m_Layer: 0
-  m_Name: 27a_Mayo_Scissors_UserGrabsTool_UserAction
+  m_Name: 24a_Mayo_Scissors_UserGrabsTool_UserAction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9744,8 +9651,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8febe03d02dfe64eb5acfb1be8bfeca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GrabType: 0
   InputAction: {fileID: 1021646204}
-  ToolToGrab: {fileID: 2080540839}
   CheckEvent:
     m_PersistentCalls:
       m_Calls:
@@ -11200,7 +11107,7 @@ GameObject:
   - component: {fileID: 1428144354}
   - component: {fileID: 1428144353}
   m_Layer: 0
-  m_Name: 37_SutureScissors_EducateOnBlades_Dialogue
+  m_Name: 33_SutureScissors_EducateOnBlades_Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12920,7 +12827,7 @@ GameObject:
   - component: {fileID: 1480717194}
   - component: {fileID: 1480717193}
   m_Layer: 0
-  m_Name: "24_Mayo_Scissors_EducateOnMayoBlades \u2013 WILL_BE_SWAPPED_Dialogue"
+  m_Name: "21_Mayo_Scissors_EducateOnMayoBlades \u2013 WILL_BE_SWAPPED_Dialogue"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13024,7 +12931,7 @@ GameObject:
   - component: {fileID: 1486331663}
   - component: {fileID: 1486331662}
   m_Layer: 0
-  m_Name: 20_Mayo_Scissors_InstructToExamine_Dialogue
+  m_Name: 18_Mayo_Scissors_InstructToExamine_Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13119,7 +13026,7 @@ GameObject:
   - component: {fileID: 1499993339}
   - component: {fileID: 1499993338}
   m_Layer: 0
-  m_Name: 26_Mayo_Scissors_MayoConclusion_Dialogue
+  m_Name: 23_Mayo_Scissors_InstructToReleaseTool_Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16043,7 +15950,6 @@ Transform:
   - {fileID: 403156467}
   - {fileID: 731253292}
   - {fileID: 10759129}
-  - {fileID: 157767852}
   - {fileID: 1428144352}
   - {fileID: 167565230}
   - {fileID: 333359799}
@@ -16155,7 +16061,7 @@ GameObject:
   - component: {fileID: 1862977580}
   - component: {fileID: 1862977581}
   m_Layer: 0
-  m_Name: 35a_Mayo_Scissors_UserPressesB_UserAction
+  m_Name: 32a_Mayo_Scissors_UserPressesB_UserAction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16195,17 +16101,17 @@ MonoBehaviour:
   CheckEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6539479389457707605}
-        m_TargetAssemblyTypeName: InstructionDeliveryListController, Assembly-CSharp
-        m_MethodName: StartNextStep
-        m_Mode: 1
+      - m_Target: {fileID: 1659573479}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!1 &1867071753
 GameObject:
@@ -16615,99 +16521,6 @@ PlayableDirector:
   m_SceneBindings: []
   m_ExposedReferences:
     m_References: []
---- !u!1 &1911157481
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1911157482}
-  - component: {fileID: 1911157484}
-  - component: {fileID: 1911157483}
-  m_Layer: 0
-  m_Name: 21_Mayo_Scissors_DisplayNextButton_NextButton
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1911157482
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1911157481}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.1329324, y: -0.40191203, z: -0.21652111}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2104975489}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1911157483
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1911157481}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShouldPlayOnStart: 0
-  OnInstructionsStarted:
-    m_PersistentCalls:
-      m_Calls: []
-  onInstructionsDelivered:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1659573479}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-  description: '---- DISPLAYNEXTBUTTON ----
-
-    ------------------------------
-
-    --------
-    NEXTBUTTON ---------'
-  TimelineAsset: {fileID: 0}
-  script: 
-  MetaData:
-    fileName: 21_Mayo_Scissors_DisplayNextButton_NextButton
-    AudioClip: {fileID: 0}
-    AnimationClip: {fileID: 0}
---- !u!320 &1911157484
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1911157481}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 0}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings: []
-  m_ExposedReferences:
-    m_References: []
 --- !u!1 &1926148644
 GameObject:
   m_ObjectHideFlags: 0
@@ -16834,7 +16647,7 @@ GameObject:
   - component: {fileID: 1964533601}
   - component: {fileID: 1964533602}
   m_Layer: 0
-  m_Name: 24a_Mayo_Scissors_UserPressesB_UserAction
+  m_Name: 21a_Mayo_Scissors_UserPressesB_UserAction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17482,7 +17295,7 @@ GameObject:
   - component: {fileID: 2058993322}
   - component: {fileID: 2058993323}
   m_Layer: 0
-  m_Name: 19a_Mayo_Scissors_UserPicksUp_UserAction
+  m_Name: 17a_Mayo_Scissors_UserPicksUp_UserAction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17512,11 +17325,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2058993321}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8febe03d02dfe64eb5acfb1be8bfeca, type: 3}
+  m_Script: {fileID: 11500000, guid: 29d9a958b8caf7544b0a8f805473e834, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CheckType: 3
+  IndexCheck: 0
+  TargetSqueezePercentage: 100
   InputAction: {fileID: 1021646204}
-  ToolToGrab: {fileID: 1623461742}
   CheckEvent:
     m_PersistentCalls:
       m_Calls:
@@ -18245,7 +18060,6 @@ Transform:
   m_Children:
   - {fileID: 1148810670}
   - {fileID: 1486331661}
-  - {fileID: 1911157482}
   - {fileID: 1199357442}
   - {fileID: 1092088740}
   - {fileID: 1480717192}
@@ -18455,7 +18269,7 @@ GameObject:
   - component: {fileID: 4130748065433406103}
   - component: {fileID: 9189480107897064014}
   m_Layer: 0
-  m_Name: 14_Scissors_InstructToPlayVideo_Dialogue
+  m_Name: 12_Scissors_InstructToPlayVideo_Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18656,23 +18470,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 732877343734803688}
   m_CullTransparentMesh: 0
---- !u!320 &737809778606342315
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8471730463425718695}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 0}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings: []
-  m_ExposedReferences:
-    m_References: []
 --- !u!1 &913214437915106856
 GameObject:
   m_ObjectHideFlags: 0
@@ -18928,7 +18725,7 @@ GameObject:
   - component: {fileID: 952584880039024750}
   - component: {fileID: 1391839190887040112}
   m_Layer: 0
-  m_Name: 11a_Scissors_Presses_B_Button_UserAction
+  m_Name: 10a_Scissors_Presses_B_Button_UserAction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19026,7 +18823,7 @@ GameObject:
   - component: {fileID: 8582272805743453039}
   - component: {fileID: 6065121314794564224}
   m_Layer: 0
-  m_Name: 10_Scissors_DescribeMetzenbaumScissors_Video
+  m_Name: 9_Scissors_DescribeMetzenbaumScissors_Video
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19228,7 +19025,7 @@ GameObject:
   - component: {fileID: 9014006632421286334}
   - component: {fileID: 9014006632421286335}
   m_Layer: 0
-  m_Name: 18a_Scissors_UserReleasesMetzenbaumScissors_UserAction
+  m_Name: 16a_Scissors_UserReleasesMetzenbaumScissors_UserAction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19252,21 +19049,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2720180920609875282
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8471730463425718695}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7323069463853631079}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2814823668393760222
 Transform:
   m_ObjectHideFlags: 0
@@ -19330,7 +19112,7 @@ GameObject:
   - component: {fileID: 8784643064029009696}
   - component: {fileID: 1050565863476590110}
   m_Layer: 0
-  m_Name: 12_Scissors_InstructToExamineBladeTypes_Dialogue
+  m_Name: 11_Scissors_InstructToExamineBladeTypes_Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19493,7 +19275,7 @@ GameObject:
   - component: {fileID: 7592623702834118012}
   - component: {fileID: 5049056544583651827}
   m_Layer: 0
-  m_Name: 15_Scissors_ScissorsSpreadVideo_Video
+  m_Name: 13_Scissors_ScissorsSpreadVideo_Video
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19625,7 +19407,7 @@ GameObject:
   - component: {fileID: 6409910759119836592}
   - component: {fileID: 7724800063347598693}
   m_Layer: 0
-  m_Name: 18_Scissors_MetzenbaumConclusion_Dialogue
+  m_Name: 16_Scissors_MetzenbaumConclusion_Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19682,35 +19464,18 @@ MonoBehaviour:
   CheckEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6539479389457707605}
-        m_TargetAssemblyTypeName: InstructionDeliveryListController, Assembly-CSharp
-        m_MethodName: StartNextStep
-        m_Mode: 1
+      - m_Target: {fileID: 1659573479}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
---- !u!320 &3696485255286122479
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4097173634852686879}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 0}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings: []
-  m_ExposedReferences:
-    m_References: []
 --- !u!1 &3717440692570615846
 GameObject:
   m_ObjectHideFlags: 0
@@ -19722,7 +19487,7 @@ GameObject:
   - component: {fileID: 4059715940563451562}
   - component: {fileID: 4059715940563451563}
   m_Layer: 0
-  m_Name: 12a_Scissors_OpensAndClosesScissors_UserAction
+  m_Name: 11a_Scissors_OpensAndClosesScissors_UserAction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19884,7 +19649,7 @@ GameObject:
   - component: {fileID: 2351973344386629768}
   - component: {fileID: 8104985333000404985}
   m_Layer: 0
-  m_Name: 16_Scissors_InstructToMimicMotion_Dialogue
+  m_Name: 14_Scissors_InstructToMimicMotion_Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19940,17 +19705,17 @@ MonoBehaviour:
   CheckEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6539479389457707605}
-        m_TargetAssemblyTypeName: InstructionDeliveryListController, Assembly-CSharp
-        m_MethodName: StartNextStep
-        m_Mode: 1
+      - m_Target: {fileID: 1659573479}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!33 &4075829764109024065
 MeshFilter:
@@ -19960,24 +19725,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5724119054479340804}
   m_Mesh: {fileID: 1503699040787010145, guid: c96f8392d29d8cd42a60945f1bb19b10, type: 3}
---- !u!1 &4097173634852686879
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8197607641901620470}
-  - component: {fileID: 3696485255286122479}
-  - component: {fileID: 8932841231034766374}
-  m_Layer: 0
-  m_Name: 13_Scissors_DisplayNextButton_NextButton
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!320 &4130748065433406103
 PlayableDirector:
   m_ObjectHideFlags: 0
@@ -20055,61 +19802,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &4334375725370318392
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8471730463425718695}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShouldPlayOnStart: 0
-  OnInstructionsStarted:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2055885269}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onInstructionsDelivered:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1659573479}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-  description: '---- DISPLAYNEXTBUTTON ----
-
-    ------------------------------
-
-    --------
-    NEXTBUTTON ---------'
-  TimelineAsset: {fileID: 0}
-  script: 
-  MetaData:
-    fileName: 8_Scissors_DisplayNextButton_NextButton
-    AudioClip: {fileID: 0}
-    AnimationClip: {fileID: 0}
 --- !u!222 &4422659089943048017
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21066,7 +20758,7 @@ GameObject:
   - component: {fileID: 3411233357204464339}
   - component: {fileID: 3318984478282723704}
   m_Layer: 0
-  m_Name: 17_Scissors_DisplayNextButton_NextButton
+  m_Name: 15_Scissors_DisplayNextButton_NextButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21092,12 +20784,12 @@ MonoBehaviour:
   - {fileID: 9008708613598151720}
   - {fileID: 5502842771294281513}
   - {fileID: 6400343805415913606}
-  - {fileID: 4334375725370318392}
+  - {fileID: 0}
   - {fileID: 968868046108460720}
   - {fileID: 6065121314794564224}
   - {fileID: 2160893643254533350}
   - {fileID: 1050565863476590110}
-  - {fileID: 8932841231034766374}
+  - {fileID: 0}
   - {fileID: 9189480107897064014}
   - {fileID: 5049056544583651827}
   - {fileID: 8104985333000404985}
@@ -21105,7 +20797,7 @@ MonoBehaviour:
   - {fileID: 7724800063347598693}
   - {fileID: 1148810671}
   - {fileID: 1486331662}
-  - {fileID: 1911157483}
+  - {fileID: 0}
   - {fileID: 1199357443}
   - {fileID: 1092088741}
   - {fileID: 1480717193}
@@ -21120,7 +20812,7 @@ MonoBehaviour:
   - {fileID: 403156468}
   - {fileID: 731253293}
   - {fileID: 10759130}
-  - {fileID: 157767853}
+  - {fileID: 0}
   - {fileID: 1428144353}
   - {fileID: 167565231}
   - {fileID: 333359800}
@@ -21421,12 +21113,10 @@ Transform:
   - {fileID: 917514722777705191}
   - {fileID: 8545976743118874588}
   - {fileID: 1275188753271073775}
-  - {fileID: 2720180920609875282}
   - {fileID: 6646906811752844602}
   - {fileID: 7625061035825029128}
   - {fileID: 922652536002508491}
   - {fileID: 6374236520404023738}
-  - {fileID: 8197607641901620470}
   - {fileID: 6586264893874048326}
   - {fileID: 2814823668393760222}
   - {fileID: 584113345818622625}
@@ -21892,21 +21582,6 @@ RectTransform:
   m_AnchoredPosition: {x: -5.1900635, y: 0.9911194}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!4 &8197607641901620470
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4097173634852686879}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7323069463853631079}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8220192635341692913
 GameObject:
   m_ObjectHideFlags: 0
@@ -21931,24 +21606,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1112876795283646238}
   m_Mesh: {fileID: -572420933359748956, guid: c96f8392d29d8cd42a60945f1bb19b10, type: 3}
---- !u!1 &8471730463425718695
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2720180920609875282}
-  - component: {fileID: 737809778606342315}
-  - component: {fileID: 4334375725370318392}
-  m_Layer: 0
-  m_Name: 8_Scissors_DisplayNextButton_NextButton
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!4 &8540446508827178478
 Transform:
   m_ObjectHideFlags: 0
@@ -22008,7 +21665,7 @@ GameObject:
   - component: {fileID: 1007011709351617184}
   - component: {fileID: 2160893643254533350}
   m_Layer: 0
-  m_Name: 11_Scissors_InstructToChangeToolVariation_Dialogue
+  m_Name: 10_Scissors_InstructToChangeToolVariation_Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22108,49 +21765,6 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: Use a modal to inform the user of something, or to have them confirm something.
     Generally keep text short.
---- !u!114 &8932841231034766374
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4097173634852686879}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShouldPlayOnStart: 0
-  OnInstructionsStarted:
-    m_PersistentCalls:
-      m_Calls: []
-  onInstructionsDelivered:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1659573479}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-  description: '---- DISPLAYNEXTBUTTON ----
-
-    ------------------------------
-
-    --------
-    NEXTBUTTON ---------'
-  TimelineAsset: {fileID: 0}
-  script: 
-  MetaData:
-    fileName: 13_Scissors_DisplayNextButton_NextButton
-    AudioClip: {fileID: 0}
-    AnimationClip: {fileID: 0}
 --- !u!114 &9007749853271524071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22163,8 +21777,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8febe03d02dfe64eb5acfb1be8bfeca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GrabType: 0
   InputAction: {fileID: 1021646204}
-  ToolToGrab: {fileID: 1883978175}
   CheckEvent:
     m_PersistentCalls:
       m_Calls:
@@ -22272,9 +21886,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2440961973328093042}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9be32534b9c66ba41a68c0732914b06f, type: 3}
+  m_Script: {fileID: 11500000, guid: 29d9a958b8caf7544b0a8f805473e834, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CheckType: 4
+  IndexCheck: 0
+  TargetSqueezePercentage: 100
   InputAction: {fileID: 1021646204}
   CheckEvent:
     m_PersistentCalls:
@@ -22345,7 +21962,7 @@ GameObject:
   - component: {fileID: 7578565123769374345}
   - component: {fileID: 968868046108460720}
   m_Layer: 0
-  m_Name: 9_Scissors_InstructToPlayVideo_Dialogue
+  m_Name: 8_Scissors_InstructToPlayVideo_Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -19,18 +19,35 @@ public class CheckInputActionEditor : Editor
     {
         serializedObject.Update();
 
+        GUI.enabled = false;
+        EditorGUILayout.ObjectField("Script", MonoScript.FromMonoBehaviour((CheckInputAction)target), typeof(CheckInputAction), false);
+        GUI.enabled = true;
         EditorGUILayout.PropertyField(checkTypeProp);
 
         CheckInputAction.checkType checkTypeEnum = (CheckInputAction.checkType)checkTypeProp.enumValueIndex;
 
-        if (checkTypeEnum == CheckInputAction.checkType.Pose || checkTypeEnum == CheckInputAction.checkType.ToolVariation)
+        switch (checkTypeEnum)
         {
-            EditorGUILayout.PropertyField(indexCheckProp);
+            case CheckInputAction.checkType.PoseChange:
+                EditorGUILayout.PropertyField(indexCheckProp);
+                break;
+            case CheckInputAction.checkType.ToolVariationChange:
+                EditorGUILayout.PropertyField(indexCheckProp);
+                break;
+            case CheckInputAction.checkType.GripSqueeze:
+                targetSqueezePercentageProp.floatValue = EditorGUILayout.Slider("Target Squeeze Percentage", targetSqueezePercentageProp.floatValue, 0, 100);
+                break;
+            case CheckInputAction.checkType.PickupTool:
+                break;
+            case CheckInputAction.checkType.ReleaseTool:
+                break;
         }
-        else if (checkTypeEnum == CheckInputAction.checkType.GripSqueeze)
-        {
-            targetSqueezePercentageProp.floatValue = EditorGUILayout.Slider("Target Squeeze Percentage", targetSqueezePercentageProp.floatValue, 0, 100);
-        }
+
+        
+
+
+
+        
 
         EditorGUILayout.PropertyField(serializedObject.FindProperty("InputAction"));
         EditorGUILayout.PropertyField(serializedObject.FindProperty("CheckEvent"));

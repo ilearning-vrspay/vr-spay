@@ -8,9 +8,12 @@ public class CheckInputAction : MonoBehaviour
     private InstructionDeliveryController instructionDeliveryController;
     public enum checkType
     {
-        Pose,
-        ToolVariation,
+        PoseChange,
+        ToolVariationChange,
         GripSqueeze,
+        PickupTool,
+        ReleaseTool
+
     }
 
     public checkType CheckType;
@@ -43,39 +46,50 @@ public class CheckInputAction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("is onnnnnnnn");
-
-        Debug.Log("checking index");
-        if (CheckType == checkType.Pose)
+        switch(CheckType)
         {
-            if (InputAction.PoseIndex == IndexCheck){
-            CheckEvent.Invoke();
-            this.enabled = false;
-            }
-        }
-        else if (CheckType == checkType.ToolVariation)
-        {
-            if (InputAction.ToolVariationIndex == IndexCheck)
-            {
-                CheckEvent.Invoke();
-                this.enabled = false;
-            }
-        }
-        else if (CheckType == checkType.GripSqueeze)
-        {
-            float value = InputAction.GripSqueezeValue;
-            value = value * 100.0f;
+            case checkType.PoseChange:
+                if (InputAction.PoseIndex == IndexCheck)
+                {
+                    CheckEvent.Invoke();
+                    this.enabled = false;
+                }
+                break;
+            case checkType.ToolVariationChange:
+                if (InputAction.ToolVariationIndex == IndexCheck)
+                {
+                    CheckEvent.Invoke();
+                    this.enabled = false;
+                }
+                break;
+            case checkType.GripSqueeze:
+                float value = InputAction.GripSqueezeValue;
+                value = value * 100.0f;
 
-            if (value >= TargetSqueezePercentage)
-            {
-                hasUsedTool = true;
-            }
-            else if (hasUsedTool && value < 0.1f){
-                CheckEvent.Invoke();
-                this.enabled = false;
-                hasUsedTool = false;
-            }
-
+                if (value >= TargetSqueezePercentage)
+                {
+                    hasUsedTool = true;
+                }
+                else if (hasUsedTool && value < 0.1f){
+                    CheckEvent.Invoke();
+                    this.enabled = false;
+                    hasUsedTool = false;
+                }
+                break;
+            case checkType.PickupTool:
+                if (InputAction.GrabbedTool)
+                {
+                    CheckEvent.Invoke();
+                    this.enabled = false; // should this be hardcoded here? or should it be determined in the inspector?
+                }
+                break;
+            case checkType.ReleaseTool:
+                if (!InputAction.GrabbedTool)
+                {
+                    CheckEvent.Invoke();
+                    this.enabled = false;
+                }
+                break;
         }
         
     }
