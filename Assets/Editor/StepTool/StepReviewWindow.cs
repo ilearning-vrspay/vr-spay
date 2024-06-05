@@ -68,6 +68,16 @@ namespace StepCreationTool
                 ReviewGroupGUI reviewGroupGUI = new ReviewGroupGUI();
                 reviewGroupGUI.stepGroupData = group;
 
+                foreach (var step in group.stepList)
+                {
+                    var reviewStepGUI = new ReviewStepGUI();
+                    reviewStepGUI.StepData = step;
+                    reviewStepGUIs.Add(reviewStepGUI);
+                    reviewGroupGUI.reviewStepGUIs.Add(reviewStepGUI);
+
+                }
+                
+
                 reviewGroupGUIs.Add(reviewGroupGUI);
 
 

@@ -27,13 +27,6 @@ namespace StepCreationTool
             EditorGUILayout.BeginHorizontal();
             EditorGUILayout.LabelField("Step Name baby");
             EditorGUILayout.EndHorizontal();
-            EditorGUILayout.BeginHorizontal();
-            EditorGUILayout.LabelField("Step Name baby");
-            EditorGUILayout.EndHorizontal();
-            EditorGUILayout.BeginHorizontal();
-            EditorGUILayout.LabelField("Step Name baby");
-            EditorGUILayout.EndHorizontal();
-
         }
     }
 }
