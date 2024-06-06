@@ -465,10 +465,14 @@ public class StepTool : EditorWindow
     private List<StepData> stepDataList = new List<StepData>(); // List to hold parsed step data
     private GameObject lastCreatedStep = null; // Track the last created step
 
+
+    
+
     [MenuItem("Tools/Step Tool")]
     public static void ShowWindow()
     {
         GetWindow<StepTool>("Step Tool");
+        
     }
 
     void OnGUI()
@@ -558,6 +562,7 @@ public class StepTool : EditorWindow
 
         if (GUILayout.Button("Import Steps from Docx"))
         {
+
             ImportStepsFromDocx(docxFilePath);
         }
     }
@@ -715,12 +720,22 @@ public class StepTool : EditorWindow
             EditorSceneManager.MarkSceneDirty(stepObject.scene);
         }
 
-        if (types[selectedTypeIndex] == "Dialogue" || types[selectedTypeIndex] == "Instruction" && !string.IsNullOrEmpty(scriptContent))
+        InstructionDeliveryListController listController = stepObject.GetComponentInParent<InstructionDeliveryListController>();
+        if (listController != null)
         {
-            // Call the GenerateAudio method from InstructionDeliveryControllerEditor
-            InstructionDeliveryControllerEditor.GenerateAudio(controller, scriptContent);
-            InstructionDeliveryControllerEditor.GenerateTimeline(controller);
+            listController.Steps.Add(controller);
         }
+        else
+        {
+            Debug.LogError("No InstructionDeliveryListController found in parent objects.");
+        }
+
+        // if (types[selectedTypeIndex] == "Dialogue" || types[selectedTypeIndex] == "Instruction" && !string.IsNullOrEmpty(scriptContent))
+        // {
+        //     // Call the GenerateAudio method from InstructionDeliveryControllerEditor
+        //     InstructionDeliveryControllerEditor.GenerateAudio(controller, scriptContent);
+        //     InstructionDeliveryControllerEditor.GenerateTimeline(controller);
+        // }
     }
 
     private void GenerateAndApplyDescription(GameObject selectedGameObject)
@@ -803,7 +818,7 @@ public class StepTool : EditorWindow
                         foreach (var paragraph in document.Paragraphs)
                         {
                             string text = paragraph.Text.Trim();
-                            if (string.IsNullOrEmpty(text)) continue;
+                            if (string.IsNullOrEmpty(text) || ExtractBetween(text, "[", "]") == "UserAction") continue;
 
                             // Check for group name
                             if (text.StartsWith("**") && text.EndsWith("**"))

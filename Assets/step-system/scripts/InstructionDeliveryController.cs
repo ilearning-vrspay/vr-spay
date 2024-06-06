@@ -12,6 +12,8 @@ using Newtonsoft.Json.Linq;
 public class InstructionDeliveryController : MonoBehaviour
 {
     public bool ShouldPlayOnStart; // Should these instructions be delivered when the game starts?
+    public bool autoNextStep = false; // should the instructions automatically move to the next step?
+
 
     [SerializeField] public UnityEvent OnInstructionsStarted = new UnityEvent(); // event that fires when the instructions have started
     [SerializeField] public UnityEvent onInstructionsDelivered = new UnityEvent(); // event that fires when instructions are done
@@ -266,8 +268,40 @@ public class InstructionDeliveryController : MonoBehaviour
 
         // OnInstructionsStarted UnityEvent activated
         OnInstructionsStarted.Invoke();
+        if (autoNextStep)
+        {
+            InstructionDeliveryListController parentController = FindParentWithController(gameObject);
+            if (!parentController)
+            {
+                parentController.StartNextStep();
+            }
+        
+        }
+
 
         StartCoroutine(_instructionLoop());
+    }
+
+    InstructionDeliveryListController FindParentWithController(GameObject obj)
+    {
+        if (obj == null)
+        {
+            return null;
+        }
+        
+        InstructionDeliveryListController parentController = obj.GetComponent<InstructionDeliveryListController>();
+        if (parentController != null)
+        {
+            return parentController;
+        }
+        
+        if (obj.transform.parent != null)
+        {
+            return FindParentWithController(obj.transform.parent.gameObject);
+        }
+        
+        return null;
+
     }
 
     /// <summary>

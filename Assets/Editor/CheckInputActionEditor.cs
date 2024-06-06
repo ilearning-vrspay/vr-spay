@@ -51,6 +51,9 @@ public class CheckInputActionEditor : Editor
 
         EditorGUILayout.PropertyField(serializedObject.FindProperty("InputAction"));
         EditorGUILayout.PropertyField(serializedObject.FindProperty("CheckEvent"));
+        EditorGUILayout.PropertyField(serializedObject.FindProperty("autoNextStep"), new GUIContent("Auto Trigger Next Step"));
+
+
 
         serializedObject.ApplyModifiedProperties();
     }

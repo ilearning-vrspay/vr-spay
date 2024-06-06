@@ -20,6 +20,8 @@ public class CheckInputAction : MonoBehaviour
     public int IndexCheck;
     public float TargetSqueezePercentage = 100.0f;
     public InputActions InputAction;
+    public bool autoNextStep = false; // should the instructions automatically move to the next step?
+
 
     private bool hasUsedTool = false;
     [SerializeField] public UnityEvent CheckEvent = new UnityEvent(); // event that fires when instructions are done
@@ -46,12 +48,16 @@ public class CheckInputAction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+
         switch(CheckType)
         {
             case checkType.PoseChange:
                 if (InputAction.PoseIndex == IndexCheck)
                 {
                     CheckEvent.Invoke();
+                    
+                    autoNext();
                     this.enabled = false;
                 }
                 break;
@@ -59,6 +65,8 @@ public class CheckInputAction : MonoBehaviour
                 if (InputAction.ToolVariationIndex == IndexCheck)
                 {
                     CheckEvent.Invoke();
+                    autoNext();
+
                     this.enabled = false;
                 }
                 break;
@@ -72,6 +80,7 @@ public class CheckInputAction : MonoBehaviour
                 }
                 else if (hasUsedTool && value < 0.1f){
                     CheckEvent.Invoke();
+                    autoNext();
                     this.enabled = false;
                     hasUsedTool = false;
                 }
@@ -80,6 +89,7 @@ public class CheckInputAction : MonoBehaviour
                 if (InputAction.GrabbedTool)
                 {
                     CheckEvent.Invoke();
+                    autoNext();
                     this.enabled = false; // should this be hardcoded here? or should it be determined in the inspector?
                 }
                 break;
@@ -87,10 +97,48 @@ public class CheckInputAction : MonoBehaviour
                 if (!InputAction.GrabbedTool)
                 {
                     CheckEvent.Invoke();
+                    autoNext();
+                    
                     this.enabled = false;
                 }
                 break;
         }
+
         
+        
+    }
+
+    InstructionDeliveryListController FindParentWithController(GameObject obj)
+    {
+        if (obj == null)
+        {
+            return null;
+        }
+        
+        InstructionDeliveryListController parentController = obj.GetComponent<InstructionDeliveryListController>();
+        if (parentController != null)
+        {
+            return parentController;
+        }
+        
+        if (obj.transform.parent != null)
+        {
+            return FindParentWithController(obj.transform.parent.gameObject);
+        }
+        
+        return null;
+
+    }
+
+    private void autoNext(){
+        if (autoNextStep)
+        {
+            InstructionDeliveryListController parentController = FindParentWithController(gameObject);
+            if (parentController != null)
+            {
+                parentController.StartNextStep();
+            }
+        
+        }
     }
 }
