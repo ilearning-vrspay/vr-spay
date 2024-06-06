@@ -1435,6 +1435,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "ToolRatchet",
+                    "type": "Button",
+                    "id": "64813899-fb05-41cf-9f97-1faae9cabe47",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -1600,6 +1609,17 @@
                     "processors": "",
                     "groups": "Generic XR Controller",
                     "action": "ToolVariation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "43e979e4-00ad-48c4-9f7f-7ecdf633aabd",
+                    "path": "<XRController>{RightHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ToolRatchet",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -26,7 +26,6 @@ public class InputActions : MonoBehaviour
     private int poseIndex = 0;
     private int customPoseIndex = -1;
     private int toolVariationIndex = 0;
-
     private float gripSqueezeValue = 0.0f;
 
     public float GripSqueezeValue
@@ -251,6 +250,10 @@ public class InputActions : MonoBehaviour
     //// TRIGGER ANALOG INPUT FUNCTION //
     public void TriggerAnalogInput(float value)
     {
+        // if Ratchetable and Ratchetable.CurrentRatchetLevel != 0 -> return
+
+        
+
         GripSqueezeValue = value;
         if (grabbedTool) // If a tool is currently in hand
         {
@@ -274,6 +277,23 @@ public class InputActions : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void RatchetTool()
+    {
+        if (!grabbedTool) return;
+        if (GripSqueezeValue < 0.9f) return;
+        // you have a tool and the grip has been press 0.9 so you can ratchet...
+        Hemostat hemostat = grabbedTool.GetComponent<Hemostat>();
+        if(hemostat == null) return;
+        if(hemostat.CurrentRatchetLevel == hemostat.MaxRatchets)
+        {
+            hemostat.CurrentRatchetLevel = 0;
+
+        }
+
+        // 0: default, 1: defaultAlt, 2: pose2, 3: defaultAlt ...., 19: ratchet1, 20: ratchet2
+        // 1, 2 -> 16, 18
     }
 
 
