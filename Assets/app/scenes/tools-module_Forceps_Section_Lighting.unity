@@ -2046,7 +2046,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShouldPlayOnStart: 0
-  autoNextStep: 0
+  autoNextStep: 1
   OnInstructionsStarted:
     m_PersistentCalls:
       m_Calls: []
@@ -2076,7 +2076,7 @@ GameObject:
   - component: {fileID: 141460370}
   - component: {fileID: 141460371}
   m_Layer: 0
-  m_Name: 2_Hemostats_InstructToPlayVideo_Video
+  m_Name: 2_Hemostats_InstructToPlayVideo_Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2133,19 +2133,31 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1540094162}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- INSTRUCTTOPLAYVIDEO ----
 
     --------------------------------
 
     ----------- 
     VIDEO ------------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 21d9fecb9aa90684db29eb4c2292a7a6, type: 2}
   script: Watch the video screen as Heidi introduces the Hemostatic Forceps instrument
     group.
   MetaData:
     fileName: 2_Hemostats_InstructToPlayVideo_Video
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: 8f3d0e5915d37034a8d6253ec7c7fa02, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!1 &142773190
 GameObject:
@@ -2330,13 +2342,13 @@ MonoBehaviour:
 
     ---------
     DIALOGUE ----------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: b44cacb1505eed745a93f7c6a5d0ed6b, type: 2}
   script: With the jaws open, turn the tips towards you and examine the horizontal
     striations that extend halfway up the inside length of each jaw. When you are
     finished, press the next button to continue.
   MetaData:
     fileName: 30_Hemostats_InstructToExamine_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: e88cfd3c852827f4abf90c161b97f027, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!1 &167565229
 GameObject:
@@ -2643,7 +2655,7 @@ MonoBehaviour:
 
     ---------
     VIDEO ---------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 5c918aed5b23708489a38d7008fae4db, type: 2}
   script: 
   MetaData:
     fileName: 10_Hemostats_TipClampVideo_Video
@@ -3373,6 +3385,82 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: -4792663604502074011, guid: fb885289feea75a479d9fa2eb31fb201, type: 3}
   m_PrefabInstance: {fileID: 1882249251}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &375552369
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 375552370}
+  - component: {fileID: 375552371}
+  m_Layer: 0
+  m_Name: 4_Hemostats_UserPicksUpHalstedMosquitoHemostats
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &375552370
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375552369}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 964479534}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &375552371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375552369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29d9a958b8caf7544b0a8f805473e834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CheckType: 3
+  IndexCheck: 0
+  TargetSqueezePercentage: 100
+  InputAction: {fileID: 1021646204}
+  autoNextStep: 1
+  CheckEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 273976626}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 273976626}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableOutline
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &387445779
 GameObject:
   m_ObjectHideFlags: 0
@@ -4063,12 +4151,12 @@ MonoBehaviour:
 
     ------------
     DIALOGUE ------------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 95226bcc32d198941b2c86c04b23b759, type: 2}
   script: Hover over the Crile Hemostats on the table and press the grip button to
     release them.
   MetaData:
     fileName: 24_Hemostats_InstructToReleaseTool_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: 5c2e502e88c827944bddb3957d188e37, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!1 &454410607
 GameObject:
@@ -4536,7 +4624,7 @@ MonoBehaviour:
 
     ----------
     VIDEO ----------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 07eb3eb34f5327345a9f3b6502b1723f, type: 2}
   script: 
   MetaData:
     fileName: 38_Hemostats_VideoToBePlayed_Video
@@ -5908,13 +5996,13 @@ MonoBehaviour:
 
     ---------
     DIALOGUE ----------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 126ba226423ff2e478c417bf01c9b6f4, type: 2}
   script: "You\u2019ll notice the Kelly Hemostats also contain a ratchet mechanism.
     Using the controller mechanics, ratchet the hemostats closed. Just squeeze the
     tool closed for now until we get the mechanism made."
   MetaData:
     fileName: 28_Hemostats_InstructToExamine_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: 08d4c747d3a472e40aa0c20569e7f988, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!1 &670971057
 GameObject:
@@ -6284,13 +6372,13 @@ MonoBehaviour:
 
     ---------
     DIALOGUE ----------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: c477f9d2e8f35424f991f04af997152c, type: 2}
   script: Press the grip button to open and close the hemostats with its tips facing
     upward. Once you have examined them, and are ready to move on, press the next
     button.
   MetaData:
     fileName: 7_Hemostats_InstructToExamine_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: a6c30457d25fd394fb3f777542d5b599, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!1 &749931414
 GameObject:
@@ -6573,12 +6661,12 @@ MonoBehaviour:
 
     ----------
     DIALOGUE -----------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 1c89eab7a7515c944beba12285be2343, type: 2}
   script: Watch the video to see how Heidi uses the Hemosts in surgery to clamp bleeding
     vessels with the tip clamping method.
   MetaData:
     fileName: 9_Hemostats_InstructToPlayVideo_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: a6bc9324b5e211a46bbddf594de24163, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!1 &785098868
 GameObject:
@@ -6656,13 +6744,13 @@ MonoBehaviour:
 
     -------
     DIALOGUE -------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 188885d5381d4d941aaaf34108cabf4e, type: 2}
   script: 'Rochester-Carmalt Hemostatic Forceps are larger and heavier than the previously
     addressed hemostats, with medium to long handles and long jaws.  They are used
     to occlude the blood flow in larger vessels and tissues before ligation. '
   MetaData:
     fileName: 36_Hemostats_DescribeTool_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: 5fc5ee6f23808614c81d59fd1cd8d25f, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!1 &790744491
 GameObject:
@@ -6740,7 +6828,7 @@ MonoBehaviour:
 
     ------------
     VIDEO ------------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: e8ed17779bbf5a44fb38e2d448cfccc2, type: 2}
   script: 
   MetaData:
     fileName: 13_Hemostats_HemostatsStriations_Video
@@ -7579,13 +7667,13 @@ MonoBehaviour:
 
     ---------
     DIALOGUE ----------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: a6ef2fdd4caa19f45976d334f4ab8d06, type: 2}
   script: With the jaws open, turn the tips towards you and examine the horizontal
     striations that extend the entire inside length of each jaw.  When you are finished,
     press the next button to continue.
   MetaData:
     fileName: 20_Hemostats_InstructToExamine_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: a745974c6f95e5d49a64fc348c9c9ba7, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!1 &879412778
 GameObject:
@@ -7805,11 +7893,11 @@ MonoBehaviour:
 
     -----------
     DIALOGUE ------------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: be5058a12cc8cb7449dbf49361956bee, type: 2}
   script: Press the joystick button again to change back to the tips down pose.
   MetaData:
     fileName: 8_Hemostats_InstructToChangePose_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: c4bd9608b4e0929428740988c1b6d9fe, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!1 &907087067
 GameObject:
@@ -7887,13 +7975,13 @@ MonoBehaviour:
 
     ---------
     DIALOGUE ----------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: d92fa3e73dc67e1439784dd805d2ec3a, type: 2}
   script: "You\u2019ll notice the Crile Hemostats also contain a ratchet mechanism.
     Using the controller mechanics, ratchet the hemostats closed. Just squeeze the
     tool closed for now until we get the mechanism made."
   MetaData:
     fileName: 21_Hemostats_InstructToExamine_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: 309d58b1959a58e4992b1fc18eba113e, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!1 &911572132
 GameObject:
@@ -8358,12 +8446,12 @@ MonoBehaviour:
 
     ------------
     DIALOGUE ------------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 8e5d0e27ea458dd4c978c4db3d1e7127, type: 2}
   script: "Let\u2019s move on to the next Hemostats tool. Hover over the Halsted
     Mostquito Hemostats and press the grip button to release the tool."
   MetaData:
     fileName: 16_Hemostats_InstructToReleaseTool_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: 8c9176fb7eb230e45b88523c3e6d690c, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!1 &961983099
 GameObject:
@@ -8448,7 +8536,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 375552370}
   m_Father: {fileID: 1486919445}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8488,18 +8577,43 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 375552371}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 273976626}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: EnableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- INSTRUCTTOPICKUP ----
 
     -----------------------------
 
     ---------
     DIALOGUE ---------'
-  TimelineAsset: {fileID: 0}
-  script: 
+  TimelineAsset: {fileID: 11400000, guid: ba93bc90c37601f4bb0b3183c2a6ebc3, type: 2}
+  script: Pick up the Halsted Mosquito Hemostats by hovering over them and pressing
+    the grip button.
   MetaData:
     fileName: 4_Hemostats_InstructToPickUp_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: 8b018913020c2174e8464ffd53249b49, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!1 &978376584
 GameObject:
@@ -8630,7 +8744,7 @@ MonoBehaviour:
 
     ---------
     DIALOGUE ----------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 88d440a1484e925499fd0a9100861a32, type: 2}
   script: Rochester-Carmalt Hemostats have shallow lengthwise serrations that run
     parallel along the entire jaw, with a few transverse serrations near the tip,
     creating a cross-hatched pattern. With the jaws open, turn the tips towards you
@@ -8638,7 +8752,7 @@ MonoBehaviour:
     of each jaw.  When you are finished, press the next button to continue.
   MetaData:
     fileName: 33_Hemostats_InstructToExamine_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: eb3c41817cc595d4491ee8317c8e5bef, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!1 &1005173472
 GameObject:
@@ -9287,11 +9401,11 @@ MonoBehaviour:
 
     ----------------
     DIALOGUE ----------------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 00ab4f9dd238f9840a01d5b829cde397, type: 2}
   script: Press the B button to change from the straight arms to the straight jaws.
   MetaData:
     fileName: 35_Hemostats_InstructToChangeToolVariation_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: c6c398c66212ed24ea20340fdaff1969, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!1 &1030490636
 GameObject:
@@ -9769,13 +9883,13 @@ MonoBehaviour:
 
     ---------
     DIALOGUE ----------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 37360418ad43a944fad1f6280187ba44, type: 2}
   script: With the jaws open, turn the tips towards you and examine the horizontal
     striations that extend the entire inside length of each jaw. When you are finished,
     press the next button to continue.
   MetaData:
     fileName: 23_Hemostats_InstructToExamine_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: fc3d501e48da3c04cb8626efe6662bc0, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!1 &1044358041
 GameObject:
@@ -10727,7 +10841,7 @@ MonoBehaviour:
 
     ------------
     VIDEO ------------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: e48829737a5b98f4690f2229fed88c0f, type: 2}
   script: 
   MetaData:
     fileName: 3_Hemostats_HemostatsIntroVideo_Video
@@ -11203,13 +11317,13 @@ MonoBehaviour:
 
     ---------
     DIALOGUE ----------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: c117ee0e407498f4c9e7d319b7187a61, type: 2}
   script: You are currently holding the large, curved Halsted Mosquito forceps. With
     the tips toward you and open, examine the transverse striations. Once you have
     examined the striations, press the next button to move on.
   MetaData:
     fileName: 14_Hemostats_InstructToExamine_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: d8ec3c4be53ee0f4483985d8cad6c5c7, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!1 &1190469139 stripped
 GameObject:
@@ -11536,11 +11650,11 @@ MonoBehaviour:
 
     -----------
     DIALOGUE ------------'
-  TimelineAsset: {fileID: 0}
-  script: 
+  TimelineAsset: {fileID: 11400000, guid: 79273c62cbc310d418691c1730dfbf9b, type: 2}
+  script: Pick up the Rochester-Carmalt Hemostatic Forceps from the table.
   MetaData:
     fileName: 32_Hemostats_InstructToPickUpTool_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: 8348a19d0251b2f47bfe0a21ef8ccb78, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!1 &1213138551
 GameObject:
@@ -12258,13 +12372,13 @@ MonoBehaviour:
 
     ---------
     DIALOGUE ----------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 78f05fee205feff4c9b824523b389646, type: 2}
   script: "You\u2019ll notice the Rochester-Carmalt Hemostats also contain a ratchet
     mechanism. Using the controller mechanics, ratchet the hemostats closed. Just
     squeeze the tool closed for now until we get the mechanism made."
   MetaData:
     fileName: 34_Hemostats_InstructToExamine_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: a1cd8bfc006991f479bb6204fe65ecf5, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!1 &1302155392
 GameObject:
@@ -12853,11 +12967,11 @@ MonoBehaviour:
 
     ----------
     DIALOGUE -----------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: ff3d70c06fdd76841beff3f8928e317f, type: 2}
   script: Press play to listen to Heidi describe the Crile Hemostatic Forceps.
   MetaData:
     fileName: 18_Hemostats_InstructToPlayVideo_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: 87007ad1a9f7ce148b072d2bfd7035ae, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!1 &1327818465
 GameObject:
@@ -13430,11 +13544,11 @@ MonoBehaviour:
 
     ----------
     DIALOGUE -----------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 499d0a956d4f0f34c93d26e47a388946, type: 2}
   script: Now watch the video as Heidi describes them.
   MetaData:
     fileName: 26_Hemostats_InstructToPlayVideo_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: ab4187f04b5e52b41b7551405b3a56db, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!1 &1428144351
 GameObject:
@@ -13971,7 +14085,7 @@ MonoBehaviour:
 
     -------------
     VIDEO --------------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 7836c6f5527f00046a8dc12eed65c55f, type: 2}
   script: 
   MetaData:
     fileName: 19_Hemostats_VideoOnCrileHemostats_Video
@@ -15903,13 +16017,13 @@ MonoBehaviour:
 
     ----------
     DIALOGUE -----------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: eae886a03f7910243a396156d2a1703c, type: 2}
   script: "Watch the video as Heidi discusses the three types of hemostatic forceps
     with transverse striations on their grasping tips. You\u2019ll notice the tools
     will be labeled on the table."
   MetaData:
     fileName: 12_Hemostats_InstructToPlayVideo_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: 6323ff624b50c8247917003462ea963d, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!4 &1511524925 stripped
 Transform:
@@ -16021,7 +16135,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6539479389457707605}
+      - m_Target: {fileID: 1076899136}
         m_TargetAssemblyTypeName: InstructionDeliveryListController, Assembly-CSharp
         m_MethodName: StartNextStep
         m_Mode: 1
@@ -16159,12 +16273,12 @@ MonoBehaviour:
 
     -----------
     DIALOGUE ------------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 7c452ad0c11d445499f8bb433a7be8d1, type: 2}
   script: Now press the joystick button to change to the Tips up pose. This pose
     is used for the jaw clamping method.
   MetaData:
     fileName: 6_Hemostats_InstructToChangePose_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: 74f13cde4e387cd4b8bbd1cbc90e1c13, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!1 &1548152331
 GameObject:
@@ -16306,13 +16420,13 @@ MonoBehaviour:
 
     ----------------
     DIALOGUE ----------------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 88777ce6a22899a4793f97e62d859a72, type: 2}
   script: "Let\u2019s look at the different variations of the tool. Press the B button
     to see the different variations available. They come in large and small sizes,
     with curved and straight jaws."
   MetaData:
     fileName: 15_Hemostats_InstructToChangeToolVariation_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: 6b9e4f8aaad1627419c7be3007c84e56, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!1 &1588657298
 GameObject:
@@ -16617,13 +16731,13 @@ MonoBehaviour:
 
     ---------
     DIALOGUE ----------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: e5457ab91ce512b4e8398fcc1e568abe, type: 2}
   script: ' With the jaws open, turn the tips towards you and examine the horizontal
     striations that extend halfway up the inside length of each jaw.  When you are
     finished, press the next button to continue.'
   MetaData:
     fileName: 27_Hemostats_InstructToExamine_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: f5f365a22a3274547b8eda1023234430, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!1 &1623461740
 GameObject:
@@ -17088,13 +17202,13 @@ MonoBehaviour:
 
     ---------
     DIALOGUE ----------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 04b2449ae07b2904493b1783beb5df4f, type: 2}
   script: "You\u2019ll notice that the tips are facing down. Squeeze and release
     the hemostats to examine them in your hand. Once you have examined them, and
     are ready to move on, press the next button."
   MetaData:
     fileName: 5_Hemostats_InstructToExamine_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: f1cfe0d323da9b345969bc91ea9c2f52, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!1 &1669628942
 GameObject:
@@ -17172,12 +17286,12 @@ MonoBehaviour:
 
     ------------
     DIALOGUE ------------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 3737cf9c926990c49a46cb5c5c6b9353, type: 2}
   script: Hover over the Kelly Hemostats on the table and press the grip button to
     release them.
   MetaData:
     fileName: 31_Hemostats_InstructToReleaseTool_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: f6e3b2068083bd740a85a3d2a23592cc, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!1 &1669661792
 GameObject:
@@ -17255,11 +17369,11 @@ MonoBehaviour:
 
     -----------
     DIALOGUE ------------'
-  TimelineAsset: {fileID: 0}
-  script: 
+  TimelineAsset: {fileID: 11400000, guid: 2878005eb92f1804db97ae900ef09ab4, type: 2}
+  script: Pick up the Kelly Hemostatic Forceps from the table.
   MetaData:
     fileName: 25_Hemostats_InstructToPickUpTool_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: 9acc3463e959d20429578fe931067b9b, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!1 &1674690230 stripped
 GameObject:
@@ -17407,12 +17521,12 @@ MonoBehaviour:
 
     ------------
     DIALOGUE ------------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 4e105ea91fecdf84590236ef87666107, type: 2}
   script: "That\u2019s the end of the Hemostatic forceps group. Hover over the Rochester-Carmalt
     Hemostats and press the grip button to release the tool."
   MetaData:
     fileName: 39_Hemostats_InstructToReleaseTool_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: 674d65456456cea4cb30f2558b4127dc, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &1680801421
 PlayableDirector:
@@ -17631,11 +17745,11 @@ MonoBehaviour:
 
     ----------------
     DIALOGUE ----------------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: ebf696326accf72458fe0bec2afa35e7, type: 2}
   script: Press the B button to change from the straight arms to the curved jaws.
   MetaData:
     fileName: 29_Hemostats_InstructToChangeToolVariation_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: e69552c218ac74847a66513c62e7a9d5, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!1001 &1726090026
 PrefabInstance:
@@ -19300,14 +19414,14 @@ MonoBehaviour:
 
     ---------
     DIALOGUE ----------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: a606aff0f288c284d805de30807030fe, type: 2}
   script: Now turn the hemostats toward you and examine the ratchet mechanism that
     Heidi used to lock the clamp after clamping the bleeding vessel in surgery with
     the tip clamping method. We need to figure out what this mechanism is, so just
     squeeze the grip for now, and check back with me at another time.
   MetaData:
     fileName: 11_Hemostats_InstructToExamine_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: 2d955f16ade36cd4c9986d2d010d2d3a, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!1 &1812859547
 GameObject:
@@ -19607,12 +19721,12 @@ MonoBehaviour:
 
     -----------
     DIALOGUE ------------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 0ade003665488284286d9b51006c17a6, type: 2}
   script: " Watch the video to see how Heidi uses them in the \u201C3-clamp technique\u201D
     during an ovariohysterectomy procedure on a large dog."
   MetaData:
     fileName: 37_Hemostats_InstructToWatchVideo_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: 995456e85dd611244ae125ec33292122, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!1001 &1882249251
 PrefabInstance:
@@ -19879,12 +19993,12 @@ MonoBehaviour:
 
     -----------
     DIALOGUE ------------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: de585aeb4d5c4704cbeda35cd3edef2d, type: 2}
   script: Next we will go over the Crile Hemostatic Forceps. Hover over them on the
     table and press the grip button to pick them up.
   MetaData:
     fileName: 17_Hemostats_InstructToPickupTool_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: 1427348090dca254ab406b6937b7df53, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!1 &1883978173
 GameObject:
@@ -21672,11 +21786,11 @@ MonoBehaviour:
 
     ----------------
     DIALOGUE ----------------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 583ca2cd2cf6e4c4eb9e81e81809a8ff, type: 2}
   script: Press the B button to change from the straight arms to the curved jaws.
   MetaData:
     fileName: 22_Hemostats_InstructToChangeToolVariation_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: 06f0ff44572f87c44bcac3be1fb9a092, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!1 &2121078968
 GameObject:
