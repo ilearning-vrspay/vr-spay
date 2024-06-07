@@ -8,4 +8,10 @@ AnimatorOverrideController:
   m_PrefabAsset: {fileID: 0}
   m_Name: R_RochesterCarmaltHemostats_Animations_Override
   m_Controller: {fileID: 9100000, guid: c794e44b2fba41b46bb522d1150608d6, type: 2}
-  m_Clips: []
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 45638d2806f1c844eadd82a4348b55fc, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ca0da14e77cc4754da7f753717f095c7, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 35b5877a999617545bfffd1ddf4fb1c5, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 443f94ec8f3361d4e8415e6ecc182a51, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: d9b5655c631c1a646b6abd5cab8b0ad1, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 69ab26e8312092d47bbfb8c826a11547, type: 2}
