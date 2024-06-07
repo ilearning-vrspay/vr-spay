@@ -281,17 +281,24 @@ public class InputActions : MonoBehaviour
 
     public void RatchetTool()
     {
-        if (!grabbedTool) return;
-        if (GripSqueezeValue < 0.9f) return;
-        // you have a tool and the grip has been press 0.9 so you can ratchet...
-        Hemostat hemostat = grabbedTool.GetComponent<Hemostat>();
-        if(hemostat == null) return;
-        if(hemostat.CurrentRatchetLevel == hemostat.MaxRatchets)
+        if (!grabbedTool) return; // you have a grabbed tool
+
+        if (GripSqueezeValue < 0.9f) return; // you have a tool and the grip has been press 0.9 so you can ratchet...
+        Ratchetable ratchetableTool = grabbedTool.GetComponent<Ratchetable>();
+        
+        if(ratchetableTool == null) return; // you have a ratchetable tool
+
+        if(ratchetableTool.CurrentRatchetLevel == ratchetableTool.MaxRatchets)
         {
-            hemostat.CurrentRatchetLevel = 0;
-
+            // you've reached the maximum ratchets so unratchet
+            ratchetableTool.CurrentRatchetLevel = 0;
+            Debug.Log($"{ratchetableTool.name} ratchet level: {ratchetableTool.CurrentRatchetLevel} - Tool has been unratcheted. Reset pose.");
+            return;
         }
-
+        
+        // ratchet me
+        ratchetableTool.CurrentRatchetLevel++;
+        Debug.Log($"{ratchetableTool.name} ratchet level: {ratchetableTool.CurrentRatchetLevel} - Tool has been ratched.");
         // 0: default, 1: defaultAlt, 2: pose2, 3: defaultAlt ...., 19: ratchet1, 20: ratchet2
         // 1, 2 -> 16, 18
     }

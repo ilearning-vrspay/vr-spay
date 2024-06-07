@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Hemostat : MonoBehaviour
+public class Ratchetable : MonoBehaviour
 {
     public int MaxRatchets;
     public int CurrentRatchetLevel;
