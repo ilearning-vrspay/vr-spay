@@ -8,6 +8,7 @@ using Unity.VisualScripting;
 using UnityEngine.PlayerLoop;
 using static UnityEngine.Rendering.DebugUI;
 using UnityEditor;
+using static UnityEditor.Progress;
 
 [RequireComponent(typeof(HandInteractionSystem))]
 
@@ -17,6 +18,8 @@ public class InputActions : MonoBehaviour
     public UnityEvent OnToolGrabbed = new UnityEvent();
     public UnityEvent OnToolReleased = new UnityEvent();
     public UnityEvent OnToolUsed = new UnityEvent();
+    public UnityEvent OnToolRatched = new UnityEvent();
+    public UnityEvent OnToolUnratched = new UnityEvent();
 
     private ToolObjectReference hoveredTool = null;
     private Animator handAnimator;
@@ -87,7 +90,8 @@ public class InputActions : MonoBehaviour
         "Pose5",
         "Pose6",
         "Pose7",
-        "Pose8"
+        "Pose8",
+        "RatchetPose"
     };
 
     private void Update()
@@ -250,14 +254,26 @@ public class InputActions : MonoBehaviour
     //// TRIGGER ANALOG INPUT FUNCTION //
     public void TriggerAnalogInput(float value)
     {
-        // if Ratchetable and Ratchetable.CurrentRatchetLevel != 0 -> return
-
-        
-
+        // cacheing the button value
         GripSqueezeValue = value;
+
+        // Do you not have a tool?
+        if (grabbedTool == null) return;
+
+        // Is the tool ratchetable and are you ratched?
+        Ratchetable ratchetableTool = grabbedTool.GetComponent<Ratchetable>();
+        if (ratchetableTool != null)
+        {
+            if (ratchetableTool.CurrentRatchetLevel == 1)
+            {
+                return;
+            } 
+        }
+
         if (grabbedTool) // If a tool is currently in hand
         {
-            if (HasAltState(poseIndex)){ // If the current pose has an alternative state
+            if (HasAltState(poseIndex))
+            { // If the current pose has an alternative state
                 handAnimator.SetFloat(animationNames[poseIndex], 1.0f - value);         // Interpolate from current pose
                 handAnimator.SetFloat(animationNames[poseIndex] + "_AltState", value);  // to current pose alternative state
 
@@ -293,6 +309,14 @@ public class InputActions : MonoBehaviour
             // you've reached the maximum ratchets so unratchet
             ratchetableTool.CurrentRatchetLevel = 0;
             Debug.Log($"{ratchetableTool.name} ratchet level: {ratchetableTool.CurrentRatchetLevel} - Tool has been unratcheted. Reset pose.");
+            handAnimator.SetFloat(animationNames[animationNames.Length - 1], 0.0f);
+
+            float gv = gripSqueezeValue;
+            float inv_gv = 1.0f - gv;
+
+            handAnimator.SetFloat(animationNames[poseIndex], inv_gv);
+            handAnimator.SetFloat(animationNames[poseIndex] + "_AltState", gv);
+            OnToolUnratched.Invoke();
             return;
         }
         
@@ -301,6 +325,10 @@ public class InputActions : MonoBehaviour
         Debug.Log($"{ratchetableTool.name} ratchet level: {ratchetableTool.CurrentRatchetLevel} - Tool has been ratched.");
         // 0: default, 1: defaultAlt, 2: pose2, 3: defaultAlt ...., 19: ratchet1, 20: ratchet2
         // 1, 2 -> 16, 18
+        handAnimator.SetFloat(animationNames[poseIndex], 0.0f);
+        handAnimator.SetFloat(animationNames[poseIndex] + "_AltState", 0.0f);
+        handAnimator.SetFloat(animationNames[animationNames.Length - 1], 1.0f);
+        OnToolRatched.Invoke();
     }
 
 

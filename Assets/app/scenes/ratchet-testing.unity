@@ -1346,7 +1346,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cf2dbb43d8fdb34ab2c46ac57fdeb2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxRatchets: 2
+  MaxRatchets: 1
   CurrentRatchetLevel: 0
 --- !u!1 &981153531 stripped
 GameObject:
@@ -1510,6 +1510,36 @@ MonoBehaviour:
       - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: InstructionDeliveryListController, Assembly-CSharp
         m_MethodName: StartNextStep
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnToolRatched:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1447223005}
+        m_TargetAssemblyTypeName: ControllerHaptics, Assembly-CSharp
+        m_MethodName: TriggerHapticFeedback
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnToolUnratched:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1447223005}
+        m_TargetAssemblyTypeName: ControllerHaptics, Assembly-CSharp
+        m_MethodName: TriggerHapticFeedback
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2924,6 +2954,7 @@ GameObject:
   - component: {fileID: 1447222998}
   - component: {fileID: 1447223004}
   - component: {fileID: 1447223003}
+  - component: {fileID: 1447223005}
   m_Layer: 0
   m_Name: Right Controller
   m_TagString: Untagged
@@ -3223,6 +3254,21 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   LockMode: 1
+--- !u!114 &1447223005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447222996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b40601655f986d40a87f840f9284dea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 1447223002}
+  amplitude: 0.7
+  duration: 0.1
 --- !u!114 &1455738945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3412,6 +3458,57 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &1529250283
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1529250285}
+  - component: {fileID: 1529250284}
+  m_Layer: 0
+  m_Name: Example
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1529250284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1529250283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cc51dc61563e2747a995bab5da0aee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ListOfExampleDS:
+  - Variation: {fileID: 0}
+    Variations: []
+  - Variation: {fileID: 0}
+    Variations: []
+  - Variation: {fileID: 0}
+    Variations: []
+--- !u!4 &1529250285
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1529250283}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.036083024, y: 0.9416206, z: 0.33385602}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1555533577 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5432567170770840196, guid: fb885289feea75a479d9fa2eb31fb201, type: 3}
@@ -5041,7 +5138,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1852286643}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -5120,7 +5217,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1726090028}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
