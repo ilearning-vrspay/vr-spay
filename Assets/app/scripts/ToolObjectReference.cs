@@ -1,6 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
+
+[System.Serializable]
+
+public class ToolVariation
+{
+    public GameObject ToolVariationObject;
+    public AnimatorOverrideController VariationOverrideController;
+
+}
+
 
 public class ToolObjectReference : MonoBehaviour
 {
@@ -12,6 +23,8 @@ public class ToolObjectReference : MonoBehaviour
     public AnimatorOverrideController LeftOverrideController;
     public GameObject RightToolKitTool;
     public List<GameObject> RightToolVariations;
+    public List<ToolVariation> RightToolVariationsTest = new List<ToolVariation>();
+    public bool thisisabool;
     public GameObject LeftToolKitTool;
     public List<GameObject> LeftToolVariations;
 

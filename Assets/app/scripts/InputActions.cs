@@ -120,7 +120,11 @@ public class InputActions : MonoBehaviour
     /// <param name="controller">The new animator override controller to use.</param>
     public void ChangeController(AnimatorOverrideController controller=null)
         {
-            handAnimator.runtimeAnimatorController = altController;
+            if (controller == null)
+            {
+                controller = altController;
+            }
+            handAnimator.runtimeAnimatorController = controller;
             altController.GetOverrides(overrides);     
         }
 
@@ -137,7 +141,7 @@ public class InputActions : MonoBehaviour
     {
         if (hoveredTool != null){
             if (grabbedTool == null){
-                ChangeController(altController);
+                ChangeController();
                 InputPressed(hoveredTool, true);
                 grabbedTool = hoveredTool;
                 OnToolGrabbed.Invoke();
@@ -365,6 +369,12 @@ public class InputActions : MonoBehaviour
         } else
         {
             toolVariationIndex = (toolVariationIndex + 1) % grabbedTool.RightToolVariations.Count;
+            if (grabbedTool.RightToolVariationsTest[toolVariationIndex].VariationOverrideController != null)
+            {
+                ChangeController(grabbedTool.RightToolVariationsTest[toolVariationIndex].VariationOverrideController);
+            } else {
+                ChangeController();
+            }
         }
         
         grabbedTool.ToggleToolVariation("Right", toolVariationIndex);

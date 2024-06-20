@@ -1,0 +1,1803 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!74 &7400000
+AnimationClip:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Right_HalstedMasquito_LargeTripod_Closed
+  serializedVersion: 7
+  m_Legacy: 0
+  m_Compressed: 0
+  m_UseHighQualityCurve: 1
+  m_RotationCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 7.1028916e-10, y: -8.5802987e-10, z: 0.0000000012995202, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 7.1028916e-10, y: -8.5802987e-10, z: 0.0000000012995202, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Bones_01/BdBn_R_Wrist_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1.9081958e-17, y: 9.486769e-20, z: 1.1275703e-17, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 1.9081958e-17, y: 9.486769e-20, z: 1.1275703e-17, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Bones_01/BdBn_R_Wrist_01/BdBn_R_Carpal_B_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.08226099, y: 0.6865381, z: 0.1809347, w: 0.6994006}
+        inSlope: {x: 2.064271, y: -0.3657775, z: 0.013186455, w: -0.018083096}
+        outSlope: {x: 2.064271, y: -0.3657775, z: 0.013186455, w: -0.018083096}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 0.16827229, y: 0.6712974, z: 0.18148413, w: 0.69864714}
+        inSlope: {x: 2.064271, y: -0.3657775, z: 0.013186455, w: -0.018083096}
+        outSlope: {x: 2.064271, y: -0.3657775, z: 0.013186455, w: -0.018083096}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Bones_01/BdBn_R_Wrist_01/BdBn_R_Carpal_B_01/BdBn_R_Mid_A_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.049039792, y: -0.06981725, z: 0.5866269, w: 0.8053506}
+        inSlope: {x: 0.059312224, y: 0.043269575, z: -0.7019477, w: 0.4922905}
+        outSlope: {x: 0.059312224, y: 0.043269575, z: -0.7019477, w: 0.4922905}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 0.051511135, y: -0.06801435, z: 0.55737907, w: 0.8258627}
+        inSlope: {x: 0.059312224, y: 0.043269575, z: -0.7019477, w: 0.4922905}
+        outSlope: {x: 0.059312224, y: 0.043269575, z: -0.7019477, w: 0.4922905}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Bones_01/BdBn_R_Wrist_01/BdBn_R_Carpal_B_01/BdBn_R_Mid_A_01/BdBn_R_Mid_B_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.052395996, y: 0.008314731, z: 0.42103222, w: 0.9054929}
+        inSlope: {x: -0.014723092, y: -0.14879802, z: -2.617384, w: 1.0347662}
+        outSlope: {x: -0.014723092, y: -0.14879802, z: -2.617384, w: 1.0347662}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: -0.053009458, y: 0.0021148126, z: 0.31197456, w: 0.94860816}
+        inSlope: {x: -0.014723092, y: -0.14879802, z: -2.617384, w: 1.0347662}
+        outSlope: {x: -0.014723092, y: -0.14879802, z: -2.617384, w: 1.0347662}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Bones_01/BdBn_R_Wrist_01/BdBn_R_Carpal_B_01/BdBn_R_Mid_A_01/BdBn_R_Mid_B_01/BdBn_R_Mid_C_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.07487033, y: 0.60596806, z: 0.09395636, w: 0.7863647}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 0.07487033, y: 0.60596806, z: 0.09395636, w: 0.7863647}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Bones_01/BdBn_R_Wrist_01/BdBn_R_Carpal_B_01/BdBn_R_Index_A_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0, y: 0, z: 0.10691026, w: 0.9942687}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 0, y: 0, z: 0.10691026, w: 0.9942687}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Bones_01/BdBn_R_Wrist_01/BdBn_R_Carpal_B_01/BdBn_R_Index_A_01/BdBn_R_Index_B_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0, y: -0, z: -0.06391407, w: 0.99795544}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 0, y: -0, z: -0.06391407, w: 0.99795544}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Bones_01/BdBn_R_Wrist_01/BdBn_R_Carpal_B_01/BdBn_R_Index_A_01/BdBn_R_Index_B_01/BdBn_R_Index_C_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.007119529, y: -0.0052006054, z: -0.25208476, w: 0.967665}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: -0.007119529, y: -0.0052006054, z: -0.25208476, w: 0.967665}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Bones_01/BdBn_R_Wrist_01/BdBn_R_Carpal_C_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.010789508, y: 0.69594806, z: 0.19194931, w: 0.6918782}
+        inSlope: {x: 2.263483, y: -0.3986063, z: 2.7585797, w: -0.80749655}
+        outSlope: {x: 2.263483, y: -0.3986063, z: 2.7585797, w: -0.80749655}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 0.1051013, y: 0.67933947, z: 0.30689013, w: 0.6582325}
+        inSlope: {x: 2.263483, y: -0.3986063, z: 2.7585797, w: -0.80749655}
+        outSlope: {x: 2.263483, y: -0.3986063, z: 2.7585797, w: -0.80749655}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Bones_01/BdBn_R_Wrist_01/BdBn_R_Carpal_C_01/BdBn_R_Ring_A_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0, y: 0, z: 0.75458735, w: 0.6561997}
+        inSlope: {x: 0, y: 0, z: -1.5256934, w: 1.5993361}
+        outSlope: {x: 0, y: 0, z: -1.5256934, w: 1.5993361}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 0, y: 0, z: 0.6910168, w: 0.7228387}
+        inSlope: {x: 0, y: 0, z: -1.5256934, w: 1.5993361}
+        outSlope: {x: 0, y: 0, z: -1.5256934, w: 1.5993361}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Bones_01/BdBn_R_Wrist_01/BdBn_R_Carpal_C_01/BdBn_R_Ring_A_01/BdBn_R_Ring_B_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.037458383, y: 0.00075498235, z: 0.21783361, w: 0.9752666}
+        inSlope: {x: 0.8989858, y: -0.0181392, z: -0.65072536, w: 0.15306902}
+        outSlope: {x: 0.8989858, y: -0.0181392, z: -0.65072536, w: 0.15306902}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: -0.00000064141256, y: -0.00000081772515, z: 0.19072005, w: 0.98164445}
+        inSlope: {x: 0.8989858, y: -0.0181392, z: -0.65072536, w: 0.15306902}
+        outSlope: {x: 0.8989858, y: -0.0181392, z: -0.65072536, w: 0.15306902}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Bones_01/BdBn_R_Wrist_01/BdBn_R_Carpal_C_01/BdBn_R_Ring_A_01/BdBn_R_Ring_B_01/BdBn_R_Ring_C_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.0041030073, y: 0.79059076, z: -0.043741487, w: 0.6107668}
+        inSlope: {x: 2.9596074, y: -0.24779892, z: 2.300219, w: -0.015749931}
+        outSlope: {x: 2.9596074, y: -0.24779892, z: 2.300219, w: -0.015749931}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 0.12741998, y: 0.7802658, z: 0.052100975, w: 0.6101106}
+        inSlope: {x: 2.9596074, y: -0.24779892, z: 2.300219, w: -0.015749931}
+        outSlope: {x: 2.9596074, y: -0.24779892, z: 2.300219, w: -0.015749931}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Bones_01/BdBn_R_Wrist_01/BdBn_R_Carpal_C_01/BdBn_R_Pink_A_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.0000015689145, y: 0.0000010205548, z: 0.4269005, w: 0.9042986}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 0.0000015689145, y: 0.0000010205548, z: 0.4269005, w: 0.9042986}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Bones_01/BdBn_R_Wrist_01/BdBn_R_Carpal_C_01/BdBn_R_Pink_A_01/BdBn_R_Pinky_B_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.012315093, y: -0.040170114, z: 0.33116734, w: 0.94263613}
+        inSlope: {x: -0.058635548, y: 0.019965917, z: 1.3740377, w: -0.5306783}
+        outSlope: {x: -0.058635548, y: 0.019965917, z: 1.3740377, w: -0.5306783}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: -0.01475824, y: -0.0393382, z: 0.3884189, w: 0.92052454}
+        inSlope: {x: -0.058635548, y: 0.019965917, z: 1.3740377, w: -0.5306783}
+        outSlope: {x: -0.058635548, y: 0.019965917, z: 1.3740377, w: -0.5306783}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Bones_01/BdBn_R_Wrist_01/BdBn_R_Carpal_C_01/BdBn_R_Pink_A_01/BdBn_R_Pinky_B_01/BdBn_R_Pinky_C_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.38893038, y: 0.31750983, z: 0.22830239, w: 0.8341455}
+        inSlope: {x: 0.21480274, y: 0.99700284, z: 1.9008336, w: -0.9377804}
+        outSlope: {x: 0.21480274, y: 0.99700284, z: 1.9008336, w: -0.9377804}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: -0.37998027, y: 0.35905161, z: 0.3075038, w: 0.7950713}
+        inSlope: {x: 0.21480274, y: 0.99700284, z: 1.9008336, w: -0.9377804}
+        outSlope: {x: 0.21480274, y: 0.99700284, z: 1.9008336, w: -0.9377804}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Bones_01/BdBn_R_Wrist_01/BdBn_R_Carpal_A_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.03254519, y: -0.0300945, z: 0.23495515, w: 0.97099495}
+        inSlope: {x: -0.006164521, y: -1.2639755, z: 1.4401578, w: -0.47098732}
+        outSlope: {x: -0.006164521, y: -1.2639755, z: 1.4401578, w: -0.47098732}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 0.032288335, y: -0.08276015, z: 0.29496172, w: 0.9513705}
+        inSlope: {x: -0.006164521, y: -1.2639755, z: 1.4401578, w: -0.47098732}
+        outSlope: {x: -0.006164521, y: -1.2639755, z: 1.4401578, w: -0.47098732}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Bones_01/BdBn_R_Wrist_01/BdBn_R_Carpal_A_01/BdBn_R_Thumb_A_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.09820744, y: 0.06238263, z: 0.35601002, w: 0.9272112}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 0.09820744, y: 0.06238263, z: 0.35601002, w: 0.9272112}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Bones_01/BdBn_R_Wrist_01/BdBn_R_Carpal_A_01/BdBn_R_Thumb_A_01/BdBn_R_Thumb_B_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.10350341, y: 0.5500425, z: 0.044604864, w: 0.82749665}
+        inSlope: {x: -0.07145941, y: -0.4407177, z: -1.0415257, w: 0.30547428}
+        outSlope: {x: -0.07145941, y: -0.4407177, z: -1.0415257, w: 0.30547428}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: -0.10648089, y: 0.5316793, z: 0.0012079569, w: 0.84022474}
+        inSlope: {x: -0.07145941, y: -0.4407177, z: -1.0415257, w: 0.30547428}
+        outSlope: {x: -0.07145941, y: -0.4407177, z: -1.0415257, w: 0.30547428}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Tools_01/Grp_RightHand_Instruments_01/Grp_r_HaMoHe_World_01/Grp__R_HaMoHe__Bones_01/Grp__R_HaMoHe__SmallHemo_Bones_01/BdBn__R_HaMoHe__SmallHemo_Arm_Root_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 5.1237248e-17, y: 0.98843205, z: -5.1237248e-17, w: -0.15166432}
+        inSlope: {x: 1.1940512e-16, y: 0.20287657, z: -1.1940512e-16, w: 1.7471573}
+        outSlope: {x: 1.1940512e-16, y: 0.20287657, z: -1.1940512e-16, w: 1.7471573}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 5.621246e-17, y: 0.99688524, z: -5.621246e-17, w: -0.078866094}
+        inSlope: {x: 1.1940512e-16, y: 0.20287657, z: -1.1940512e-16, w: 1.7471573}
+        outSlope: {x: 1.1940512e-16, y: 0.20287657, z: -1.1940512e-16, w: 1.7471573}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Tools_01/Grp_RightHand_Instruments_01/Grp_r_HaMoHe_World_01/Grp__R_HaMoHe__Bones_01/Grp__R_HaMoHe__SmallHemo_Bones_01/BdBn__R_HaMoHe__SmallHemo_Arm_Root_01/BdBn__R_HaMoHe__SmallHemo_l_Arm_Base_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Tools_01/Grp_RightHand_Instruments_01/Grp_r_HaMoHe_World_01/Grp__R_HaMoHe__Bones_01/Grp__R_HaMoHe__SmallHemo_Bones_01/BdBn__R_HaMoHe__SmallHemo_Arm_Root_01/BdBn__R_HaMoHe__SmallHemo_l_Arm_Base_01/BdBn__R_HaMoHe__SmallHemo_l_Arm_Handle_A_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Tools_01/Grp_RightHand_Instruments_01/Grp_r_HaMoHe_World_01/Grp__R_HaMoHe__Bones_01/Grp__R_HaMoHe__SmallHemo_Bones_01/BdBn__R_HaMoHe__SmallHemo_Arm_Root_01/BdBn__R_HaMoHe__SmallHemo_l_Arm_Base_01/BdBn__R_HaMoHe__SmallHemo_l_Arm_Handle_A_01/BdBn__R_HaMoHe__SmallHemo_l_Arm_Handle_B_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Tools_01/Grp_RightHand_Instruments_01/Grp_r_HaMoHe_World_01/Grp__R_HaMoHe__Bones_01/Grp__R_HaMoHe__SmallHemo_Bones_01/BdBn__R_HaMoHe__SmallHemo_Arm_Root_01/BdBn__R_HaMoHe__SmallHemo_l_Arm_Base_01/BdBn__R_HaMoHe__SmallHemo_l_Arm_Handle_A_01/BdBn__R_HaMoHe__SmallHemo_l_Arm_Handle_B_01/BdBn__R_HaMoHe__SmallHemo_l_Arm_Handle_C_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0, y: 0.25370306, z: -0, w: 0.9672822}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 0, y: 0.25370306, z: -0, w: 0.9672822}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Tools_01/Grp_RightHand_Instruments_01/Grp_r_HaMoHe_World_01/Grp__R_HaMoHe__Bones_01/Grp__R_HaMoHe__SmallHemo_Bones_01/BdBn__R_HaMoHe__SmallHemo_Arm_Root_01/BdBn__R_HaMoHe__SmallHemo_l_Arm_Base_01/BdBn__R_HaMoHe__SmallHemo_l_Arm_Handle_A_01/BdBn__R_HaMoHe__SmallHemo_l_Arm_Handle_B_01/BdBn__R_HaMoHe__SmallHemo_l_Arm_Handle_C_01/BdBn__R_HaMoHe__SmallHemo_l_Arm_Handle_D_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.98843205, y: -7.4720243e-19, z: 0.15166433, w: -5.89844e-17}
+        inSlope: {x: 0.20287657, y: 1.1570919e-16, z: -1.7471588, w: -4.793926e-17}
+        outSlope: {x: 0.20287657, y: 1.1570919e-16, z: -1.7471588, w: -4.793926e-17}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 0.99688524, y: 4.074014e-18, z: 0.07886605, w: -6.098187e-17}
+        inSlope: {x: 0.20287657, y: 1.1570919e-16, z: -1.7471588, w: -4.793926e-17}
+        outSlope: {x: 0.20287657, y: 1.1570919e-16, z: -1.7471588, w: -4.793926e-17}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Tools_01/Grp_RightHand_Instruments_01/Grp_r_HaMoHe_World_01/Grp__R_HaMoHe__Bones_01/Grp__R_HaMoHe__SmallHemo_Bones_01/BdBn__R_HaMoHe__SmallHemo_Arm_Root_01/BdBn__R_HaMoHe__SmallHemo_r_Arm_Base_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Tools_01/Grp_RightHand_Instruments_01/Grp_r_HaMoHe_World_01/Grp__R_HaMoHe__Bones_01/Grp__R_HaMoHe__SmallHemo_Bones_01/BdBn__R_HaMoHe__SmallHemo_Arm_Root_01/BdBn__R_HaMoHe__SmallHemo_r_Arm_Base_01/BdBn__R_HaMoHe__SmallHemo_r_Arm_Handle_A_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Tools_01/Grp_RightHand_Instruments_01/Grp_r_HaMoHe_World_01/Grp__R_HaMoHe__Bones_01/Grp__R_HaMoHe__SmallHemo_Bones_01/BdBn__R_HaMoHe__SmallHemo_Arm_Root_01/BdBn__R_HaMoHe__SmallHemo_r_Arm_Base_01/BdBn__R_HaMoHe__SmallHemo_r_Arm_Handle_A_01/BdBn__R_HaMoHe__SmallHemo_r_Arm_Handle_B_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Tools_01/Grp_RightHand_Instruments_01/Grp_r_HaMoHe_World_01/Grp__R_HaMoHe__Bones_01/Grp__R_HaMoHe__SmallHemo_Bones_01/BdBn__R_HaMoHe__SmallHemo_Arm_Root_01/BdBn__R_HaMoHe__SmallHemo_r_Arm_Base_01/BdBn__R_HaMoHe__SmallHemo_r_Arm_Handle_A_01/BdBn__R_HaMoHe__SmallHemo_r_Arm_Handle_B_01/BdBn__R_HaMoHe__SmallHemo_r_Arm_Handle_C_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0, y: 0.25370306, z: -0, w: 0.9672822}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 0, y: 0.25370306, z: -0, w: 0.9672822}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Tools_01/Grp_RightHand_Instruments_01/Grp_r_HaMoHe_World_01/Grp__R_HaMoHe__Bones_01/Grp__R_HaMoHe__SmallHemo_Bones_01/BdBn__R_HaMoHe__SmallHemo_Arm_Root_01/BdBn__R_HaMoHe__SmallHemo_r_Arm_Base_01/BdBn__R_HaMoHe__SmallHemo_r_Arm_Handle_A_01/BdBn__R_HaMoHe__SmallHemo_r_Arm_Handle_B_01/BdBn__R_HaMoHe__SmallHemo_r_Arm_Handle_C_01/BdBn__R_HaMoHe__SmallHemo_r_Arm_Handle_D_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.10350341, y: 0.5500425, z: 0.044604864, w: 0.82749665}
+        inSlope: {x: -0.07145941, y: -0.4407177, z: -1.0415257, w: 0.30547428}
+        outSlope: {x: -0.07145941, y: -0.4407177, z: -1.0415257, w: 0.30547428}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: -0.10648089, y: 0.5316793, z: 0.0012079569, w: 0.84022474}
+        inSlope: {x: -0.07145941, y: -0.4407177, z: -1.0415257, w: 0.30547428}
+        outSlope: {x: -0.07145941, y: -0.4407177, z: -1.0415257, w: 0.30547428}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Tools_01/Grp_RightHand_Instruments_01/Grp_r_HaMoHe_World_01/Grp__R_HaMoHe__Bones_01/Grp__R_HaMoHe__LargeHemo_Bones_01/BdBn__R_HaMoHe__LargeHemo_Arm_Root_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 5.3214233e-17, y: 0.9923678, z: -5.3214233e-17, w: -0.12331339}
+        inSlope: {x: 1.1664986e-16, y: 0.15278864, z: -1.1664986e-16, w: 1.7522482}
+        outSlope: {x: 1.1664986e-16, y: 0.15278864, z: -1.1664986e-16, w: 1.7522482}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 5.8074644e-17, y: 0.998734, z: -5.8074644e-17, w: -0.050303053}
+        inSlope: {x: 1.1664986e-16, y: 0.15278864, z: -1.1664986e-16, w: 1.7522482}
+        outSlope: {x: 1.1664986e-16, y: 0.15278864, z: -1.1664986e-16, w: 1.7522482}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Tools_01/Grp_RightHand_Instruments_01/Grp_r_HaMoHe_World_01/Grp__R_HaMoHe__Bones_01/Grp__R_HaMoHe__LargeHemo_Bones_01/BdBn__R_HaMoHe__LargeHemo_Arm_Root_01/BdBn__R_HaMoHe__LargeHemo_l_Arm_Base_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Tools_01/Grp_RightHand_Instruments_01/Grp_r_HaMoHe_World_01/Grp__R_HaMoHe__Bones_01/Grp__R_HaMoHe__LargeHemo_Bones_01/BdBn__R_HaMoHe__LargeHemo_Arm_Root_01/BdBn__R_HaMoHe__LargeHemo_l_Arm_Base_01/BdBn__R_HaMoHe__LargeHemo_l_Arm_Handle_A_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Tools_01/Grp_RightHand_Instruments_01/Grp_r_HaMoHe_World_01/Grp__R_HaMoHe__Bones_01/Grp__R_HaMoHe__LargeHemo_Bones_01/BdBn__R_HaMoHe__LargeHemo_Arm_Root_01/BdBn__R_HaMoHe__LargeHemo_l_Arm_Base_01/BdBn__R_HaMoHe__LargeHemo_l_Arm_Handle_A_01/BdBn__R_HaMoHe__LargeHemo_l_Arm_Handle_B_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Tools_01/Grp_RightHand_Instruments_01/Grp_r_HaMoHe_World_01/Grp__R_HaMoHe__Bones_01/Grp__R_HaMoHe__LargeHemo_Bones_01/BdBn__R_HaMoHe__LargeHemo_Arm_Root_01/BdBn__R_HaMoHe__LargeHemo_l_Arm_Base_01/BdBn__R_HaMoHe__LargeHemo_l_Arm_Handle_A_01/BdBn__R_HaMoHe__LargeHemo_l_Arm_Handle_B_01/BdBn__R_HaMoHe__LargeHemo_l_Arm_Handle_C_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0, y: 0.28191444, z: -0, w: 0.9594396}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 0, y: 0.28191444, z: -0, w: 0.9594396}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Tools_01/Grp_RightHand_Instruments_01/Grp_r_HaMoHe_World_01/Grp__R_HaMoHe__Bones_01/Grp__R_HaMoHe__LargeHemo_Bones_01/BdBn__R_HaMoHe__LargeHemo_Arm_Root_01/BdBn__R_HaMoHe__LargeHemo_l_Arm_Base_01/BdBn__R_HaMoHe__LargeHemo_l_Arm_Handle_A_01/BdBn__R_HaMoHe__LargeHemo_l_Arm_Handle_B_01/BdBn__R_HaMoHe__LargeHemo_l_Arm_Handle_C_01/BdBn__R_HaMoHe__LargeHemo_l_Arm_Handle_D_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.9923678, y: -2.3611521e-18, z: 0.12331342, w: -5.953333e-17}
+        inSlope: {x: 0.15278864, y: 1.1256949e-16, z: -1.7522492, w: -3.8008168e-17}
+        outSlope: {x: 0.15278864, y: 1.1256949e-16, z: -1.7522492, w: -3.8008168e-17}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 0.998734, y: 2.3292436e-18, z: 0.05030303, w: -6.1117e-17}
+        inSlope: {x: 0.15278864, y: 1.1256949e-16, z: -1.7522492, w: -3.8008168e-17}
+        outSlope: {x: 0.15278864, y: 1.1256949e-16, z: -1.7522492, w: -3.8008168e-17}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Tools_01/Grp_RightHand_Instruments_01/Grp_r_HaMoHe_World_01/Grp__R_HaMoHe__Bones_01/Grp__R_HaMoHe__LargeHemo_Bones_01/BdBn__R_HaMoHe__LargeHemo_Arm_Root_01/BdBn__R_HaMoHe__LargeHemo_r_Arm_Base_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Tools_01/Grp_RightHand_Instruments_01/Grp_r_HaMoHe_World_01/Grp__R_HaMoHe__Bones_01/Grp__R_HaMoHe__LargeHemo_Bones_01/BdBn__R_HaMoHe__LargeHemo_Arm_Root_01/BdBn__R_HaMoHe__LargeHemo_r_Arm_Base_01/BdBn__R_HaMoHe__LargeHemo_r_Arm_Handle_A_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Tools_01/Grp_RightHand_Instruments_01/Grp_r_HaMoHe_World_01/Grp__R_HaMoHe__Bones_01/Grp__R_HaMoHe__LargeHemo_Bones_01/BdBn__R_HaMoHe__LargeHemo_Arm_Root_01/BdBn__R_HaMoHe__LargeHemo_r_Arm_Base_01/BdBn__R_HaMoHe__LargeHemo_r_Arm_Handle_A_01/BdBn__R_HaMoHe__LargeHemo_r_Arm_Handle_B_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Tools_01/Grp_RightHand_Instruments_01/Grp_r_HaMoHe_World_01/Grp__R_HaMoHe__Bones_01/Grp__R_HaMoHe__LargeHemo_Bones_01/BdBn__R_HaMoHe__LargeHemo_Arm_Root_01/BdBn__R_HaMoHe__LargeHemo_r_Arm_Base_01/BdBn__R_HaMoHe__LargeHemo_r_Arm_Handle_A_01/BdBn__R_HaMoHe__LargeHemo_r_Arm_Handle_B_01/BdBn__R_HaMoHe__LargeHemo_r_Arm_Handle_C_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0, y: 0.28191444, z: -0, w: 0.9594396}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 0, y: 0.28191444, z: -0, w: 0.9594396}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Tools_01/Grp_RightHand_Instruments_01/Grp_r_HaMoHe_World_01/Grp__R_HaMoHe__Bones_01/Grp__R_HaMoHe__LargeHemo_Bones_01/BdBn__R_HaMoHe__LargeHemo_Arm_Root_01/BdBn__R_HaMoHe__LargeHemo_r_Arm_Base_01/BdBn__R_HaMoHe__LargeHemo_r_Arm_Handle_A_01/BdBn__R_HaMoHe__LargeHemo_r_Arm_Handle_B_01/BdBn__R_HaMoHe__LargeHemo_r_Arm_Handle_C_01/BdBn__R_HaMoHe__LargeHemo_r_Arm_Handle_D_01
+  m_CompressedRotationCurves: []
+  m_EulerCurves: []
+  m_PositionCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.02241697, y: 0.000015133669, z: -0.031400546}
+        inSlope: {x: 1.110223e-16, y: 2.1684043e-19, z: -6.661338e-16}
+        outSlope: {x: 1.110223e-16, y: 2.1684043e-19, z: -6.661338e-16}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 0.02241697, y: 0.000015133669, z: -0.031400546}
+        inSlope: {x: 4.7580987e-17, y: 9.2931616e-20, z: -2.8548594e-16}
+        outSlope: {x: 4.7580987e-17, y: 9.2931616e-20, z: -2.8548594e-16}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Bones_01/BdBn_R_Wrist_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.013053499, y: 0.0028604465, z: 0.015255841}
+        inSlope: {x: -1.110223e-16, y: 5.551115e-17, z: 1.110223e-16}
+        outSlope: {x: -1.110223e-16, y: 5.551115e-17, z: 1.110223e-16}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: -0.013053499, y: 0.0028604465, z: 0.015255841}
+        inSlope: {x: -4.7580987e-17, y: 2.3790494e-17, z: 4.7580987e-17}
+        outSlope: {x: -4.7580987e-17, y: 2.3790494e-17, z: 4.7580987e-17}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Bones_01/BdBn_R_Wrist_01/BdBn_R_Carpal_B_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.010850141, y: -0.0031912993, z: 0.018078176}
+        inSlope: {x: 1.110223e-16, y: -5.551115e-17, z: 3.330669e-16}
+        outSlope: {x: 1.110223e-16, y: -5.551115e-17, z: 3.330669e-16}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 0.010850141, y: -0.0031912993, z: 0.018078176}
+        inSlope: {x: 4.7580987e-17, y: -2.3790494e-17, z: 1.4274297e-16}
+        outSlope: {x: 4.7580987e-17, y: -2.3790494e-17, z: 1.4274297e-16}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Bones_01/BdBn_R_Wrist_01/BdBn_R_Carpal_C_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.022894895, y: -0.014731818, z: 0.012444829}
+        inSlope: {x: 0.00000021452402, y: 0.00000012348988, z: 0.00000009869925}
+        outSlope: {x: 0.00000021452402, y: 0.00000012348988, z: 0.00000009869925}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: -0.020819122, y: -0.014935618, z: 0.0154779805}
+        inSlope: {x: 0.00000021452402, y: 0.00000012348988, z: 0.00000009869925}
+        outSlope: {x: 0.00000021452402, y: 0.00000012348988, z: 0.00000009869925}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Bones_01/BdBn_R_Wrist_01/BdBn_R_Carpal_A_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.01953756, y: -0.029577864, z: 0.09183459}
+        inSlope: {x: -0.00000006311256, y: -0.00000009977056, z: 0.0000013279497}
+        outSlope: {x: -0.00000006311256, y: -0.00000009977056, z: 0.0000013279497}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: -0.019116985, y: -0.030456623, z: 0.09224116}
+        inSlope: {x: -0.00000019935175, y: -0.00000009977056, z: 0.0000013279497}
+        outSlope: {x: -0.00000019935175, y: -0.00000009977056, z: 0.0000013279497}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Tools_01/Grp_RightHand_Instruments_01/Grp_r_HaMoHe_World_01/Grp__R_HaMoHe__Bones_01/Grp__R_HaMoHe__SmallHemo_Bones_01/BdBn__R_HaMoHe__SmallHemo_Arm_Root_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.029258681, y: -0.028582152, z: 0.11470088}
+        inSlope: {x: 0.0000001608965, y: -0.00000047248508, z: 0.000000088205084}
+        outSlope: {x: 0.0000001608965, y: -0.00000047248508, z: 0.000000088205084}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: -0.029924888, y: -0.027691497, z: 0.11446507}
+        inSlope: {x: 0.0000001608965, y: -0.00000047248508, z: 0.000000088205084}
+        outSlope: {x: 0.0000001608965, y: -0.00000047248508, z: 0.000000088205084}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Tools_01/Grp_RightHand_Instruments_01/Grp_r_HaMoHe_World_01/Grp__R_HaMoHe__Bones_01/Grp__R_HaMoHe__LargeHemo_Bones_01/BdBn__R_HaMoHe__LargeHemo_Arm_Root_01
+  m_ScaleCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Bones_01/BdBn_R_Wrist_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Bones_01/BdBn_R_Wrist_01/BdBn_R_Carpal_B_01/BdBn_R_Mid_A_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Bones_01/BdBn_R_Wrist_01/BdBn_R_Carpal_B_01/BdBn_R_Mid_A_01/BdBn_R_Mid_B_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Bones_01/BdBn_R_Wrist_01/BdBn_R_Carpal_B_01/BdBn_R_Mid_A_01/BdBn_R_Mid_B_01/BdBn_R_Mid_C_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Bones_01/BdBn_R_Wrist_01/BdBn_R_Carpal_B_01/BdBn_R_Index_A_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Bones_01/BdBn_R_Wrist_01/BdBn_R_Carpal_B_01/BdBn_R_Index_A_01/BdBn_R_Index_B_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Bones_01/BdBn_R_Wrist_01/BdBn_R_Carpal_B_01/BdBn_R_Index_A_01/BdBn_R_Index_B_01/BdBn_R_Index_C_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Bones_01/BdBn_R_Wrist_01/BdBn_R_Carpal_C_01/BdBn_R_Ring_A_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Bones_01/BdBn_R_Wrist_01/BdBn_R_Carpal_C_01/BdBn_R_Ring_A_01/BdBn_R_Ring_B_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Bones_01/BdBn_R_Wrist_01/BdBn_R_Carpal_C_01/BdBn_R_Ring_A_01/BdBn_R_Ring_B_01/BdBn_R_Ring_C_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Bones_01/BdBn_R_Wrist_01/BdBn_R_Carpal_C_01/BdBn_R_Pink_A_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Bones_01/BdBn_R_Wrist_01/BdBn_R_Carpal_C_01/BdBn_R_Pink_A_01/BdBn_R_Pinky_B_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Bones_01/BdBn_R_Wrist_01/BdBn_R_Carpal_C_01/BdBn_R_Pink_A_01/BdBn_R_Pinky_B_01/BdBn_R_Pinky_C_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Bones_01/BdBn_R_Wrist_01/BdBn_R_Carpal_A_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Bones_01/BdBn_R_Wrist_01/BdBn_R_Carpal_A_01/BdBn_R_Thumb_A_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Bones_01/BdBn_R_Wrist_01/BdBn_R_Carpal_A_01/BdBn_R_Thumb_A_01/BdBn_R_Thumb_B_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Tools_01/Grp_RightHand_Instruments_01/Grp_r_HaMoHe_World_01/Grp__R_HaMoHe__Bones_01/Grp__R_HaMoHe__SmallHemo_Bones_01/BdBn__R_HaMoHe__SmallHemo_Arm_Root_01/BdBn__R_HaMoHe__SmallHemo_l_Arm_Base_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Tools_01/Grp_RightHand_Instruments_01/Grp_r_HaMoHe_World_01/Grp__R_HaMoHe__Bones_01/Grp__R_HaMoHe__SmallHemo_Bones_01/BdBn__R_HaMoHe__SmallHemo_Arm_Root_01/BdBn__R_HaMoHe__SmallHemo_l_Arm_Base_01/BdBn__R_HaMoHe__SmallHemo_l_Arm_Handle_A_01/BdBn__R_HaMoHe__SmallHemo_l_Arm_Handle_B_01/BdBn__R_HaMoHe__SmallHemo_l_Arm_Handle_C_01/BdBn__R_HaMoHe__SmallHemo_l_Arm_Handle_D_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Tools_01/Grp_RightHand_Instruments_01/Grp_r_HaMoHe_World_01/Grp__R_HaMoHe__Bones_01/Grp__R_HaMoHe__SmallHemo_Bones_01/BdBn__R_HaMoHe__SmallHemo_Arm_Root_01/BdBn__R_HaMoHe__SmallHemo_r_Arm_Base_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Tools_01/Grp_RightHand_Instruments_01/Grp_r_HaMoHe_World_01/Grp__R_HaMoHe__Bones_01/Grp__R_HaMoHe__SmallHemo_Bones_01/BdBn__R_HaMoHe__SmallHemo_Arm_Root_01/BdBn__R_HaMoHe__SmallHemo_r_Arm_Base_01/BdBn__R_HaMoHe__SmallHemo_r_Arm_Handle_A_01/BdBn__R_HaMoHe__SmallHemo_r_Arm_Handle_B_01/BdBn__R_HaMoHe__SmallHemo_r_Arm_Handle_C_01/BdBn__R_HaMoHe__SmallHemo_r_Arm_Handle_D_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Tools_01/Grp_RightHand_Instruments_01/Grp_r_HaMoHe_World_01/Grp__R_HaMoHe__Bones_01/Grp__R_HaMoHe__LargeHemo_Bones_01/BdBn__R_HaMoHe__LargeHemo_Arm_Root_01/BdBn__R_HaMoHe__LargeHemo_l_Arm_Base_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Tools_01/Grp_RightHand_Instruments_01/Grp_r_HaMoHe_World_01/Grp__R_HaMoHe__Bones_01/Grp__R_HaMoHe__LargeHemo_Bones_01/BdBn__R_HaMoHe__LargeHemo_Arm_Root_01/BdBn__R_HaMoHe__LargeHemo_l_Arm_Base_01/BdBn__R_HaMoHe__LargeHemo_l_Arm_Handle_A_01/BdBn__R_HaMoHe__LargeHemo_l_Arm_Handle_B_01/BdBn__R_HaMoHe__LargeHemo_l_Arm_Handle_C_01/BdBn__R_HaMoHe__LargeHemo_l_Arm_Handle_D_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Tools_01/Grp_RightHand_Instruments_01/Grp_r_HaMoHe_World_01/Grp__R_HaMoHe__Bones_01/Grp__R_HaMoHe__LargeHemo_Bones_01/BdBn__R_HaMoHe__LargeHemo_Arm_Root_01/BdBn__R_HaMoHe__LargeHemo_r_Arm_Base_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Grp_Tools_01/Grp_RightHand_Instruments_01/Grp_r_HaMoHe_World_01/Grp__R_HaMoHe__Bones_01/Grp__R_HaMoHe__LargeHemo_Bones_01/BdBn__R_HaMoHe__LargeHemo_Arm_Root_01/BdBn__R_HaMoHe__LargeHemo_r_Arm_Base_01/BdBn__R_HaMoHe__LargeHemo_r_Arm_Handle_A_01/BdBn__R_HaMoHe__LargeHemo_r_Arm_Handle_B_01/BdBn__R_HaMoHe__LargeHemo_r_Arm_Handle_C_01/BdBn__R_HaMoHe__LargeHemo_r_Arm_Handle_D_01
+  m_FloatCurves: []
+  m_PPtrCurves: []
+  m_SampleRate: 24
+  m_WrapMode: 0
+  m_Bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_ClipBindingConstant:
+    genericBindings: []
+    pptrCurveMapping: []
+  m_AnimationClipSettings:
+    serializedVersion: 2
+    m_AdditiveReferencePoseClip: {fileID: 0}
+    m_AdditiveReferencePoseTime: 0
+    m_StartTime: 0
+    m_StopTime: 0.041666668
+    m_OrientationOffsetY: 0
+    m_Level: 0
+    m_CycleOffset: 0
+    m_HasAdditiveReferencePose: 0
+    m_LoopTime: 0
+    m_LoopBlend: 0
+    m_LoopBlendOrientation: 0
+    m_LoopBlendPositionY: 0
+    m_LoopBlendPositionXZ: 0
+    m_KeepOriginalOrientation: 0
+    m_KeepOriginalPositionY: 1
+    m_KeepOriginalPositionXZ: 0
+    m_HeightFromFeet: 0
+    m_Mirror: 0
+  m_EditorCurves: []
+  m_EulerEditorCurves: []
+  m_HasGenericRootTransform: 0
+  m_HasMotionFloatCurves: 0
+  m_Events: []
