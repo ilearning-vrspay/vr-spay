@@ -369,9 +369,9 @@ public class InputActions : MonoBehaviour
         } else
         {
             toolVariationIndex = (toolVariationIndex + 1) % grabbedTool.RightToolVariations.Count;
-            if (grabbedTool.RightToolVariationsTest[toolVariationIndex].VariationOverrideController != null)
+            if (grabbedTool.RightToolVariations[toolVariationIndex].VariationOverrideController != null)
             {
-                ChangeController(grabbedTool.RightToolVariationsTest[toolVariationIndex].VariationOverrideController);
+                ChangeController(grabbedTool.RightToolVariations[toolVariationIndex].VariationOverrideController);
             } else {
                 ChangeController();
             }

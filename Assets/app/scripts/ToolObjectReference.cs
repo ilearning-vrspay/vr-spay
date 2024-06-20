@@ -22,8 +22,8 @@ public class ToolObjectReference : MonoBehaviour
     public AnimatorOverrideController RightOverrideController;
     public AnimatorOverrideController LeftOverrideController;
     public GameObject RightToolKitTool;
-    public List<GameObject> RightToolVariations;
-    public List<ToolVariation> RightToolVariationsTest = new List<ToolVariation>();
+    //public List<GameObject> RightToolVariations;
+    public List<ToolVariation> RightToolVariations = new List<ToolVariation>();
     public bool thisisabool;
     public GameObject LeftToolKitTool;
     public List<GameObject> LeftToolVariations;
@@ -61,11 +61,11 @@ public class ToolObjectReference : MonoBehaviour
                 {
                     if (i == index)
                     {
-                        RightToolVariations[i].SetActive(true);
+                        RightToolVariations[i].ToolVariationObject.SetActive(true);
                     }
                     else
                     {
-                        RightToolVariations[i].SetActive(false);
+                        RightToolVariations[i].ToolVariationObject.SetActive(false);
                     }
                 }
             }
