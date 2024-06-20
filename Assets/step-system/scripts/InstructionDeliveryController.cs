@@ -68,6 +68,7 @@ public class InstructionDeliveryController : MonoBehaviour
         // Get the director on the game object. This will never fail because we require that any gameobject
         // that has the InstructionDeliveryComponent will automatically add the PlayableDirector component.
         _director = GetComponent<PlayableDirector>();
+      
 
         // Set the instructionDuration based on the TimelineAsset for the instructions
         if(TimelineAsset != null)
@@ -136,9 +137,9 @@ public class InstructionDeliveryController : MonoBehaviour
         }
     }
 
+
     public void ResetInstructions()
     {
-        // set time to zero, bring to first frame 
         _director.time = 0f;
         // set to false, ResumeInstructions() will StartCoroutine from top
         _isUserReceivingInstruction = false;

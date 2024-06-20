@@ -333,6 +333,7 @@ GameObject:
   m_Component:
   - component: {fileID: 273976625}
   - component: {fileID: 273976626}
+  - component: {fileID: 273976627}
   m_Layer: 0
   m_Name: Halsted Mosquito Hemostats
   m_TagString: Untagged
@@ -381,15 +382,29 @@ MonoBehaviour:
   - ToolVariationObject: {fileID: 427505659}
     VariationOverrideController: {fileID: 0}
   - ToolVariationObject: {fileID: 19254767}
-    VariationOverrideController: {fileID: 0}
+    VariationOverrideController: {fileID: 22100000, guid: 3563bfd48c294834b8464a3e3a4c0f4b, type: 2}
   - ToolVariationObject: {fileID: 140636609}
-    VariationOverrideController: {fileID: 0}
+    VariationOverrideController: {fileID: 22100000, guid: 3563bfd48c294834b8464a3e3a4c0f4b, type: 2}
   thisisabool: 0
   LeftToolKitTool: {fileID: 0}
   LeftToolVariations: []
   Outlines:
   - {fileID: 1250544347}
   - {fileID: 663730017}
+--- !u!114 &273976627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 273976624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cf2dbb43d8fdb34ab2c46ac57fdeb2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxRatchets: 1
+  CurrentRatchetLevel: 0
 --- !u!1 &286292846 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -429778535767825689, guid: eefff011af345c647b5f0a874d3933f5, type: 3}

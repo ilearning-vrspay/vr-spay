@@ -67,6 +67,8 @@ public class InstructionDeliveryListController : MonoBehaviour
     {
         foreach(var step in Steps)
         {
+            //Debug.Log(step);
+            Debug.Log(step.onInstructionsDelivered.ToString());
             step.onInstructionsDelivered.AddListener(OnInstructionDelivered);
         }
     }
@@ -88,6 +90,7 @@ public class InstructionDeliveryListController : MonoBehaviour
 
     public void StartSequence()
     {
+        
         if (!_startClicked)
         {
             StepIndex = 0;
