@@ -179,7 +179,6 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 0}
   RightToolKitTool: {fileID: 0}
   RightToolVariations: []
-  RightToolVariationsTest: []
   thisisabool: 0
   LeftToolKitTool: {fileID: 0}
   LeftToolVariations: []
@@ -241,7 +240,6 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 22100000, guid: 64ece57a29a2b18428ed9e0989b50439, type: 2}
   RightToolKitTool: {fileID: 1674690230}
   RightToolVariations: []
-  RightToolVariationsTest: []
   thisisabool: 0
   LeftToolKitTool: {fileID: 1383461738}
   LeftToolVariations: []
@@ -298,7 +296,6 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 0}
   RightToolKitTool: {fileID: 0}
   RightToolVariations: []
-  RightToolVariationsTest: []
   thisisabool: 0
   LeftToolKitTool: {fileID: 0}
   LeftToolVariations: []
@@ -379,19 +376,14 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 0}
   RightToolKitTool: {fileID: 1155253874}
   RightToolVariations:
-  - {fileID: 654449469}
-  - {fileID: 427505659}
-  - {fileID: 19254767}
-  - {fileID: 140636609}
-  RightToolVariationsTest:
-  - ToolVariationObject: {fileID: 0}
+  - ToolVariationObject: {fileID: 654449469}
     VariationOverrideController: {fileID: 0}
-  - ToolVariationObject: {fileID: 0}
+  - ToolVariationObject: {fileID: 427505659}
     VariationOverrideController: {fileID: 0}
-  - ToolVariationObject: {fileID: 0}
-    VariationOverrideController: {fileID: 22100000, guid: 3563bfd48c294834b8464a3e3a4c0f4b, type: 2}
-  - ToolVariationObject: {fileID: 0}
-    VariationOverrideController: {fileID: 22100000, guid: 3563bfd48c294834b8464a3e3a4c0f4b, type: 2}
+  - ToolVariationObject: {fileID: 19254767}
+    VariationOverrideController: {fileID: 0}
+  - ToolVariationObject: {fileID: 140636609}
+    VariationOverrideController: {fileID: 0}
   thisisabool: 0
   LeftToolKitTool: {fileID: 0}
   LeftToolVariations: []
@@ -472,7 +464,6 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 0}
   RightToolKitTool: {fileID: 0}
   RightToolVariations: []
-  RightToolVariationsTest: []
   thisisabool: 0
   LeftToolKitTool: {fileID: 0}
   LeftToolVariations: []
@@ -639,7 +630,6 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 0}
   RightToolKitTool: {fileID: 0}
   RightToolVariations: []
-  RightToolVariationsTest: []
   thisisabool: 0
   LeftToolKitTool: {fileID: 0}
   LeftToolVariations: []
@@ -779,7 +769,6 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 0}
   RightToolKitTool: {fileID: 0}
   RightToolVariations: []
-  RightToolVariationsTest: []
   thisisabool: 0
   LeftToolKitTool: {fileID: 0}
   LeftToolVariations: []
@@ -1285,7 +1274,6 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 0}
   RightToolKitTool: {fileID: 0}
   RightToolVariations: []
-  RightToolVariationsTest: []
   thisisabool: 0
   LeftToolKitTool: {fileID: 0}
   LeftToolVariations: []
@@ -1341,7 +1329,6 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 0}
   RightToolKitTool: {fileID: 0}
   RightToolVariations: []
-  RightToolVariationsTest: []
   thisisabool: 0
   LeftToolKitTool: {fileID: 0}
   LeftToolVariations: []
@@ -1400,9 +1387,10 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 22100000, guid: 766744cfbd38e7744aa5c9762eb58ae3, type: 2}
   RightToolKitTool: {fileID: 1211217537}
   RightToolVariations:
-  - {fileID: 1211217535}
-  - {fileID: 1211217536}
-  RightToolVariationsTest: []
+  - ToolVariationObject: {fileID: 1211217535}
+    VariationOverrideController: {fileID: 0}
+  - ToolVariationObject: {fileID: 1211217536}
+    VariationOverrideController: {fileID: 0}
   thisisabool: 0
   LeftToolKitTool: {fileID: 1555533579}
   LeftToolVariations:
@@ -1833,7 +1821,6 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 22100000, guid: acc45aaad8648ad45ac7dbd1232b0579, type: 2}
   RightToolKitTool: {fileID: 1306327877}
   RightToolVariations: []
-  RightToolVariationsTest: []
   thisisabool: 0
   LeftToolKitTool: {fileID: 1882249252}
   LeftToolVariations: []
@@ -2237,7 +2224,6 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 0}
   RightToolKitTool: {fileID: 0}
   RightToolVariations: []
-  RightToolVariationsTest: []
   thisisabool: 0
   LeftToolKitTool: {fileID: 0}
   LeftToolVariations: []
@@ -2947,7 +2933,6 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 0}
   RightToolKitTool: {fileID: 0}
   RightToolVariations: []
-  RightToolVariationsTest: []
   thisisabool: 0
   LeftToolKitTool: {fileID: 0}
   LeftToolVariations: []
@@ -3003,7 +2988,6 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 0}
   RightToolKitTool: {fileID: 0}
   RightToolVariations: []
-  RightToolVariationsTest: []
   thisisabool: 0
   LeftToolKitTool: {fileID: 0}
   LeftToolVariations: []
@@ -3541,7 +3525,6 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 22100000, guid: 018fd549bdc818943a8dac55d9130ee4, type: 2}
   RightToolKitTool: {fileID: 1306327878}
   RightToolVariations: []
-  RightToolVariationsTest: []
   thisisabool: 0
   LeftToolKitTool: {fileID: 1882249253}
   LeftToolVariations: []
@@ -3726,9 +3709,10 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 22100000, guid: fd530bb47487ff44fbe6601d09be2c67, type: 2}
   RightToolKitTool: {fileID: 1306327880}
   RightToolVariations:
-  - {fileID: 728457147}
-  - {fileID: 1444267036}
-  RightToolVariationsTest: []
+  - ToolVariationObject: {fileID: 728457147}
+    VariationOverrideController: {fileID: 0}
+  - ToolVariationObject: {fileID: 1444267036}
+    VariationOverrideController: {fileID: 0}
   thisisabool: 0
   LeftToolKitTool: {fileID: 1882249255}
   LeftToolVariations:
@@ -5250,7 +5234,6 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 0}
   RightToolKitTool: {fileID: 0}
   RightToolVariations: []
-  RightToolVariationsTest: []
   thisisabool: 0
   LeftToolKitTool: {fileID: 0}
   LeftToolVariations: []
@@ -5604,9 +5587,10 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 22100000, guid: 7d1398b35d1702a4f86becc53bb59ce4, type: 2}
   RightToolKitTool: {fileID: 1306327879}
   RightToolVariations:
-  - {fileID: 62356566}
-  - {fileID: 2011765550}
-  RightToolVariationsTest: []
+  - ToolVariationObject: {fileID: 62356566}
+    VariationOverrideController: {fileID: 0}
+  - ToolVariationObject: {fileID: 2011765550}
+    VariationOverrideController: {fileID: 0}
   thisisabool: 0
   LeftToolKitTool: {fileID: 1882249254}
   LeftToolVariations: []
@@ -5818,7 +5802,6 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 0}
   RightToolKitTool: {fileID: 0}
   RightToolVariations: []
-  RightToolVariationsTest: []
   thisisabool: 0
   LeftToolKitTool: {fileID: 0}
   LeftToolVariations: []
@@ -5874,7 +5857,6 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 0}
   RightToolKitTool: {fileID: 0}
   RightToolVariations: []
-  RightToolVariationsTest: []
   thisisabool: 0
   LeftToolKitTool: {fileID: 0}
   LeftToolVariations: []
@@ -5932,9 +5914,10 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 22100000, guid: 25d1c0bf68540ad40b6419c6d46515ba, type: 2}
   RightToolKitTool: {fileID: 1306327881}
   RightToolVariations:
-  - {fileID: 1228192464}
-  - {fileID: 1190469139}
-  RightToolVariationsTest: []
+  - ToolVariationObject: {fileID: 1228192464}
+    VariationOverrideController: {fileID: 0}
+  - ToolVariationObject: {fileID: 1190469139}
+    VariationOverrideController: {fileID: 0}
   thisisabool: 0
   LeftToolKitTool: {fileID: 1882249256}
   LeftToolVariations:
@@ -5994,7 +5977,6 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 0}
   RightToolKitTool: {fileID: 0}
   RightToolVariations: []
-  RightToolVariationsTest: []
   thisisabool: 0
   LeftToolKitTool: {fileID: 0}
   LeftToolVariations: []
