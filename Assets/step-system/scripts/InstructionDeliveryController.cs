@@ -269,15 +269,7 @@ public class InstructionDeliveryController : MonoBehaviour
 
         // OnInstructionsStarted UnityEvent activated
         OnInstructionsStarted.Invoke();
-        if (autoNextStep)
-        {
-            InstructionDeliveryListController parentController = FindParentWithController(gameObject);
-            if (!parentController)
-            {
-                parentController.StartNextStep();
-            }
         
-        }
 
 
         StartCoroutine(_instructionLoop());
@@ -327,6 +319,15 @@ public class InstructionDeliveryController : MonoBehaviour
                 _director.Pause();
                 Debug.Log("Pause status: " + _paused);
                 _isUserReceivingInstruction = false;
+                if (autoNextStep)
+                {
+                    InstructionDeliveryListController parentController = FindParentWithController(gameObject);
+                    if (parentController)
+                    {
+                        parentController.StartNextStep();
+                    }
+
+                }
             }
             else
             { // loop clicked, start coroutine again at end of sequence

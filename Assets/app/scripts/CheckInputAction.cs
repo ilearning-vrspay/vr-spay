@@ -12,7 +12,8 @@ public class CheckInputAction : MonoBehaviour
         ToolVariationChange,
         GripSqueeze,
         PickupTool,
-        ReleaseTool
+        ReleaseTool,
+        RatchetTool
 
     }
 
@@ -99,6 +100,15 @@ public class CheckInputAction : MonoBehaviour
                     CheckEvent.Invoke();
                     autoNext();
                     
+                    this.enabled = false;
+                }
+                break;
+            case checkType.RatchetTool:
+                if (InputAction.GetRatchetState() == 1)
+                {
+                    CheckEvent.Invoke();
+                    autoNext();
+
                     this.enabled = false;
                 }
                 break;

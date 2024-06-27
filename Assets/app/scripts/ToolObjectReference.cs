@@ -19,6 +19,7 @@ public class ToolObjectReference : MonoBehaviour
     public Collider ColliderObject;
     public GameObject RootBone;
     public List<GameObject> MeshObjects;
+    public List<Outline> Outlines;
     public AnimatorOverrideController RightOverrideController;
     public AnimatorOverrideController LeftOverrideController;
     public GameObject RightToolKitTool;
@@ -28,7 +29,7 @@ public class ToolObjectReference : MonoBehaviour
     public GameObject LeftToolKitTool;
     public List<GameObject> LeftToolVariations;
 
-    public List<Outline> Outlines;
+    
     public void ToggleToolBeltTool(string hand, bool state)
     {
         if (hand == "Right"){

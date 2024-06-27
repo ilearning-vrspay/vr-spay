@@ -9,6 +9,7 @@ using UnityEngine.PlayerLoop;
 using static UnityEngine.Rendering.DebugUI;
 using UnityEditor;
 using static UnityEditor.Progress;
+using Palmmedia.ReportGenerator.Core.CodeAnalysis;
 
 [RequireComponent(typeof(HandInteractionSystem))]
 
@@ -335,6 +336,17 @@ public class InputActions : MonoBehaviour
         OnToolRatched.Invoke();
     }
 
+    public int GetRatchetState()
+    {
+        if (!grabbedTool) return -1; // you don't have a grabbed tool
+
+        Ratchetable ratchetableTool = grabbedTool.GetComponent<Ratchetable>();
+
+        if (ratchetableTool == null) return -1; // you don't have a ratchetable tool
+
+        return ratchetableTool.CurrentRatchetLevel;
+    }
+
 
     /// <summary>
     /// Handles the input when a tool is pressed.
@@ -357,6 +369,31 @@ public class InputActions : MonoBehaviour
         }
         tool.ToggleToolBeltTool(side, state);               
 
+    }
+
+    public void SetCustomToolIndex(int index)
+    {
+        toolVariationIndex = index - 1;
+    }
+
+    public void CycleTool()
+    {
+        if (grabbedTool == null) return;
+        if (!ToolVariationSwitchable) return;
+        
+        toolVariationIndex = (toolVariationIndex + 1) % grabbedTool.RightToolVariations.Count;
+        Debug.Log("Tool variation index: " +  toolVariationIndex);
+        if (grabbedTool.RightToolVariations[toolVariationIndex].VariationOverrideController != null)
+        {
+            ChangeController(grabbedTool.RightToolVariations[toolVariationIndex].VariationOverrideController);
+        }
+        else
+        {
+            ChangeController();
+        }
+        
+
+        grabbedTool.ToggleToolVariation("Right", toolVariationIndex);
     }
 
     public void changeCustomTool(int index = -1)
