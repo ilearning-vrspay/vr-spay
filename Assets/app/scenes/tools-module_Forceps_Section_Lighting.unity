@@ -2224,7 +2224,19 @@ MonoBehaviour:
   autoNextStep: 0
   OnInstructionsStarted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1021646204}
+        m_TargetAssemblyTypeName: InputActions, Assembly-CSharp
+        m_MethodName: UnratchetTool
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onInstructionsDelivered:
     m_PersistentCalls:
       m_Calls:
@@ -6601,13 +6613,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShouldPlayOnStart: 0
-  autoNextStep: 1
+  autoNextStep: 0
   OnInstructionsStarted:
     m_PersistentCalls:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1659573479}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- INSTRUCTTOPLAYVIDEO ----
 
     --------------------------------
@@ -10935,6 +10959,7 @@ MonoBehaviour:
   - {fileID: 444795886}
   - {fileID: 1669661795}
   - {fileID: 1427293915}
+  - {fileID: 706585319}
   - {fileID: 1614319769}
   - {fileID: 668718234}
   - {fileID: 1705664870}
@@ -10948,7 +10973,7 @@ MonoBehaviour:
   - {fileID: 1876113767}
   - {fileID: 472751469}
   - {fileID: 1680801420}
-  StepIndex: 3
+  StepIndex: 0
   SequenceStarted:
     m_PersistentCalls:
       m_Calls:
@@ -12629,8 +12654,8 @@ MonoBehaviour:
   CheckType: 1
   IndexCheck: 1
   TargetSqueezePercentage: 100
-  InputAction: {fileID: 0}
-  autoNextStep: 0
+  InputAction: {fileID: 1021646204}
+  autoNextStep: 1
   CheckEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -22518,6 +22543,26 @@ Transform:
   m_Father: {fileID: 1295310216}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2023316479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023316475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29d9a958b8caf7544b0a8f805473e834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CheckType: 5
+  IndexCheck: 0
+  TargetSqueezePercentage: 100
+  InputAction: {fileID: 1021646204}
+  autoNextStep: 1
+  CheckEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2023716682
 GameObject:
   m_ObjectHideFlags: 0
@@ -22582,26 +22627,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
---- !u!114 &2023316479
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2023316475}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29d9a958b8caf7544b0a8f805473e834, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CheckType: 5
-  IndexCheck: 0
-  TargetSqueezePercentage: 100
-  InputAction: {fileID: 1021646204}
-  autoNextStep: 1
-  CheckEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &2024247673 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7756817204201003520, guid: eefff011af345c647b5f0a874d3933f5, type: 3}

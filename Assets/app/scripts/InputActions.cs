@@ -151,6 +151,7 @@ public class InputActions : MonoBehaviour
                 ResetController();
                 InputPressed(grabbedTool, false);
                 grabbedTool = null;
+                toolVariationIndex = 0;
                 OnToolReleased.Invoke();
             }
         } 

@@ -93,7 +93,7 @@ public class InstructionDeliveryListController : MonoBehaviour
         
         if (!_startClicked)
         {
-            StepIndex = 0;
+            // StepIndex = 0;
             GetCurrentInstructionDeliveryController().ResetInstructions();
             SequenceStarted.Invoke(this);
             GetCurrentInstructionDeliveryController().ResumeInstructions();
