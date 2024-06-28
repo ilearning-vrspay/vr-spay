@@ -1,30 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-672099920731066161
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c6857444e3728a4f8403533f3d8b979, type: 3}
-  m_Name: VideoPlayableAsset
-  m_EditorClassIdentifier: 
-  videoClip: {fileID: 32900000, guid: 4edd57e45de3ee14cba47c56e4fce77e, type: 3}
-  mute: 0
-  loop: 1
-  preloadTime: 0.3
-  aspectRatio: 2
-  renderMode: 0
-  targetCamera:
-    exposedName: 
-    defaultValue: {fileID: 0}
-  audioSource:
-    exposedName: 
-    defaultValue: {fileID: 0}
-  renderTexture: {fileID: 8400000, guid: 9cfd958c5d7bc0447bfe2970f8d1c265, type: 2}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bfda56da833e2384a9677cd3c976a436, type: 3}
-  m_Name: 19_Hemostats_VideoOnCrileHemostats_Video
+  m_Name: 27_Hemostats_KellyForceps_Video
   m_EditorClassIdentifier: 
   m_Version: 0
   m_Tracks:
-  - {fileID: 4548058488292162366}
+  - {fileID: 4483440147389943287}
   m_FixedDuration: 0
   m_EditorSettings:
     m_Framerate: 60
     m_ScenePreview: 1
   m_DurationMode: 0
   m_MarkerTrack: {fileID: 0}
---- !u!114 &4548058488292162366
+--- !u!114 &4483440147389943287
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -70,10 +45,10 @@ MonoBehaviour:
   - m_Version: 1
     m_Start: 0
     m_ClipIn: 0
-    m_Asset: {fileID: -672099920731066161}
-    m_Duration: 22.756066772282466
+    m_Asset: {fileID: 6872595870851177858}
+    m_Duration: 20.520500095240052
     m_TimeScale: 1
-    m_ParentTrack: {fileID: 4548058488292162366}
+    m_ParentTrack: {fileID: 4483440147389943287}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
     m_BlendInDuration: -1
@@ -135,6 +110,31 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: CrileForceps
+    m_DisplayName: KellyForceps
   m_Markers:
     m_Objects: []
+--- !u!114 &6872595870851177858
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c6857444e3728a4f8403533f3d8b979, type: 3}
+  m_Name: VideoPlayableAsset
+  m_EditorClassIdentifier: 
+  videoClip: {fileID: 32900000, guid: e6107e5c59ee1384e8ab3919fc54d47e, type: 3}
+  mute: 0
+  loop: 1
+  preloadTime: 0.3
+  aspectRatio: 2
+  renderMode: 0
+  targetCamera:
+    exposedName: 
+    defaultValue: {fileID: 0}
+  audioSource:
+    exposedName: 
+    defaultValue: {fileID: 0}
+  renderTexture: {fileID: 8400000, guid: 9cfd958c5d7bc0447bfe2970f8d1c265, type: 2}

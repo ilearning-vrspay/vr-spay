@@ -2118,7 +2118,7 @@ GameObject:
   - component: {fileID: 146257182}
   - component: {fileID: 146257183}
   m_Layer: 0
-  m_Name: 30_Hemostats_InstructToExamine_Dialogue
+  m_Name: 31_Hemostats_InstructToExamine_Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4722,7 +4722,7 @@ GameObject:
   - component: {fileID: 472751468}
   - component: {fileID: 472751469}
   m_Layer: 0
-  m_Name: 38_Hemostats_VideoToBePlayed_Video
+  m_Name: 39_Hemostats_VideoToBePlayed_Video
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6095,7 +6095,7 @@ GameObject:
   - component: {fileID: 668718233}
   - component: {fileID: 668718234}
   m_Layer: 0
-  m_Name: 28_Hemostats_InstructToExamine_Dialogue
+  m_Name: 29_Hemostats_InstructToExamine_Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6426,6 +6426,88 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 687529547}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &706585317
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 706585318}
+  - component: {fileID: 706585320}
+  - component: {fileID: 706585319}
+  m_Layer: 0
+  m_Name: 27_Hemostats_KellyForceps_Video
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &706585318
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706585317}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1486919445}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &706585319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706585317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '---- INSTRUCTTOPLAYVIDEO ----
+
+    --------------------------------
+
+    ----------
+    DIALOGUE -----------'
+  TimelineAsset: {fileID: 11400000, guid: 206fe343db115404d967422d0411e914, type: 2}
+  script: Now watch the video as Heidi describes them.
+  MetaData:
+    fileName: 27_Hemostats_KellyForceps_Video
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &706585320
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706585317}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &731253291
 GameObject:
   m_ObjectHideFlags: 0
@@ -6929,7 +7011,7 @@ GameObject:
   - component: {fileID: 785098870}
   - component: {fileID: 785098871}
   m_Layer: 0
-  m_Name: 36_Hemostats_DescribeTool_Dialogue
+  m_Name: 37_Hemostats_DescribeTool_Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9221,7 +9303,7 @@ GameObject:
   - component: {fileID: 995808606}
   - component: {fileID: 995808607}
   m_Layer: 0
-  m_Name: 33_Hemostats_InstructToExamine_Dialogue
+  m_Name: 34_Hemostats_InstructToExamine_Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9699,7 +9781,7 @@ GameObject:
   - component: {fileID: 1023590786}
   - component: {fileID: 1023590787}
   m_Layer: 0
-  m_Name: 35_Hemostats_InstructToChangeToolVariation_Dialogue
+  m_Name: 36_Hemostats_InstructToChangeToolVariation_Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12122,7 +12204,7 @@ GameObject:
   - component: {fileID: 1210143309}
   - component: {fileID: 1210143310}
   m_Layer: 0
-  m_Name: 32_Hemostats_InstructToPickUpTool_Dialogue
+  m_Name: 33_Hemostats_InstructToPickUpTool_Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12990,7 +13072,7 @@ GameObject:
   - component: {fileID: 1295310217}
   - component: {fileID: 1295310218}
   m_Layer: 0
-  m_Name: 34_Hemostats_InstructToExamine_Dialogue
+  m_Name: 35_Hemostats_InstructToExamine_Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13670,7 +13752,19 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1540094162}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- INSTRUCTTOPLAYVIDEO ----
 
     --------------------------------
@@ -14790,7 +14884,19 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1659573479}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- VIDEOONCRILEHEMOSTATS ----
 
     ----------------------------------
@@ -16339,6 +16445,7 @@ Transform:
   - {fileID: 444795884}
   - {fileID: 1669661793}
   - {fileID: 1427293913}
+  - {fileID: 706585318}
   - {fileID: 1614319767}
   - {fileID: 668718232}
   - {fileID: 1705664868}
@@ -17486,7 +17593,7 @@ GameObject:
   - component: {fileID: 1614319768}
   - component: {fileID: 1614319769}
   m_Layer: 0
-  m_Name: 27_Hemostats_InstructToExamine_Dialogue
+  m_Name: 28_Hemostats_InstructToExamine_Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18057,7 +18164,7 @@ GameObject:
   - component: {fileID: 1669628944}
   - component: {fileID: 1669628945}
   m_Layer: 0
-  m_Name: 31_Hemostats_InstructToReleaseTool_Dialogue
+  m_Name: 32_Hemostats_InstructToReleaseTool_Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18398,7 +18505,7 @@ GameObject:
   - component: {fileID: 1680801421}
   - component: {fileID: 1680801420}
   m_Layer: 0
-  m_Name: 39_Hemostats_InstructToReleaseTool_Dialogue
+  m_Name: 40_Hemostats_InstructToReleaseTool_Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18627,7 +18734,7 @@ GameObject:
   - component: {fileID: 1705664869}
   - component: {fileID: 1705664870}
   m_Layer: 0
-  m_Name: 29_Hemostats_InstructToChangeToolVariation_Dialogue
+  m_Name: 30_Hemostats_InstructToChangeToolVariation_Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20847,7 +20954,7 @@ GameObject:
   - component: {fileID: 1876113766}
   - component: {fileID: 1876113767}
   m_Layer: 0
-  m_Name: 37_Hemostats_InstructToWatchVideo_Dialogue
+  m_Name: 38_Hemostats_InstructToWatchVideo_Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
