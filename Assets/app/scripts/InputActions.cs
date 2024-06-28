@@ -300,6 +300,24 @@ public class InputActions : MonoBehaviour
         }
     }
 
+    public void UnratchetTool()
+    {
+        if (!grabbedTool) return; // you have a grabbed tool
+
+        Ratchetable ratchetableTool = grabbedTool.GetComponent<Ratchetable>();
+        // you've reached the maximum ratchets so unratchet
+        ratchetableTool.CurrentRatchetLevel = 0;
+        Debug.Log($"{ratchetableTool.name} ratchet level: {ratchetableTool.CurrentRatchetLevel} - Tool has been unratcheted. Reset pose.");
+        handAnimator.SetFloat(animationNames[animationNames.Length - 1], 0.0f);
+
+        float gv = gripSqueezeValue;
+        float inv_gv = 1.0f - gv;
+
+        handAnimator.SetFloat(animationNames[poseIndex], inv_gv);
+        handAnimator.SetFloat(animationNames[poseIndex] + "_AltState", gv);
+        OnToolUnratched.Invoke();
+    }
+
     public void RatchetTool()
     {
         if (!grabbedTool) return; // you have a grabbed tool

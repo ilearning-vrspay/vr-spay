@@ -1384,6 +1384,29 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &61934015 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 756251018389442626, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
+  m_PrefabInstance: {fileID: 1726090026}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &61934017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61934015}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0, g: 1, b: 0.023529412, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &62744846
 GameObject:
   m_ObjectHideFlags: 0
@@ -1800,16 +1823,6 @@ Transform:
   m_Father: {fileID: 928197131}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &108037829 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3083181206850490064, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
-  m_PrefabInstance: {fileID: 1726090026}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &117027739 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -602858754777699533, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
-  m_PrefabInstance: {fileID: 1726090026}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &122816625
 GameObject:
   m_ObjectHideFlags: 0
@@ -2988,29 +3001,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38aefc723d902714cb725093a645a612, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ColliderObject: {fileID: 1222423715}
-  RootBone: {fileID: 1222423712}
+  ColliderObject: {fileID: 2024247676}
+  RootBone: {fileID: 2024247673}
   MeshObjects:
-  - {fileID: 1516608556}
-  - {fileID: 449989010}
+  - {fileID: 61934015}
+  - {fileID: 1309366334}
   Outlines:
-  - {fileID: 758238014}
-  - {fileID: 372232843}
+  - {fileID: 61934017}
+  - {fileID: 1309366336}
   RightOverrideController: {fileID: 22100000, guid: ec01173198fb6514da099ddeb5da5dd3, type: 2}
   LeftOverrideController: {fileID: 0}
   RightToolKitTool: {fileID: 853255093}
   RightToolVariations:
-  - ToolVariationObject: {fileID: 441818384}
+  - ToolVariationObject: {fileID: 1349525356}
     VariationOverrideController: {fileID: 0}
-  - ToolVariationObject: {fileID: 1210170757}
+  - ToolVariationObject: {fileID: 94786389}
+    VariationOverrideController: {fileID: 0}
+  - ToolVariationObject: {fileID: 853255091}
     VariationOverrideController: {fileID: 0}
   - ToolVariationObject: {fileID: 847395096}
-    VariationOverrideController: {fileID: 0}
-  - ToolVariationObject: {fileID: 1349525356}
     VariationOverrideController: {fileID: 22100000, guid: 3563bfd48c294834b8464a3e3a4c0f4b, type: 2}
-  - ToolVariationObject: {fileID: 94786389}
+  - ToolVariationObject: {fileID: 441818384}
     VariationOverrideController: {fileID: 22100000, guid: 3563bfd48c294834b8464a3e3a4c0f4b, type: 2}
-  - ToolVariationObject: {fileID: 853255091}
+  - ToolVariationObject: {fileID: 1210170757}
     VariationOverrideController: {fileID: 22100000, guid: 3563bfd48c294834b8464a3e3a4c0f4b, type: 2}
   thisisabool: 0
   LeftToolKitTool: {fileID: 0}
@@ -3156,11 +3169,6 @@ MonoBehaviour:
   precomputeOutline: 1
   bakeKeys: []
   bakeValues: []
---- !u!1 &328990892 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 604370820554201168, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
-  m_PrefabInstance: {fileID: 1726090026}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &333359798
 GameObject:
   m_ObjectHideFlags: 0
@@ -3420,29 +3428,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2896332828022355818, guid: 2a2aa44742c186a4b9d7bac280bf0f81, type: 3}
   m_PrefabInstance: {fileID: 1306327876}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &372232840 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2692439945037762393, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
-  m_PrefabInstance: {fileID: 1726090026}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &372232843
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 372232840}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 0, g: 1, b: 0.023529412, a: 1}
-  outlineWidth: 2
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &375552369
 GameObject:
   m_ObjectHideFlags: 0
@@ -3995,6 +3980,82 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5888765399538998960, guid: ad818c36731146e994540a1896ad8f24, type: 3}
   m_PrefabInstance: {fileID: 428348773}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &435044319
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 435044320}
+  - component: {fileID: 435044321}
+  m_Layer: 0
+  m_Name: 25_Hemostats_InstructToPickUpTool_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &435044320
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435044319}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1669661793}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &435044321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435044319}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29d9a958b8caf7544b0a8f805473e834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CheckType: 3
+  IndexCheck: 0
+  TargetSqueezePercentage: 100
+  InputAction: {fileID: 1021646204}
+  autoNextStep: 1
+  CheckEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2021352764}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2021352764}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableOutline
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &435489426
 GameObject:
   m_ObjectHideFlags: 0
@@ -4168,7 +4229,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 945535028}
   m_Father: {fileID: 1486919445}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4208,7 +4270,43 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 945535029}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 926177606}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: EnableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 926177606}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: EnableOutline
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- INSTRUCTTORELEASETOOL ----
 
     ----------------------------------
@@ -4222,11 +4320,6 @@ MonoBehaviour:
     fileName: 24_Hemostats_InstructToReleaseTool_Dialogue
     AudioClip: {fileID: 8300000, guid: 5c2e502e88c827944bddb3957d188e37, type: 3}
     AnimationClip: {fileID: 0}
---- !u!1 &449989010 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -3056200102706644852, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
-  m_PrefabInstance: {fileID: 1726090026}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &454410607
 GameObject:
   m_ObjectHideFlags: 0
@@ -6161,11 +6254,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &678552881 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -5220370893533187956, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
-  m_PrefabInstance: {fileID: 1726090026}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &678552882 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4827057273522740754, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
@@ -6625,29 +6713,6 @@ PlayableDirector:
   m_SceneBindings: []
   m_ExposedReferences:
     m_References: []
---- !u!1 &758238011 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -6572857278873978609, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
-  m_PrefabInstance: {fileID: 1726090026}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &758238014
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 758238011}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 0, g: 1, b: 0.023529412, a: 1}
-  outlineWidth: 2
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &763889031
 GameObject:
   m_ObjectHideFlags: 0
@@ -7002,10 +7067,34 @@ MonoBehaviour:
   autoNextStep: 0
   OnInstructionsStarted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1021646204}
+        m_TargetAssemblyTypeName: InputActions, Assembly-CSharp
+        m_MethodName: UnratchetTool
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1659573479}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- HEMOSTATSSTRIATIONS ----
 
     --------------------------------
@@ -8103,6 +8192,82 @@ MonoBehaviour:
     fileName: 8_Hemostats_InstructToChangePose_Dialogue
     AudioClip: {fileID: 8300000, guid: c4bd9608b4e0929428740988c1b6d9fe, type: 3}
     AnimationClip: {fileID: 0}
+--- !u!1 &892982892
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 892982893}
+  - component: {fileID: 892982894}
+  m_Layer: 0
+  m_Name: 16_Hemostats_InstructToReleaseTool_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &892982893
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892982892}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 949600465}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &892982894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892982892}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29d9a958b8caf7544b0a8f805473e834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CheckType: 4
+  IndexCheck: 0
+  TargetSqueezePercentage: 100
+  InputAction: {fileID: 1021646204}
+  autoNextStep: 1
+  CheckEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 273976626}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 273976626}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableOutline
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &907087067
 GameObject:
   m_ObjectHideFlags: 0
@@ -8409,8 +8574,8 @@ MonoBehaviour:
   ColliderObject: {fileID: 678552885}
   RootBone: {fileID: 678552882}
   MeshObjects:
-  - {fileID: 678552881}
-  - {fileID: 1726090028}
+  - {fileID: 1784469927}
+  - {fileID: 1028786979}
   Outlines:
   - {fileID: 1784469930}
   - {fileID: 1028786982}
@@ -8605,6 +8770,82 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &945535027
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 945535028}
+  - component: {fileID: 945535029}
+  m_Layer: 0
+  m_Name: 24_Hemostats_InstructToReleaseTool_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &945535028
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945535027}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 444795884}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &945535029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945535027}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29d9a958b8caf7544b0a8f805473e834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CheckType: 4
+  IndexCheck: 0
+  TargetSqueezePercentage: 100
+  InputAction: {fileID: 1021646204}
+  autoNextStep: 1
+  CheckEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 926177606}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 926177606}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableOutline
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &949600464
 GameObject:
   m_ObjectHideFlags: 0
@@ -8634,7 +8875,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 892982893}
   m_Father: {fileID: 1486919445}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8674,7 +8916,43 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 892982894}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 273976626}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: EnableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 273976626}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: EnableOutline
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- INSTRUCTTORELEASETOOL ----
 
     ----------------------------------
@@ -8736,8 +9014,8 @@ MonoBehaviour:
   ColliderObject: {fileID: 1852286648}
   RootBone: {fileID: 1852286644}
   MeshObjects:
-  - {fileID: 1293589318}
-  - {fileID: 117027739}
+  - {fileID: 241092977}
+  - {fileID: 1526329663}
   Outlines:
   - {fileID: 241092980}
   - {fileID: 1526329666}
@@ -10247,6 +10525,94 @@ MonoBehaviour:
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0
+--- !u!1 &1072002330
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1072002331}
+  - component: {fileID: 1072002332}
+  m_Layer: 0
+  m_Name: 15b_Hemostats_InstructToChangeToolVariation_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1072002331
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072002330}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1556998919}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1072002332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072002330}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29d9a958b8caf7544b0a8f805473e834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CheckType: 1
+  IndexCheck: 2
+  TargetSqueezePercentage: 100
+  InputAction: {fileID: 1021646204}
+  autoNextStep: 0
+  CheckEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1242896836}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1072002332}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1021646204}
+        m_TargetAssemblyTypeName: InputActions, Assembly-CSharp
+        m_MethodName: SetCustomToolIndex
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1072754755 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7273487585992082943, guid: fb885289feea75a479d9fa2eb31fb201, type: 3}
@@ -10815,6 +11181,94 @@ Transform:
   m_Father: {fileID: 231432086}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1146895278
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1146895279}
+  - component: {fileID: 1146895280}
+  m_Layer: 0
+  m_Name: 15a_Hemostats_InstructToChangeToolVariation_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1146895279
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146895278}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1556998919}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1146895280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146895278}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29d9a958b8caf7544b0a8f805473e834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CheckType: 1
+  IndexCheck: 4
+  TargetSqueezePercentage: 100
+  InputAction: {fileID: 1021646204}
+  autoNextStep: 0
+  CheckEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1072002332}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1146895280}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1021646204}
+        m_TargetAssemblyTypeName: InputActions, Assembly-CSharp
+        m_MethodName: SetCustomToolIndex
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1147451240
 GameObject:
   m_ObjectHideFlags: 0
@@ -11384,7 +11838,19 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1659573479}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- INSTRUCTTOEXAMINE ----
 
     ------------------------------
@@ -11843,72 +12309,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8679816502123715603, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
   m_PrefabInstance: {fileID: 1726090026}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1222423712 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -1394643911010749743, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
-  m_PrefabInstance: {fileID: 1726090026}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1222423713
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1222423712}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e08a3e5de175404a9051deec21d6b74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ToolObjectReference: {fileID: 273976626}
---- !u!54 &1222423714
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1222423712}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!65 &1222423715
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1222423712}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.107592896, y: 0.0058652163, z: 0.066290766}
-  m_Center: {x: 0.021757014, y: -0.00032895803, z: -0.0021243468}
 --- !u!1 &1235407633
 GameObject:
   m_ObjectHideFlags: 0
@@ -11955,6 +12355,58 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CheckType: 1
   IndexCheck: 0
+  TargetSqueezePercentage: 100
+  InputAction: {fileID: 1021646204}
+  autoNextStep: 1
+  CheckEvent:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!1 &1242896834
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1242896835}
+  - component: {fileID: 1242896836}
+  m_Layer: 0
+  m_Name: 15c_Hemostats_InstructToChangeToolVariation_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1242896835
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1242896834}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1556998919}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1242896836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1242896834}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29d9a958b8caf7544b0a8f805473e834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CheckType: 1
+  IndexCheck: 3
   TargetSqueezePercentage: 100
   InputAction: {fileID: 1021646204}
   autoNextStep: 1
@@ -12514,11 +12966,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!1 &1293589318 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3778174312250562655, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
-  m_PrefabInstance: {fileID: 1726090026}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1295310215
 GameObject:
   m_ObjectHideFlags: 0
@@ -13054,6 +13501,29 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2870494946103911158, guid: 2a2aa44742c186a4b9d7bac280bf0f81, type: 3}
   m_PrefabInstance: {fileID: 1306327876}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1309366334 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -6769319140573541128, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
+  m_PrefabInstance: {fileID: 1726090026}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1309366336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309366334}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0, g: 1, b: 0.023529412, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &1320836837
 GameObject:
   m_ObjectHideFlags: 0
@@ -16257,7 +16727,19 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1540094162}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- INSTRUCTTOPLAYVIDEO ----
 
     --------------------------------
@@ -16298,11 +16780,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!1 &1516608556 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4036810044078119676, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
-  m_PrefabInstance: {fileID: 1726090026}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1526329663 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1577576604493398181, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
@@ -16676,7 +17153,10 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1146895279}
+  - {fileID: 1072002331}
+  - {fileID: 1242896835}
   m_Father: {fileID: 1486919445}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16716,7 +17196,31 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1146895280}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1021646204}
+        m_TargetAssemblyTypeName: InputActions, Assembly-CSharp
+        m_MethodName: SetCustomToolIndex
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- INSTRUCTTOCHANGETOOLVARIATION ----
 
     -------------------------------------------
@@ -17641,7 +18145,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 435044320}
   m_Father: {fileID: 1486919445}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -17681,7 +18186,43 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 435044321}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 2021352764}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: EnableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2021352764}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: EnableOutline
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   description: '---- INSTRUCTTOPICKUPTOOL ----
 
     ---------------------------------
@@ -19225,15 +19766,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2683053518139351031, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
       insertIndex: -1
       addedObject: {fileID: 438490539}
-    - targetCorrespondingSourceObject: {fileID: -1394643911010749743, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 7756817204201003520, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1222423715}
-    - targetCorrespondingSourceObject: {fileID: -1394643911010749743, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
+      addedObject: {fileID: 2024247676}
+    - targetCorrespondingSourceObject: {fileID: 7756817204201003520, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1222423714}
-    - targetCorrespondingSourceObject: {fileID: -1394643911010749743, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
+      addedObject: {fileID: 2024247675}
+    - targetCorrespondingSourceObject: {fileID: 7756817204201003520, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1222423713}
+      addedObject: {fileID: 2024247674}
     - targetCorrespondingSourceObject: {fileID: -7709096764402146629, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
       insertIndex: -1
       addedObject: {fileID: 218249940}
@@ -19312,12 +19853,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8056193344726338000, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1134664605}
-    - targetCorrespondingSourceObject: {fileID: -6572857278873978609, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 756251018389442626, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 758238014}
-    - targetCorrespondingSourceObject: {fileID: 2692439945037762393, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
+      addedObject: {fileID: 61934017}
+    - targetCorrespondingSourceObject: {fileID: -6769319140573541128, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 372232843}
+      addedObject: {fileID: 1309366336}
     - targetCorrespondingSourceObject: {fileID: -7874436700546020538, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2069759279}
@@ -19334,11 +19875,6 @@ PrefabInstance:
 --- !u!1 &1726090027 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8056193344726338000, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
-  m_PrefabInstance: {fileID: 1726090026}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1726090028 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6128183106398654894, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
   m_PrefabInstance: {fileID: 1726090026}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1726090029 stripped
@@ -19903,6 +20439,82 @@ MonoBehaviour:
   thisisabool: 0
   LeftToolKitTool: {fileID: 0}
   LeftToolVariations: []
+--- !u!1 &1815182196
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1815182197}
+  - component: {fileID: 1815182198}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1815182197
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815182196}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1882399227}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1815182198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815182196}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29d9a958b8caf7544b0a8f805473e834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CheckType: 3
+  IndexCheck: 0
+  TargetSqueezePercentage: 100
+  InputAction: {fileID: 1021646204}
+  autoNextStep: 1
+  CheckEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 926177606}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: EnableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 926177606}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableOutline
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1823873422
 GameObject:
   m_ObjectHideFlags: 0
@@ -20438,7 +21050,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1815182197}
   m_Father: {fileID: 1486919445}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -20478,7 +21091,43 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 926177606}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: EnableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1815182198}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 926177606}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: EnableOutline
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- INSTRUCTTOPICKUPTOOL ----
 
     ---------------------------------
@@ -21168,8 +21817,8 @@ MonoBehaviour:
   ColliderObject: {fileID: 218249940}
   RootBone: {fileID: 218249936}
   MeshObjects:
-  - {fileID: 328990892}
-  - {fileID: 108037829}
+  - {fileID: 2069759276}
+  - {fileID: 1905469604}
   Outlines:
   - {fileID: 2069759279}
   - {fileID: 1905469607}
@@ -21282,6 +21931,72 @@ Transform:
   m_Father: {fileID: 1295310216}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2024247673 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7756817204201003520, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
+  m_PrefabInstance: {fileID: 1726090026}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2024247674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024247673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e08a3e5de175404a9051deec21d6b74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ToolObjectReference: {fileID: 273976626}
+--- !u!54 &2024247675
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024247673}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &2024247676
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024247673}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.12594587, y: 0.017673193, z: 0.074144445}
+  m_Center: {x: 0.035570014, y: 0.0012022626, z: -0.00023901094}
 --- !u!1 &2032314671
 GameObject:
   m_ObjectHideFlags: 0
