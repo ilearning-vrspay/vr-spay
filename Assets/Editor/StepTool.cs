@@ -15,7 +15,7 @@
 //     private string docxFilePath = ""; // Path to the .docx file
 //     private string groupName = ""; // Current group name
 
-//     private bool renumberClipsEnabled = false;
+//     private bool renumberClips`Enable`d = false;
 //     private int startingNumber = 1;
 //     private enum NumberingPosition { Prefix, Suffix }
 //     private NumberingPosition numberingPosition = NumberingPosition.Prefix;
@@ -478,6 +478,9 @@ public class StepTool : EditorWindow
     void OnGUI()
     {
         float width = EditorGUIUtility.currentViewWidth;
+        bool userAction = false;
+
+        
 
         GUILayout.Space(10f);
         GUILayout.BeginHorizontal();
@@ -526,8 +529,10 @@ public class StepTool : EditorWindow
             {
                 newStep.transform.SetParent(selectedGameObject.transform, false);
             }
-
-            SetupStep(newStep, objectName);
+            if (selectedTypeIndex == 6){
+                userAction = true;
+            }
+            SetupStep(newStep, objectName, userAction);
         }
 
         // Button for updating the existing step, only shown if a suitable GameObject is selected
@@ -682,12 +687,19 @@ public class StepTool : EditorWindow
         }
     }
 
-    private void SetupStep(GameObject stepObject, string fullName)
+    private void SetupStep(GameObject stepObject, string fullName, bool userAction = false)
     {
         InstructionDeliveryController controller = stepObject.GetComponent<InstructionDeliveryController>();
         if (controller == null)
         {
-            controller = stepObject.AddComponent<InstructionDeliveryController>();
+            if (userAction){
+                CheckInputAction checkInputActionComponent = stepObject.AddComponent<CheckInputAction>();
+                checkInputActionComponent.enabled = false;
+                return;
+            } else {
+                controller = stepObject.AddComponent<InstructionDeliveryController>();
+            
+            }
         }
 
         // Create a SerializedObject that represents the component
@@ -902,6 +914,8 @@ public class StepTool : EditorWindow
     {
         groupName = stepData.GroupName;
         stepName = stepData.StepName;
+        bool userAction = false;
+
 
         int typeIndex = types.IndexOf(stepData.StepType);
         if (typeIndex >= 0)
@@ -925,6 +939,8 @@ public class StepTool : EditorWindow
         // Set the type index for user action
         if (stepData.StepType == "User Action")
         {
+            userAction = true;
+           
             selectedTypeIndex = types.IndexOf("User Action");
         }
 
@@ -936,7 +952,7 @@ public class StepTool : EditorWindow
             newStep.transform.SetParent(selectedGameObject.transform, false);
         }
 
-        SetupStep(newStep, objectName);
+        SetupStep(newStep, objectName, userAction);
 
         // Update the last created step if it's not a user action
         if (stepData.StepType != "User Action")

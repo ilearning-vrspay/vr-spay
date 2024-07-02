@@ -1268,6 +1268,8 @@ MonoBehaviour:
   - {fileID: 1991364457}
   - {fileID: 1516862304}
   - {fileID: 740700960}
+  - {fileID: 0}
+  - {fileID: 0}
   StepIndex: 0
   SequenceStarted:
     m_PersistentCalls:
@@ -4199,6 +4201,58 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxRatchets: 1
   CurrentRatchetLevel: 0
+--- !u!1 &285263591
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 285263593}
+  - component: {fileID: 285263592}
+  m_Layer: 0
+  m_Name: 12a_Retractors_ChangeToolVariation_UserAction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &285263592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285263591}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29d9a958b8caf7544b0a8f805473e834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CheckType: 1
+  IndexCheck: 1
+  TargetSqueezePercentage: 100
+  InputAction: {fileID: 1021646204}
+  autoNextStep: 1
+  CheckEvent:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &285263593
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285263591}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 805947412}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &286292846 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -429778535767825689, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
@@ -4363,19 +4417,55 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 80099804}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: EnableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 80099804}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: EnableOutline
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 612374173}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   description: '---- INSTRUCTTORELEASETOOL ----
 
     ----------------------------------
 
     ------------
     DIALOGUE ------------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 3d3b7363bef96da4f9712d16843baed3, type: 2}
   script: Hover over the Army-Navy Hand-held retractor on the table and squeeze the
     grip again to release it.
   MetaData:
     fileName: 9_Retractors_InstructToReleaseTool_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: 50a60a43040a6bf4882b1931e7f2a06d, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &321702067
 PlayableDirector:
@@ -4405,7 +4495,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 612374174}
   m_Father: {fileID: 35352354}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5140,6 +5231,82 @@ MonoBehaviour:
   CheckEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &414543875
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 414543877}
+  - component: {fileID: 414543876}
+  m_Layer: 0
+  m_Name: 19a_Retractors_ReleaseSpayHook_UserAction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &414543876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 414543875}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29d9a958b8caf7544b0a8f805473e834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CheckType: 4
+  IndexCheck: 0
+  TargetSqueezePercentage: 100
+  InputAction: {fileID: 1021646204}
+  autoNextStep: 1
+  CheckEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 35320570}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableOutline
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 35320570}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!4 &414543877
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 414543875}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1538903006}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &423227730
 GameObject:
   m_ObjectHideFlags: 0
@@ -6774,19 +6941,55 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1205226269}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: EnableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1205226269}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableOutline
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 579242413}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- INSTRUCTTOPICKUP ----
 
     -----------------------------
 
     ---------
     DIALOGUE ---------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 59580d43a7ecc734590b586d62d17a0a, type: 2}
   script: 'Hover over the Senn Handheld retractor and squeeze the grip to pick it
     up. Make sure to turn your hand over to view the end you are holding.  '
   MetaData:
     fileName: 10_Retractors_InstructToPickUp_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: 93b16c479d4bb4e4e83a52ad9b4399d7, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &521938820
 PlayableDirector:
@@ -6816,7 +7019,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 579242414}
   m_Father: {fileID: 35352354}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7400,19 +7604,31 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1659573479}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- INSTUCTTOEXAMINE ----
 
     -----------------------------
 
     ---------
     DIALOGUE ---------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 526b31216155772438ae90ceddec0b66, type: 2}
   script: Turn your hand to see how the spay hook is held and to examine its spatulated
     hook.
   MetaData:
     fileName: 18_Retractors_InstuctToExamine_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: 4c00b4b99a4fb6f4aaabe2947c301ea0, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &573405451
 PlayableDirector:
@@ -7444,6 +7660,82 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 35352354}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &579242412
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 579242414}
+  - component: {fileID: 579242413}
+  m_Layer: 0
+  m_Name: 10a_Retractors_PickupSenn_UserAction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &579242413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579242412}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29d9a958b8caf7544b0a8f805473e834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CheckType: 3
+  IndexCheck: 0
+  TargetSqueezePercentage: 100
+  InputAction: {fileID: 1021646204}
+  autoNextStep: 1
+  CheckEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1205226269}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1205226269}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableOutline
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!4 &579242414
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579242412}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 521938821}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &582721160
@@ -7483,14 +7775,26 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1659573479}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- SPAYHOOKINSURGVIDEO ----
 
     --------------------------------
 
     ------------
     VIDEO ------------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 7dda2646eeff3ba4e84ae79c385919eb, type: 2}
   script: 
   MetaData:
     fileName: 16_Retractors_SpayHookInSurgVideo_Video
@@ -7565,19 +7869,55 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2033209333}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: EnableOutline
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2033209333}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: EnableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1828906985}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- INSTRUCTTOPICKUP ----
 
     -----------------------------
 
     ---------
     DIALOGUE ---------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 23d250b3ae8018543a5fb3fca7e5d0a2, type: 2}
   script: 'Hover over the Baby Balfour self retaining retractors on the table and
     squeeze the grip to pick them up. Then watch the video. '
   MetaData:
     fileName: 20_Retractors_InstructToPickUp_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: 6ede66583801dee45996839cbc32c42e, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &587958879
 PlayableDirector:
@@ -7607,7 +7947,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1828906986}
   m_Father: {fileID: 35352354}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7822,6 +8163,82 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 595885001}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &612374172
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 612374174}
+  - component: {fileID: 612374173}
+  m_Layer: 0
+  m_Name: 9a_Retractors_ReleaseArmyNave_UserAction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &612374173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612374172}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29d9a958b8caf7544b0a8f805473e834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CheckType: 4
+  IndexCheck: 0
+  TargetSqueezePercentage: 100
+  InputAction: {fileID: 0}
+  autoNextStep: 1
+  CheckEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 80099804}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 80099804}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableOutline
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!4 &612374174
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612374172}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 321702068}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &615655714
 GameObject:
   m_ObjectHideFlags: 0
@@ -8874,19 +9291,55 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2033209333}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: EnableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2033209333}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: EnableOutline
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1599964751}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- INSTRUCTTORELEASETOOL ----
 
     ----------------------------------
 
     ------------
     DIALOGUE ------------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: e056b38dd26fceb4987ce9442c93e9e8, type: 2}
   script: Hover over the Baby Balfour self retaining retractors on the table and
     squeeze the grip to release them.
   MetaData:
     fileName: 25_Retractors_InstructToReleaseTool_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: 8074f3baa4469354c976b950dd0c009e, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &740700961
 PlayableDirector:
@@ -8916,7 +9369,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1599964752}
   m_Father: {fileID: 35352354}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9537,14 +9991,26 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1659573479}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- SELFRETAININGRETRACTORGVIDEO ----
 
     ------------------------------------------
 
     -----------------
     VIDEO -----------------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 0491f3550bdba3c4aae0a192e54a628d, type: 2}
   script: 
   MetaData:
     fileName: 22_Retractors_SelfRetainingRetractorgVideo_Video
@@ -10049,19 +10515,31 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 285263592}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- INSTRUCTTOCHANGETOOLVARIATION ----
 
     -------------------------------------------
 
     ----------------
     DIALOGUE ----------------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: a8287ab4fb29d6543a68fab9ae64d159, type: 2}
   script: The Senn Handheld Retractor also comes with a the forked retractor facing
     up.  Click the B button to change  from fork down to fork up.
   MetaData:
     fileName: 12_Retractors_InstructToChangeToolVariation_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: 0640e5c8ffc15c34ab558c073e9ad67f, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &805947411
 PlayableDirector:
@@ -10091,7 +10569,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 285263593}
   m_Father: {fileID: 35352354}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10521,18 +11000,30 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1540094162}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- INSTRUCTTOPLAYVIDEO ----
 
     --------------------------------
 
     ----------
     DIALOGUE -----------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 949fe2c39390b2548b69be659801ae37, type: 2}
   script: Watch the video to hear Heidi talk about Self-retaining retractors.
   MetaData:
     fileName: 21_Retractors_InstructToPlayVideo_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: 54d2705b952c0fc44a661225300a0113, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &841592006
 PlayableDirector:
@@ -12084,18 +12575,30 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1540094162}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- INSTRUCTTOPLAYVIDEO ----
 
     --------------------------------
 
     ----------
     DIALOGUE -----------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 5845d773d8ed0734995f818d3c0a4a78, type: 2}
   script: Watch the video clip to see how the spay hook is used in surgery.
   MetaData:
     fileName: 15_Retractors_InstructToPlayVideo_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: 981e7ed31367cfe4fa23e5279523d545, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &935951897
 PlayableDirector:
@@ -13938,19 +14441,55 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1812859549}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: EnableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1812859549}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: EnableOutline
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1647857064}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- INSTRUCTTORELEASETOOL ----
 
     ----------------------------------
 
     ------------
     DIALOGUE ------------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 9c49295e58ed8df44ba9a0119566fa54, type: 2}
   script: Hover over the Parker Hand-held retractor on the table and squeeze the
     grip again to release it.
   MetaData:
     fileName: 6_Retractors_InstructToReleaseTool_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: 359d94a3be959e34cb74a0202c3e0319, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &1042954871
 PlayableDirector:
@@ -13980,7 +14519,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1647857065}
   m_Father: {fileID: 35352354}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14766,19 +15306,55 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 80099804}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: EnableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 80099804}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: EnableOutline
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1972935182}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- INSTRUCTTOPICKUP ----
 
     -----------------------------
 
     ---------
     DIALOGUE ---------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 30f83d5969c4b8f47b05ec475803cf78, type: 2}
   script: Hover over the Army-Navy Hand-held retractor and squeeze the grip to pick
     it up. Make sure to turn your hand over to view the end you are holding.
   MetaData:
     fileName: 7_Retractors_InstructToPickUp_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: d81bf23db98467e459afb8e9677ac3d3, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &1089746400
 PlayableDirector:
@@ -14808,7 +15384,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1972935183}
   m_Father: {fileID: 35352354}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -17160,20 +17737,32 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1659573479}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- PARKERRETRACTORS ----
 
     -----------------------------
 
     ---------
     DIALOGUE ---------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 43f42a883483cf34890aa8845ed03e42, type: 2}
   script: "Parker retractors may be used to retract body wall during ovariohysterectomy.
     Parker retractors have two curved ends and are held by hooking the fingers around
     one curved end\_ and the other curved end over the tissue."
   MetaData:
     fileName: 5_Retractors_ParkerRetractors_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: 1e1e5921413d0f04db4f809b4f0aaea7, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &1270223939
 PlayableDirector:
@@ -17612,14 +18201,26 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1659573479}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- SENNHANDHELDRETRACTORS ----
 
     ------------------------------------
 
     ------------
     DIALOGUE -------------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 973629e486f1fb0458fde1ca6676fd95, type: 2}
   script: Senn retractors are finger retractors that may also be used to retract
     body wall during ovariohysterectomy in smaller patients. They have one smooth,
     flat end and one toothed end that may be sharp or blunt. They are held by hooking
@@ -17628,7 +18229,7 @@ MonoBehaviour:
     from the toothed tip.
   MetaData:
     fileName: 11_Retractors_SennHandheldRetractors_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: 64cdd4a2c33fdf54eba128bd58f57c54, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &1280061891
 PlayableDirector:
@@ -18353,19 +18954,55 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1205226269}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: EnableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1205226269}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: EnableOutline
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1808224721}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- INSTRUCTTORELEASETOOL ----
 
     ----------------------------------
 
     ------------
     DIALOGUE ------------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: a69968e7a7f006e43827a5e08604c2d1, type: 2}
   script: Hover over the Senn Handheld retractor on the table and squeeze the grip
     to release it.
   MetaData:
     fileName: 13_Retractors_InstructToReleaseTool_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: ebe18b0b309177a44ae9679b8303be1d, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &1312313474
 PlayableDirector:
@@ -18395,7 +19032,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1808224722}
   m_Father: {fileID: 35352354}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -21398,6 +22036,82 @@ PlayableDirector:
   m_SceneBindings: []
   m_ExposedReferences:
     m_References: []
+--- !u!1 &1486603131
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1486603133}
+  - component: {fileID: 1486603132}
+  m_Layer: 0
+  m_Name: 14a_Retractors_PickupSpayHook_UserAction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1486603132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1486603131}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29d9a958b8caf7544b0a8f805473e834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CheckType: 3
+  IndexCheck: 0
+  TargetSqueezePercentage: 100
+  InputAction: {fileID: 1021646204}
+  autoNextStep: 1
+  CheckEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 35320570}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 35320570}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableOutline
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!4 &1486603133
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1486603131}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2120592601}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1486919444
 GameObject:
   m_ObjectHideFlags: 0
@@ -21951,7 +22665,7 @@ MonoBehaviour:
 
     -------------
     VIDEO -------------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 2cf62e3ec9fa42347b605cc7803d6aca, type: 2}
   script: 
   MetaData:
     fileName: 24_Retractors_ BalfoursinSurgVideo_Video
@@ -22131,19 +22845,55 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 35320570}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: EnableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 35320570}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: EnableOutline
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 414543876}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- INSTRUCTTORELEASETOOL ----
 
     ----------------------------------
 
     ------------
     DIALOGUE ------------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 763a8b9bf236f284aa95b0d26e576288, type: 2}
   script: Hover over the Spay hook on the table and squeeze the grip again to release
     it.
   MetaData:
     fileName: 19_Retractors_InstructToReleaseTool_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: e1a99220f67f77d41b260be8417cd64e, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &1538903005
 PlayableDirector:
@@ -22173,7 +22923,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 414543877}
   m_Father: {fileID: 35352354}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -22646,13 +23397,25 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1659573479}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- SPAYHOOK ----
 
     --------------------
 
     ---- DIALOGUE -----'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 2db487755654b8d479e82aa14bf01211, type: 2}
   script: A spay hook consists of a long flat handle and a curved, blunted, spatulated
     hook at the opposite end. The spay hook is held by the end of the handle with
     the index and middle fingers and thumb. A spay hook consists of a long flat handle
@@ -22660,7 +23423,7 @@ MonoBehaviour:
     held by the end of the handle with the index and middle fingers and thumb.
   MetaData:
     fileName: 17_Retractors_SpayHook_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: c45430abe1a4f7f48ac4773794325941, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &1570618886
 PlayableDirector:
@@ -22887,6 +23650,82 @@ PlayableDirector:
   m_SceneBindings: []
   m_ExposedReferences:
     m_References: []
+--- !u!1 &1599964750
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1599964752}
+  - component: {fileID: 1599964751}
+  m_Layer: 0
+  m_Name: 25a_Retractors_ReleaseBalfour_UserAction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1599964751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1599964750}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29d9a958b8caf7544b0a8f805473e834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CheckType: 4
+  IndexCheck: 0
+  TargetSqueezePercentage: 100
+  InputAction: {fileID: 1021646204}
+  autoNextStep: 1
+  CheckEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2033209333}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2033209333}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableOutline
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!4 &1599964752
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1599964750}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 740700962}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1610788602
 GameObject:
   m_ObjectHideFlags: 0
@@ -23273,6 +24112,82 @@ PlayableDirector:
   m_SceneBindings: []
   m_ExposedReferences:
     m_References: []
+--- !u!1 &1647857063
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1647857065}
+  - component: {fileID: 1647857064}
+  m_Layer: 0
+  m_Name: 6a_Retractors_ReleaseRetractor_UserAction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1647857064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1647857063}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29d9a958b8caf7544b0a8f805473e834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CheckType: 4
+  IndexCheck: 0
+  TargetSqueezePercentage: 100
+  InputAction: {fileID: 1021646204}
+  autoNextStep: 1
+  CheckEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1812859549}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1812859549}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableOutline
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!4 &1647857065
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1647857063}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1042954872}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1659573479
 GameObject:
   m_ObjectHideFlags: 0
@@ -26420,6 +27335,82 @@ MonoBehaviour:
     fileName: 11_Hemostats_InstructToExamine_Dialogue
     AudioClip: {fileID: 8300000, guid: 2d955f16ade36cd4c9986d2d010d2d3a, type: 3}
     AnimationClip: {fileID: 0}
+--- !u!1 &1808224720
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1808224722}
+  - component: {fileID: 1808224721}
+  m_Layer: 0
+  m_Name: 13a_Retractors_ReleaseSenn_UserAction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1808224721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808224720}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29d9a958b8caf7544b0a8f805473e834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CheckType: 4
+  IndexCheck: 0
+  TargetSqueezePercentage: 100
+  InputAction: {fileID: 1021646204}
+  autoNextStep: 1
+  CheckEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1205226269}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1205226269}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableOutline
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!4 &1808224722
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808224720}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1312313475}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1812859547
 GameObject:
   m_ObjectHideFlags: 0
@@ -26591,6 +27582,82 @@ Transform:
   m_Father: {fileID: 1443313850}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1828906984
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1828906986}
+  - component: {fileID: 1828906985}
+  m_Layer: 0
+  m_Name: 20a_Retractors_PickUpBalfour_UserAction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1828906985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828906984}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29d9a958b8caf7544b0a8f805473e834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CheckType: 3
+  IndexCheck: 0
+  TargetSqueezePercentage: 100
+  InputAction: {fileID: 1021646204}
+  autoNextStep: 1
+  CheckEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2033209333}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2033209333}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableOutline
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!4 &1828906986
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828906984}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 587958880}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1830540165
 GameObject:
   m_ObjectHideFlags: 0
@@ -26628,20 +27695,32 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1659573479}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- ARMYNAVYRETRACTORS ----
 
     -------------------------------
 
     ----------
     DIALOGUE ----------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: da6e64f28ecd9444e89b191823c54166, type: 2}
   script: Army-Navy retractors may be used to retract body wall during ovariohysterectomy.
     They have two flat ends, one shorter and one longer, and are held by hooking
     the fingers around one flat end and the other flat end over the tissue.
   MetaData:
     fileName: 8_Retractors_ArmyNavyRetractors_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: dd53cf0cc2d94b2478e886cc35a6b1f6, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &1830540167
 PlayableDirector:
@@ -28157,6 +29236,58 @@ Transform:
   m_Father: {fileID: 517160524}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1961190309
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1961190311}
+  - component: {fileID: 1961190310}
+  m_Layer: 0
+  m_Name: 4a_Retractors_PickUpRetractor_UserAction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1961190310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961190309}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29d9a958b8caf7544b0a8f805473e834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CheckType: 3
+  IndexCheck: 0
+  TargetSqueezePercentage: 100
+  InputAction: {fileID: 1021646204}
+  autoNextStep: 1
+  CheckEvent:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &1961190311
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961190309}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2013425996}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1964533600
 GameObject:
   m_ObjectHideFlags: 0
@@ -28221,6 +29352,82 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &1972935181
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1972935183}
+  - component: {fileID: 1972935182}
+  m_Layer: 0
+  m_Name: 7a_Retractors_PickUpArmyNavy_UserAction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1972935182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972935181}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29d9a958b8caf7544b0a8f805473e834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CheckType: 3
+  IndexCheck: 0
+  TargetSqueezePercentage: 100
+  InputAction: {fileID: 1021646204}
+  autoNextStep: 1
+  CheckEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 80099804}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 80099804}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableOutline
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!4 &1972935183
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972935181}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1089746401}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1974403347
 GameObject:
   m_ObjectHideFlags: 0
@@ -28594,7 +29801,19 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1540094162}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- INSTRUCTTOPLAYVIDEO ----
 
     --------------------------------
@@ -29053,7 +30272,43 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1812859549}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: EnableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1812859549}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: EnableOutline
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1961190310}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- INSTRUCTTOPICKUP ----
 
     -----------------------------
@@ -29095,7 +30350,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1961190311}
   m_Father: {fileID: 35352354}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -30964,19 +32220,55 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 35320570}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: EnableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 35320570}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: EnableOutline
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1486603132}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- INSTRUCTTOPICKUP ----
 
     -----------------------------
 
     ---------
     DIALOGUE ---------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: cd25c6b4b7322ba4da40bcee0abd7fa3, type: 2}
   script: Hover over the Spay hook on the table and squeeze the grip to pick up the
     spay hook.
   MetaData:
     fileName: 14_Retractors_InstructToPickUp_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: 19e6b94baa0eab7429a3a5bf8bcb7fc5, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &2120592600
 PlayableDirector:
@@ -31006,7 +32298,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1486603133}
   m_Father: {fileID: 35352354}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
