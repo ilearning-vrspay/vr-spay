@@ -849,6 +849,88 @@ PlayableDirector:
   m_SceneBindings: []
   m_ExposedReferences:
     m_References: []
+--- !u!1 &29489947
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 29489950}
+  - component: {fileID: 29489949}
+  - component: {fileID: 29489948}
+  m_Layer: 0
+  m_Name: 19_Scalpels_InstructToPlayVideo_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &29489948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29489947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '---- INSTRUCTTOPLAYVIDEO ----
+
+    --------------------------------
+
+    ----------
+    DIALOGUE -----------'
+  TimelineAsset: {fileID: 0}
+  script: Watch the video to see when to use the pencil grip.
+  MetaData:
+    fileName: 19_Scalpels_InstructToPlayVideo_Dialogue
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &29489949
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29489947}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &29489950
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29489947}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2011996818}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &30205165
 GameObject:
   m_ObjectHideFlags: 0
@@ -1131,6 +1213,316 @@ MonoBehaviour:
   thisisabool: 0
   LeftToolKitTool: {fileID: 0}
   LeftToolVariations: []
+--- !u!1 &35352352
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 35352354}
+  - component: {fileID: 35352353}
+  m_Layer: 0
+  m_Name: Retractors-Guided-Sequence
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &35352353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35352352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8636d161688c164dadb3443c239b911, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Steps:
+  - {fileID: 230727451}
+  - {fileID: 1991215507}
+  - {fileID: 423227731}
+  - {fileID: 2013425994}
+  - {fileID: 1270223938}
+  - {fileID: 1042954870}
+  - {fileID: 1089746399}
+  - {fileID: 1830540166}
+  - {fileID: 321702066}
+  - {fileID: 521938819}
+  - {fileID: 1280061890}
+  - {fileID: 805947410}
+  - {fileID: 1312313473}
+  - {fileID: 2120592599}
+  - {fileID: 935951896}
+  - {fileID: 582721161}
+  - {fileID: 1570618885}
+  - {fileID: 573405450}
+  - {fileID: 1538903004}
+  - {fileID: 587958878}
+  - {fileID: 841592005}
+  - {fileID: 789241074}
+  - {fileID: 1991364457}
+  - {fileID: 1516862304}
+  - {fileID: 740700960}
+  StepIndex: 0
+  SequenceStarted:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1266969159}
+        m_TargetAssemblyTypeName: ToolObjectReferences, Assembly-CSharp
+        m_MethodName: DisableAllGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1021646204}
+        m_TargetAssemblyTypeName: InputActions, Assembly-CSharp
+        m_MethodName: DisableSwitchablity
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  SequencePlaying:
+    m_PersistentCalls:
+      m_Calls: []
+  SequenceNext:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1659573479}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1540094162}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2055885269}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1021646204}
+        m_TargetAssemblyTypeName: InputActions, Assembly-CSharp
+        m_MethodName: ToggleUsabilityCheck
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1021646204}
+        m_TargetAssemblyTypeName: InputActions, Assembly-CSharp
+        m_MethodName: DisableSwitchablity
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  SequenceBack:
+    m_PersistentCalls:
+      m_Calls: []
+  SequenceReset:
+    m_PersistentCalls:
+      m_Calls: []
+  SequenceScrubbed:
+    m_PersistentCalls:
+      m_Calls: []
+  SequencePaused:
+    m_PersistentCalls:
+      m_Calls: []
+  SequenceResumed:
+    m_PersistentCalls:
+      m_Calls: []
+  ProgramMuted:
+    m_PersistentCalls:
+      m_Calls: []
+  ProgramUnmuted:
+    m_PersistentCalls:
+      m_Calls: []
+  InstructionDelivered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2055885269}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  ProgramRestarted:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &35352354
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35352352}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.1329324, y: 0.40191203, z: 0.21652111}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 230727453}
+  - {fileID: 1991215509}
+  - {fileID: 423227733}
+  - {fileID: 2013425996}
+  - {fileID: 1270223940}
+  - {fileID: 1042954872}
+  - {fileID: 1089746401}
+  - {fileID: 1830540168}
+  - {fileID: 321702068}
+  - {fileID: 521938821}
+  - {fileID: 1280061892}
+  - {fileID: 805947412}
+  - {fileID: 1312313475}
+  - {fileID: 2120592601}
+  - {fileID: 935951898}
+  - {fileID: 582721163}
+  - {fileID: 1570618887}
+  - {fileID: 573405452}
+  - {fileID: 1538903006}
+  - {fileID: 587958880}
+  - {fileID: 841592007}
+  - {fileID: 789241076}
+  - {fileID: 1991364459}
+  - {fileID: 1516862306}
+  - {fileID: 740700962}
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &41671340
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 41671343}
+  - component: {fileID: 41671342}
+  - component: {fileID: 41671341}
+  m_Layer: 0
+  m_Name: 13_Scalpels_ScalpelAttatchBladeVideo_Video
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &41671341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41671340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '---- SCALPELATTATCHBLADEVIDEO ----
+
+    --------------------------------------
+
+    ---------------
+    VIDEO ---------------'
+  TimelineAsset: {fileID: 0}
+  script: 
+  MetaData:
+    fileName: 13_Scalpels_ScalpelAttatchBladeVideo_Video
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &41671342
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41671340}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &41671343
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41671340}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2011996818}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &46721746 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8416189188015790944, guid: 2a2aa44742c186a4b9d7bac280bf0f81, type: 3}
@@ -2064,6 +2456,88 @@ Transform:
   m_Father: {fileID: 928197131}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &105205726
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 105205729}
+  - component: {fileID: 105205728}
+  - component: {fileID: 105205727}
+  m_Layer: 0
+  m_Name: 20_Scalpels_ScalpelsPencilGripVideo_Video
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &105205727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 105205726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '---- SCALPELSPENCILGRIPVIDEO ----
+
+    -------------------------------------
+
+    --------------
+    VIDEO ---------------'
+  TimelineAsset: {fileID: 0}
+  script: 
+  MetaData:
+    fileName: 20_Scalpels_ScalpelsPencilGripVideo_Video
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &105205728
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 105205726}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &105205729
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 105205726}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2011996818}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &120708291
 GameObject:
   m_ObjectHideFlags: 0
@@ -2602,6 +3076,87 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1871042755}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &164163621
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 164163624}
+  - component: {fileID: 164163623}
+  - component: {fileID: 164163622}
+  m_Layer: 0
+  m_Name: 1_Scalpels_Intro_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &164163622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 164163621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '----- INTRO ------
+
+    --------------------
+
+    ---- DIALOGUE -----'
+  TimelineAsset: {fileID: 0}
+  script: Next, Heidi will talk about the Scalpels.
+  MetaData:
+    fileName: 1_Scalpels_Intro_Dialogue
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &164163623
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 164163621}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &164163624
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 164163621}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2011996818}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &167565229
@@ -3193,6 +3748,100 @@ Transform:
   m_Father: {fileID: 879517517}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &230727450
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 230727453}
+  - component: {fileID: 230727452}
+  - component: {fileID: 230727451}
+  m_Layer: 0
+  m_Name: 1_Retractors_Intro_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &230727451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230727450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1540094162}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  description: '----- INTRO ------
+
+    --------------------
+
+    ---- DIALOGUE -----'
+  TimelineAsset: {fileID: 0}
+  script: Next, we will do the Retractors Group. Watch the video screen as Heidi
+    describes what retractors are used for.
+  MetaData:
+    fileName: 1_Retractors_Intro_Dialogue
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &230727452
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230727450}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &230727453
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230727450}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 35352354}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &231432085
 GameObject:
   m_ObjectHideFlags: 0
@@ -3677,6 +4326,89 @@ MonoBehaviour:
   precomputeOutline: 1
   bakeKeys: []
   bakeValues: []
+--- !u!1 &321702065
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 321702068}
+  - component: {fileID: 321702067}
+  - component: {fileID: 321702066}
+  m_Layer: 0
+  m_Name: 9_Retractors_InstructToReleaseTool_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &321702066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321702065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '---- INSTRUCTTORELEASETOOL ----
+
+    ----------------------------------
+
+    ------------
+    DIALOGUE ------------'
+  TimelineAsset: {fileID: 0}
+  script: Hover over the Army-Navy Hand-held retractor on the table and squeeze the
+    grip again to release it.
+  MetaData:
+    fileName: 9_Retractors_InstructToReleaseTool_Dialogue
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &321702067
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321702065}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &321702068
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321702065}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 35352354}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &333359798
 GameObject:
   m_ObjectHideFlags: 0
@@ -4178,6 +4910,90 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &394963683
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 394963686}
+  - component: {fileID: 394963685}
+  - component: {fileID: 394963684}
+  m_Layer: 0
+  m_Name: 5_Scalpels_InstructToExamine_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &394963684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394963683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '---- INSTRUCTTOEXAMINE ----
+
+    ------------------------------
+
+    ---------
+    DIALOGUE ----------'
+  TimelineAsset: {fileID: 0}
+  script: Turn the blade toward you to examine the blade and where it attaches to
+    the handle.  Once you have examined the blade, and are ready to move on, press
+    the next button.
+  MetaData:
+    fileName: 5_Scalpels_InstructToExamine_Dialogue
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &394963685
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394963683}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &394963686
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394963683}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2011996818}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &403156466
 GameObject:
   m_ObjectHideFlags: 0
@@ -4324,6 +5140,104 @@ MonoBehaviour:
   CheckEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &423227730
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 423227733}
+  - component: {fileID: 423227732}
+  - component: {fileID: 423227731}
+  m_Layer: 0
+  m_Name: 3_Retractors_CommonHandHeldRetractorIntro_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &423227731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423227730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1659573479}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  description: '---- COMMONHANDHELDRETRACTORINTRO ----
+
+    ------------------------------------------
+
+    ---------------
+    DIALOGUE ----------------'
+  TimelineAsset: {fileID: 11400000, guid: 5d98e16b6ddc6dd48a2cf9c236666cd6, type: 2}
+  script: "Hand-held retractors can be double-ended or single-ended and may have
+    a ring for hooking the finger.\_Handheld retractors shown here are the Parker
+    retractor, Army-Navy retractor, and Senn retractor, which are all double-ended
+    retractors. A spay hook also constitutes a handheld, or finger retractor and
+    is single-ended."
+  MetaData:
+    fileName: 3_Retractors_CommonHandHeldRetractorIntro_Dialogue
+    AudioClip: {fileID: 8300000, guid: 03fe25206309f424d9640c40fc4647b8, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &423227732
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423227730}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &423227733
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423227730}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 35352354}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &424758316
 GameObject:
   m_ObjectHideFlags: 0
@@ -4621,6 +5535,88 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5888765399538998960, guid: ad818c36731146e994540a1896ad8f24, type: 3}
   m_PrefabInstance: {fileID: 428348773}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &428835340
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 428835343}
+  - component: {fileID: 428835342}
+  - component: {fileID: 428835341}
+  m_Layer: 0
+  m_Name: 10_Scalpels_ScalpelDetatchBladeVideo_Video
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &428835341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428835340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '---- SCALPELDETATCHBLADEVIDEO ----
+
+    --------------------------------------
+
+    ---------------
+    VIDEO ---------------'
+  TimelineAsset: {fileID: 0}
+  script: 
+  MetaData:
+    fileName: 10_Scalpels_ScalpelDetatchBladeVideo_Video
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &428835342
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428835340}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &428835343
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428835340}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2011996818}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &435044319
 GameObject:
   m_ObjectHideFlags: 0
@@ -5741,6 +6737,89 @@ Transform:
   m_Father: {fileID: 1680476699}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &521938818
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 521938821}
+  - component: {fileID: 521938820}
+  - component: {fileID: 521938819}
+  m_Layer: 0
+  m_Name: 10_Retractors_InstructToPickUp_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &521938819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521938818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '---- INSTRUCTTOPICKUP ----
+
+    -----------------------------
+
+    ---------
+    DIALOGUE ---------'
+  TimelineAsset: {fileID: 0}
+  script: 'Hover over the Senn Handheld retractor and squeeze the grip to pick it
+    up. Make sure to turn your hand over to view the end you are holding.  '
+  MetaData:
+    fileName: 10_Retractors_InstructToPickUp_Dialogue
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &521938820
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521938818}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &521938821
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521938818}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 35352354}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &523964807
 GameObject:
   m_ObjectHideFlags: 0
@@ -6284,6 +7363,254 @@ PlayableDirector:
   m_SceneBindings: []
   m_ExposedReferences:
     m_References: []
+--- !u!1 &573405449
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 573405452}
+  - component: {fileID: 573405451}
+  - component: {fileID: 573405450}
+  m_Layer: 0
+  m_Name: 18_Retractors_InstuctToExamine_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &573405450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 573405449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '---- INSTUCTTOEXAMINE ----
+
+    -----------------------------
+
+    ---------
+    DIALOGUE ---------'
+  TimelineAsset: {fileID: 0}
+  script: Turn your hand to see how the spay hook is held and to examine its spatulated
+    hook.
+  MetaData:
+    fileName: 18_Retractors_InstuctToExamine_Dialogue
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &573405451
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 573405449}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &573405452
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 573405449}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 35352354}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &582721160
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 582721163}
+  - component: {fileID: 582721162}
+  - component: {fileID: 582721161}
+  m_Layer: 0
+  m_Name: 16_Retractors_SpayHookInSurgVideo_Video
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &582721161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582721160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '---- SPAYHOOKINSURGVIDEO ----
+
+    --------------------------------
+
+    ------------
+    VIDEO ------------'
+  TimelineAsset: {fileID: 0}
+  script: 
+  MetaData:
+    fileName: 16_Retractors_SpayHookInSurgVideo_Video
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &582721162
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582721160}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &582721163
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582721160}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 35352354}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &587958877
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 587958880}
+  - component: {fileID: 587958879}
+  - component: {fileID: 587958878}
+  m_Layer: 0
+  m_Name: 20_Retractors_InstructToPickUp_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &587958878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 587958877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '---- INSTRUCTTOPICKUP ----
+
+    -----------------------------
+
+    ---------
+    DIALOGUE ---------'
+  TimelineAsset: {fileID: 0}
+  script: 'Hover over the Baby Balfour self retaining retractors on the table and
+    squeeze the grip to pick them up. Then watch the video. '
+  MetaData:
+    fileName: 20_Retractors_InstructToPickUp_Dialogue
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &587958879
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 587958877}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &587958880
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 587958877}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 35352354}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &593186349
 GameObject:
   m_ObjectHideFlags: 0
@@ -6495,6 +7822,88 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 595885001}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &615655714
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 615655717}
+  - component: {fileID: 615655716}
+  - component: {fileID: 615655715}
+  m_Layer: 0
+  m_Name: 12_Scalpels_InstructToPlayVideo_Video
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &615655715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615655714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '---- INSTRUCTTOPLAYVIDEO ----
+
+    --------------------------------
+
+    ----------- 
+    VIDEO ------------'
+  TimelineAsset: {fileID: 0}
+  script: "{InstructToPlayVideo} \u2013 [ Video] -  "
+  MetaData:
+    fileName: 12_Scalpels_InstructToPlayVideo_Video
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &615655716
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615655714}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &615655717
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615655714}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2011996818}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &629107335
 GameObject:
   m_ObjectHideFlags: 0
@@ -7428,6 +8837,89 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.07457537, y: 0.0061025308, z: 0.18194385}
   m_Center: {x: 0.0036492986, y: -0.000081300735, z: -0.08245843}
+--- !u!1 &740700959
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 740700962}
+  - component: {fileID: 740700961}
+  - component: {fileID: 740700960}
+  m_Layer: 0
+  m_Name: 25_Retractors_InstructToReleaseTool_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &740700960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 740700959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '---- INSTRUCTTORELEASETOOL ----
+
+    ----------------------------------
+
+    ------------
+    DIALOGUE ------------'
+  TimelineAsset: {fileID: 0}
+  script: Hover over the Baby Balfour self retaining retractors on the table and
+    squeeze the grip to release them.
+  MetaData:
+    fileName: 25_Retractors_InstructToReleaseTool_Dialogue
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &740700961
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 740700959}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &740700962
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 740700959}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 35352354}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &744110069
 GameObject:
   m_ObjectHideFlags: 0
@@ -8008,6 +9500,88 @@ MonoBehaviour:
     fileName: 36_Hemostats_DescribeTool_Dialogue
     AudioClip: {fileID: 8300000, guid: 5fc5ee6f23808614c81d59fd1cd8d25f, type: 3}
     AnimationClip: {fileID: 0}
+--- !u!1 &789241073
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 789241076}
+  - component: {fileID: 789241075}
+  - component: {fileID: 789241074}
+  m_Layer: 0
+  m_Name: 22_Retractors_SelfRetainingRetractorgVideo_Video
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &789241074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789241073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '---- SELFRETAININGRETRACTORGVIDEO ----
+
+    ------------------------------------------
+
+    -----------------
+    VIDEO -----------------'
+  TimelineAsset: {fileID: 0}
+  script: 
+  MetaData:
+    fileName: 22_Retractors_SelfRetainingRetractorgVideo_Video
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &789241075
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789241073}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &789241076
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789241073}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 35352354}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &790744491
 GameObject:
   m_ObjectHideFlags: 0
@@ -8438,6 +10012,89 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &805947409
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 805947412}
+  - component: {fileID: 805947411}
+  - component: {fileID: 805947410}
+  m_Layer: 0
+  m_Name: 12_Retractors_InstructToChangeToolVariation_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &805947410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 805947409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '---- INSTRUCTTOCHANGETOOLVARIATION ----
+
+    -------------------------------------------
+
+    ----------------
+    DIALOGUE ----------------'
+  TimelineAsset: {fileID: 0}
+  script: The Senn Handheld Retractor also comes with a the forked retractor facing
+    up.  Click the B button to change  from fork down to fork up.
+  MetaData:
+    fileName: 12_Retractors_InstructToChangeToolVariation_Dialogue
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &805947411
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 805947409}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &805947412
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 805947409}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 35352354}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &818035479
 GameObject:
   m_ObjectHideFlags: 0
@@ -8825,6 +10482,88 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1374123757}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &841592004
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 841592007}
+  - component: {fileID: 841592006}
+  - component: {fileID: 841592005}
+  m_Layer: 0
+  m_Name: 21_Retractors_InstructToPlayVideo_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &841592005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 841592004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '---- INSTRUCTTOPLAYVIDEO ----
+
+    --------------------------------
+
+    ----------
+    DIALOGUE -----------'
+  TimelineAsset: {fileID: 0}
+  script: Watch the video to hear Heidi talk about Self-retaining retractors.
+  MetaData:
+    fileName: 21_Retractors_InstructToPlayVideo_Dialogue
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &841592006
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 841592004}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &841592007
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 841592004}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 35352354}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &845236110
@@ -9573,6 +11312,88 @@ MonoBehaviour:
     fileName: 8_Hemostats_InstructToChangePose_Dialogue
     AudioClip: {fileID: 8300000, guid: c4bd9608b4e0929428740988c1b6d9fe, type: 3}
     AnimationClip: {fileID: 0}
+--- !u!1 &886248033
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 886248036}
+  - component: {fileID: 886248035}
+  - component: {fileID: 886248034}
+  m_Layer: 0
+  m_Name: 14_Scalpels_InstructToPlayVideo_Video
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &886248034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 886248033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '---- INSTRUCTTOPLAYVIDEO ----
+
+    --------------------------------
+
+    ----------- 
+    VIDEO ------------'
+  TimelineAsset: {fileID: 0}
+  script: "{InstructToPlayVideo} \u2013 [ Video] -  "
+  MetaData:
+    fileName: 14_Scalpels_InstructToPlayVideo_Video
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &886248035
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 886248033}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &886248036
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 886248033}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2011996818}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &892982892
 GameObject:
   m_ObjectHideFlags: 0
@@ -9649,6 +11470,91 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &895733467
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 895733470}
+  - component: {fileID: 895733469}
+  - component: {fileID: 895733468}
+  m_Layer: 0
+  m_Name: 11_Scalpels_ScalpelBladeAttachmentInstructions_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &895733468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895733467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '---- SCALPELBLADEATTACHMENTINSTRUCTIONS ----
+
+    -------------------------------------------------
+
+    -------------------
+    DIALOGUE -------------------'
+  TimelineAsset: {fileID: 0}
+  script: "Align the number 10 blade with the raised platform with groove in the
+    number 3 handle and gently slide\_ the blade toward the scalpel handle. Continue
+    to slide the blade onto the scalpel handle until the oblong opening of the blade
+    locks in place within the groove in the raised platform of the scalpel handle. "
+  MetaData:
+    fileName: 11_Scalpels_ScalpelBladeAttachmentInstructions_Dialogue
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &895733469
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895733467}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &895733470
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895733467}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2011996818}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &905539628 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1547376385669471500, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
@@ -10141,6 +12047,88 @@ PlayableDirector:
   m_SceneBindings: []
   m_ExposedReferences:
     m_References: []
+--- !u!1 &935951895
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 935951898}
+  - component: {fileID: 935951897}
+  - component: {fileID: 935951896}
+  m_Layer: 0
+  m_Name: 15_Retractors_InstructToPlayVideo_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &935951896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935951895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '---- INSTRUCTTOPLAYVIDEO ----
+
+    --------------------------------
+
+    ----------
+    DIALOGUE -----------'
+  TimelineAsset: {fileID: 0}
+  script: Watch the video clip to see how the spay hook is used in surgery.
+  MetaData:
+    fileName: 15_Retractors_InstructToPlayVideo_Dialogue
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &935951897
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935951895}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &935951898
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935951895}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 35352354}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &936267979 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1123566353887104004, guid: 2a2aa44742c186a4b9d7bac280bf0f81, type: 3}
@@ -11913,6 +13901,89 @@ MonoBehaviour:
     fileName: 23_Hemostats_InstructToExamine_Dialogue
     AudioClip: {fileID: 8300000, guid: fc3d501e48da3c04cb8626efe6662bc0, type: 3}
     AnimationClip: {fileID: 0}
+--- !u!1 &1042954869
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1042954872}
+  - component: {fileID: 1042954871}
+  - component: {fileID: 1042954870}
+  m_Layer: 0
+  m_Name: 6_Retractors_InstructToReleaseTool_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1042954870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042954869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '---- INSTRUCTTORELEASETOOL ----
+
+    ----------------------------------
+
+    ------------
+    DIALOGUE ------------'
+  TimelineAsset: {fileID: 0}
+  script: Hover over the Parker Hand-held retractor on the table and squeeze the
+    grip again to release it.
+  MetaData:
+    fileName: 6_Retractors_InstructToReleaseTool_Dialogue
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1042954871
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042954869}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &1042954872
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042954869}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 35352354}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1044358041
 GameObject:
   m_ObjectHideFlags: 0
@@ -12100,6 +14171,172 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 879517517}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1056384219
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1056384222}
+  - component: {fileID: 1056384221}
+  - component: {fileID: 1056384220}
+  m_Layer: 0
+  m_Name: 6_Scalpels_InstructToPlayVideo_Video
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1056384220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1056384219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '---- INSTRUCTTOPLAYVIDEO ----
+
+    --------------------------------
+
+    ----------- 
+    VIDEO ------------'
+  TimelineAsset: {fileID: 0}
+  script: ' Watch the video screen to see how to attach a new blade to a scalpel
+    handle.'
+  MetaData:
+    fileName: 6_Scalpels_InstructToPlayVideo_Video
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1056384221
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1056384219}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &1056384222
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1056384219}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2011996818}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1056560285
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1056560288}
+  - component: {fileID: 1056560287}
+  - component: {fileID: 1056560286}
+  m_Layer: 0
+  m_Name: 24_Scalpels_InstructToReleaseTool_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1056560286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1056560285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '---- INSTRUCTTORELEASETOOL ----
+
+    ----------------------------------
+
+    ------------
+    DIALOGUE ------------'
+  TimelineAsset: {fileID: 0}
+  script: Hover over the number 3 Scalpel Handle with a number 10 Blade and press
+    the grip again to release it.
+  MetaData:
+    fileName: 24_Scalpels_InstructToReleaseTool_Dialogue
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1056560287
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1056560285}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &1056560288
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1056560285}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2011996818}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1070035684
@@ -12491,6 +14728,89 @@ Transform:
   - {fileID: 1486919445}
   m_Father: {fileID: 0}
   m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1089746398
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1089746401}
+  - component: {fileID: 1089746400}
+  - component: {fileID: 1089746399}
+  m_Layer: 0
+  m_Name: 7_Retractors_InstructToPickUp_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1089746399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089746398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '---- INSTRUCTTOPICKUP ----
+
+    -----------------------------
+
+    ---------
+    DIALOGUE ---------'
+  TimelineAsset: {fileID: 0}
+  script: Hover over the Army-Navy Hand-held retractor and squeeze the grip to pick
+    it up. Make sure to turn your hand over to view the end you are holding.
+  MetaData:
+    fileName: 7_Retractors_InstructToPickUp_Dialogue
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1089746400
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089746398}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &1089746401
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089746398}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 35352354}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1092088739
 GameObject:
@@ -13233,6 +15553,88 @@ PlayableDirector:
   m_SceneBindings: []
   m_ExposedReferences:
     m_References: []
+--- !u!1 &1172203527
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1172203530}
+  - component: {fileID: 1172203529}
+  - component: {fileID: 1172203528}
+  m_Layer: 0
+  m_Name: 17_Scalpels_ ScalpelsFingertipGrip Video_Video
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1172203528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172203527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '----  SCALPELSFINGERTIPGRIP VIDEO ----
+
+    ------------------------------------------
+
+    -----------------
+    VIDEO -----------------'
+  TimelineAsset: {fileID: 0}
+  script: 
+  MetaData:
+    fileName: 17_Scalpels_ ScalpelsFingertipGrip Video_Video
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1172203529
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172203527}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &1172203530
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172203527}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2011996818}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1174068827 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8344240366312856507, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
@@ -13299,6 +15701,88 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.13159214, y: 0.017673193, z: 0.014829885}
   m_Center: {x: -0.045002222, y: 0.0012022629, z: -0.00020313263}
+--- !u!1 &1174246699
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1174246702}
+  - component: {fileID: 1174246701}
+  - component: {fileID: 1174246700}
+  m_Layer: 0
+  m_Name: 9_Scalpels_InstructToPlayVideo_Video
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1174246700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174246699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '---- INSTRUCTTOPLAYVIDEO ----
+
+    --------------------------------
+
+    ----------- 
+    VIDEO ------------'
+  TimelineAsset: {fileID: 0}
+  script: "{InstructToPlayVideo} \u2013 [ Video] -  "
+  MetaData:
+    fileName: 9_Scalpels_InstructToPlayVideo_Video
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1174246701
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174246699}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &1174246702
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174246699}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2011996818}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1183504233
 GameObject:
   m_ObjectHideFlags: 0
@@ -14639,6 +17123,90 @@ MonoBehaviour:
   - {fileID: 1205226269}
   - {fileID: 35320570}
   - {fileID: 2121078970}
+--- !u!1 &1270223937
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1270223940}
+  - component: {fileID: 1270223939}
+  - component: {fileID: 1270223938}
+  m_Layer: 0
+  m_Name: 5_Retractors_ParkerRetractors_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1270223938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270223937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '---- PARKERRETRACTORS ----
+
+    -----------------------------
+
+    ---------
+    DIALOGUE ---------'
+  TimelineAsset: {fileID: 0}
+  script: "Parker retractors may be used to retract body wall during ovariohysterectomy.
+    Parker retractors have two curved ends and are held by hooking the fingers around
+    one curved end\_ and the other curved end over the tissue."
+  MetaData:
+    fileName: 5_Retractors_ParkerRetractors_Dialogue
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1270223939
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270223937}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &1270223940
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270223937}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 35352354}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1271789873
 GameObject:
   m_ObjectHideFlags: 0
@@ -14748,6 +17316,171 @@ PlayableDirector:
   m_SceneBindings: []
   m_ExposedReferences:
     m_References: []
+--- !u!1 &1272415758
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1272415761}
+  - component: {fileID: 1272415760}
+  - component: {fileID: 1272415759}
+  m_Layer: 0
+  m_Name: 2_Scalpels_InstructToPlayVideo_Video
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1272415759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1272415758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '---- INSTRUCTTOPLAYVIDEO ----
+
+    --------------------------------
+
+    ----------- 
+    VIDEO ------------'
+  TimelineAsset: {fileID: 0}
+  script: ' Watch the introductory video on the screen and the table as each item
+    is described.'
+  MetaData:
+    fileName: 2_Scalpels_InstructToPlayVideo_Video
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1272415760
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1272415758}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &1272415761
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1272415758}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2011996818}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1275179689
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1275179692}
+  - component: {fileID: 1275179691}
+  - component: {fileID: 1275179690}
+  m_Layer: 0
+  m_Name: 3_Scalpels_ScalpelsIntroVideo_Video
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1275179690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1275179689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '---- SCALPELSINTROVIDEO ----
+
+    -------------------------------
+
+    -----------
+    VIDEO ------------'
+  TimelineAsset: {fileID: 0}
+  script: 
+  MetaData:
+    fileName: 3_Scalpels_ScalpelsIntroVideo_Video
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1275179691
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1275179689}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &1275179692
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1275179689}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2011996818}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1276013415
 GameObject:
   m_ObjectHideFlags: 0
@@ -14840,6 +17573,93 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 879517517}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1280061889
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1280061892}
+  - component: {fileID: 1280061891}
+  - component: {fileID: 1280061890}
+  m_Layer: 0
+  m_Name: 11_Retractors_SennHandheldRetractors_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1280061890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280061889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '---- SENNHANDHELDRETRACTORS ----
+
+    ------------------------------------
+
+    ------------
+    DIALOGUE -------------'
+  TimelineAsset: {fileID: 0}
+  script: Senn retractors are finger retractors that may also be used to retract
+    body wall during ovariohysterectomy in smaller patients. They have one smooth,
+    flat end and one toothed end that may be sharp or blunt. They are held by hooking
+    one finger around the flat end and the other toothed end over the tissue, or
+    vice versa, being careful not to incur injury and therefore surgical contamination
+    from the toothed tip.
+  MetaData:
+    fileName: 11_Retractors_SennHandheldRetractors_Dialogue
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1280061891
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280061889}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &1280061892
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280061889}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 35352354}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1282472205
@@ -15496,6 +18316,89 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!1 &1312313472
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1312313475}
+  - component: {fileID: 1312313474}
+  - component: {fileID: 1312313473}
+  m_Layer: 0
+  m_Name: 13_Retractors_InstructToReleaseTool_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1312313473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312313472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '---- INSTRUCTTORELEASETOOL ----
+
+    ----------------------------------
+
+    ------------
+    DIALOGUE ------------'
+  TimelineAsset: {fileID: 0}
+  script: Hover over the Senn Handheld retractor on the table and squeeze the grip
+    to release it.
+  MetaData:
+    fileName: 13_Retractors_InstructToReleaseTool_Dialogue
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1312313474
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312313472}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &1312313475
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312313472}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 35352354}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1320836837
 GameObject:
   m_ObjectHideFlags: 0
@@ -19004,6 +21907,88 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &1516862303
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1516862306}
+  - component: {fileID: 1516862305}
+  - component: {fileID: 1516862304}
+  m_Layer: 0
+  m_Name: 24_Retractors_ BalfoursinSurgVideo_Video
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1516862304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516862303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '----  BALFOURSINSURGVIDEO ----
+
+    ---------------------------------
+
+    -------------
+    VIDEO -------------'
+  TimelineAsset: {fileID: 0}
+  script: 
+  MetaData:
+    fileName: 24_Retractors_ BalfoursinSurgVideo_Video
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1516862305
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516862303}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &1516862306
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516862303}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 35352354}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1526329663 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1577576604493398181, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
@@ -19027,6 +22012,171 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!1 &1527595604
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1527595607}
+  - component: {fileID: 1527595606}
+  - component: {fileID: 1527595605}
+  m_Layer: 0
+  m_Name: 7_Scalpels_ScalpelsAttachBladeVideo_Video
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1527595605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527595604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '---- SCALPELSATTACHBLADEVIDEO ----
+
+    --------------------------------------
+
+    ---------------
+    VIDEO ---------------'
+  TimelineAsset: {fileID: 0}
+  script: 
+  MetaData:
+    fileName: 7_Scalpels_ScalpelsAttachBladeVideo_Video
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1527595606
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527595604}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &1527595607
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527595604}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2011996818}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1538903003
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1538903006}
+  - component: {fileID: 1538903005}
+  - component: {fileID: 1538903004}
+  m_Layer: 0
+  m_Name: 19_Retractors_InstructToReleaseTool_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1538903004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1538903003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '---- INSTRUCTTORELEASETOOL ----
+
+    ----------------------------------
+
+    ------------
+    DIALOGUE ------------'
+  TimelineAsset: {fileID: 0}
+  script: Hover over the Spay hook on the table and squeeze the grip again to release
+    it.
+  MetaData:
+    fileName: 19_Retractors_InstructToReleaseTool_Dialogue
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1538903005
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1538903003}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &1538903006
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1538903003}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 35352354}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1540094162
 GameObject:
   m_ObjectHideFlags: 0
@@ -19459,6 +22609,91 @@ MonoBehaviour:
     fileName: 15_Hemostats_InstructToChangeToolVariation_Dialogue
     AudioClip: {fileID: 8300000, guid: 6b9e4f8aaad1627419c7be3007c84e56, type: 3}
     AnimationClip: {fileID: 0}
+--- !u!1 &1570618884
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1570618887}
+  - component: {fileID: 1570618886}
+  - component: {fileID: 1570618885}
+  m_Layer: 0
+  m_Name: 17_Retractors_SpayHook_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1570618885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570618884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '---- SPAYHOOK ----
+
+    --------------------
+
+    ---- DIALOGUE -----'
+  TimelineAsset: {fileID: 0}
+  script: A spay hook consists of a long flat handle and a curved, blunted, spatulated
+    hook at the opposite end. The spay hook is held by the end of the handle with
+    the index and middle fingers and thumb. A spay hook consists of a long flat handle
+    and a curved, blunted, spatulated hook at the opposite end. The spay hook is
+    held by the end of the handle with the index and middle fingers and thumb.
+  MetaData:
+    fileName: 17_Retractors_SpayHook_Dialogue
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1570618886
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570618884}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &1570618887
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570618884}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 35352354}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1588657298
 GameObject:
   m_ObjectHideFlags: 0
@@ -20513,6 +23748,88 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: -3133477712170797657, guid: 2a2aa44742c186a4b9d7bac280bf0f81, type: 3}
   m_PrefabInstance: {fileID: 1306327876}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1677911680
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1677911683}
+  - component: {fileID: 1677911682}
+  - component: {fileID: 1677911681}
+  m_Layer: 0
+  m_Name: 22_Scalpels_InstructToPlayVideo_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1677911681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677911680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '---- INSTRUCTTOPLAYVIDEO ----
+
+    --------------------------------
+
+    ----------
+    DIALOGUE -----------'
+  TimelineAsset: {fileID: 0}
+  script: Watch the video to see when to use the  reverse press motion.
+  MetaData:
+    fileName: 22_Scalpels_InstructToPlayVideo_Dialogue
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1677911682
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677911680}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &1677911683
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677911680}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2011996818}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1680476698
 GameObject:
   m_ObjectHideFlags: 0
@@ -22352,6 +25669,88 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6258854190082142410, guid: 2a2aa44742c186a4b9d7bac280bf0f81, type: 3}
   m_PrefabInstance: {fileID: 1306327876}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1734263756
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1734263759}
+  - component: {fileID: 1734263758}
+  - component: {fileID: 1734263757}
+  m_Layer: 0
+  m_Name: 15_Scalpels_ ScalpelsSlidingMotion Video_Video
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1734263757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734263756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '----  SCALPELSSLIDINGMOTION VIDEO ----
+
+    ------------------------------------------
+
+    -----------------
+    VIDEO -----------------'
+  TimelineAsset: {fileID: 0}
+  script: 
+  MetaData:
+    fileName: 15_Scalpels_ ScalpelsSlidingMotion Video_Video
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1734263758
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734263756}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &1734263759
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734263756}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2011996818}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1745182165
 GameObject:
   m_ObjectHideFlags: 0
@@ -22534,6 +25933,89 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.16995941, y: 0.017673193, z: 0.04690443}
   m_Center: {x: 0.05281652, y: 0.0012022629, z: -0.00009183596}
+--- !u!1 &1766454493
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1766454496}
+  - component: {fileID: 1766454495}
+  - component: {fileID: 1766454494}
+  m_Layer: 0
+  m_Name: 16_Scalpels_InstructToPlayVideo_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1766454494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766454493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '---- INSTRUCTTOPLAYVIDEO ----
+
+    --------------------------------
+
+    ----------
+    DIALOGUE -----------'
+  TimelineAsset: {fileID: 0}
+  script: What the video to learn about the basic ways to grip the scalpel.  You
+    are currently using the Fingertip Grip used for sliding and scraping.
+  MetaData:
+    fileName: 16_Scalpels_InstructToPlayVideo_Dialogue
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1766454495
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766454493}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &1766454496
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766454493}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2011996818}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1770337516 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8589868606741093017, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
@@ -23107,6 +26589,90 @@ Transform:
   - {fileID: 2039636257}
   - {fileID: 1685011453}
   m_Father: {fileID: 1443313850}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1830540165
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1830540168}
+  - component: {fileID: 1830540167}
+  - component: {fileID: 1830540166}
+  m_Layer: 0
+  m_Name: 8_Retractors_ArmyNavyRetractors_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1830540166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830540165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '---- ARMYNAVYRETRACTORS ----
+
+    -------------------------------
+
+    ----------
+    DIALOGUE ----------'
+  TimelineAsset: {fileID: 0}
+  script: Army-Navy retractors may be used to retract body wall during ovariohysterectomy.
+    They have two flat ends, one shorter and one longer, and are held by hooking
+    the fingers around one flat end and the other flat end over the tissue.
+  MetaData:
+    fileName: 8_Retractors_ArmyNavyRetractors_Dialogue
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1830540167
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830540165}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &1830540168
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830540165}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 35352354}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1852286644 stripped
@@ -24069,6 +27635,174 @@ PlayableDirector:
   m_SceneBindings: []
   m_ExposedReferences:
     m_References: []
+--- !u!1 &1890799503
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1890799506}
+  - component: {fileID: 1890799505}
+  - component: {fileID: 1890799504}
+  m_Layer: 0
+  m_Name: 8_Scalpels_ScalpelBladeRemovalInstructions_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1890799504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890799503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '---- SCALPELBLADEREMOVALINSTRUCTIONS ----
+
+    ----------------------------------------------
+
+    -----------------
+    DIALOGUE ------------------'
+  TimelineAsset: {fileID: 0}
+  script: To remove the blade, carefully lift the non-cutting end of the blade until
+    the oblong opening unlocks from the groove in the raised platform of the scalpel
+    handle. Slide the blade off the scalpel handle, moving the blade away from the
+    handle. Be sure to place the used blade in the sharps container on the table. 
+    Press the next button.
+  MetaData:
+    fileName: 8_Scalpels_ScalpelBladeRemovalInstructions_Dialogue
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1890799505
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890799503}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &1890799506
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890799503}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2011996818}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1891563434
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1891563437}
+  - component: {fileID: 1891563436}
+  - component: {fileID: 1891563435}
+  m_Layer: 0
+  m_Name: 23_Scalpels_ScalpelsReverseStabVideo_Video
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1891563435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891563434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '---- SCALPELSREVERSESTABVIDEO ----
+
+    --------------------------------------
+
+    ---------------
+    VIDEO ---------------'
+  TimelineAsset: {fileID: 0}
+  script: 
+  MetaData:
+    fileName: 23_Scalpels_ScalpelsReverseStabVideo_Video
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1891563436
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891563434}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &1891563437
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891563434}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2011996818}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1905009844 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1490951669508669430, guid: 2a2aa44742c186a4b9d7bac280bf0f81, type: 3}
@@ -24225,6 +27959,89 @@ MonoBehaviour:
   CheckEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &1921264453
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1921264456}
+  - component: {fileID: 1921264455}
+  - component: {fileID: 1921264454}
+  m_Layer: 0
+  m_Name: 18_Scalpels_InstructToChangePose_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1921264454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921264453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '---- INSTRUCTTOCHANGEPOSE ----
+
+    ---------------------------------
+
+    -----------
+    DIALOGUE ------------'
+  TimelineAsset: {fileID: 0}
+  script: Now press the joystick button to change poses from the fingertip grip to
+    the pencil .
+  MetaData:
+    fileName: 18_Scalpels_InstructToChangePose_Dialogue
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1921264455
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921264453}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &1921264456
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921264453}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2011996818}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1926148644
 GameObject:
   m_ObjectHideFlags: 0
@@ -24563,6 +28380,265 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1978115210}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1986539698
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1986539701}
+  - component: {fileID: 1986539700}
+  - component: {fileID: 1986539699}
+  m_Layer: 0
+  m_Name: 21_Scalpels_InstructToChangePose_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1986539699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1986539698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '---- INSTRUCTTOCHANGEPOSE ----
+
+    ---------------------------------
+
+    -----------
+    DIALOGUE ------------'
+  TimelineAsset: {fileID: 0}
+  script: Use the joystick to change poses from the pencil grip to the reverse press
+    motion.
+  MetaData:
+    fileName: 21_Scalpels_InstructToChangePose_Dialogue
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1986539700
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1986539698}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &1986539701
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1986539698}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2011996818}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1991215506
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1991215509}
+  - component: {fileID: 1991215508}
+  - component: {fileID: 1991215507}
+  m_Layer: 0
+  m_Name: 2_Retractors_RetractorsIntroVideo_Video
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1991215507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1991215506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1659573479}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  description: '---- RETRACTORSINTROVIDEO ----
+
+    ---------------------------------
+
+    -------------
+    VIDEO -------------'
+  TimelineAsset: {fileID: 11400000, guid: 92bfaa19e10c0ea47a064a158e349af8, type: 2}
+  script: 
+  MetaData:
+    fileName: 2_Retractors_RetractorsIntroVideo_Video
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1991215508
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1991215506}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &1991215509
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1991215506}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 35352354}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1991364456
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1991364459}
+  - component: {fileID: 1991364458}
+  - component: {fileID: 1991364457}
+  m_Layer: 0
+  m_Name: 23_Retractors_InstructToPlayVideo_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1991364457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1991364456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '---- INSTRUCTTOPLAYVIDEO ----
+
+    --------------------------------
+
+    ----------
+    DIALOGUE -----------'
+  TimelineAsset: {fileID: 0}
+  script: Watch the video to see how self retaining retractors are used in surgery.
+  MetaData:
+    fileName: 23_Retractors_InstructToPlayVideo_Dialogue
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &1991364458
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1991364456}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &1991364459
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1991364456}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 35352354}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1993900737
 GameObject:
   m_ObjectHideFlags: 0
@@ -24689,6 +28765,340 @@ PlayableDirector:
   m_SceneBindings: []
   m_ExposedReferences:
     m_References: []
+--- !u!1 &2011996816
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2011996818}
+  - component: {fileID: 2011996817}
+  m_Layer: 0
+  m_Name: Scalpel-Guided-Sequence
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2011996817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2011996816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8636d161688c164dadb3443c239b911, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Steps:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 164163622}
+  - {fileID: 1272415759}
+  - {fileID: 1275179690}
+  - {fileID: 2108637355}
+  - {fileID: 394963684}
+  - {fileID: 1056384220}
+  - {fileID: 1527595605}
+  - {fileID: 1890799504}
+  - {fileID: 1174246700}
+  - {fileID: 428835341}
+  - {fileID: 895733468}
+  - {fileID: 615655715}
+  - {fileID: 41671341}
+  - {fileID: 886248034}
+  - {fileID: 1734263757}
+  - {fileID: 1766454494}
+  - {fileID: 1172203528}
+  - {fileID: 1921264454}
+  - {fileID: 29489948}
+  - {fileID: 105205727}
+  - {fileID: 1986539699}
+  - {fileID: 1677911681}
+  - {fileID: 1891563435}
+  - {fileID: 1056560286}
+  StepIndex: 0
+  SequenceStarted:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1266969159}
+        m_TargetAssemblyTypeName: ToolObjectReferences, Assembly-CSharp
+        m_MethodName: DisableAllGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1021646204}
+        m_TargetAssemblyTypeName: InputActions, Assembly-CSharp
+        m_MethodName: DisableSwitchablity
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  SequencePlaying:
+    m_PersistentCalls:
+      m_Calls: []
+  SequenceNext:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1659573479}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1540094162}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2055885269}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1021646204}
+        m_TargetAssemblyTypeName: InputActions, Assembly-CSharp
+        m_MethodName: ToggleUsabilityCheck
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1021646204}
+        m_TargetAssemblyTypeName: InputActions, Assembly-CSharp
+        m_MethodName: DisableSwitchablity
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  SequenceBack:
+    m_PersistentCalls:
+      m_Calls: []
+  SequenceReset:
+    m_PersistentCalls:
+      m_Calls: []
+  SequenceScrubbed:
+    m_PersistentCalls:
+      m_Calls: []
+  SequencePaused:
+    m_PersistentCalls:
+      m_Calls: []
+  SequenceResumed:
+    m_PersistentCalls:
+      m_Calls: []
+  ProgramMuted:
+    m_PersistentCalls:
+      m_Calls: []
+  ProgramUnmuted:
+    m_PersistentCalls:
+      m_Calls: []
+  InstructionDelivered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2055885269}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  ProgramRestarted:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &2011996818
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2011996816}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.1329324, y: 0.40191203, z: 0.21652111}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 164163624}
+  - {fileID: 1272415761}
+  - {fileID: 1275179692}
+  - {fileID: 2108637357}
+  - {fileID: 394963686}
+  - {fileID: 1056384222}
+  - {fileID: 1527595607}
+  - {fileID: 1890799506}
+  - {fileID: 1174246702}
+  - {fileID: 428835343}
+  - {fileID: 895733470}
+  - {fileID: 615655717}
+  - {fileID: 41671343}
+  - {fileID: 886248036}
+  - {fileID: 1734263759}
+  - {fileID: 1766454496}
+  - {fileID: 1172203530}
+  - {fileID: 1921264456}
+  - {fileID: 29489950}
+  - {fileID: 105205729}
+  - {fileID: 1986539701}
+  - {fileID: 1677911683}
+  - {fileID: 1891563437}
+  - {fileID: 1056560288}
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2013425993
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2013425996}
+  - component: {fileID: 2013425995}
+  - component: {fileID: 2013425994}
+  m_Layer: 0
+  m_Name: 4_Retractors_InstructToPickUp_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2013425994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013425993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '---- INSTRUCTTOPICKUP ----
+
+    -----------------------------
+
+    ---------
+    DIALOGUE ---------'
+  TimelineAsset: {fileID: 11400000, guid: e74d9b02fc66c4c49b78c83b641ce790, type: 2}
+  script: Hover over the Parker Hand-held retractor and squeeze the grip to pick
+    it up. Make sure you turn your hand over to view the end you are holding.
+  MetaData:
+    fileName: 4_Retractors_InstructToPickUp_Dialogue
+    AudioClip: {fileID: 8300000, guid: 51400023a834ffd48996a865b4d293ba, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &2013425995
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013425993}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &2013425996
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013425993}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 35352354}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2021352762
 GameObject:
   m_ObjectHideFlags: 0
@@ -26434,6 +30844,172 @@ MonoBehaviour:
   CheckEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &2108637354
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2108637357}
+  - component: {fileID: 2108637356}
+  - component: {fileID: 2108637355}
+  m_Layer: 0
+  m_Name: 4_Scalpels_InstructToPickUp_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2108637355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108637354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '---- INSTRUCTTOPICKUP ----
+
+    -----------------------------
+
+    ---------
+    DIALOGUE ---------'
+  TimelineAsset: {fileID: 0}
+  script: Hover over the number 3 Scalpel Handle with a number 10 Blade and press
+    the grip to pick it up.
+  MetaData:
+    fileName: 4_Scalpels_InstructToPickUp_Dialogue
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &2108637356
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108637354}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &2108637357
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108637354}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2011996818}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2120592598
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2120592601}
+  - component: {fileID: 2120592600}
+  - component: {fileID: 2120592599}
+  m_Layer: 0
+  m_Name: 14_Retractors_InstructToPickUp_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2120592599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120592598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '---- INSTRUCTTOPICKUP ----
+
+    -----------------------------
+
+    ---------
+    DIALOGUE ---------'
+  TimelineAsset: {fileID: 0}
+  script: Hover over the Spay hook on the table and squeeze the grip to pick up the
+    spay hook.
+  MetaData:
+    fileName: 14_Retractors_InstructToPickUp_Dialogue
+    AudioClip: {fileID: 0}
+    AnimationClip: {fileID: 0}
+--- !u!320 &2120592600
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120592598}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &2120592601
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120592598}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 35352354}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2121078968
 GameObject:
   m_ObjectHideFlags: 0
