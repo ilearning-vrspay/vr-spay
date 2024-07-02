@@ -281,6 +281,58 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+--- !u!1 &9643679
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9643680}
+  - component: {fileID: 9643681}
+  m_Layer: 0
+  m_Name: 4_Scalpels_InstructToPickUp_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9643680
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9643679}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2108637357}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9643681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9643679}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29d9a958b8caf7544b0a8f805473e834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CheckType: 0
+  IndexCheck: 0
+  TargetSqueezePercentage: 100
+  InputAction: {fileID: 0}
+  autoNextStep: 0
+  CheckEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &9665192
 GameObject:
   m_ObjectHideFlags: 0
@@ -886,18 +938,30 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1540094162}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- INSTRUCTTOPLAYVIDEO ----
 
     --------------------------------
 
     ----------
     DIALOGUE -----------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 2aaf73e55fb0b0748be5750016343729, type: 2}
   script: Watch the video to see when to use the pencil grip.
   MetaData:
     fileName: 19_Scalpels_InstructToPlayVideo_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: e0582b9cf6f841148aa9ae6993ea91fb, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &29489949
 PlayableDirector:
@@ -1478,14 +1542,26 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1659573479}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- SCALPELATTATCHBLADEVIDEO ----
 
     --------------------------------------
 
     ---------------
     VIDEO ---------------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: cd76cf43faa2cf642ae2599a66b01393, type: 2}
   script: 
   MetaData:
     fileName: 13_Scalpels_ScalpelAttatchBladeVideo_Video
@@ -2500,7 +2576,7 @@ MonoBehaviour:
 
     --------------
     VIDEO ---------------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 60b944ca86c521b4485328f0710419fd, type: 2}
   script: 
   MetaData:
     fileName: 20_Scalpels_ScalpelsPencilGripVideo_Video
@@ -3109,7 +3185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShouldPlayOnStart: 0
-  autoNextStep: 0
+  autoNextStep: 1
   OnInstructionsStarted:
     m_PersistentCalls:
       m_Calls: []
@@ -3121,11 +3197,11 @@ MonoBehaviour:
     --------------------
 
     ---- DIALOGUE -----'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 767f611a5c20b0d4fa227b24da10db07, type: 2}
   script: Next, Heidi will talk about the Scalpels.
   MetaData:
     fileName: 1_Scalpels_Intro_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: b8c72416fbe854d47ae51323181cee26, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &164163623
 PlayableDirector:
@@ -4277,6 +4353,58 @@ MonoBehaviour:
   thisisabool: 0
   LeftToolKitTool: {fileID: 0}
   LeftToolVariations: []
+--- !u!1 &292686919
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 292686920}
+  - component: {fileID: 292686921}
+  m_Layer: 0
+  m_Name: 21_Scalpels_InstructToChangePose_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &292686920
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 292686919}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1986539701}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &292686921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 292686919}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29d9a958b8caf7544b0a8f805473e834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CheckType: 0
+  IndexCheck: 0
+  TargetSqueezePercentage: 100
+  InputAction: {fileID: 0}
+  autoNextStep: 0
+  CheckEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &298292618
 GameObject:
   m_ObjectHideFlags: 0
@@ -4947,20 +5075,32 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1659573479}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- INSTRUCTTOEXAMINE ----
 
     ------------------------------
 
     ---------
     DIALOGUE ----------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: f0e88f002bd153b489af9b2a4ea03f0b, type: 2}
   script: Turn the blade toward you to examine the blade and where it attaches to
     the handle.  Once you have examined the blade, and are ready to move on, press
     the next button.
   MetaData:
     fileName: 5_Scalpels_InstructToExamine_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: d83e28b7d96c52c408bc6a443089899f, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &394963685
 PlayableDirector:
@@ -5579,7 +5719,7 @@ MonoBehaviour:
 
     ---------------
     VIDEO ---------------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: ca66ad794b7a3c94dadcc106b2f3c34f, type: 2}
   script: 
   MetaData:
     fileName: 10_Scalpels_ScalpelDetatchBladeVideo_Video
@@ -7859,18 +7999,30 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1540094162}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- INSTRUCTTOPLAYVIDEO ----
 
     --------------------------------
 
     ----------- 
     VIDEO ------------'
-  TimelineAsset: {fileID: 0}
-  script: "{InstructToPlayVideo} \u2013 [ Video] -  "
+  TimelineAsset: {fileID: 11400000, guid: 4c178ce4229bb4c40a9e2bbc5b9212f6, type: 2}
+  script: Watch the avatar animation on the screen to see how to attach scalpel blades.
   MetaData:
     fileName: 12_Scalpels_InstructToPlayVideo_Video
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: 0038b7d80185ebf4db52d17240d5c593, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &615655716
 PlayableDirector:
@@ -11349,18 +11501,30 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1540094162}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- INSTRUCTTOPLAYVIDEO ----
 
     --------------------------------
 
     ----------- 
     VIDEO ------------'
-  TimelineAsset: {fileID: 0}
-  script: "{InstructToPlayVideo} \u2013 [ Video] -  "
+  TimelineAsset: {fileID: 11400000, guid: 9705a47e0cfc4b040aed3147dea69214, type: 2}
+  script: 'Watch the video clip to see 4 basic motions employed when using a scalpel. '
   MetaData:
     fileName: 14_Scalpels_InstructToPlayVideo_Video
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: 716faf55f29c3cb4c8f7561f7049db87, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &886248035
 PlayableDirector:
@@ -11501,7 +11665,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShouldPlayOnStart: 0
-  autoNextStep: 0
+  autoNextStep: 1
   OnInstructionsStarted:
     m_PersistentCalls:
       m_Calls: []
@@ -11514,14 +11678,15 @@ MonoBehaviour:
 
     -------------------
     DIALOGUE -------------------'
-  TimelineAsset: {fileID: 0}
-  script: "Align the number 10 blade with the raised platform with groove in the
-    number 3 handle and gently slide\_ the blade toward the scalpel handle. Continue
-    to slide the blade onto the scalpel handle until the oblong opening of the blade
-    locks in place within the groove in the raised platform of the scalpel handle. "
+  TimelineAsset: {fileID: 11400000, guid: 915ef57769ca0f5468e30fe27e8e2971, type: 2}
+  script: "To attach the scalpel blade, align the number 10 blade with the raised
+    platform with groove in the number 3 handle and gently slide\_ the blade toward
+    the scalpel handle. Continue to slide the blade onto the scalpel handle until
+    the oblong opening of the blade locks in place within the groove in the raised
+    platform of the scalpel handle. "
   MetaData:
     fileName: 11_Scalpels_ScalpelBladeAttachmentInstructions_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: fba1e585f2b56de40a5246e7faece2d7, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &895733469
 PlayableDirector:
@@ -14210,19 +14375,31 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1540094162}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- INSTRUCTTOPLAYVIDEO ----
 
     --------------------------------
 
     ----------- 
     VIDEO ------------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 5c762765d8c49024c8b835d5b172cfef, type: 2}
   script: ' Watch the video screen to see how to attach a new blade to a scalpel
     handle.'
   MetaData:
     fileName: 6_Scalpels_InstructToPlayVideo_Video
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: e3d9bd0b7187c9840a942fe8094a3ebf, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &1056384221
 PlayableDirector:
@@ -14287,7 +14464,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShouldPlayOnStart: 0
-  autoNextStep: 0
+  autoNextStep: 1
   OnInstructionsStarted:
     m_PersistentCalls:
       m_Calls: []
@@ -14300,12 +14477,12 @@ MonoBehaviour:
 
     ------------
     DIALOGUE ------------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 8ec165324558cf34c9cb675ae78d5f36, type: 2}
   script: Hover over the number 3 Scalpel Handle with a number 10 Blade and press
     the grip again to release it.
   MetaData:
     fileName: 24_Scalpels_InstructToReleaseTool_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: 7a69935c3ebaa3442ac9f69eb02e29c7, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &1056560287
 PlayableDirector:
@@ -14335,7 +14512,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1604396520}
   m_Father: {fileID: 2011996818}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -15590,14 +15768,26 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1659573479}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '----  SCALPELSFINGERTIPGRIP VIDEO ----
 
     ------------------------------------------
 
     -----------------
     VIDEO -----------------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 7c82f3cffdb602642be84d9675c0ed8e, type: 2}
   script: 
   MetaData:
     fileName: 17_Scalpels_ ScalpelsFingertipGrip Video_Video
@@ -15738,18 +15928,30 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1540094162}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- INSTRUCTTOPLAYVIDEO ----
 
     --------------------------------
 
     ----------- 
     VIDEO ------------'
-  TimelineAsset: {fileID: 0}
-  script: "{InstructToPlayVideo} \u2013 [ Video] -  "
+  TimelineAsset: {fileID: 11400000, guid: f90e41a7ab30f9743892a33bd497638d, type: 2}
+  script: Watch the avatar animation on the screen to see how to remove scalpel blades.
   MetaData:
     fileName: 9_Scalpels_InstructToPlayVideo_Video
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: e723b5222e615d740a0c6966a866da54, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &1174246701
 PlayableDirector:
@@ -17353,19 +17555,31 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1540094162}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- INSTRUCTTOPLAYVIDEO ----
 
     --------------------------------
 
     ----------- 
     VIDEO ------------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 4569a3064e5aacf4eadb23732009c72b, type: 2}
   script: ' Watch the introductory video on the screen and the table as each item
     is described.'
   MetaData:
     fileName: 2_Scalpels_InstructToPlayVideo_Video
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: 1ac6ff5e265bb67478d122e6e6a3a0d8, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &1272415760
 PlayableDirector:
@@ -17436,14 +17650,26 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1659573479}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- SCALPELSINTROVIDEO ----
 
     -------------------------------
 
     -----------
     VIDEO ------------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 36c1144db3e45be4d972f545f9a82ed9, type: 2}
   script: 
   MetaData:
     fileName: 3_Scalpels_ScalpelsIntroVideo_Video
@@ -22049,14 +22275,26 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1659573479}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- SCALPELSATTACHBLADEVIDEO ----
 
     --------------------------------------
 
     ---------------
     VIDEO ---------------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 9d63da56d08b62743915d77a2dbb1fef, type: 2}
   script: 
   MetaData:
     fileName: 7_Scalpels_ScalpelsAttachBladeVideo_Video
@@ -22887,6 +23125,58 @@ PlayableDirector:
   m_SceneBindings: []
   m_ExposedReferences:
     m_References: []
+--- !u!1 &1604396519
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1604396520}
+  - component: {fileID: 1604396521}
+  m_Layer: 0
+  m_Name: 24_Scalpels_InstructToReleaseTool_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1604396520
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604396519}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1056560288}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1604396521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604396519}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29d9a958b8caf7544b0a8f805473e834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CheckType: 0
+  IndexCheck: 0
+  TargetSqueezePercentage: 100
+  InputAction: {fileID: 0}
+  autoNextStep: 0
+  CheckEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1610788602
 GameObject:
   m_ObjectHideFlags: 0
@@ -23785,18 +24075,30 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1540094162}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- INSTRUCTTOPLAYVIDEO ----
 
     --------------------------------
 
     ----------
     DIALOGUE -----------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 9d9316987314c4140999190a73bd3fec, type: 2}
   script: Watch the video to see when to use the  reverse press motion.
   MetaData:
     fileName: 22_Scalpels_InstructToPlayVideo_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: 5e6503ad800c1414a99d07312b8ef64b, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &1677911682
 PlayableDirector:
@@ -25706,14 +26008,26 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1659573479}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '----  SCALPELSSLIDINGMOTION VIDEO ----
 
     ------------------------------------------
 
     -----------------
     VIDEO -----------------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 1d3f53b70c5ab934d843301aab5bd54a, type: 2}
   script: 
   MetaData:
     fileName: 15_Scalpels_ ScalpelsSlidingMotion Video_Video
@@ -25970,19 +26284,31 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1540094162}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- INSTRUCTTOPLAYVIDEO ----
 
     --------------------------------
 
     ----------
     DIALOGUE -----------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 260fc994cc76f74459403dd364594100, type: 2}
   script: What the video to learn about the basic ways to grip the scalpel.  You
     are currently using the Fingertip Grip used for sliding and scraping.
   MetaData:
     fileName: 16_Scalpels_InstructToPlayVideo_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: adf08b0ab0711b84487ca7cc280674d1, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &1766454495
 PlayableDirector:
@@ -27672,14 +27998,26 @@ MonoBehaviour:
       m_Calls: []
   onInstructionsDelivered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1659573479}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- SCALPELBLADEREMOVALINSTRUCTIONS ----
 
     ----------------------------------------------
 
     -----------------
     DIALOGUE ------------------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: db8d1c1186b995b4fa8747354bf71808, type: 2}
   script: To remove the blade, carefully lift the non-cutting end of the blade until
     the oblong opening unlocks from the groove in the raised platform of the scalpel
     handle. Slide the blade off the scalpel handle, moving the blade away from the
@@ -27687,7 +28025,7 @@ MonoBehaviour:
     Press the next button.
   MetaData:
     fileName: 8_Scalpels_ScalpelBladeRemovalInstructions_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: cc57b8e6bf16eab449efbdbeab35969d, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &1890799505
 PlayableDirector:
@@ -27765,7 +28103,7 @@ MonoBehaviour:
 
     ---------------
     VIDEO ---------------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 809e0f1857885b6488ab05bd01fe9752, type: 2}
   script: 
   MetaData:
     fileName: 23_Scalpels_ScalpelsReverseStabVideo_Video
@@ -27990,7 +28328,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShouldPlayOnStart: 0
-  autoNextStep: 0
+  autoNextStep: 1
   OnInstructionsStarted:
     m_PersistentCalls:
       m_Calls: []
@@ -28003,12 +28341,12 @@ MonoBehaviour:
 
     -----------
     DIALOGUE ------------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 40f0ecc00bd9527478641483ff9646da, type: 2}
   script: Now press the joystick button to change poses from the fingertip grip to
     the pencil .
   MetaData:
     fileName: 18_Scalpels_InstructToChangePose_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: ca078ac2fd477cb47b1a7804ed9d9a2f, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &1921264455
 PlayableDirector:
@@ -28038,7 +28376,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2072060376}
   m_Father: {fileID: 2011996818}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -28411,7 +28750,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShouldPlayOnStart: 0
-  autoNextStep: 0
+  autoNextStep: 1
   OnInstructionsStarted:
     m_PersistentCalls:
       m_Calls: []
@@ -28424,12 +28763,12 @@ MonoBehaviour:
 
     -----------
     DIALOGUE ------------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 6e60ecb5ac8824044ba93ba32f6b5ade, type: 2}
   script: Use the joystick to change poses from the pencil grip to the reverse press
     motion.
   MetaData:
     fileName: 21_Scalpels_InstructToChangePose_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: c3b65faae994c8040bc3dbaa35969126, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &1986539700
 PlayableDirector:
@@ -28459,7 +28798,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 292686920}
   m_Father: {fileID: 2011996818}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -29989,6 +30329,58 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2070040604}
   m_CullTransparentMesh: 1
+--- !u!1 &2072060375
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2072060376}
+  - component: {fileID: 2072060377}
+  m_Layer: 0
+  m_Name: 18_Scalpels_InstructToChangePose_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2072060376
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072060375}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1921264456}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2072060377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072060375}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29d9a958b8caf7544b0a8f805473e834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CheckType: 0
+  IndexCheck: 0
+  TargetSqueezePercentage: 100
+  InputAction: {fileID: 0}
+  autoNextStep: 0
+  CheckEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2080540837
 GameObject:
   m_ObjectHideFlags: 0
@@ -30875,7 +31267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShouldPlayOnStart: 0
-  autoNextStep: 0
+  autoNextStep: 1
   OnInstructionsStarted:
     m_PersistentCalls:
       m_Calls: []
@@ -30888,12 +31280,12 @@ MonoBehaviour:
 
     ---------
     DIALOGUE ---------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: c595e65c461c360499337c2f14c6b43b, type: 2}
   script: Hover over the number 3 Scalpel Handle with a number 10 Blade and press
     the grip to pick it up.
   MetaData:
     fileName: 4_Scalpels_InstructToPickUp_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: 2c852c7ecbe652d4d8d99b504d08b929, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!320 &2108637356
 PlayableDirector:
@@ -30923,7 +31315,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 9643680}
   m_Father: {fileID: 2011996818}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
