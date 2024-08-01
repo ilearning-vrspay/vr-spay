@@ -59,12 +59,13 @@ public class InputActions : MonoBehaviour
     {
         get => grabbedTool;
     }
-    bool JoystickClickable = false;
+    bool JoystickClickable = true;
     bool ToolVariationSwitchable = true;
     private List<KeyValuePair<AnimationClip, AnimationClip>> overrides = new List<KeyValuePair<AnimationClip, AnimationClip>>();
 
     public void EnableSwitchablity()
     {
+        Debug.Log("Switching Enabled");
         JoystickClickable = true;
     }
 
@@ -191,8 +192,12 @@ public class InputActions : MonoBehaviour
     /// </summary>
     public void JoystickOnClick()
     {
+        Debug.Log("Joystick Clicked");
         if (!JoystickClickable) return;
-        if (grabbedTool == null) return;    //  If no tool is currently in hand, return
+        Debug.Log("Joystick Clickable");
+        if (grabbedTool == null) return; 
+        Debug.Log("Grabbable");
+           //  If no tool is currently in hand, return
         Debug.Log("testerInt: " + testerInt);
         testerInt++;
         int prevPoseIndex = poseIndex; // to act on the previous pose index
@@ -397,9 +402,12 @@ public class InputActions : MonoBehaviour
 
     public void CycleTool()
     {
-        if (grabbedTool == null) return;
+        Debug.Log("Cycle Tool");
+        if (grabbedTool == null) return;    
+        Debug.Log("Grabbable");
         if (!ToolVariationSwitchable) return;
-        
+        Debug.Log("Switchable");
+        Debug.Log(grabbedTool.RightToolVariations.Count);
         toolVariationIndex = (toolVariationIndex + 1) % grabbedTool.RightToolVariations.Count;
         Debug.Log("Tool variation index: " +  toolVariationIndex);
         if (grabbedTool.RightToolVariations[toolVariationIndex].VariationOverrideController != null)

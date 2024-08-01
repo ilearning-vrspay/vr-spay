@@ -24,7 +24,7 @@ MonoBehaviour:
   audioSource:
     exposedName: 
     defaultValue: {fileID: 0}
-  renderTexture: {fileID: 0}
+  renderTexture: {fileID: 8400000, guid: 9cfd958c5d7bc0447bfe2970f8d1c265, type: 2}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0

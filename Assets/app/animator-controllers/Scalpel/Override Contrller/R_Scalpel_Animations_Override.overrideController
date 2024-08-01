@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: R_Scalpel_Animations_Override
+  m_Controller: {fileID: 9100000, guid: c794e44b2fba41b46bb522d1150608d6, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 45638d2806f1c844eadd82a4348b55fc, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 301cb3ea9714ad8418750496ed2b0eb2, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 8dee4f3edcac1374db236cb942ebb4a3, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 750f44f43430d8b4ea01fee8825a227e, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: b7a2202ba38ee0e4a849349a95608b1d, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 235e8827ee45ed44d85ef33bbdc303f2, type: 2}

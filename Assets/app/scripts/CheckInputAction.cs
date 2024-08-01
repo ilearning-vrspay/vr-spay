@@ -49,13 +49,16 @@ public class CheckInputAction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
 
         switch(CheckType)
         {
             case checkType.PoseChange:
+
+                InputAction.EnableSwitchablity();
+
                 if (InputAction.PoseIndex == IndexCheck)
                 {
+                    Debug.Log("Pose Change Detected");
                     CheckEvent.Invoke();
                     
                     autoNext();
