@@ -8,8 +8,7 @@ using Unity.VisualScripting;
 using UnityEngine.PlayerLoop;
 using static UnityEngine.Rendering.DebugUI;
 using UnityEditor;
-using static UnityEditor.Progress;
-using Palmmedia.ReportGenerator.Core.CodeAnalysis;
+
 
 [RequireComponent(typeof(HandInteractionSystem))]
 

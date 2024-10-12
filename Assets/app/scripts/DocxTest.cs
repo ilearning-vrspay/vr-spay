@@ -1,13 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+#if UNITY_EDITOR
 using Xceed.Words.NET;
+#endif
+
 using System.IO;
 
 
 
 public class DocxTest : MonoBehaviour
 {
+    #if UNITY_EDITOR
     public string docxFilePath;
 
     // Start is called before the first frame update
@@ -38,4 +42,5 @@ public class DocxTest : MonoBehaviour
     {
         
     }
+    #endif
 }

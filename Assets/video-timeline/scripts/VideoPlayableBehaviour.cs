@@ -95,7 +95,6 @@ public sealed class VideoPlayableBehaviour : PlayableBehaviour
     // Called when the playable is destroyed.
     public override void OnPlayableDestroy(Playable playable)
     {
-        Debug.Log("HERE 2");
         if (videoPlayer != null)
         {
             videoPlayer.Stop();

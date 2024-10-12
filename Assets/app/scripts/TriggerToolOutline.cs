@@ -1,17 +1,23 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEditor;
 
 public class TriggerToolOutline : MonoBehaviour
 {
     private Dictionary<ToolObjectReference, List<Outline>> toolOutlines = new Dictionary<ToolObjectReference, List<Outline>>();
     private ToolObjectReference closestTool = null;
     private bool triggered = false;
+    private bool findClosestTool = false;
+
 
     private void Update() {
-        UpdateClosestTool();
+        if (findClosestTool){
+            UpdateClosestTool();
+        }
         if (closestTool != null){
             foreach (var outline in closestTool.Outlines){
                 if (outline.enabled == false && closestTool != null){
+                    Debug.Log("doing something");
                     RemoveOutline(closestTool.ColliderObject);
 
                 }
@@ -23,6 +29,7 @@ public class TriggerToolOutline : MonoBehaviour
     
 
     private void UpdateClosestTool() {
+
         float closestDistance = float.MaxValue;
         ToolObjectReference newClosestTool = null;
 
@@ -39,22 +46,43 @@ public class TriggerToolOutline : MonoBehaviour
         if (closestTool != newClosestTool) {
             if (closestTool != null) {
                 // Disable outlines for the previously closest tool
-                SetOutlinesEnabled(closestTool, false);
+                if (closestTool.highlighted == true){
+                    foreach (var outline in toolOutlines[closestTool]) {
+                        outline.OutlineColor = Color.yellow;
+                    }
+                } else {
+                    SetOutlinesEnabled(closestTool, false);
+                }
             }
             if (newClosestTool != null) {
                 // Enable outlines for the new closest tool
-                SetOutlinesEnabled(newClosestTool, true);
+                if (newClosestTool.highlighted == true){
+
+                    foreach (var outline in toolOutlines[newClosestTool]) {
+                        outline.OutlineColor = Color.green;
+                        
+                    }
+                
+                } else {
+                    SetOutlinesEnabled(newClosestTool, true);
+
+                }
+                
             }
             closestTool = newClosestTool;
         }
     }
 
     private void OnTriggerEnter(Collider other) {
+        findClosestTool = true;
+        Debug.Log("triggered");
         triggered = true;
         ToolObjectReference toolComponent = GetToolObjectReference(other);
 
+
         // ToolObjectReference toolComponent = other.GetComponent<ToolObjectReference>();
         if (toolComponent != null && toolComponent.MeshObjects.Count > 0) {
+            
             List<Outline> outlines = new List<Outline>();
             foreach (var mesh in toolComponent.MeshObjects) {
                 Outline outline = mesh.GetComponent<Outline>();
@@ -68,6 +96,7 @@ public class TriggerToolOutline : MonoBehaviour
     }
 
     private void RemoveOutline(Collider other){
+        Debug.Log("removing outline");
         triggered = false;
         GetToolReferenceObject toolRef = other.GetComponent<GetToolReferenceObject>();
         ToolObjectReference toolComponent = null;
@@ -85,11 +114,34 @@ public class TriggerToolOutline : MonoBehaviour
     }
 
     private void OnTriggerExit(Collider other) {
-        RemoveOutline(other);
+        Debug.Log("trigger exit");
+        findClosestTool = false;
+       
+        GetToolReferenceObject toolRef = other.GetComponent<GetToolReferenceObject>();
+        ToolObjectReference toolComponent = null;
+        if (toolRef != null)
+        {
+            toolComponent = toolRef.ToolObjectReference;
+        }
+        if (toolComponent.highlighted == true){
+            foreach (var outline in toolOutlines[closestTool]) {
+                outline.OutlineColor = Color.yellow;
+            }
+            triggered = false;
+            toolOutlines.Remove(toolComponent); // Remove the tool from tracking
+            if (closestTool == toolComponent) {
+                closestTool = null; // Reset closest tool if the exiting tool was the closest
+            }
+        } else {
+            RemoveOutline(other);
+
+        }
+        
     }
 
     // Helper method to enable or disable all outlines for a tool
     private void SetOutlinesEnabled(ToolObjectReference tool, bool enabled) {
+        Debug.Log("setting outlines enabled");
         foreach (var outline in toolOutlines[tool]) {
             outline.enabled = enabled;
         }

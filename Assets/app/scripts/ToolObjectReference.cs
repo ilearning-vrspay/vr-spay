@@ -5,6 +5,8 @@ using UnityEngine;
 
 [System.Serializable]
 
+
+
 public class ToolVariation
 {
     public GameObject ToolVariationObject;
@@ -19,6 +21,7 @@ public class ToolObjectReference : MonoBehaviour
     public Collider ColliderObject;
     public GameObject RootBone;
     public List<GameObject> MeshObjects;
+    public bool highlighted = false;
     public List<Outline> Outlines;
     public AnimatorOverrideController RightOverrideController;
     public AnimatorOverrideController LeftOverrideController;
@@ -28,6 +31,8 @@ public class ToolObjectReference : MonoBehaviour
     public bool thisisabool;
     public GameObject LeftToolKitTool;
     public List<GameObject> LeftToolVariations;
+
+    
 
     
     public void ToggleToolBeltTool(string hand, bool state)
@@ -108,7 +113,7 @@ public class ToolObjectReference : MonoBehaviour
     {
         if (ColliderObject != null)
         {
-            Debug.Log("EnableGrabability called");
+
             ColliderObject.enabled = true;
         }
     }
@@ -123,7 +128,7 @@ public class ToolObjectReference : MonoBehaviour
 
     public void EnableOutline()
     {
-        Debug.Log("EnableOutline called");
+
         foreach (var outline in Outlines)
         {
             if (outline != null)
@@ -134,6 +139,21 @@ public class ToolObjectReference : MonoBehaviour
         
     }
 
+    public void highlightTool()
+    {
+        highlighted = true;
+        EnableOutline();
+    }
+
+    public void unhighlightTool()
+    {
+        highlighted = false;
+        DisableOutline();
+    }
+
+   
+
+
     public void DisableOutline()
     {
         Debug.Log("DisableOutline called");
@@ -142,6 +162,7 @@ public class ToolObjectReference : MonoBehaviour
             if (outline != null)
             {
                 outline.enabled = false;
+                outline.OutlineColor = Color.yellow;
             }
         }
     }

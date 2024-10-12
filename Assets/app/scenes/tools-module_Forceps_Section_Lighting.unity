@@ -347,7 +347,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 803784680}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: DisableOutline
+        m_MethodName: unhighlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -435,6 +435,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1030490638}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: highlightTool
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- USER IS INSTRUCTED TO PICK UP BROWN ADSON FORCEPS ----
 
     ------------------------------------------------------------------
@@ -496,8 +508,7 @@ Transform:
   m_LocalPosition: {x: 0.1329324, y: -0.40191203, z: -0.21652111}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 92915991}
+  m_Children: []
   m_Father: {fileID: 978376585}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -812,7 +823,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0, g: 1, b: 0.023529412, a: 1}
+  outlineColor: {r: 1, g: 1, b: 0, a: 1}
   outlineWidth: 2
   precomputeOutline: 0
   bakeKeys: []
@@ -830,7 +841,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0, g: 1, b: 0.023529412, a: 1}
+  outlineColor: {r: 1, g: 1, b: 0, a: 1}
   outlineWidth: 2
   precomputeOutline: 0
   bakeKeys: []
@@ -848,7 +859,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0, g: 1, b: 0.023529412, a: 1}
+  outlineColor: {r: 1, g: 1, b: 0, a: 1}
   outlineWidth: 2
   precomputeOutline: 0
   bakeKeys: []
@@ -866,7 +877,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0, g: 1, b: 0.023529412, a: 1}
+  outlineColor: {r: 1, g: 1, b: 0, a: 1}
   outlineWidth: 2
   precomputeOutline: 0
   bakeKeys: []
@@ -1156,6 +1167,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 62744848}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: highlightTool
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- INSTRUCT THE USER TO PICK UP DEBAKEY FORCEPS ----
 
     ------------------------------------------------------------
@@ -1200,7 +1223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0, g: 1, b: 0.023529412, a: 1}
+  outlineColor: {r: 1, g: 1, b: 0, a: 1}
   outlineWidth: 2
   precomputeOutline: 0
   bakeKeys: []
@@ -1574,6 +1597,7 @@ MonoBehaviour:
   RootBone: {fileID: 1817709357}
   MeshObjects:
   - {fileID: 1795784325}
+  highlighted: 0
   Outlines:
   - {fileID: 1795784328}
   RightOverrideController: {fileID: 22100000, guid: a01ead8514202f14fa4a72f6e3e95ba7, type: 2}
@@ -1599,7 +1623,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &35352353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1638,7 +1662,7 @@ MonoBehaviour:
   - {fileID: 1991364457}
   - {fileID: 1516862304}
   - {fileID: 740700960}
-  StepIndex: 19
+  StepIndex: 0
   SequenceStarted:
     m_PersistentCalls:
       m_Calls:
@@ -1809,7 +1833,7 @@ Transform:
   - {fileID: 1516862306}
   - {fileID: 740700962}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &41671340
 GameObject:
@@ -2195,6 +2219,161 @@ Transform:
   m_Father: {fileID: 879517517}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &56708890
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 56708891}
+  - component: {fileID: 56708895}
+  - component: {fileID: 56708894}
+  - component: {fileID: 56708893}
+  - component: {fileID: 56708892}
+  m_Layer: 5
+  m_Name: ResetScene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &56708891
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56708890}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1895239149}
+  m_Father: {fileID: 1182409137}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &56708892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56708890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 0
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: -1
+  m_PreferredHeight: -1
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+  m_LayoutPriority: 1
+--- !u!114 &56708893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56708890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 56708894}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2106870268}
+        m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
+        m_MethodName: ResetScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &56708894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56708890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &56708895
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56708890}
+  m_CullTransparentMesh: 1
 --- !u!1 &58642793
 GameObject:
   m_ObjectHideFlags: 0
@@ -2376,7 +2555,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1030490638}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: DisableOutline
+        m_MethodName: unhighlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2404,7 +2583,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0, g: 1, b: 0.023529412, a: 1}
+  outlineColor: {r: 1, g: 1, b: 0, a: 1}
   outlineWidth: 2
   precomputeOutline: 0
   bakeKeys: []
@@ -2457,6 +2636,7 @@ MonoBehaviour:
   RootBone: {fileID: 438490537}
   MeshObjects:
   - {fileID: 286292846}
+  highlighted: 0
   Outlines:
   - {fileID: 286292848}
   RightOverrideController: {fileID: 22100000, guid: 6dc0e889c6d015f42aec1be4a879926e, type: 2}
@@ -2507,25 +2687,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 67452458}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9be32534b9c66ba41a68c0732914b06f, type: 3}
+  m_Script: {fileID: 11500000, guid: 29d9a958b8caf7544b0a8f805473e834, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CheckType: 4
+  IndexCheck: 0
+  TargetSqueezePercentage: 100
   InputAction: {fileID: 1021646204}
+  autoNextStep: 1
   CheckEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6539479389457707605}
-        m_TargetAssemblyTypeName: InstructionDeliveryListController, Assembly-CSharp
-        m_MethodName: StartNextStep
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1623461742}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
         m_MethodName: DisableGrabability
@@ -2540,7 +2712,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1623461742}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: DisableOutline
+        m_MethodName: unhighlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2693,6 +2865,7 @@ MonoBehaviour:
   RootBone: {fileID: 870733155}
   MeshObjects:
   - {fileID: 1726090028}
+  highlighted: 0
   Outlines:
   - {fileID: 28688312}
   RightOverrideController: {fileID: 22100000, guid: bb8a271f5c9b3ab40ad22d53d2dcc165, type: 2}
@@ -2755,7 +2928,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentStepIndex: 0
   stepText: {fileID: 92211880}
-  instructionDeliveryListController: {fileID: 620414264}
+  instructionDeliveryListController: {fileID: 0}
+  useSequenceManager: 1
+  sequenceManager: {fileID: 436106006}
 --- !u!114 &92211880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2855,73 +3030,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 92211877}
   m_CullTransparentMesh: 1
---- !u!1 &92915990
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 92915991}
-  m_Layer: 0
-  m_Name: 4a_Forceps_PressesPlay_UserAction
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &92915991
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 92915990}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 9673842}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &94786389 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7734084190928066353, guid: 2a2aa44742c186a4b9d7bac280bf0f81, type: 3}
   m_PrefabInstance: {fileID: 1306327876}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &102587038
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 102587039}
-  m_Layer: 0
-  m_Name: 24a_Brown-Adson_UserPressesPlay_UserAction
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &102587039
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 102587038}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 928197131}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &105160973
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3376,7 +3489,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 288210116}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: EnableOutline
+        m_MethodName: highlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3598,6 +3711,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 2080540839}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: highlightTool
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4386,6 +4511,11 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.13542776, y: 0.017673193, z: 0.074144445}
   m_Center: {x: 0.01897489, y: 0.0012022629, z: -0.00023901073}
+--- !u!1 &222555664 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3167006753472375542, guid: 2a2aa44742c186a4b9d7bac280bf0f81, type: 3}
+  m_PrefabInstance: {fileID: 1306327876}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &226687717
 GameObject:
   m_ObjectHideFlags: 0
@@ -4610,7 +4740,7 @@ Transform:
   - {fileID: 687529548}
   - {fileID: 805404071}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &241092977 stripped
 GameObject:
@@ -4630,7 +4760,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0, g: 1, b: 0.023529412, a: 1}
+  outlineColor: {r: 1, g: 1, b: 0, a: 1}
   outlineWidth: 2
   precomputeOutline: 0
   bakeKeys: []
@@ -4648,7 +4778,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0, g: 1, b: 0.021962404, a: 1}
+  outlineColor: {r: 1, g: 1, b: 0, a: 1}
   outlineWidth: 2.5
   precomputeOutline: 1
   bakeKeys: []
@@ -4895,6 +5025,7 @@ MonoBehaviour:
   MeshObjects:
   - {fileID: 61934015}
   - {fileID: 1309366334}
+  highlighted: 0
   Outlines:
   - {fileID: 61934017}
   - {fileID: 1309366336}
@@ -5001,7 +5132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0, g: 1, b: 0.021962404, a: 1}
+  outlineColor: {r: 1, g: 1, b: 0, a: 1}
   outlineWidth: 2
   precomputeOutline: 0
   bakeKeys: []
@@ -5056,6 +5187,7 @@ MonoBehaviour:
   MeshObjects:
   - {fileID: 598590778}
   - {fileID: 1844866920}
+  highlighted: 0
   Outlines:
   - {fileID: 598590781}
   - {fileID: 1844866923}
@@ -5132,37 +5264,6 @@ MonoBehaviour:
   CheckEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!1 &298292618
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 298292619}
-  m_Layer: 0
-  m_Name: 7a_Forceps_PressesPlay_UserAction
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &298292619
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 298292618}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1031221751}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &302309239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5176,7 +5277,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0, g: 1, b: 0.021962404, a: 1}
+  outlineColor: {r: 1, g: 1, b: 0, a: 1}
   outlineWidth: 2.5
   precomputeOutline: 1
   bakeKeys: []
@@ -5233,7 +5334,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 80099804}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: EnableOutline
+        m_MethodName: highlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5371,6 +5472,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 2080540839}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: highlightTool
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5626,6 +5739,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2896332828022355818, guid: 2a2aa44742c186a4b9d7bac280bf0f81, type: 3}
   m_PrefabInstance: {fileID: 1306327876}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &374320139 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -361977809142676648, guid: 2a2aa44742c186a4b9d7bac280bf0f81, type: 3}
+  m_PrefabInstance: {fileID: 1306327876}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &374766965
 GameObject:
   m_ObjectHideFlags: 0
@@ -5677,7 +5795,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1364469886}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: DisableOutline
+        m_MethodName: unhighlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5768,7 +5886,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 273976626}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: DisableOutline
+        m_MethodName: unhighlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5858,7 +5976,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1504145190}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: DisableOutline
+        m_MethodName: unhighlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6149,7 +6267,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 35320570}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: DisableOutline
+        m_MethodName: unhighlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6418,18 +6536,22 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 424758316}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9be32534b9c66ba41a68c0732914b06f, type: 3}
+  m_Script: {fileID: 11500000, guid: 29d9a958b8caf7544b0a8f805473e834, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CheckType: 4
+  IndexCheck: 0
+  TargetSqueezePercentage: 100
   InputAction: {fileID: 1021646204}
+  autoNextStep: 0
   CheckEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1443313849}
-        m_TargetAssemblyTypeName: InstructionDeliveryListController, Assembly-CSharp
-        m_MethodName: StartNextStep
+      - m_Target: {fileID: 436106006}
+        m_TargetAssemblyTypeName: SequenceManager, Assembly-CSharp
+        m_MethodName: BeginNextSequence
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6453,7 +6575,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1504145190}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: DisableOutline
+        m_MethodName: unhighlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6836,7 +6958,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 2021352764}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: DisableOutline
+        m_MethodName: unhighlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6893,6 +7015,7 @@ MonoBehaviour:
   ColliderObject: {fileID: 0}
   RootBone: {fileID: 0}
   MeshObjects: []
+  highlighted: 0
   Outlines: []
   RightOverrideController: {fileID: 0}
   LeftOverrideController: {fileID: 0}
@@ -6914,11 +7037,64 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0, g: 1, b: 0.021962404, a: 1}
+  outlineColor: {r: 1, g: 1, b: 0, a: 1}
   outlineWidth: 2
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!1 &436106005
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 436106007}
+  - component: {fileID: 436106006}
+  m_Layer: 0
+  m_Name: SequenceManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &436106006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436106005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 550099f4a843b7a4d8cb665e90af7340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  instructionDeliveryListControllers:
+  - {fileID: 1443313849}
+  - {fileID: 6539479389457707605}
+  - {fileID: 1076899136}
+  - {fileID: 879517516}
+  - {fileID: 35352353}
+  - {fileID: 2011996817}
+  - {fileID: 620414264}
+  startingSequenceIndex: 0
+--- !u!4 &436106007
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436106005}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.24611783, y: -0.34674394, z: 2.2363276}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &438490537 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2683053518139351031, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
@@ -7087,7 +7263,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 926177606}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: EnableOutline
+        m_MethodName: highlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7270,9 +7446,9 @@ MonoBehaviour:
   onInstructionsDelivered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1021646204}
-        m_TargetAssemblyTypeName: InputActions, Assembly-CSharp
-        m_MethodName: ToggleUsabilityCheck
+      - m_Target: {fileID: 1399170511}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7452,7 +7628,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0, g: 1, b: 0.023529412, a: 1}
+  outlineColor: {r: 1, g: 1, b: 0, a: 1}
   outlineWidth: 2
   precomputeOutline: 0
   bakeKeys: []
@@ -7812,7 +7988,7 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
---- !u!1 &481127270
+--- !u!1 &481908392
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7820,58 +7996,77 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 481127271}
+  - component: {fileID: 481908395}
+  - component: {fileID: 481908394}
+  - component: {fileID: 481908393}
   m_Layer: 0
-  m_Name: 35a_AdsonRat_ClicksNextButton_UserAction
+  m_Name: 19_Ancillary Draping_End_Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &481127271
+--- !u!114 &481908393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481908392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b1f2ad4f1a3bd4fb18a8779f0eb68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShouldPlayOnStart: 0
+  autoNextStep: 0
+  OnInstructionsStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onInstructionsDelivered:
+    m_PersistentCalls:
+      m_Calls: []
+  description: '--------  --------
+
+    --------------------
+
+    ---- DIALOGUE -----'
+  TimelineAsset: {fileID: 11400000, guid: ca925224f2cce65499d94d63b8b0e5be, type: 2}
+  script: That is the end
+  MetaData:
+    fileName: 19_Ancillary Draping_End_Dialogue
+    AudioClip: {fileID: 8300000, guid: d133864e84d9e8b4dad811d799fd23c4, type: 3}
+    AnimationClip: {fileID: 0}
+--- !u!320 &481908394
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481908392}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &481908395
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 481127270}
+  m_GameObject: {fileID: 481908392}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1890243086}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &489712471
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 489712472}
-  m_Layer: 0
-  m_Name: 28a_Brown-Adson_ClicksNextButton_UserAction
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &489712472
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 489712471}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2000786097}
+  m_Father: {fileID: 620414265}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &517160523
@@ -7903,8 +8098,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1931127187}
+  m_Children: []
   m_Father: {fileID: 1407607783}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7971,37 +8165,6 @@ PlayableDirector:
   m_SceneBindings: []
   m_ExposedReferences:
     m_References: []
---- !u!1 &520474456
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 520474457}
-  m_Layer: 0
-  m_Name: 26a_Brown-Adson_PressesNextButton_UserAction
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &520474457
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 520474456}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1680476699}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &521938818
 GameObject:
   m_ObjectHideFlags: 0
@@ -8054,7 +8217,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1205226269}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: DisableOutline
+        m_MethodName: highlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8263,6 +8426,7 @@ MonoBehaviour:
   ColliderObject: {fileID: 0}
   RootBone: {fileID: 0}
   MeshObjects: []
+  highlighted: 0
   Outlines: []
   RightOverrideController: {fileID: 0}
   LeftOverrideController: {fileID: 0}
@@ -8811,7 +8975,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1205226269}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: DisableOutline
+        m_MethodName: unhighlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8970,7 +9134,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2033209333}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: EnableOutline
+        m_MethodName: highlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9153,7 +9317,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &595885001
 GameObject:
@@ -9279,7 +9443,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0, g: 1, b: 0.023529412, a: 1}
+  outlineColor: {r: 1, g: 1, b: 0, a: 1}
   outlineWidth: 2
   precomputeOutline: 0
   bakeKeys: []
@@ -9335,7 +9499,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 80099804}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: DisableOutline
+        m_MethodName: unhighlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9502,6 +9666,7 @@ MonoBehaviour:
   - {fileID: 1975656693}
   - {fileID: 123965011}
   - {fileID: 53205293}
+  - {fileID: 481908393}
   StepIndex: 0
   SequenceStarted:
     m_PersistentCalls:
@@ -9665,8 +9830,9 @@ Transform:
   - {fileID: 1975656695}
   - {fileID: 123965012}
   - {fileID: 53205295}
+  - {fileID: 481908395}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &629107335
 GameObject:
@@ -9682,7 +9848,7 @@ GameObject:
   - component: {fileID: 629107337}
   - component: {fileID: 629107340}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: Force_Next
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9753,9 +9919,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 620414264}
-        m_TargetAssemblyTypeName: InstructionDeliveryListController, Assembly-CSharp
-        m_MethodName: SkipInstructions
+      - m_Target: {fileID: 436106006}
+        m_TargetAssemblyTypeName: SequenceManager, Assembly-CSharp
+        m_MethodName: SkipSequenceInstructions
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10141,7 +10307,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 288210116}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: DisableOutline
+        m_MethodName: unhighlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10269,8 +10435,7 @@ MonoBehaviour:
     DIALOGUE ----------'
   TimelineAsset: {fileID: 11400000, guid: 126ba226423ff2e478c417bf01c9b6f4, type: 2}
   script: "You\u2019ll notice the Kelly Hemostats also contain a ratchet mechanism.
-    Using the controller mechanics, ratchet the hemostats closed. Just squeeze the
-    tool closed for now until we get the mechanism made."
+    Again, squeeze the grip and press A to ratchet the hemostats closed."
   MetaData:
     fileName: 28_Hemostats_InstructToExamine_Dialogue
     AudioClip: {fileID: 8300000, guid: 08d4c747d3a472e40aa0c20569e7f988, type: 3}
@@ -10360,7 +10525,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &678552882 stripped
 GameObject:
@@ -10628,6 +10793,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 687529547}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &705784468 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1028626532802701393, guid: 2a2aa44742c186a4b9d7bac280bf0f81, type: 3}
+  m_PrefabInstance: {fileID: 1306327876}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &706585317
 GameObject:
   m_ObjectHideFlags: 0
@@ -10740,7 +10910,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0, g: 1, b: 0.023529412, a: 1}
+  outlineColor: {r: 1, g: 1, b: 0, a: 1}
   outlineWidth: 2
   precomputeOutline: 0
   bakeKeys: []
@@ -10957,7 +11127,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 2033209333}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: EnableOutline
+        m_MethodName: highlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11186,9 +11356,9 @@ MonoBehaviour:
   onInstructionsDelivered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1021646204}
-        m_TargetAssemblyTypeName: InputActions, Assembly-CSharp
-        m_MethodName: ToggleUsabilityCheck
+      - m_Target: {fileID: 2093951518}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11388,10 +11558,22 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1109097834}
+      - m_Target: {fileID: 1109097835}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 62744848}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: highlightTool
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -12109,6 +12291,7 @@ MonoBehaviour:
   MeshObjects:
   - {fileID: 466787778}
   - {fileID: 466787779}
+  highlighted: 0
   Outlines:
   - {fileID: 466787782}
   - {fileID: 466787781}
@@ -12366,8 +12549,7 @@ Transform:
   m_LocalPosition: {x: 0.1329324, y: -0.40191203, z: -0.21652111}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1215519028}
+  m_Children: []
   m_Father: {fileID: 978376585}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12555,8 +12737,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1183504234}
+  m_Children: []
   m_Father: {fileID: 646260739}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -13139,7 +13320,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 62744848}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: DisableOutline
+        m_MethodName: unhighlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13325,7 +13506,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &879517516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13523,7 +13704,7 @@ Transform:
   - {fileID: 1778843799}
   - {fileID: 1745182167}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &884856019
 GameObject:
@@ -14003,7 +14184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0, g: 1, b: 0.021962404, a: 1}
+  outlineColor: {r: 1, g: 1, b: 0, a: 1}
   outlineWidth: 2
   precomputeOutline: 0
   bakeKeys: []
@@ -14099,8 +14280,7 @@ MonoBehaviour:
     DIALOGUE ----------'
   TimelineAsset: {fileID: 11400000, guid: d92fa3e73dc67e1439784dd805d2ec3a, type: 2}
   script: "You\u2019ll notice the Crile Hemostats also contain a ratchet mechanism.
-    Using the controller mechanics, ratchet the hemostats closed. Just squeeze the
-    tool closed for now until we get the mechanism made."
+    Again, squeeze the grip, and press the A button to ratchet the Hemostats."
   MetaData:
     fileName: 21_Hemostats_InstructToExamine_Dialogue
     AudioClip: {fileID: 8300000, guid: 309d58b1959a58e4992b1fc18eba113e, type: 3}
@@ -14247,6 +14427,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1504145190}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: highlightTool
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- USER INSTRUCTED TO PICK UP ADSON RAT FORCEPS ----
 
     ------------------------------------------------------------
@@ -14297,7 +14489,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0, g: 1, b: 0.021962404, a: 1}
+  outlineColor: {r: 1, g: 1, b: 0, a: 1}
   outlineWidth: 2
   precomputeOutline: 0
   bakeKeys: []
@@ -14352,6 +14544,7 @@ MonoBehaviour:
   MeshObjects:
   - {fileID: 1784469927}
   - {fileID: 1028786979}
+  highlighted: 0
   Outlines:
   - {fileID: 1784469930}
   - {fileID: 1028786982}
@@ -14411,8 +14604,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 102587039}
+  m_Children: []
   m_Father: {fileID: 1823873423}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14706,7 +14898,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 926177606}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: DisableOutline
+        m_MethodName: unhighlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14886,6 +15078,7 @@ MonoBehaviour:
   MeshObjects:
   - {fileID: 241092977}
   - {fileID: 1526329663}
+  highlighted: 0
   Outlines:
   - {fileID: 241092980}
   - {fileID: 1526329666}
@@ -15013,6 +15206,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 273976626}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: highlightTool
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- INSTRUCTTOPICKUP ----
 
     -----------------------------
@@ -15039,7 +15244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0, g: 1, b: 0.023529412, a: 1}
+  outlineColor: {r: 1, g: 1, b: 0, a: 1}
   outlineWidth: 2
   precomputeOutline: 0
   bakeKeys: []
@@ -15313,42 +15518,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0, g: 1, b: 0.021962404, a: 1}
+  outlineColor: {r: 1, g: 1, b: 0, a: 1}
   outlineWidth: 2
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
---- !u!1 &1019480162
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1019480163}
-  m_Layer: 0
-  m_Name: 39a_AdsonRat_PressNextButton_UserAction
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1019480163
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1019480162}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2095727253}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1020537233 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2045616709476443918, guid: 2a2aa44742c186a4b9d7bac280bf0f81, type: 3}
@@ -15788,7 +15962,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0, g: 1, b: 0.023529412, a: 1}
+  outlineColor: {r: 1, g: 1, b: 0, a: 1}
   outlineWidth: 2
   precomputeOutline: 0
   bakeKeys: []
@@ -15811,7 +15985,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0, g: 1, b: 0.021962404, a: 1}
+  outlineColor: {r: 1, g: 1, b: 0, a: 1}
   outlineWidth: 2
   precomputeOutline: 0
   bakeKeys: []
@@ -15870,7 +16044,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 961983101}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: DisableOutline
+        m_MethodName: unhighlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15940,6 +16114,7 @@ MonoBehaviour:
   RootBone: {fileID: 1259789437}
   MeshObjects:
   - {fileID: 1770337516}
+  highlighted: 0
   Outlines:
   - {fileID: 1770337519}
   RightOverrideController: {fileID: 22100000, guid: 7b518616d8b2ee44eb9d578f5e257c9b, type: 2}
@@ -15978,8 +16153,7 @@ Transform:
   m_LocalPosition: {x: 0.1329324, y: -0.40191203, z: -0.21652111}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 298292619}
+  m_Children: []
   m_Father: {fileID: 978376585}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16493,7 +16667,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1812859549}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: EnableOutline
+        m_MethodName: highlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16909,7 +17083,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 803784680}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: DisableGrabability
+        m_MethodName: highlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17029,7 +17203,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 288210116}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: EnableOutline
+        m_MethodName: highlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17085,6 +17259,11 @@ PlayableDirector:
   m_SceneBindings: []
   m_ExposedReferences:
     m_References: []
+--- !u!1 &1061601398 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3817612810089089717, guid: 2a2aa44742c186a4b9d7bac280bf0f81, type: 3}
+  m_PrefabInstance: {fileID: 1306327876}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1070035684
 GameObject:
   m_ObjectHideFlags: 0
@@ -17131,7 +17310,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1070035688
 MonoBehaviour:
@@ -17272,7 +17451,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1076899136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17473,7 +17652,7 @@ Transform:
   m_Children:
   - {fileID: 1486919445}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1089746398
 GameObject:
@@ -17527,7 +17706,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 80099804}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: EnableOutline
+        m_MethodName: highlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17796,25 +17975,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1104391921}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9be32534b9c66ba41a68c0732914b06f, type: 3}
+  m_Script: {fileID: 11500000, guid: 29d9a958b8caf7544b0a8f805473e834, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CheckType: 4
+  IndexCheck: 0
+  TargetSqueezePercentage: 100
   InputAction: {fileID: 1021646204}
+  autoNextStep: 0
   CheckEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6539479389457707605}
-        m_TargetAssemblyTypeName: InstructionDeliveryListController, Assembly-CSharp
-        m_MethodName: StartNextStep
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 2080540839}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
         m_MethodName: DisableGrabability
@@ -17829,7 +18000,19 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 2080540839}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: DisableOutline
+        m_MethodName: unhighlightTool
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 436106006}
+        m_TargetAssemblyTypeName: SequenceManager, Assembly-CSharp
+        m_MethodName: BeginNextSequence
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17942,7 +18125,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1109097833}
-  - component: {fileID: 1109097834}
+  - component: {fileID: 1109097835}
   m_Layer: 0
   m_Name: 22a_DeBakey_ReleasesDeBakey_UserAction
   m_TagString: Untagged
@@ -17965,7 +18148,7 @@ Transform:
   m_Father: {fileID: 763889032}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1109097834
+--- !u!114 &1109097835
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -17974,25 +18157,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1109097832}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9be32534b9c66ba41a68c0732914b06f, type: 3}
+  m_Script: {fileID: 11500000, guid: 29d9a958b8caf7544b0a8f805473e834, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CheckType: 4
+  IndexCheck: 0
+  TargetSqueezePercentage: 100
   InputAction: {fileID: 1021646204}
+  autoNextStep: 1
   CheckEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1443313849}
-        m_TargetAssemblyTypeName: InstructionDeliveryListController, Assembly-CSharp
-        m_MethodName: StartNextStep
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 62744848}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
         m_MethodName: DisableGrabability
@@ -18007,7 +18182,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 62744848}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: DisableOutline
+        m_MethodName: unhighlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18030,7 +18205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0, g: 1, b: 0.021962404, a: 1}
+  outlineColor: {r: 1, g: 1, b: 0, a: 1}
   outlineWidth: 2
   precomputeOutline: 0
   bakeKeys: []
@@ -18364,6 +18539,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1623461742}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: highlightTool
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -18750,7 +18937,7 @@ Transform:
   m_Father: {fileID: 2011996818}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1183504233
+--- !u!1 &1182409136
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -18758,29 +18945,102 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1183504234}
-  m_Layer: 0
-  m_Name: 33a_AdsonRat_PressesPlayButton_UserAction
+  - component: {fileID: 1182409137}
+  - component: {fileID: 1182409140}
+  - component: {fileID: 1182409139}
+  - component: {fileID: 1182409138}
+  m_Layer: 5
+  m_Name: Panel (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1183504234
-Transform:
+--- !u!224 &1182409137
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1183504233}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 1182409136}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: -1160}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 822833798}
+  m_Children:
+  - {fileID: 56708891}
+  m_Father: {fileID: 4015128327748833673}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -1259, y: -222}
+  m_SizeDelta: {x: 0, y: -261.52005}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1182409138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1182409136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 1
+  m_ChildControlHeight: 1
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
+--- !u!114 &1182409139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1182409136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1182409140
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1182409136}
+  m_CullTransparentMesh: 1
 --- !u!1 &1184374002
 GameObject:
   m_ObjectHideFlags: 0
@@ -19356,6 +19616,7 @@ MonoBehaviour:
   RootBone: {fileID: 1329006746}
   MeshObjects:
   - {fileID: 714146160}
+  highlighted: 0
   Outlines:
   - {fileID: 714146163}
   RightOverrideController: {fileID: 22100000, guid: 0561d5b85647ec344a9ffd6bbbba106c, type: 2}
@@ -19466,7 +19727,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 961983101}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: EnableOutline
+        m_MethodName: highlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -19542,38 +19803,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1215519027
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1215519028}
-  m_Layer: 0
-  m_Name: 11a_Forceps_PressesPlay_UserAction
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1215519028
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1215519027}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 818035480}
-  m_RootOrder: -1
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1217592829 stripped
 GameObject:
@@ -19971,7 +20201,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 2080540839}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: DisableOutline
+        m_MethodName: unhighlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -20153,7 +20383,7 @@ Transform:
   - {fileID: 35320569}
   - {fileID: 2121078969}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1266969159
 MonoBehaviour:
@@ -20356,6 +20586,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1504145190}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: highlightTool
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -20786,7 +21028,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1282472206}
-  - component: {fileID: 1282472207}
+  - component: {fileID: 1282472208}
   m_Layer: 0
   m_Name: 31a_Brown-Adson_ReleasesBrown-Adson_UserAction
   m_TagString: Untagged
@@ -20809,7 +21051,7 @@ Transform:
   m_Father: {fileID: 1685011453}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1282472207
+--- !u!114 &1282472208
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20818,25 +21060,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1282472205}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9be32534b9c66ba41a68c0732914b06f, type: 3}
+  m_Script: {fileID: 11500000, guid: 29d9a958b8caf7544b0a8f805473e834, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CheckType: 4
+  IndexCheck: 0
+  TargetSqueezePercentage: 100
   InputAction: {fileID: 1021646204}
+  autoNextStep: 1
   CheckEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1443313849}
-        m_TargetAssemblyTypeName: InstructionDeliveryListController, Assembly-CSharp
-        m_MethodName: StartNextStep
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1030490638}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
         m_MethodName: DisableGrabability
@@ -20851,7 +21085,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1030490638}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: DisableOutline
+        m_MethodName: unhighlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -20952,8 +21186,7 @@ MonoBehaviour:
     DIALOGUE ----------'
   TimelineAsset: {fileID: 11400000, guid: 78f05fee205feff4c9b824523b389646, type: 2}
   script: "You\u2019ll notice the Rochester-Carmalt Hemostats also contain a ratchet
-    mechanism. Using the controller mechanics, ratchet the hemostats closed. Just
-    squeeze the tool closed for now until we get the mechanism made."
+    mechanism. Again, squeeze the grip and press A to ratchet the hemostats closed."
   MetaData:
     fileName: 34_Hemostats_InstructToExamine_Dialogue
     AudioClip: {fileID: 8300000, guid: a1cd8bfc006991f479bb6204fe65ecf5, type: 3}
@@ -21426,7 +21659,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0, g: 1, b: 0.023529412, a: 1}
+  outlineColor: {r: 1, g: 1, b: 0, a: 1}
   outlineWidth: 2
   precomputeOutline: 0
   bakeKeys: []
@@ -21483,7 +21716,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1205226269}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: EnableOutline
+        m_MethodName: highlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21614,7 +21847,7 @@ Transform:
   m_Children:
   - {fileID: 1610788603}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1325046570
 GameObject:
@@ -21887,6 +22120,7 @@ MonoBehaviour:
   ColliderObject: {fileID: 0}
   RootBone: {fileID: 0}
   MeshObjects: []
+  highlighted: 0
   Outlines: []
   RightOverrideController: {fileID: 0}
   LeftOverrideController: {fileID: 0}
@@ -21950,6 +22184,7 @@ MonoBehaviour:
   MeshObjects:
   - {fileID: 905539628}
   - {fileID: 922841694}
+  highlighted: 0
   Outlines:
   - {fileID: 905539630}
   - {fileID: 922841696}
@@ -22090,6 +22325,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1399170510}
+  - component: {fileID: 1399170511}
   m_Layer: 0
   m_Name: 14a_Forceps_OpenCloseChuckGrip_UserAction
   m_TagString: Untagged
@@ -22112,6 +22348,31 @@ Transform:
   m_Father: {fileID: 456491282}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1399170511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1399170509}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29d9a958b8caf7544b0a8f805473e834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CheckType: 2
+  IndexCheck: 0
+  TargetSqueezePercentage: 95
+  InputAction: {fileID: 1021646204}
+  autoNextStep: 1
+  CheckEvent:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!1 &1403968167 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4845239309778285682, guid: 2a2aa44742c186a4b9d7bac280bf0f81, type: 3}
+  m_PrefabInstance: {fileID: 1306327876}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1404757088 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: fb885289feea75a479d9fa2eb31fb201, type: 3}
@@ -22741,7 +23002,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1443313849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22945,7 +23206,7 @@ Transform:
   - {fileID: 1823873423}
   - {fileID: 646260739}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1444299977
 GameObject:
@@ -24290,37 +24551,6 @@ Transform:
   m_Father: {fileID: 1021646199}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!1 &1467133879
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1467133880}
-  m_Layer: 0
-  m_Name: 37a_AdsonRat_PressNextButton_UserAction
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1467133880
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1467133879}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2032314672}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1477123595
 GameObject:
   m_ObjectHideFlags: 0
@@ -24667,7 +24897,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 35320570}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: DisableOutline
+        m_MethodName: unhighlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -24949,6 +25179,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1623461742}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: highlightTool
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   description: '---- MAYOCONCLUSION ----
 
     ---------------------------
@@ -25165,6 +25407,7 @@ MonoBehaviour:
   RootBone: {fileID: 1174068827}
   MeshObjects:
   - {fileID: 1012504674}
+  highlighted: 0
   Outlines:
   - {fileID: 1012504677}
   RightOverrideController: {fileID: 22100000, guid: 6e5b23f949b7c7e43a93dfba428bed62, type: 2}
@@ -25474,7 +25717,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0, g: 1, b: 0.023529412, a: 1}
+  outlineColor: {r: 1, g: 1, b: 0, a: 1}
   outlineWidth: 2
   precomputeOutline: 0
   bakeKeys: []
@@ -25625,7 +25868,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 35320570}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: EnableOutline
+        m_MethodName: highlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -25777,9 +26020,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 620414264}
-        m_TargetAssemblyTypeName: InstructionDeliveryListController, Assembly-CSharp
-        m_MethodName: StartNextStep
+      - m_Target: {fileID: 436106006}
+        m_TargetAssemblyTypeName: SequenceManager, Assembly-CSharp
+        m_MethodName: StartSequenceNextStep
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -25929,8 +26172,8 @@ MonoBehaviour:
     -----------
     DIALOGUE ------------'
   TimelineAsset: {fileID: 11400000, guid: 7c452ad0c11d445499f8bb433a7be8d1, type: 2}
-  script: Now press the joystick button to change to the Tips up pose. This pose
-    is used for the jaw clamping method.
+  script: Now press the B button to change to the Tips up pose. This pose is used
+    for the jaw clamping method.
   MetaData:
     fileName: 6_Hemostats_InstructToChangePose_Dialogue
     AudioClip: {fileID: 8300000, guid: 74f13cde4e387cd4b8bbd1cbc90e1c13, type: 3}
@@ -26557,7 +26800,7 @@ MonoBehaviour:
   IndexCheck: 0
   TargetSqueezePercentage: 100
   InputAction: {fileID: 1021646204}
-  autoNextStep: 1
+  autoNextStep: 0
   CheckEvent:
     m_PersistentCalls:
       m_Calls:
@@ -26575,7 +26818,19 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 803784680}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: DisableOutline
+        m_MethodName: unhighlightTool
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 436106006}
+        m_TargetAssemblyTypeName: SequenceManager, Assembly-CSharp
+        m_MethodName: BeginNextSequence
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -26764,6 +27019,7 @@ MonoBehaviour:
   MeshObjects:
   - {fileID: 1726090029}
   - {fileID: 1217592829}
+  highlighted: 0
   Outlines:
   - {fileID: 253472400}
   - {fileID: 302309239}
@@ -26771,9 +27027,9 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 22100000, guid: fd530bb47487ff44fbe6601d09be2c67, type: 2}
   RightToolKitTool: {fileID: 1306327880}
   RightToolVariations:
-  - ToolVariationObject: {fileID: 0}
-    VariationOverrideController: {fileID: 0}
-  - ToolVariationObject: {fileID: 0}
+  - ToolVariationObject: {fileID: 374320139}
+    VariationOverrideController: {fileID: 22100000, guid: 8aff4284dbdf3bf4db218c0c78c984d6, type: 2}
+  - ToolVariationObject: {fileID: 1061601398}
     VariationOverrideController: {fileID: 0}
   thisisabool: 0
   LeftToolKitTool: {fileID: 1882249255}
@@ -27022,7 +27278,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1812859549}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: DisableOutline
+        m_MethodName: unhighlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -27131,9 +27387,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 620414264}
-        m_TargetAssemblyTypeName: InstructionDeliveryListController, Assembly-CSharp
-        m_MethodName: StartNextStep
+      - m_Target: {fileID: 436106006}
+        m_TargetAssemblyTypeName: SequenceManager, Assembly-CSharp
+        m_MethodName: StartSequenceNextStep
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -27363,7 +27619,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 2021352764}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: EnableOutline
+        m_MethodName: highlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -27495,7 +27751,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 2021352764}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: EnableOutline
+        m_MethodName: highlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -27645,8 +27901,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 520474457}
+  m_Children: []
   m_Father: {fileID: 1823873423}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -27777,7 +28032,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 961983101}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: EnableOutline
+        m_MethodName: highlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -27899,10 +28154,22 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1282472207}
+      - m_Target: {fileID: 1282472208}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1030490638}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: highlightTool
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -29500,7 +29767,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0, g: 1, b: 0.021962404, a: 1}
+  outlineColor: {r: 1, g: 1, b: 0, a: 1}
   outlineWidth: 2
   precomputeOutline: 0
   bakeKeys: []
@@ -29579,7 +29846,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0, g: 1, b: 0.021962404, a: 1}
+  outlineColor: {r: 1, g: 1, b: 0, a: 1}
   outlineWidth: 2
   precomputeOutline: 0
   bakeKeys: []
@@ -29747,7 +30014,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1364469886}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: EnableOutline
+        m_MethodName: highlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -30076,7 +30343,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0, g: 1, b: 0.021962404, a: 1}
+  outlineColor: {r: 1, g: 1, b: 0, a: 1}
   outlineWidth: 2
   precomputeOutline: 0
   bakeKeys: []
@@ -30194,7 +30461,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0, g: 1, b: 0.021962404, a: 1}
+  outlineColor: {r: 1, g: 1, b: 0, a: 1}
   outlineWidth: 2
   precomputeOutline: 0
   bakeKeys: []
@@ -30456,8 +30723,8 @@ MonoBehaviour:
   TimelineAsset: {fileID: 11400000, guid: a606aff0f288c284d805de30807030fe, type: 2}
   script: Now turn the hemostats toward you and examine the ratchet mechanism that
     Heidi used to lock the clamp after clamping the bleeding vessel in surgery with
-    the tip clamping method. We need to figure out what this mechanism is, so just
-    squeeze the grip for now, and check back with me at another time.
+    the tip clamping method. Squeeze the grip to completely close the Hemostats.
+    While Closed, press the A button to ratchet the Hemostats closed.
   MetaData:
     fileName: 11_Hemostats_InstructToExamine_Dialogue
     AudioClip: {fileID: 8300000, guid: 2d955f16ade36cd4c9986d2d010d2d3a, type: 3}
@@ -30480,7 +30747,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0, g: 1, b: 0.023529412, a: 1}
+  outlineColor: {r: 1, g: 1, b: 0, a: 1}
   outlineWidth: 2
   precomputeOutline: 0
   bakeKeys: []
@@ -30541,7 +30808,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1205226269}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: DisableOutline
+        m_MethodName: unhighlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -30614,6 +30881,7 @@ MonoBehaviour:
   RootBone: {fileID: 333570320}
   MeshObjects:
   - {fileID: 2098218132}
+  highlighted: 0
   Outlines:
   - {fileID: 2098218135}
   RightOverrideController: {fileID: 22100000, guid: 6f191389f586c7b42b1d6b25e0977fcf, type: 2}
@@ -30689,7 +30957,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 926177606}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: DisableOutline
+        m_MethodName: unhighlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -30950,7 +31218,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 2033209333}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: DisableOutline
+        m_MethodName: unhighlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -31108,11 +31376,47 @@ MonoBehaviour:
   CheckType: 4
   IndexCheck: 0
   TargetSqueezePercentage: 100
-  InputAction: {fileID: 0}
+  InputAction: {fileID: 1021646204}
   autoNextStep: 0
   CheckEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2033209333}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2033209333}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: unhighlightTool
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 436106006}
+        m_TargetAssemblyTypeName: SequenceManager, Assembly-CSharp
+        m_MethodName: BeginNextSequence
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &1840042324
 Transform:
   m_ObjectHideFlags: 0
@@ -31146,7 +31450,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0, g: 1, b: 0.023529412, a: 1}
+  outlineColor: {r: 1, g: 1, b: 0, a: 1}
   outlineWidth: 2
   precomputeOutline: 0
   bakeKeys: []
@@ -31930,7 +32234,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 926177606}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: EnableOutline
+        m_MethodName: highlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -32002,6 +32306,7 @@ MonoBehaviour:
   MeshObjects:
   - {fileID: 1726090035}
   - {fileID: 1726090027}
+  highlighted: 0
   Outlines:
   - {fileID: 1726090040}
   - {fileID: 1134664605}
@@ -32009,13 +32314,18 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 22100000, guid: 7d1398b35d1702a4f86becc53bb59ce4, type: 2}
   RightToolKitTool: {fileID: 1306327879}
   RightToolVariations:
-  - ToolVariationObject: {fileID: 0}
-    VariationOverrideController: {fileID: 0}
-  - ToolVariationObject: {fileID: 0}
+  - ToolVariationObject: {fileID: 222555664}
+    VariationOverrideController: {fileID: 22100000, guid: dcaf8942c83a74a4a874f1c3e7475a57, type: 2}
+  - ToolVariationObject: {fileID: 705784468}
     VariationOverrideController: {fileID: 0}
   thisisabool: 0
   LeftToolKitTool: {fileID: 1882249254}
   LeftToolVariations: []
+--- !u!1 &1884052078 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4675584728469762711, guid: 2a2aa44742c186a4b9d7bac280bf0f81, type: 3}
+  m_PrefabInstance: {fileID: 1306327876}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1885773686 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7047947039211075329, guid: 2a2aa44742c186a4b9d7bac280bf0f81, type: 3}
@@ -32144,8 +32454,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 481127271}
+  m_Children: []
   m_Father: {fileID: 646260739}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -32403,6 +32712,143 @@ Transform:
   m_Father: {fileID: 2011996818}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1895239148
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1895239149}
+  - component: {fileID: 1895239151}
+  - component: {fileID: 1895239150}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1895239149
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1895239148}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 56708891}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1895239150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1895239148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Restart Scene
+
+'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4281479730
+  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1895239151
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1895239148}
+  m_CullTransparentMesh: 1
 --- !u!1 &1905009844 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1490951669508669430, guid: 2a2aa44742c186a4b9d7bac280bf0f81, type: 3}
@@ -32426,7 +32872,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0, g: 1, b: 0.023529412, a: 1}
+  outlineColor: {r: 1, g: 1, b: 0, a: 1}
   outlineWidth: 2
   precomputeOutline: 0
   bakeKeys: []
@@ -32482,7 +32928,19 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 961983101}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: DisableOutline
+        m_MethodName: unhighlightTool
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 436106006}
+        m_TargetAssemblyTypeName: SequenceManager, Assembly-CSharp
+        m_MethodName: BeginNextSequence
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -32739,37 +33197,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1926148644}
   m_Mesh: {fileID: -3294768540057815688, guid: 20f5c7aaef5530344be002e7563d149c, type: 3}
---- !u!1 &1931127186
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1931127187}
-  m_Layer: 0
-  m_Name: 20a_DeBakey_PressesNextButton_UserAction
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1931127187
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1931127186}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 517160524}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1961190309
 GameObject:
   m_ObjectHideFlags: 0
@@ -32821,7 +33248,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1812859549}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: DisableOutline
+        m_MethodName: unhighlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -32961,7 +33388,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 80099804}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: DisableOutline
+        m_MethodName: unhighlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -33040,7 +33467,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2021352764}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: DisableOutline
+        m_MethodName: unhighlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -33207,7 +33634,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 288210116}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: DisableOutline
+        m_MethodName: unhighlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -33599,37 +34026,6 @@ Transform:
   m_Father: {fileID: 35352354}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1993900737
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1993900738}
-  m_Layer: 0
-  m_Name: 30a_Brown-Adson_ClicksNextButton_UserAction
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1993900738
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1993900737}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2039636257}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2000786096
 GameObject:
   m_ObjectHideFlags: 0
@@ -33659,8 +34055,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 489712472}
+  m_Children: []
   m_Father: {fileID: 1823873423}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -33741,7 +34136,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2011996817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33949,7 +34344,7 @@ Transform:
   - {fileID: 1891563437}
   - {fileID: 1056560288}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2013425993
 GameObject:
@@ -34003,7 +34398,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1812859549}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: EnableOutline
+        m_MethodName: highlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -34121,6 +34516,7 @@ MonoBehaviour:
   MeshObjects:
   - {fileID: 2069759276}
   - {fileID: 1905469604}
+  highlighted: 0
   Outlines:
   - {fileID: 2069759279}
   - {fileID: 1905469607}
@@ -34362,8 +34758,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1467133880}
+  m_Children: []
   m_Father: {fileID: 646260739}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -34481,6 +34876,7 @@ MonoBehaviour:
   - {fileID: 19477336}
   - {fileID: 19477335}
   - {fileID: 19477334}
+  highlighted: 0
   Outlines:
   - {fileID: 19477344}
   - {fileID: 19477343}
@@ -34524,8 +34920,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1993900738}
+  m_Children: []
   m_Father: {fileID: 1823873423}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -34603,7 +34998,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0, g: 1, b: 0.023529412, a: 1}
+  outlineColor: {r: 1, g: 1, b: 0, a: 1}
   outlineWidth: 2
   precomputeOutline: 0
   bakeKeys: []
@@ -34737,22 +35132,10 @@ MonoBehaviour:
   IndexCheck: 0
   TargetSqueezePercentage: 100
   InputAction: {fileID: 1021646204}
-  autoNextStep: 0
+  autoNextStep: 1
   CheckEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6539479389457707605}
-        m_TargetAssemblyTypeName: InstructionDeliveryListController, Assembly-CSharp
-        m_MethodName: StartNextStep
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1623461742}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
         m_MethodName: DisableGrabability
@@ -34767,7 +35150,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1623461742}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: DisableOutline
+        m_MethodName: unhighlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -34864,7 +35247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0, g: 1, b: 0.023529412, a: 1}
+  outlineColor: {r: 1, g: 1, b: 0, a: 1}
   outlineWidth: 2
   precomputeOutline: 0
   bakeKeys: []
@@ -35092,6 +35475,7 @@ MonoBehaviour:
   MeshObjects:
   - {fileID: 1726090031}
   - {fileID: 1726090030}
+  highlighted: 0
   Outlines:
   - {fileID: 435608977}
   - {fileID: 1726090036}
@@ -35099,10 +35483,10 @@ MonoBehaviour:
   LeftOverrideController: {fileID: 22100000, guid: 25d1c0bf68540ad40b6419c6d46515ba, type: 2}
   RightToolKitTool: {fileID: 1306327881}
   RightToolVariations:
-  - ToolVariationObject: {fileID: 0}
-    VariationOverrideController: {fileID: 0}
-  - ToolVariationObject: {fileID: 0}
-    VariationOverrideController: {fileID: 0}
+  - ToolVariationObject: {fileID: 1884052078}
+    VariationOverrideController: {fileID: 22100000, guid: 36d639b778c2ab94a950d2c6e9389103, type: 2}
+  - ToolVariationObject: {fileID: 1403968167}
+    VariationOverrideController: {fileID: 22100000, guid: 36d639b778c2ab94a950d2c6e9389103, type: 2}
   thisisabool: 0
   LeftToolKitTool: {fileID: 1882249256}
   LeftToolVariations:
@@ -35208,7 +35592,7 @@ RectTransform:
   - {fileID: 1540094163}
   - {fileID: 1659573480}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -35270,7 +35654,43 @@ MonoBehaviour:
   autoNextStep: 0
   CheckEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1364469886}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: DisableGrabability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1364469886}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: unhighlightTool
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 436106006}
+        m_TargetAssemblyTypeName: SequenceManager, Assembly-CSharp
+        m_MethodName: BeginNextSequence
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &2087933644
 Transform:
   m_ObjectHideFlags: 0
@@ -35300,6 +35720,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2093951517}
+  - component: {fileID: 2093951518}
   m_Layer: 0
   m_Name: 6a_Forceps_SqueezeForceps_UserAction
   m_TagString: Untagged
@@ -35322,6 +35743,26 @@ Transform:
   m_Father: {fileID: 749931415}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2093951518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093951516}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29d9a958b8caf7544b0a8f805473e834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CheckType: 2
+  IndexCheck: 0
+  TargetSqueezePercentage: 95
+  InputAction: {fileID: 1021646204}
+  autoNextStep: 1
+  CheckEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2095727252
 GameObject:
   m_ObjectHideFlags: 0
@@ -35351,8 +35792,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1019480163}
+  m_Children: []
   m_Father: {fileID: 646260739}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -35481,7 +35921,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1364469886}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: EnableOutline
+        m_MethodName: highlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -35557,7 +35997,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0, g: 1, b: 0.023529412, a: 1}
+  outlineColor: {r: 1, g: 1, b: 0, a: 1}
   outlineWidth: 2
   precomputeOutline: 0
   bakeKeys: []
@@ -35576,7 +36016,7 @@ GameObject:
   - component: {fileID: 2100531891}
   - component: {fileID: 2100531894}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Start_Sequence
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35647,9 +36087,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 620414264}
-        m_TargetAssemblyTypeName: InstructionDeliveryListController, Assembly-CSharp
-        m_MethodName: StartSequence
+      - m_Target: {fileID: 436106006}
+        m_TargetAssemblyTypeName: SequenceManager, Assembly-CSharp
+        m_MethodName: StartFullSequence
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -35926,6 +36366,50 @@ MonoBehaviour:
   CheckEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &2106870267
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2106870269}
+  - component: {fileID: 2106870268}
+  m_Layer: 0
+  m_Name: SceneController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2106870268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106870267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f76ccc8d073316458d802b2453ed95b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &2106870269
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106870267}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.2673235, y: 0.04792571, z: 0.9789267}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2108637354
 GameObject:
   m_ObjectHideFlags: 0
@@ -35990,7 +36474,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 803784680}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: EnableOutline
+        m_MethodName: highlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -36098,7 +36582,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 35320570}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: EnableOutline
+        m_MethodName: highlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -36213,6 +36697,7 @@ MonoBehaviour:
   ColliderObject: {fileID: 0}
   RootBone: {fileID: 0}
   MeshObjects: []
+  highlighted: 0
   Outlines: []
   RightOverrideController: {fileID: 0}
   LeftOverrideController: {fileID: 0}
@@ -36809,7 +37294,7 @@ Transform:
   - {fileID: 1511524925}
   - {fileID: 105160974}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1133610557989951807
 Transform:
@@ -37429,7 +37914,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1883978175}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: DisableOutline
+        m_MethodName: unhighlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -37574,8 +38059,9 @@ RectTransform:
   - {fileID: 2070040605}
   - {fileID: 1419316920}
   - {fileID: 92211878}
+  - {fileID: 1182409137}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -38543,7 +39029,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6800697688986044379}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b8636d161688c164dadb3443c239b911, type: 3}
   m_Name: 
@@ -38556,12 +39042,10 @@ MonoBehaviour:
   - {fileID: 9008708613598151720}
   - {fileID: 5502842771294281513}
   - {fileID: 6400343805415913606}
-  - {fileID: 0}
   - {fileID: 968868046108460720}
   - {fileID: 6065121314794564224}
   - {fileID: 2160893643254533350}
   - {fileID: 1050565863476590110}
-  - {fileID: 0}
   - {fileID: 9189480107897064014}
   - {fileID: 5049056544583651827}
   - {fileID: 8104985333000404985}
@@ -38569,7 +39053,6 @@ MonoBehaviour:
   - {fileID: 7724800063347598693}
   - {fileID: 1148810671}
   - {fileID: 1486331662}
-  - {fileID: 0}
   - {fileID: 1199357443}
   - {fileID: 1092088741}
   - {fileID: 1480717193}
@@ -38584,11 +39067,10 @@ MonoBehaviour:
   - {fileID: 403156468}
   - {fileID: 731253293}
   - {fileID: 10759130}
-  - {fileID: 0}
   - {fileID: 1428144353}
   - {fileID: 167565231}
   - {fileID: 333359800}
-  StepIndex: 15
+  StepIndex: 0
   SequenceStarted:
     m_PersistentCalls:
       m_Calls:
@@ -38827,7 +39309,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &7007135175093843236
 RectTransform:
   m_ObjectHideFlags: 0
@@ -39008,6 +39490,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1883978175}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: highlightTool
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -39413,22 +39907,10 @@ MonoBehaviour:
   IndexCheck: 0
   TargetSqueezePercentage: 100
   InputAction: {fileID: 1021646204}
-  autoNextStep: 0
+  autoNextStep: 1
   CheckEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6539479389457707605}
-        m_TargetAssemblyTypeName: InstructionDeliveryListController, Assembly-CSharp
-        m_MethodName: StartNextStep
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1883978175}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
         m_MethodName: DisableGrabability
@@ -39443,7 +39925,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1883978175}
         m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
-        m_MethodName: DisableOutline
+        m_MethodName: unhighlightTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -39469,7 +39951,7 @@ Transform:
   - {fileID: 2104975489}
   - {fileID: 1790662507}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9057804198347879726
 GameObject:
@@ -39600,6 +40082,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1883978175}
+        m_TargetAssemblyTypeName: ToolObjectReference, Assembly-CSharp
+        m_MethodName: highlightTool
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

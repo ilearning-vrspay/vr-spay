@@ -67,8 +67,7 @@ public class InstructionDeliveryListController : MonoBehaviour
     {
         foreach(var step in Steps)
         {
-            //Debug.Log(step);
-            Debug.Log(step.onInstructionsDelivered.ToString());
+
             step.onInstructionsDelivered.AddListener(OnInstructionDelivered);
         }
     }
@@ -122,7 +121,6 @@ public class InstructionDeliveryListController : MonoBehaviour
         SequenceNext.Invoke(this);
         GetCurrentInstructionDeliveryController().StartInstructionDelivery();
 
-        Debug.Log("Paused: " + GetCurrentInstructionDeliveryController().Paused);
     }
 
     public void StartPreviousStep()
