@@ -17,6 +17,12 @@ public class ToolVariation
 
 public class ToolObjectReference : MonoBehaviour
 {
+    private bool grabbable = false;
+    public bool Grabbable
+    {
+        get { return grabbable; }
+        set { grabbable = value; }
+    }
 
     public Collider ColliderObject;
     public GameObject RootBone;
@@ -28,7 +34,6 @@ public class ToolObjectReference : MonoBehaviour
     public GameObject RightToolKitTool;
     //public List<GameObject> RightToolVariations;
     public List<ToolVariation> RightToolVariations = new List<ToolVariation>();
-    public bool thisisabool;
     public GameObject LeftToolKitTool;
     public List<GameObject> LeftToolVariations;
 
@@ -111,19 +116,21 @@ public class ToolObjectReference : MonoBehaviour
 
     public void EnableGrabability()
     {
-        if (ColliderObject != null)
-        {
+        grabbable = true;
+        // if (ColliderObject != null)
+        // {
 
-            ColliderObject.enabled = true;
-        }
+        //     ColliderObject.enabled = true;
+        // }
     }
 
     public void DisableGrabability()
     {
-        if (ColliderObject != null)
-        {
-            ColliderObject.enabled = false;
-        }
+        grabbable = false;
+        // if (ColliderObject != null)
+        // {
+        //     ColliderObject.enabled = false;
+        // }
     }
 
     public void EnableOutline()

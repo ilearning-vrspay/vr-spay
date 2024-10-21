@@ -141,18 +141,19 @@ public class InputActions : MonoBehaviour
     public void TriggerOnBooleanInput(bool value)
     {
         if (hoveredTool != null){
-            if (grabbedTool == null){
+            if (grabbedTool == null && hoveredTool.Grabbable == true){
+                Debug.Log("When no tool is held and a tool is hovered");
                 ChangeController();
                 InputPressed(hoveredTool, true);
                 grabbedTool = hoveredTool;
                 OnToolGrabbed.Invoke();
             } else if (grabbedTool == hoveredTool){
-                Debug.Log("HERE");
+                Debug.Log("When a tool is held and the same tool is hovered");
                 ResetController();
                 InputPressed(grabbedTool, false);
                 grabbedTool = null;
                 toolVariationIndex = 0;
-                OnToolReleased.Invoke();
+                OnToolReleased.Invoke();    
             }
         } 
     }
@@ -469,6 +470,7 @@ public class InputActions : MonoBehaviour
     /// <param name="other">The collider that exited the trigger.</param>
     private void OnTriggerExit(Collider other)
     {
+        Debug.Log("Trigger Exit");
         hoveredTool = null;
     }
 
