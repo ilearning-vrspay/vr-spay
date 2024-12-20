@@ -39,7 +39,23 @@ public class ToolObjectReference : MonoBehaviour
 
     
 
-    
+    public void changeOutlineColor(string color)
+    {
+        foreach (var outline in Outlines)
+        {
+            if (outline != null)
+            {
+                if (color == "green")
+                {
+                    outline.OutlineColor = Color.green;
+                }
+                else if (color == "yellow")
+                {
+                    outline.OutlineColor = Color.yellow;
+                }
+            }
+        }
+    }
     public void ToggleToolBeltTool(string hand, bool state)
     {
         if (hand == "Right"){
