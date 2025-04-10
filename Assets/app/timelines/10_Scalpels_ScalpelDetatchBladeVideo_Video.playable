@@ -89,7 +89,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: Video-Placeholder
+    m_DisplayName: Video-AvatarRemoveBlade
   m_Markers:
     m_Objects: []
 --- !u!114 &-2718367521700641518
@@ -104,7 +104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c6857444e3728a4f8403533f3d8b979, type: 3}
   m_Name: VideoPlayableAsset
   m_EditorClassIdentifier: 
-  videoClip: {fileID: 32900000, guid: fa6b9f09f3d37ac4d8acaf6912937662, type: 3}
+  videoClip: {fileID: 32900000, guid: 5accd739e9f0e244cbdf34a052f5c3b6, type: 3}
   mute: 0
   loop: 1
   preloadTime: 0.3
