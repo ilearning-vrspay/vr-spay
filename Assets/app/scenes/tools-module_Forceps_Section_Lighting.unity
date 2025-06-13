@@ -11008,7 +11008,19 @@ MonoBehaviour:
   autoNextStep: 0
   OnInstructionsStarted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1659573479}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   onInstructionsDelivered:
     m_PersistentCalls:
       m_Calls:
@@ -11031,7 +11043,8 @@ MonoBehaviour:
     ------------------
     VIDEO -----------------------'
   TimelineAsset: {fileID: 11400000, guid: b17660c383b2ed34da3a0679c790b76d, type: 2}
-  script: 
+  script: When cutting suture, the surgeon should place the pointed end against the
+    skin, and angle the blade at 45deg to cut the suture, leaving a 5mm tail.
   MetaData:
     fileName: "34_SutureScissors_Educate45DegCut \u2013 WILL_BE_SWAPPED_Dialogue"
     AudioClip: {fileID: 8300000, guid: f16f38db03c580147aea2a901c70c404, type: 3}
@@ -21960,7 +21973,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1320836837}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.66, y: -0.102, z: -0.61}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -36195,14 +36208,14 @@ MonoBehaviour:
 
     ---------
     DIALOGUE ---------'
-  TimelineAsset: {fileID: 0}
+  TimelineAsset: {fileID: 11400000, guid: 557ccb83e98c3e94faf17c69abd4f35b, type: 2}
   script: 'Since Mayo-Hegar Needle Drivers are most commonly used by students and
     novice surgeons, we will be using them to describe the features and uses of Needle
     Drivers. Hover the Mayo-Hegar Needle Drivers and press the grip button to pick
     them up. '
   MetaData:
     fileName: 5_NeedleDrivers_InstructToPickUp_Dialogue
-    AudioClip: {fileID: 0}
+    AudioClip: {fileID: 8300000, guid: 42a7feda17703604586e7042837c95c8, type: 3}
     AnimationClip: {fileID: 0}
 --- !u!4 &2095845756
 Transform:
