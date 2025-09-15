@@ -12719,7 +12719,19 @@ MonoBehaviour:
   autoNextStep: 0
   OnInstructionsStarted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 894580029}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onInstructionsDelivered:
     m_PersistentCalls:
       m_Calls:
@@ -14230,6 +14242,11 @@ PlayableDirector:
   m_SceneBindings: []
   m_ExposedReferences:
     m_References: []
+--- !u!1 &894580029 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -660974309514646784, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
+  m_PrefabInstance: {fileID: 1726090026}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &895733467
 GameObject:
   m_ObjectHideFlags: 0
@@ -24272,7 +24289,19 @@ MonoBehaviour:
   autoNextStep: 0
   OnInstructionsStarted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 894580029}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   onInstructionsDelivered:
     m_PersistentCalls:
       m_Calls:
@@ -29443,6 +29472,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 6ca52550b7144a440a69659dd9782bf7, type: 2}
+    - target: {fileID: -660974309514646784, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -224247221816122535, guid: eefff011af345c647b5f0a874d3933f5, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
