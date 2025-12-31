@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c6857444e3728a4f8403533f3d8b979, type: 3}
   m_Name: VideoPlayableAsset
   m_EditorClassIdentifier: 
-  videoClip: {fileID: 32900000, guid: fa751a1a12a6b18438f132254ba0cf26, type: 3}
+  videoClip: {fileID: 32900000, guid: 5143a930328e07749b3107816445f4b2, type: 3}
   mute: 0
   loop: 1
   preloadTime: 0.3
